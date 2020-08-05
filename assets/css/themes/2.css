@@ -1,0 +1,84 @@
+/* Reset */
+html, body{background:#000; color:#ffff00;}
+.btn{border-color:#ffff00;}
+
+
+/* Hamburger */
+.hamburger > *{background:#414243;}
+
+
+/* Topnav */
+nav.topnav{background:#000; border-color:#ffff00;}
+nav.topnav .logo{color:#ffff00;}
+nav.topnav .top-menu{background:#000;}
+nav.topnav .top-menu > .option p{color:#ffff00;}
+nav.topnav .top-menu > .option .btn{background:#fff; color:#000;}
+nav.topnav .top-menu > .option .btn[data-theme="0"]{background:#fff; color:#5abbb7;}
+nav.topnav .top-menu > .option .btn[data-theme="1"]{background:#010101; color:#fff;}
+nav.topnav .top-menu > .option .btn[data-theme="2"]{background:#010101; color:#ffff00;}
+nav.topnav .top-menu > .menu-option{color:#ffff00; background:#000;}
+
+nav.topnav .menu > a{background:#000; color:#ffff00;}
+nav.topnav .menu > a::before{background:#ffff00;}
+
+nav.topnav .ui.fluid.dropdown.active, nav.topnav .ui.selection.active.dropdown .menu{border-color:#ffff00;}
+nav.topnav .ui.fluid.dropdown > .text, nav.topnav .ui.fluid.dropdown .item{color:#000;}
+
+nav.topnav .submenu-container .hero h2{color:#ffff00;}
+nav.topnav .submenu-container .hero p{color:#ffff00;}
+
+nav.topnav .submenus::after{background:#ffff00;}
+
+nav.topnav .submenu > a{color:#ffff00;}
+nav.topnav .submenu > a::after{background:#ffff00;}
+nav.topnav .submenu.has-children > a::before{color:#ffff00;}
+
+nav.topnav .submenu .child > a{color:#ffff00;}
+nav.topnav .submenu .child > a::after{background:#ffff00;}
+nav.topnav .submenu.has-children:hover > a::before{color:#000;}
+
+nav.topnav .menu .submenus{background:#000;}
+nav.topnav .menu .submenu:hover > a{background:#ffff00; color:#000;}
+nav.topnav .menu .submenu .childs{background:#000; color:#ffff00;}
+nav.topnav .menu .child:hover > a{background:#ffff00; color:#000;}
+
+nav.topnav .mobile-menu .sidenav-btn .hamburger > *{background:#ffff00;}
+
+
+/* Sidenav */
+nav.sidenav{background:#000;}
+nav.sidenav .sidenav-btn{border-color:#ffff00;}
+nav.sidenav .sidenav-btn .hamburger > *{background:#ffff00;}
+nav.sidenav .scroll-wrapper{border-color:#ffff00;;}
+
+nav.sidenav .menu > a{color:#ffff00; border-color:#ffff00;;}
+nav.sidenav .menu:hover > a{color:#000; background:#ffff00;}
+nav.sidenav .menu > .dropdown-toggle{color:#ffff00;}
+nav.sidenav .menu:hover > .dropdown-toggle > i{color:#000;}
+nav.sidenav .menu.has-children > a::after{background:#ffff00;}
+
+nav.sidenav .submenu > a{background:#000; color:#ffff00; border-color:#ffff00;;}
+nav.sidenav .submenu:hover > a{background:#ffff00; color:#000;}
+nav.sidenav .submenu > .dropdown-toggle{color:#ffff00;}
+nav.sidenav .submenu:hover > .dropdown-toggle{color:#000;}
+nav.sidenav .submenu.has-children > a::after{background:#ffff00;;}
+
+nav.sidenav .submenu .child > a{background:#000; color:#ffff00; border-color:#ffff00;;}
+nav.sidenav .submenu .child:hover > a{background:#ffff00; color:#000;}
+
+
+/* Banner 01 */
+.banner-01 .dots{background:#000;}
+.banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after, .banner-01 .dots button{
+    background:#ffff00;
+}
+.banner-01 .dots button:before{color:#ffff00;}
+
+
+/* Content 01 */
+.content-01 .content .banner > .icon{color:#ffff00;}
+.content-01 .content .banner > .order{color:#ffff00;}
+.content-01 .content .banner,
+.content-01 .content .text-container::before{background:#000;}
+.content-01 .content .text-container{color:#ffff00;}
+.content-01 .content:hover .text-container h1{color:#ffff00;}

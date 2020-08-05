@@ -1,0 +1,14 @@
+
+/* Topnav */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    nav.topnav .submenu-container{display:none;}
+    nav.topnav .menu:hover > .submenu-container{display:block;}
+    nav.topnav .submenu > .child-container{display:none;}
+    nav.topnav .submenu:hover > .child-container{display:block;}
+}
+
+/* Sidenav */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    nav.sidenav ~ .sidenav-filter{display:none;}
+    nav.sidenav.active ~ .sidenav-filter{display:block;}
+}

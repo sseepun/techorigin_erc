@@ -1,0 +1,97 @@
+
+/* Banner 01 */
+.banner-01{position:relative; width:100%;}
+.banner-01 > .slide-container{position:relative; width:100%;}
+.banner-01 .slide{
+    height:calc(100vh - 180px); display:flex; align-items:center;
+    background-size:cover; background-position:center;
+}
+.banner-01 .dots{
+    position:absolute; top:0; bottom:0; right:0; display:flex; align-items:center; 
+    padding:1rem 1.5rem; overflow:hidden;
+}
+.banner-01 .dots > .slick-dots{
+    display:block; position:relative; margin:0; padding:0; list-style:none; counter-reset:banner01;
+}
+.banner-01 .dots li{position:relative; display:block; margin:0 auto; padding:.625rem 0;}
+.banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after{
+    content:''; position:absolute; left:calc(50% - .5px); bottom:calc(100% - .625rem);
+    width:1px; height:50vh;
+}
+.banner-01 .dots li:last-child::after{top:calc(100% - .625rem); bottom:auto;}
+.banner-01 .dots li.slick-active:first-child::after{bottom:calc(100% + .5rem);}
+.banner-01 .dots li.slick-active:last-child::after{top:calc(100% + .5rem);}
+.banner-01 .dots button{
+    display:block; font-size:0; border:0; box-shadow:none; width:.375rem; height:.375rem;
+    border-radius:50%; cursor:pointer; padding:0; margin:0 auto;
+}
+.banner-01 .dots li.slick-active > button{
+    width:auto; height:auto; background:transparent; border-radius:0;
+}
+.banner-01 .dots button:before{
+    counter-increment:banner01; content: counter(banner01, decimal-leading-zero);
+    font-size:0; font-family:'DB Ozone X'; font-weight:400; line-height:.5;
+}
+.banner-01 .dots li.slick-active > button::before{font-size:2.5rem;}
+@media screen and (max-width:1199.98px){
+    .banner-01 .slide{height:calc(100vh - 210px);}
+    .banner-01 .dots{padding:1rem 1.375rem;}
+    .banner-01 .dots li.slick-active > button::before{font-size:2.375rem;}
+}
+@media screen and (max-width:991.98px){
+    .banner-01 .slide{height:440px;}
+    .banner-01 .dots{padding:.5rem 1.125rem;}
+    .banner-01 .dots li.slick-active > button::before{font-size:2.25rem;}
+}
+@media screen and (max-width:767.98px){
+    .banner-01 .slide{height:400px;}
+    .banner-01 .dots{padding:.5rem .875rem;}
+    .banner-01 .dots li.slick-active > button::before{font-size:2.125rem;}
+}
+
+
+/* Content 01 */
+.content-01{
+    position:relative; width:100%; transform:translateY(-4.25rem);
+    box-shadow:rgba(58,45,45,.25) 0px 8px 16px;
+}
+.content-01 .contents{width:100%; display:flex; justify-content:space-between; flex-wrap:wrap;}
+.content-01 .content{width:calc((100% - 28px) / 8); display:block; text-decoration:none;}
+.content-01 .content > .wrapper{width:100%; position:relative;}
+.content-01 .content .banner{width:100%; height:4.25rem; position:relative; padding:.5rem .75rem;}
+.content-01 .content:first-child .banner{border-radius:1.25rem 0 0 0;}
+.content-01 .content:last-child .banner{border-radius:0 1.25rem 0 0;}
+.content-01 .content .banner > .icon{
+    position:absolute; top:.5rem; left:.75rem; font-size:1.5rem; line-height:1;
+}
+.content-01 .content .banner > .order{
+    position:absolute; bottom:.125rem; right:.75rem; font-size:1.25rem; font-weight:300;
+    line-height:1; transition:font-size .3s;
+}
+.content-01 .content:hover .banner > .order{font-size:2.5rem;}
+.content-01 .content .text-container{position:relative; padding:1.0625rem .75rem; text-align:center;}
+.content-01 .content .text-container h1{
+    position:relative; margin:0; font-size:1.125rem; font-weight:300; z-index:2; transition:color .3s;
+}
+.content-01 .content .text-container::before{
+    content:''; position:absolute; top:0; bottom:100%; left:0; right:0; z-index:1; transition:bottom .3s;
+}
+.content-01 .content:hover .text-container::before{bottom:0;}
+.content-01 .content .text-container::after{
+    content:''; position:absolute; top:.625rem; bottom:.625rem; right:-2px; width:1px;
+}
+.content-01 .content:last-child .text-container::after{display:none;}
+@media screen and (max-width:991.98px){
+    .content-01 .content{width:calc((100% - 12px) / 4);}
+    .content-01 .content:nth-child(4) .banner{border-radius:0 1.25rem 0 0;}
+    .content-01 .content:last-child .banner{border-radius:0;}
+    .content-01 .content:nth-child(4n) .text-container::after{display:none;}
+}
+@media screen and (max-width:767.98px){
+    .content-01{transform:translateY(0); padding:1.5rem 0;}
+    .content-01 .content .banner{border-radius:0!important;}
+}
+@media screen and (max-width:549.98px){
+    .content-01 .content{width:calc((100% - 4px) / 2);}
+    .content-01 .content:nth-child(2n) .text-container::after{display:none;}
+}

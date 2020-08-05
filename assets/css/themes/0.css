@@ -1,0 +1,122 @@
+/* Reset */
+html, body{background:transparent; color:#000;}
+.btn{border-color:transparent;}
+
+
+/* Hamburger */
+.hamburger > *{background:#414243;}
+
+
+/* Topnav */
+nav.topnav{background:#fff; border-color:#ebebeb;}
+nav.topnav .logo{color:#393939;}
+nav.topnav .top-menu{background:#ebebeb;}
+nav.topnav .top-menu > .option p{color:#393939;}
+nav.topnav .top-menu > .option .btn{background:#fff; color:#000;}
+nav.topnav .top-menu > .option .btn[data-theme="0"]{background:#fff; color:#5abbb7;}
+nav.topnav .top-menu > .option .btn[data-theme="1"]{background:#010101; color:#fff;}
+nav.topnav .top-menu > .option .btn[data-theme="2"]{background:#010101; color:#ffff00;}
+nav.topnav .top-menu > .menu-option{color:#fff; background:#5abbb7; background:var(--color0);}
+
+nav.topnav .menu > a{background:#fff; color:#000; border-color:#ebebeb;}
+nav.topnav .menu > a::before, nav.topnav .menu > a::after{background:#4d4e52;}
+nav.topnav .menu:nth-child(5n+2) > a::before, nav.topnav .menu:nth-child(5n+2) > a::after{
+    background:#5abbb7; background:var(--color0);
+}
+nav.topnav .menu:nth-child(5n+3) > a::before, nav.topnav .menu:nth-child(5n+3) > a::after{
+    background:#399bac; background:var(--color1);
+}
+nav.topnav .menu:nth-child(5n+4) > a::before, nav.topnav .menu:nth-child(5n+4) > a::after{
+    background:#b9d34f; background:var(--color2);
+}
+nav.topnav .menu:nth-child(5n) > a::before, nav.topnav .menu:nth-child(5n) > a::after{
+    background:#c0c1b9; background:var(--color3);
+}
+nav.topnav .menu.icon-menu:last-child > a{border-color:#ebebeb;}
+nav.topnav .menu.icon-menu:hover > a{color:#5abbb7; color:var(--color0);}
+
+nav.topnav .ui.fluid.dropdown.active, nav.topnav .ui.selection.active.dropdown .menu{
+    border-color:#5abbb7; border-color:var(--color0);
+}
+nav.topnav .ui.fluid.dropdown > .text, nav.topnav .ui.fluid.dropdown .item{color:#909090;}
+
+nav.topnav .submenu-container .hero h2{color:#fff;}
+nav.topnav .submenu-container .hero p{color:#fff;}
+
+nav.topnav .submenus::after{background:#fff;}
+
+nav.topnav .submenu > a{color:#fff;}
+nav.topnav .submenu > a::after{background:#fff;}
+nav.topnav .submenu.has-children > a::before{color:#fff;}
+
+nav.topnav .submenu .child > a{color:#fff;}
+nav.topnav .submenu .child > a::after{background:#fff;}
+
+nav.topnav .menu:nth-child(3n+2) .submenus{background:rgba(83,174,169,.95);}
+nav.topnav .menu:nth-child(3n+2) .submenu:hover > a{background:rgba(43,132,140,.95);}
+nav.topnav .menu:nth-child(3n+2) .submenu .childs{background:rgba(43,132,140,.95);}
+nav.topnav .menu:nth-child(3n+2) .child:hover > a{background:rgba(83,174,169,.95);}
+nav.topnav .menu:nth-child(3n) .submenus{background:rgba(86,156,168,.95);}
+nav.topnav .menu:nth-child(3n) .submenu:hover > a{background:rgba(52,134,148,.95);}
+nav.topnav .menu:nth-child(3n) .submenu .childs{background:rgba(52,134,148,.95);}
+nav.topnav .menu:nth-child(3n) .child:hover > a{background:rgba(86,156,168,.95);}
+nav.topnav .menu:nth-child(3n+1) .submenus{background:rgba(154,167,88,.95);}
+nav.topnav .menu:nth-child(3n+1) .submenu:hover > a{background:rgba(192,205,89,.95);}
+nav.topnav .menu:nth-child(3n+1) .submenu .childs{background:rgba(192,205,89,.95);}
+nav.topnav .menu:nth-child(3n+1) .child:hover > a{background:rgba(154,167,88,.95);}
+
+nav.topnav .mobile-menu .sidenav-btn{border-color:#ebebeb;}
+nav.topnav .mobile-menu .sidenav-btn:hover .hamburger > *{background:#5abbb7; background:var(--color0);}
+
+
+/* Sidenav */
+nav.sidenav{background:#fff;}
+nav.sidenav .sidenav-btn{border-color:#ebebeb;}
+nav.sidenav .sidenav-btn:hover .hamburger > *{background:#5abbb7; background:var(--color0);}
+nav.sidenav .scroll-wrapper{border-color:#ebebeb;}
+
+nav.sidenav .menu > a{color:#000; border-color:#ebebeb;}
+nav.sidenav .menu:hover > a{color:#5abbb7; color:var(--color0);}
+nav.sidenav .menu > .dropdown-toggle{color:#363636;}
+nav.sidenav .menu:hover > .dropdown-toggle > i{color:#5abbb7; color:var(--color0);}
+nav.sidenav .menu.has-children > a::after{background:#ebebeb;}
+
+nav.sidenav .submenu > a{background:#54afaa; color:#fff; border-color:rgba(255,255,255,.25);}
+nav.sidenav .submenu:hover > a{background:#2b848c;}
+nav.sidenav .submenu > .dropdown-toggle{color:#fff;}
+nav.sidenav .submenu.has-children > a::after{background:rgba(255,255,255,.25);}
+
+nav.sidenav .submenu .child > a{background:#2b848c; color:#fff; border-color:rgba(255,255,255,.25);}
+nav.sidenav .submenu .child:hover > a{background:#5abbb7;}
+
+
+/* Banner 01 */
+.banner-01 .dots{background:rgba(0,0,0,.65);}
+.banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after, .banner-01 .dots button{
+    background:#5abbb7; background:var(--color0);
+}
+.banner-01 .dots button:before{color:#fff;}
+
+
+/* Content 01 */
+.content-01 .content .banner > .icon{color:#fff;}
+.content-01 .content .banner > .order{color:#fff;}
+.content-01 .content:nth-child(8n+1) .banner,
+.content-01 .content:nth-child(8n+1) .text-container::before{background:#ab7ba3;}
+.content-01 .content:nth-child(8n+2) .banner,
+.content-01 .content:nth-child(8n+2) .text-container::before{background:#707fa0;}
+.content-01 .content:nth-child(8n+3) .banner,
+.content-01 .content:nth-child(8n+3) .text-container::before{background:#4d4e52;}
+.content-01 .content:nth-child(8n+4) .banner,
+.content-01 .content:nth-child(8n+4) .text-container::before{background:#1f9faa;}
+.content-01 .content:nth-child(8n+5) .banner,
+.content-01 .content:nth-child(8n+5) .text-container::before{background:#2c9f76;}
+.content-01 .content:nth-child(8n+6) .banner,
+.content-01 .content:nth-child(8n+6) .text-container::before{background:#b9d252;}
+.content-01 .content:nth-child(8n+7) .banner,
+.content-01 .content:nth-child(8n+7) .text-container::before{background:#c84557;}
+.content-01 .content:nth-child(8n) .banner,
+.content-01 .content:nth-child(8n) .text-container::before{background:#febc42;}
+.content-01 .content .text-container{color:#393939;}
+.content-01 .content:hover .text-container h1{color:#fff;}
+.content-01 .content .text-container::after{background:#e1e1e2;}

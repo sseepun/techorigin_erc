@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* DB Ozone X */
+@font-face{
+    font-family:'DB Ozone X'; font-weight:100; font-style:normal;
+    src:url('./DB-Ozone-X/DB-Ozone-X-UltraLi.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:100; font-style:italic;
+    src:url('./DB-Ozone-X/DB-Ozone-X-UltraLiIt.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:200; font-style:normal;
+    src:url('./DB-Ozone-X/DB-Ozone-X-Li.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:200; font-style:italic;
+    src:url('./DB-Ozone-X/DB-Ozone-X-LiIt.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:300; font-style:normal;
+    src:url('./DB-Ozone-X/DB-Ozone-X.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:300; font-style:italic;
+    src:url('./DB-Ozone-X/DB-Ozone-X-Italic.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:400; font-style:normal;
+    src:url('./DB-Ozone-X/DB-Ozone-X-Med.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:400; font-style:italic;
+    src:url('./DB-Ozone-X/DB-Ozone-X-MedIt.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:600; font-style:normal;
+    src:url('./DB-Ozone-X/DB-Ozone-X-Bd.ttf') format('truetype');
+}
+@font-face{
+    font-family:'DB Ozone X'; font-weight:600; font-style:italic;
+    src:url('./DB-Ozone-X/DB-Ozone-X-BdIt.ttf') format('truetype');
+}
