@@ -143,7 +143,7 @@ nav.topnav .mobile-menu .sidenav-btn{
     border-left:1px solid transparent; border-right:1px solid transparent;
 }
 
-nav.topnav ~ .topnav-spacer{display:block; width:100%; height:6.25rem;}
+nav.topnav ~ .topnav-spacer{display:block; width:100%; height:6.625rem;}
 
 @media screen and (max-width:1299.98px){
     nav.topnav .submenu-container.expand-adaptive{transform:translateX(-20rem);}
