@@ -12,9 +12,19 @@
         .main-news-01 .left-side {width:calc(60% - 1rem); position:relative;}
         .main-news-01 .right-side {width:calc(50% - 1rem);}
         /* Banner 02 */
-        .banner-02 .container {width: inherit;}
+        .banner-02 .container {width: inherit; position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
+        .banner-02 .date{background-color: #1e6b65; border-radius:50%;width:5.625rem; position:absolute;top:10%;left: -2.8125rem;height:5.625rem;
+            -webkit-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
+            -moz-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
+            box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);}
+        .banner-02 .date .inset{
+            -webkit-box-shadow:inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11, 61, 55, 1);
+            -moz-box-shadow: inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11, 61, 55, 1);
+            box-shadow: inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11,61, 55, 1);
+            position:absolute; width:100%; height:100%; border-radius:50%; 
+        }
 
         /* Content 02 */
         .content-02 {overflow:hidden;}
@@ -51,7 +61,9 @@
                                 <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
                                 </div>
                             </div>
-                            <div class="date"></div>
+                            <div class="date">
+                                <div class="inset"></div>
+                            </div>
                         </div>
                     </section>
                     <!-- Content 02 -->
