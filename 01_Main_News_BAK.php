@@ -21,28 +21,30 @@
         .content-02 .text-container h2, .content-02 .text-container p{margin:0;}
         .content-02 .text-container h2 {font-weight:normal; font-size:160%;}
         .content-02 .contents {display:flex; flex-wrap:wrap; width:100%; height: auto; justify-content:space-between;}
-        .content-02 .grids .grid{width:calc(25% - 0.703125rem); padding-top:1rem;}
-        .content-02 .grids .grid .img-container {position:relative; width:100%; padding:80% 0 0 0;}
-        .content-02 .grids .grid .img-container .img-bg {border-radius:10px; position:absolute; top:0; left:0; right:0; bottom:0;background-position:center; background-size:cover;}
-        .content-02 .grids .grid .img-container .img-bg::before{
-            content: ''; position:absolute; background: #97a246; opacity:0; transition: opacity .5s; border-radius:10px; width:100%; height:100%;
+        .content-02 .contents .content{width:calc(25% - 0.703125rem); padding-top:1rem;}
+        .content-02 .contents .content .img-container {position:relative; width:100%; padding:80% 0 0 0;}
+        .content-02 .contents .content .img-container .img-bg {border-radius:10px; position:absolute; top:0; left:0; right:0; bottom:0;background-position:center; background-size:cover;}
+        .content-02 .contents .content .img-container .img-bg::before, .content-02 .contents .content .img-container .img-bg::after {
+            content: ''; position:absolute; width:0; height:0; background: var(--main-news-01-img-hover); opacity:.7; transition: width ease .5s, height ease .5s; border-radius:10px;
         }
-        .content-02 .grids .grid .img-container:hover .img-bg::before{opacity:1;}
-        .content-02 .grids .grid .img-container .socials {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; z-index:2; position:absolute; top:0; bottom:0;left:0; right:0; padding:0;}
-        .content-02 .grids .grid .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; padding: .5rem; min-width:2rem; font-size:100%; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
-        .content-02 .grids .grid .img-container .socials > a:nth-child(2n+1) {transform: translateY(-.75rem);}
-        .content-02 .grids .grid .img-container .socials > a:nth-child(2n) {transform: translateY(.75rem);}
-        .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n+1), .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n) {
+        .content-02 .contents .content .img-container .img-bg::before {top:0;left:0;}
+        .content-02 .contents .content .img-container .img-bg::after {right:0;bottom:0;}
+        .content-02 .contents .content .img-container:hover .img-bg::before, .content-02 .contents .content .img-container:hover .img-bg::after {width:100%; height:100%;}
+        .content-02 .contents .content .img-container .socials {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; z-index:2; position:absolute; top:0; bottom:0;left:0; right:0; padding:0;}
+        .content-02 .contents .content .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; padding: .5rem; min-width:2rem; font-size:100%; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
+        .content-02 .contents .content .img-container .socials > a:nth-child(2n+1) {transform: translateY(-.75rem);}
+        .content-02 .contents .content .img-container .socials > a:nth-child(2n) {transform: translateY(.75rem);}
+        .content-02 .contents .content .img-container:hover .socials > a:nth-child(2n+1), .content-02 .contents .content .img-container:hover .socials > a:nth-child(2n) {
             opacity: 1; transform: translateY(0); pointer-events:auto;
         }
-        .content-02 .grids .grid .tag, .content-02 .text-container .tag {padding:0.125rem 0.5rem; font-size:80%;border-radius: 5px; display:inline-block; text-align:center; color:#fff; margin-top:0.625rem;}
-        .content-02 .grids .grid .date {font-size: 90%;}
-        .content-02 .grids .grid .text-container > p {margin: 0;}
+        .content-02 .contents .content .tag, .content-02 .text-container .tag {padding:0.125rem 0.5rem; font-size:80%;border-radius: 5px; display:inline-block; text-align:center; color:#fff; margin-top:0.625rem;}
+        .content-02 .contents .content .date {font-size: 90%;}
+        .content-02 .contents .content .text-container > p {margin: 0;}
     </style>
     <section class="main-news-01">
         <div class="container">
-            <div class="grids">
-                <section class="grid lg-75">
+            <div class="wrapper">
+                <section class="left-side">
                     <!-- Banner 02 -->
                     <section class="banner-02">
                         <div class="container">
@@ -71,9 +73,9 @@
                                     นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
                                 </p>
                             </div>  
-                            <div class="grids">
+                            <div class="contents">
                                 <?php for($i = 1; $i<13;$i++){?>
-                                    <div class="grid lg-25">
+                                    <div class="content">
                                         <div class="wrapper">
                                             <div class="img-container">
                                                 <div class="img-bg" style="background-image:url('./assets/img/default/blog-01.jpg');"></div>
@@ -103,7 +105,7 @@
                         </div>
                     </section>
                 </section>
-                <section class="grid lg-25" style="background: red;"></section>
+                <section class="right-side"></section>
             </div>
         </div>
     </section>
