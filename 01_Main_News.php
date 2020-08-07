@@ -12,7 +12,9 @@
         .main-news-01 .left-side {width:calc(60% - 1rem); position:relative;}
         .main-news-01 .right-side {width:calc(50% - 1rem);}
         /* Banner 02 */
-
+        .banner-02 .container {width: inherit;}
+        .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
+        .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
 
         /* Content 02 */
         .content-02 {overflow:hidden;}
@@ -21,7 +23,6 @@
         .content-02 .text-container h2, .content-02 .text-container p{margin:0;}
         .content-02 .text-container h2 {font-weight:normal; font-size:160%;}
         .content-02 .contents {display:flex; flex-wrap:wrap; width:100%; height: auto; justify-content:space-between;}
-        .content-02 .grids .grid{width:calc(25% - 0.703125rem); padding-top:1rem;}
         .content-02 .grids .grid .img-container {position:relative; width:100%; padding:80% 0 0 0;}
         .content-02 .grids .grid .img-container .img-bg {border-radius:10px; position:absolute; top:0; left:0; right:0; bottom:0;background-position:center; background-size:cover;}
         .content-02 .grids .grid .img-container .img-bg::before{
@@ -29,7 +30,7 @@
         }
         .content-02 .grids .grid .img-container:hover .img-bg::before{opacity:1;}
         .content-02 .grids .grid .img-container .socials {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; z-index:2; position:absolute; top:0; bottom:0;left:0; right:0; padding:0;}
-        .content-02 .grids .grid .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; padding: .5rem; min-width:2rem; font-size:100%; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
+        .content-02 .grids .grid .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; padding: .5vw; font-size:1vw; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
         .content-02 .grids .grid .img-container .socials > a:nth-child(2n+1) {transform: translateY(-.75rem);}
         .content-02 .grids .grid .img-container .socials > a:nth-child(2n) {transform: translateY(.75rem);}
         .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n+1), .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n) {
@@ -46,18 +47,11 @@
                     <!-- Banner 02 -->
                     <section class="banner-02">
                         <div class="container">
-                            <div class="header-container">
-                                <!-- ข่าวประชาสัมพันธ์ -->
-                            </div>
-                            <div class="nav-tools">
-                                <div class="search-box"></div>
-                                <div class="order"></div>
-                            </div>
                             <div class="img-container">
-                                <div class="img-bg">
-
+                                <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
                                 </div>
                             </div>
+                            <div class="date"></div>
                         </div>
                     </section>
                     <!-- Content 02 -->
@@ -89,7 +83,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="tag" style="background-color:var(--main-news-01-color-<?php echo sprintf("%02d", $i); ?>);">
+                                            <div class="tag" style="background-color:#2c9f76;">
                                                 อนามัยสิ่งแวดล้อม
                                             </div>
                                             <div class="date">02.04.2563</div>
