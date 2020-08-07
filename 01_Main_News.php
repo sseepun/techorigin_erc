@@ -15,7 +15,13 @@
         .banner-02 .container {width: inherit; position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
-        .banner-02 .date{background-color: #1e6b65; border-radius:50%;width:5.625rem; position:absolute;top:10%;left: -2.8125rem;height:5.625rem;
+        .banner-02 .date{background-color: #1e6b65; border-radius:50%;position:absolute;top:10%;
+            /* left: -2.8125rem; */
+            left: -3.125vw;
+            /* height:5.625rem; */
+            /* width:5.625rem;  */
+            height:6.25vw;
+            width: 6.25vw;
             -webkit-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
             -moz-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
             box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);}
@@ -49,6 +55,14 @@
         .content-02 .grids .grid .tag, .content-02 .text-container .tag {padding:0.125rem 0.5rem; font-size:80%;border-radius: 5px; display:inline-block; text-align:center; color:#fff; margin-top:0.625rem;}
         .content-02 .grids .grid .date {font-size: 90%;}
         .content-02 .grids .grid .text-container > p {margin: 0;}
+
+        /* Right banner */
+        .banner-top{height:50%; }
+        .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
+        .banner-top .img-container img {position:absolute; z-index:1; left:-3rem; top:-3rem; height:65%;}
+        .banner-top .img-container .img-bg{position:absolute; top:0; left:0; right:0; bottom:0; background-position:top center; background-size:cover; background-image:url('./assets/img/default/banner-02.jpg');}
+        .banner-bottom{height:50%; background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(6, 91, 128, 1),rgba(6, 91, 128, 1), rgba(255, 255, 255, 0));}
+
     </style>
     <section class="main-news-01">
         <div class="container">
@@ -109,7 +123,23 @@
                         </div>
                     </section>
                 </section>
-                <section class="grid lg-25" style="background: red;"></section>
+                <!-- Right banner -->
+                <section class="grid lg-25">
+                    <div class="banner-top">
+                        <div class="img-container">
+                            <img src="./assets/img/default/kid.png" alt="kid">
+                            <div class="img-bg"></div>
+                        </div>
+                    </div>
+                    <div class="banner-bottom">
+                        <div class="text-container">
+                            <span>กรมอนามัย</span>
+                            <span>เรามีสาระสุขภาพดีๆ</span>
+                            <span>ส่งตรงถึงคุณ</span>
+                            <span>ทุกวัน</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
