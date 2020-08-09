@@ -61,9 +61,28 @@
         .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
         .banner-top .img-container img {position:absolute; z-index:1; left:-3rem; top:-3rem; height:65%;}
         .banner-top .img-container .img-bg{position:absolute; top:0; left:0; right:0; bottom:0; background-position:top center; background-size:cover; background-image:url('./assets/img/default/banner-02.jpg');}
-        .banner-bottom{height:50%; background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(6, 91, 128, 1),rgba(6, 91, 128, 1), rgba(255, 255, 255, 0));}
-
+        .banner-top .img-container > .grids {position:absolute; bottom: 0; opacity:0; transition: all .5s;}
+        .banner-top .img-container:hover > .grids {opacity:1;}
+        .banner-top .img-container > .grids .grid > .grids {background:orange; padding: 0.25rem 0.5rem;}
+        .banner-top .img-container .grids .icon-wrapper {position:relative; width:100%; height:100%;}
+        .banner-top .img-container .grids .icon-wrapper .icon {position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
+        .banner-top .img-container > .grids .grid > .grids .grid .info {color:#fff;}
+        .banner-top .img-container > .grids .grid > .grids .grid .info .order, .banner-top .img-container > .grids .grid > .grids .grid .info .category{font-size:100%;}
+        .banner-top .img-container > .grids .grid > .grids .grid .info .title {font-size:120%;}
+        .banner-bottom{position:relative; height:50%; background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(6, 91, 128, 1),rgba(6, 91, 128, 1), rgba(255, 255, 255, 0));}
+        .banner-bottom .text-container {position:absolute; top:calc(50% - 5.625rem); text-align:center; display:flex; flex-wrap:wrap;}
+        .banner-bottom .text-container::before{
+            content: '\201D'; color:var(--color2); position:absolute; transform:rotateY(180deg); font-family:sans-serif; font-size:300%; top: calc(0% - 1rem); left: calc(0% + 3.5rem);
+        }
+        .banner-bottom .text-container::after{
+            content: '\201C'; color:var(--color2); position:absolute; transform:rotate(180deg); font-family:sans-serif; font-size:300%; bottom: calc(0% + 1rem); right: calc(0% + 4rem);
+        }
+        .banner-bottom .text-container > span {width:100%; color:#fff;}
+        .banner-bottom .text-container > span:first-child, .banner-bottom .text-container > span:last-child {font-size: 250%;}
+        .banner-bottom .text-container > span:nth-child(2) {font-size:180%;}
+        .banner-bottom .text-container > span:nth-child(3) {font-size:300%;}
     </style>
+    <div style="padding-top:120px;"></div>
     <section class="main-news-01">
         <div class="container">
             <div class="grids">
@@ -129,6 +148,52 @@
                         <div class="img-container">
                             <img src="./assets/img/default/kid.png" alt="kid">
                             <div class="img-bg"></div>
+                            <div class="grids">
+                                <div class="grid all-100">
+                                    <div class="grids">
+                                        <div class="grid all-20 mt-0">
+                                            <div class="icon-wrapper">
+                                                <div class="icon" style="background-image:url('./assets/img/default/icon-01.jpg');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="grid all-80 mt-0">
+                                            <div class="info">
+                                                <div class="order">01.</div>
+                                                <div class="title">ข่าวจากหน่วยงานส่วนกลาง</div>
+                                                <div class="category">กรมอนามัย</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grids">
+                                        <div class="grid all-20 mt-0">
+                                            <div class="icon-wrapper">
+                                                <div class="icon" style="background-image:url('./assets/img/default/icon-01.jpg');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="grid all-80 mt-0">
+                                            <div class="info">
+                                                <div class="order">01.</div>
+                                                <div class="title">ข่าวจากหน่วยงานส่วนกลาง</div>
+                                                <div class="category">กรมอนามัย</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grids">
+                                        <div class="grid all-20 mt-0">
+                                            <div class="icon-wrapper">
+                                                <div class="icon" style="background-image:url('./assets/img/default/icon-01.jpg');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="grid all-80 mt-0">
+                                            <div class="info">
+                                                <div class="order">01.</div>
+                                                <div class="title">ข่าวจากหน่วยงานส่วนกลาง</div>
+                                                <div class="category">กรมอนามัย</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="banner-bottom">
