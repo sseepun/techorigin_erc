@@ -28,8 +28,21 @@
             box-shadow: inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11,61, 55, 1);
             position:absolute; width:100%; height:100%; border-radius:50%; 
         }
+        .banner-02 .date .date-display {position:absolute; color:#fff; text-align:center; top: 5%; left:25%;}
+        .banner-02 .date .date-display .separator {width: 100%; height: 0.03125rem; background: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255, 255,255, 0.7),rgba(255, 255,255, 0.7), rgba(255, 255,255, 0.7), rgba(255, 255,255, 0.7),rgba(255, 255,255, 0.7),rgba(255, 255, 255, 0));}
+        .banner-02 .date .date-display .day {font-size: 200%; font-weight: bold;}
+        .banner-02 .date .date-display .month {padding-top: 0.25rem;}
+        .banner-02 .date .date-display .year {font-weight:bold;}
         /* date responsive */
-        @media screen and (max-width:)
+        @media screen and (min-width: 1200px) {
+            .banner-02 .date {transform: scale(1);}
+        }
+        @media screen and (max-width: 1199.98px) and (min-width: 768px) {
+            .banner-02 .date {transform: scale(0.75);}
+        }
+        @media screen and (max-width: 767.98px){
+            .banner-02 .date {transform: scale(0.6);}
+        }
         /* Content 02 */
         .content-02 {overflow:hidden;}
         .content-02 .container {width:inherit;}
@@ -99,6 +112,12 @@
                             </div>
                             <div class="date">
                                 <div class="inset"></div>
+                                <div class="date-display">
+                                    <div class="day">8</div>
+                                    <div class="separator"></div>
+                                    <div class="month">กรกฎาคม</div>
+                                    <div class="year">2563</div>
+                                </div>
                             </div>
                         </div>
                     </section>
