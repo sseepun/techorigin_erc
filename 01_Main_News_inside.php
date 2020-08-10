@@ -36,6 +36,14 @@
         @media screen and (max-width: 767.98px){
             .banner-02 .date {transform: scale(0.6);}
         }
+
+        /* content-03 */
+        .content-03 .container {width:inherit;}
+        .content-03 .container .title {position:relative; display:flex;}
+        .content-03 .container .title .lead {font-size:800%; position:absolute; top: calc(-50% - 0.25rem); font-weight:200;}
+        .content-03 .container .title .heading {font-size:200%; padding-left:3.5rem;}
+        .content-03 .container .text-container p {margin:0; font-size:150%; padding-top:2rem;}
+        
     </style>
 </head>
 <body>
@@ -62,13 +70,15 @@
                             </div>
                         </div>
                     </section>
+                    <div style="padding-top:2rem;"></div>
                     <section class="content-03">
                         <div class="container">
                             <div class="title">
-                                <h3>
+                                <div class="lead">ก</div>
+                                <div class="heading">
                                     รมอนามัย เตือนขับรถทางไกลดื่มกาแฟเกิน <span>4 แก้วต่อวันเสี่ยงหัวใจเต้นเร็ว</span> <br>
                                     มือสั่น ใจสั่นแนะคุมปริมาณแต่พอดี
-                                </h3>
+                                </div>
                             </div>
                             <div class="text-container">
                                 <p>กรมอนามัย กระทรวงสาธารณสุข แนะคนขับรถทางไกลดื่มกาแฟมากไปเกิน 4 แก้วต่อวัน หวั่นคาเฟอีน

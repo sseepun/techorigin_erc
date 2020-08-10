@@ -70,15 +70,15 @@
         .banner-top{height:50%; }
         .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
         /* light orange filter */
-        .banner-top .img-container .filter {position:absolute; width:100%; top:40%; height:100%; background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(218, 180, 107, 1));}
+        .banner-top .img-container .filter {position:absolute; width:100%; top:40%; height:100%; background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(133, 185, 147, 1));}
         .banner-top .img-container img {position:absolute; z-index:1; left:-3rem; top:-3rem; height:65%;}
         .banner-top .img-container .img-bg{position:absolute; top:0; left:0; right:0; bottom:0; background-position:top center; background-size:cover; background-image:url('./assets/img/default/banner-02.jpg');}
         .banner-top .img-container > .grids {position:absolute; bottom: 0; opacity:0; transform: translateY(10px); transition: all ease .5s; z-index:2;}
         .banner-top .img-container:hover > .grids {opacity:1; transform: translateY(0);}
         .banner-top .img-container > .grids .grid > .grids {padding: 0.25rem 0.5rem;}
-        .banner-top .img-container > .grids .grid > .grids:first-child {background: #d1a248; }
-        .banner-top .img-container > .grids .grid > .grids:nth-child(2) {background: #bb8837;}
-        .banner-top .img-container > .grids .grid > .grids:last-child {background: #846234;}
+        .banner-top .img-container > .grids .grid > .grids:first-child {background: #659e75; }
+        .banner-top .img-container > .grids .grid > .grids:nth-child(2) {background: #537d55;}
+        .banner-top .img-container > .grids .grid > .grids:last-child {background: #535d38;}
         .banner-top .img-container .grids .icon-wrapper {position:relative; width:100%; height:100%;}
         .banner-top .img-container .grids .icon-wrapper .icon {position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
         .banner-top .img-container > .grids .grid > .grids .grid .info {color:#fff;}
@@ -87,15 +87,15 @@
         .banner-bottom{position:relative; height:50%; background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(6, 91, 128, 1),rgba(6, 91, 128, 1), rgba(255, 255, 255, 0));}
         .banner-bottom .text-container {position:absolute; top:calc(50% - 5.625rem); text-align:center; display:flex; flex-wrap:wrap;}
         .banner-bottom .text-container::before{
-            content: '\201D'; color:var(--color2); position:absolute; transform:rotateY(180deg); font-family:sans-serif; font-size:300%; top: calc(0% - 1rem); left: calc(0% + 3.5rem);
+            content: '\201C'; color:var(--color2); position:absolute; font-family:sans-serif; font-size:300%; top: calc(0% - 2rem); left: calc(50% - .5rem);
         }
         .banner-bottom .text-container::after{
-            content: '\201C'; color:var(--color2); position:absolute; transform:rotate(180deg); font-family:sans-serif; font-size:300%; bottom: calc(0% + 1rem); right: calc(0% + 4rem);
+            content: '\201D'; color:var(--color2); position:absolute; font-family:sans-serif; font-size:300%; bottom: calc(0% - 4rem); right: calc(50% - .5rem);
         }
         .banner-bottom .text-container > span {width:100%; color:#fff;}
         .banner-bottom .text-container > span:first-child, .banner-bottom .text-container > span:last-child {font-size: 250%;}
         .banner-bottom .text-container > span:nth-child(2) {font-size:180%;}
-        .banner-bottom .text-container > span:nth-child(3) {font-size:300%;}
+        .banner-bottom .text-container > span:nth-child(3) {font-size:300%; color:#b2c43a;}
     </style>
     <div style="padding-top:120px;"></div>
     <section class="main-news-01">
