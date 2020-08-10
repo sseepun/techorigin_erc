@@ -8,9 +8,8 @@
     <?php include_once('include/topnav.php'); ?> 
     
     <style>
-        .main-news-01 .container > .wrapper {display:flex; flex-wrap:wrap; justify-content: space-between; }
-        .main-news-01 .left-side {width:calc(60% - 1rem); position:relative;}
-        .main-news-01 .right-side {width:calc(50% - 1rem);}
+        .main-news-01 .container .right-banner {min-height:100vh;}
+        
         /* Banner 02 */
         .banner-02 .container {width: inherit; position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
@@ -165,7 +164,7 @@
                     </section>
                 </section>
                 <!-- Right banner -->
-                <section class="grid lg-25">
+                <section class="grid lg-25 right-banner">
                     <div class="banner-top">
                         <div class="img-container">
                             <img src="./assets/img/default/kid.png" alt="kid">
@@ -231,5 +230,7 @@
             </div>
         </div>
     </section>
-
+ 
+    <?php include_once('include/script.php'); ?>
 </body>
+</html>
