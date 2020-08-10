@@ -16,12 +16,9 @@
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
         .banner-02 .date{background-color: #1e6b65; border-radius:50%;position:absolute;top:10%;
-            /* left: -2.8125rem; */
-            left: -3.125vw;
-            /* height:5.625rem; */
-            /* width:5.625rem;  */
-            height:6.25vw;
-            width: 6.25vw;
+            left: -2.8125rem;
+            height:5.625rem;
+            width:5.625rem; 
             -webkit-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
             -moz-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
             box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);}
@@ -31,7 +28,8 @@
             box-shadow: inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11,61, 55, 1);
             position:absolute; width:100%; height:100%; border-radius:50%; 
         }
-
+        /* date responsive */
+        @media screen and (max-width:)
         /* Content 02 */
         .content-02 {overflow:hidden;}
         .content-02 .container {width:inherit;}
@@ -59,11 +57,16 @@
         /* Right banner */
         .banner-top{height:50%; }
         .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
+        /* light orange filter */
+        .banner-top .img-container .filter {position:absolute; width:100%; top:40%; height:100%; background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(218, 180, 107, 1));}
         .banner-top .img-container img {position:absolute; z-index:1; left:-3rem; top:-3rem; height:65%;}
         .banner-top .img-container .img-bg{position:absolute; top:0; left:0; right:0; bottom:0; background-position:top center; background-size:cover; background-image:url('./assets/img/default/banner-02.jpg');}
-        .banner-top .img-container > .grids {position:absolute; bottom: 0; opacity:0; transition: all .5s;}
-        .banner-top .img-container:hover > .grids {opacity:1;}
-        .banner-top .img-container > .grids .grid > .grids {background:orange; padding: 0.25rem 0.5rem;}
+        .banner-top .img-container > .grids {position:absolute; bottom: 0; opacity:0; transform: translateY(10px); transition: all ease .5s; z-index:2;}
+        .banner-top .img-container:hover > .grids {opacity:1; transform: translateY(0);}
+        .banner-top .img-container > .grids .grid > .grids {padding: 0.25rem 0.5rem;}
+        .banner-top .img-container > .grids .grid > .grids:first-child {background: #d1a248; }
+        .banner-top .img-container > .grids .grid > .grids:nth-child(2) {background: #bb8837;}
+        .banner-top .img-container > .grids .grid > .grids:last-child {background: #846234;}
         .banner-top .img-container .grids .icon-wrapper {position:relative; width:100%; height:100%;}
         .banner-top .img-container .grids .icon-wrapper .icon {position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
         .banner-top .img-container > .grids .grid > .grids .grid .info {color:#fff;}
@@ -194,6 +197,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="filter"></div>
                         </div>
                     </div>
                     <div class="banner-bottom">
