@@ -69,7 +69,7 @@
         /* Right banner */
         .banner-top{height:50%; }
         .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
-        /* light orange filter */
+        /* light green filter */
         .banner-top .img-container .filter {position:absolute; width:100%; top:40%; height:100%; background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(133, 185, 147, 1));}
         .banner-top .img-container img {position:absolute; z-index:1; left:-3rem; top:-3rem; height:65%;}
         .banner-top .img-container .img-bg{position:absolute; top:0; left:0; right:0; bottom:0; background-position:top center; background-size:cover; background-image:url('./assets/img/default/banner-02.jpg');}
@@ -84,7 +84,7 @@
         .banner-top .img-container > .grids .grid > .grids .grid .info {color:#fff;}
         .banner-top .img-container > .grids .grid > .grids .grid .info .order, .banner-top .img-container > .grids .grid > .grids .grid .info .category{font-size:100%;}
         .banner-top .img-container > .grids .grid > .grids .grid .info .title {font-size:120%;}
-        .banner-bottom{position:relative; height:50%; background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(6, 91, 128, 1),rgba(6, 91, 128, 1), rgba(255, 255, 255, 0));}
+        .banner-bottom{position:relative; height:50%; background: linear-gradient(to bottom, rgba(44, 133, 79, 1), rgba(32, 111, 66, 1), rgba(36, 82, 69, 1),  rgba(36, 82, 69, 1), rgba(255, 255, 255, 0));}
         .banner-bottom .text-container {position:absolute; top:calc(50% - 5.625rem); text-align:center; display:flex; flex-wrap:wrap;}
         .banner-bottom .text-container::before{
             content: '\201C'; color:var(--color2); position:absolute; font-family:sans-serif; font-size:300%; top: calc(0% - 2rem); left: calc(50% - .5rem);
