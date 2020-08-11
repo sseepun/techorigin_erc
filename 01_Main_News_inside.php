@@ -8,35 +8,15 @@
         .banner-02 .container {width: inherit; position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
-        .banner-02 .date{background-color: #1e6b65; border-radius:50%;position:absolute;top:10%;
-            left: -2.8125rem;
-            height:5.625rem;
-            width:5.625rem; 
-            -webkit-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
-            -moz-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
-            box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);}
-        .banner-02 .date .inset{
-            -webkit-box-shadow:inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11, 61, 55, 1);
-            -moz-box-shadow: inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11, 61, 55, 1);
-            box-shadow: inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11,61, 55, 1);
-            position:absolute; width:100%; height:100%; border-radius:50%; 
-        }
-        .banner-02 .date .date-display {position:absolute; color:#fff; text-align:center; top: 5%; left:25%;}
-        .banner-02 .date .date-display .separator {width: 100%; height: 0.03125rem; background: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255, 255,255, 0.7),rgba(255, 255,255, 0.7), rgba(255, 255,255, 0.7), rgba(255, 255,255, 0.7),rgba(255, 255,255, 0.7),rgba(255, 255, 255, 0));}
-        .banner-02 .date .date-display .day {font-size: 200%; font-weight: bold;}
-        .banner-02 .date .date-display .month {padding-top: 0.25rem;}
-        .banner-02 .date .date-display .year {font-weight:bold;}
-        /* date responsive */
-        @media screen and (min-width: 1200px) {
-            .banner-02 .date {transform: scale(1);}
-        }
-        @media screen and (max-width: 1199.98px) and (min-width: 768px) {
-            .banner-02 .date {transform: scale(0.75);}
-        }
-        @media screen and (max-width: 767.98px){
-            .banner-02 .date {transform: scale(0.6);}
-        }
-
+        /* date display */
+        .date-display {position:absolute; bottom:0; width:20%; height: 20%; color:#fff; }
+        .date-display .wrapper {position:relative; width:100%; height:100%; display:flex; flex-wrap:wrap;}
+        .date-display .day-container{width: 40%; display:flex; justify-content: flex-end; align-items:center;}
+        .date-display .day-container .day {font-size:400%;}
+        .date-display .month-year-container {width:60%; display:flex; flex-wrap:wrap;}
+        .date-display .month-year-container .month {height:50%; width:100%; font-size:150%; display:flex; align-items:flex-end;}
+        .date-display .month-year-container .year {height:50%; width:100%; font-size:150%; display:flex; align-items:flex-start;}
+        
         /* content-03 */
         .content-03 .container {width:inherit;}
         .content-03 .container .title {position:relative; display:flex;}
@@ -59,13 +39,15 @@
                                 <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
                                 </div>
                             </div>
-                            <div class="date">
-                                <div class="inset"></div>
-                                <div class="date-display">
-                                    <div class="day">8</div>
-                                    <div class="separator"></div>
-                                    <div class="month">กรกฎาคม</div>
-                                    <div class="year">2563</div>
+                            <div class="date-display">
+                                <div class="wrapper">
+                                    <div class="day-container">
+                                        <div class="day">28</div>
+                                    </div>
+                                    <div class="month-year-container">
+                                        <div class="month">กรกฎาคม</div>
+                                        <div class="year">2563</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
