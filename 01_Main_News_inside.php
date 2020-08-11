@@ -9,13 +9,15 @@
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
         /* date display */
-        .date-display {position:absolute; bottom:0; width:20%; height: 20%; color:#fff; }
+        .date-display {position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
+           
+        }
         .date-display .wrapper {position:relative; width:100%; height:100%; display:flex; flex-wrap:wrap;}
-        .date-display .day-container{width: 40%; display:flex; justify-content: flex-end; align-items:center;}
-        .date-display .day-container .day {font-size:400%;}
-        .date-display .month-year-container {width:60%; display:flex; flex-wrap:wrap;}
-        .date-display .month-year-container .month {height:50%; width:100%; font-size:150%; display:flex; align-items:flex-end;}
-        .date-display .month-year-container .year {height:50%; width:100%; font-size:150%; display:flex; align-items:flex-start;}
+        .date-display .day-container{width: 20%; height: inherit;}
+        .date-display .day-container .day {font-size:400%; height:inherit; display:flex; align-items:center; justify-content:flex-end;}
+        .date-display .month-year-container {width:80%; position:relative; padding-left:0.5rem;}
+        .date-display .month-year-container .month { width:100%; font-size:150%; position:absolute; top:calc(50% - 1.4rem);}
+        .date-display .month-year-container .year { width:100%; font-size:150%; position:absolute; top: calc(50% - 0.3rem);}
         
         /* content-03 */
         .content-03 .container {width:inherit;}
