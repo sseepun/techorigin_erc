@@ -10,8 +10,8 @@
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
         /* date display */
         .date-display {position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
-           
         }
+        .date-display::before {content: ''; position:absolute; border-top: 0.125rem solid #fff; width:100%; top:0;}
         .date-display .wrapper {position:relative; width:100%; height:100%; display:flex; flex-wrap:wrap;}
         .date-display .day-container{width: 20%; height: inherit;}
         .date-display .day-container .day {font-size:400%; height:inherit; display:flex; align-items:center; justify-content:flex-end;}
