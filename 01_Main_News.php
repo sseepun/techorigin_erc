@@ -71,7 +71,7 @@
         .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
         /* light green filter */
         .banner-top .img-container .filter {position:absolute; width:100%; top:40%; height:100%; background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(133, 185, 147, 1), rgba(133, 185, 147, 1), rgba(133, 185, 147, 1));}
-        .banner-top .img-container img {position:absolute; z-index:1; left:-3rem; top:-3rem; height:65%;}
+        .banner-top .img-container img {position:absolute; z-index:1; left:calc(50% - 9.375rem); top:-3rem; width:110%;}
         .banner-top .img-container .img-bg{position:absolute; top:0; left:0; right:0; bottom:0; background-position:top center; background-size:cover; background-image:url('./assets/img/default/banner-02.jpg');}
         .banner-top .img-container > .grids {position:absolute; bottom: 0; opacity:0;  transition: all ease .5s; z-index:2;}
         .banner-top .img-container:hover > .grids {opacity:1; }
