@@ -76,6 +76,11 @@ nav.footer .content .socials a{border-color:#fff;}
 nav.footer .content .socials a:hover{background:#fff; color:#000;}
 
 
+/* Special Header */
+.ss-header{color:#fff;}
+.ss-header > .ss{color:#fff!important;}
+
+
 /* Banner 01 */
 .banner-01 .dots{background:#000;}
 .banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after, .banner-01 .dots button{

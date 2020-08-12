@@ -99,6 +99,11 @@ nav.footer .content .socials a{border-color:#fff;}
 nav.footer .content .socials a:hover{background:#fff; color:#284e51; color:var(--color3);}
 
 
+/* Special Header */
+.ss-header{color:#363636;}
+.ss-header > .ss{background-image:linear-gradient(to bottom, #c0ca67, #1d684a);}
+
+
 /* Banner 01 */
 .banner-01 .dots{background:rgba(0,0,0,.3);}
 .banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after, .banner-01 .dots button{

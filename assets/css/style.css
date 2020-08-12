@@ -45,3 +45,25 @@ img{display:block; border:0;}
 @media screen and (max-width:575.98px){
     .container{width:calc(100% - 30px);}
 }
+
+
+/* Special Header */
+.ss-header{position:relative; display:block; font-size:1.3125rem; font-weight:300;}
+.ss-header > *{margin:0;}
+.ss-header > h1{font-size:2.5rem; font-weight:400; line-height:.8;}
+@media screen and (min-width:768px){
+    .ss-header > .ss{
+        float:left; font-size:5.375rem; font-weight:300; line-height:.8; transform:translateY(-.25rem);
+        color:transparent; background-clip:text; -webkit-background-clip:text;
+    }
+}
+@media screen and (max-width:991.98px){
+    .ss-header{font-size:1.25rem;}
+    .ss-header > .ss{font-size:5.125rem; transform:translateY(-.25rem);}
+    .ss-header > h1{font-size:2.25rem;}
+}
+@media screen and (max-width:767.98px){
+    .ss-header > .ss, .ss-header > h1{
+        display:inline; background-image:none!important; font-size:2.125rem; font-weight:400;
+    }
+}

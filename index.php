@@ -52,9 +52,13 @@
         </div>
     </section> -->
 
-    <section>
+    <section style="padding:4rem 0;">
         <div class="container">
-            <h1>ประชาสัมพันธ์</h1>
+            <div class="ss-header">
+                <div class="ss">ข่</div><h1>าวประชาสัมพันธ์</h1>
+                <p>อัพเดททุกสาระ ข่าวสารเพื่อสุขภาพ มั่นใจไม่ตกเทรนด์</p>
+            </div>
+
         </div>
     </section>
     
