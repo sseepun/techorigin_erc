@@ -9,16 +9,34 @@
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
         /* date display */
-        .date-display {position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
+        .date-display {transform: scale(0.8); transform-origin:bottom left;  position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
         }
-        .date-display::before {content: ''; position:absolute; border-top: 0.125rem solid #fff; width:100%; top:0;}
+        /* Effect borders */
+        .date-display::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.125rem;}
+        .date-display::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.125rem;}
+        .date-display .wrapper::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.0625rem;}
+        .date-display .wrapper::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.0625rem;}
         .date-display .wrapper {position:relative; width:100%; height:100%; display:flex; flex-wrap:wrap;}
         .date-display .day-container{width: 20%; height: inherit;}
         .date-display .day-container .day {font-size:400%; height:inherit; display:flex; align-items:center; justify-content:flex-end;}
         .date-display .month-year-container {width:80%; position:relative; padding-left:0.5rem;}
         .date-display .month-year-container .month { width:100%; font-size:150%; position:absolute; top:calc(50% - 1.4rem);}
         .date-display .month-year-container .year { width:100%; font-size:150%; position:absolute; top: calc(50% - 0.3rem);}
-        
+        /* date responsive */
+        @media screen and (max-width: 991.98px) and (min-width: 768px) {
+            .date-display .day-container .day {font-size:200%;}
+            .date-display .month-year-container .month, .date-display .month-year-container .year   {font-size:100%; }
+            .date-display .month-year-container .month  {top:calc(50% - 0.9rem);}
+        }
+        @media screen and (max-width: 767.98px){
+            .date-display .day-container .day {font-size:150%;}
+            .date-display .month-year-container .month, .date-display .month-year-container .year  {font-size:80%;}
+            .date-display .month-year-container .month {top: calc(50% - 0.8rem);}
+            .date-display .month-year-container .year {top: calc(50% - 0.2rem);}
+        }
+        @media screen and (max-width: 576px) {
+            .date-display {width:25%;}
+        }
         /* content-03 */
         .content-03 .container {width:inherit;}
         .content-03 .container .title {position:relative; display:flex;}
@@ -55,7 +73,7 @@
                         </div>
                     </section>
                     <div style="padding-top:2rem;"></div>
-                    <section class="content-03">
+                    <!-- <section class="content-03">
                         <div class="container">
                             <div class="title">
                                 <div class="lead">ก</div>
@@ -81,7 +99,7 @@
                                 </p>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
 
 
                 </section>
