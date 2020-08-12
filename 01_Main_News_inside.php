@@ -121,7 +121,35 @@
                         </div>
                     </section>
                     <!-- ไฟล์เอกสารที่เกี่ยวข้อง -->
-                    <section class="related-document"></section>
+                    <section class="related-files">
+                        <div class="title">ไฟล์เอกสารที่เกี่ยวข้อง</div>
+                        <div class="separator"></div>
+                        <div class="container">
+                            <div class="grids">
+                                <div class="grid">
+                                    <div class="grids">
+                                        <div class="grid lg-75">
+                                            <div class="title">ประกาศกรมอนามัย ฉบับที่ 27/04.pdf</div>
+                                            <div class="size">
+                                                ขนาดไฟล์ 30.31 MB
+                                            </div>
+                                            <div class="download-count">
+                                                จำนวนดาวน์โหลด 200 ครั้ง
+                                            </div>
+                                        </div>
+                                        <div class="grid lg-25">
+                                            <!-- download button -->
+                                            <div class="btn-container">
+                                                <a href="#">คลิกเพื่อดาวน์โหลด</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        </div>
+                    </section>
                     <!-- รูปภาพที่เกี่ยวข้อง -->
                     <section class="related-pic"></section>
                     <!-- ข่าวสารที่เกี่ยวข้อง -->
