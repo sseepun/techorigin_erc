@@ -19,7 +19,7 @@ nav.topnav .top-menu > .option .btn[data-theme="2"]{background:#010101; color:#f
 nav.topnav .top-menu > .menu-option{color:#ffff00; background:#000;}
 
 nav.topnav .menu > a{background:#000; color:#ffff00;}
-nav.topnav .menu > a::before{background:#ffff00;}
+nav.topnav .menu > a::after{background:#ffff00;}
 
 nav.topnav .ui.fluid.dropdown.active, nav.topnav .ui.selection.active.dropdown .menu{border-color:#ffff00;}
 nav.topnav .ui.fluid.dropdown > .text, nav.topnav .ui.fluid.dropdown .item{color:#000;}
@@ -67,12 +67,23 @@ nav.sidenav .submenu .child > a{background:#000; color:#ffff00; border-color:#ff
 nav.sidenav .submenu .child:hover > a{background:#ffff00; color:#000;}
 
 
+/* Footer */
+nav.footer{background:#000; border-color:#ffff00;}
+nav.footer a{color:#ffff00;}
+nav.footer .top-footer, nav.footer .top-footer .content{border-color:#ffff00;}
+nav.footer .top-footer .content::after{background:#ffff00;}
+nav.footer .content .socials a{border-color:#ffff00;}
+nav.footer .content .socials a:hover{background:#ffff00; color:#000;}
+
+
 /* Banner 01 */
 .banner-01 .dots{background:#000;}
 .banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after, .banner-01 .dots button{
     background:#ffff00;
 }
 .banner-01 .dots button:before{color:#ffff00;}
+.banner-01 h1, .banner-01 h2, .banner-01 h3{color:#ffff00;}
+.banner-01 .line{background:#ffff00;}
 
 
 /* Content 01 */

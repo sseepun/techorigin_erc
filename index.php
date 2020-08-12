@@ -12,9 +12,17 @@
         <div class="slide-container">
             <div class="slides">
                 <?php for($i=0; $i<8; $i++){?>
-                    <div class="slide" style="background-image:url('./assets/img/banner/<?php echo sprintf('%02d', $i%4+1); ?>.jpg');">
+                    <div class="slide" style="background-image:url('./assets/img/banner/01.jpg');">
                         <div class="container">
-                            <h1>Slide</h1>
+                            <h2 class="animate" style="--delay:.6s;">
+                                new gen
+                            </h2>
+                            <h1 class="animate" style="--delay:.75s;">
+                                NEW NORMAL
+                            </h1>
+                            <h3 class="animate" style="--delay:.9s;">
+                                ปลอดภัยห่างไกล <span class="line"></span> COVID-19
+                            </h3>
                         </div>
                     </div>
                 <?php }?>
@@ -24,7 +32,7 @@
     </section>
 
     <!-- Content 01 -->
-    <section class="content-01">
+    <!-- <section class="content-01">
         <div class="container">
             <div class="contents">
                 <?php for($i=0; $i<8; $i++){?>
@@ -42,7 +50,7 @@
                 <?php }?>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section>
         <div class="container">
@@ -50,6 +58,7 @@
         </div>
     </section>
     
+    <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 </html>
