@@ -4,6 +4,7 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <style>
+        .main-news-inside {padding:7.5rem 0;}
         /* Banner 02 */
         .banner-02 .container {width: inherit; position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
@@ -85,9 +86,9 @@
     <section class="main-news-inside">
         <div class="container">
             <div class="grids">
-                <section class="grid lg-75">
+                <div class="grid lg-75">
                     <!-- Banner 02 -->
-                    <section class="banner-02">
+                    <div class="banner-02">
                         <div class="container">
                             <div class="img-container">
                                 <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
@@ -105,8 +106,8 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <section class="content-03">
+                    </div>
+                    <div class="content-03">
                         <div class="container">
                             <div class="tag" style="background-color: #cfa143;">แม่และเด็ก</div>
                             <div class="text-container">
@@ -123,10 +124,10 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </section>
+                    </div>
+                </div>
                 <!-- Right banner -->
-                <section class="grid lg-25 right-banner">
+                <div class="grid lg-25 right-banner">
                     <div class="banner-top">
                         <div class="img-container">
                             <img src="./assets/img/default/kid.png" alt="kid">
@@ -188,7 +189,7 @@
                             <span>ทุกวัน</span>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     

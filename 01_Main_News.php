@@ -8,6 +8,7 @@
     <?php include_once('include/topnav.php'); ?> 
     
     <style>
+        .main-news-01 {padding: 7.5rem 0;}
         .main-news-01 .container .right-banner {min-height:100vh;}
         
         /* Banner 02 */
@@ -99,13 +100,12 @@
         .banner-bottom .text-container > span:nth-child(2) {font-size:180%;}
         .banner-bottom .text-container > span:nth-child(3) {font-size:300%; color:#b2c43a;}
     </style>
-    <div style="padding-top:120px;"></div>
     <section class="main-news-01">
         <div class="container">
             <div class="grids">
-                <section class="grid lg-75">
+                <div class="grid lg-75">
                     <!-- Banner 02 -->
-                    <section class="banner-02">
+                    <div class="banner-02">
                         <div class="container">
                             <div class="img-container">
                                 <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
@@ -123,9 +123,9 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                     <!-- Content 02 -->
-                    <section class="content-02">
+                    <div class="content-02">
                         <div class="container">
                             <div class="text-container">
                                 <div class="tag" style="background-color: #cfa143;">โภชนาการ</div>
@@ -165,10 +165,10 @@
                                 <?php }?> 
                             </div>
                         </div>
-                    </section>
-                </section>
+                    </div>
+                </div>
                 <!-- Right banner -->
-                <section class="grid lg-25 right-banner">
+                <div class="grid lg-25 right-banner">
                     <div class="banner-top">
                         <div class="img-container">
                             <img src="./assets/img/default/kid.png" alt="kid">
@@ -230,7 +230,7 @@
                             <span>ทุกวัน</span>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </section>
