@@ -39,7 +39,7 @@
             .date-display {width:25%;}
         }
 
-        /* content news inside */
+        /* content-03 */
         .content-03 {padding-top:1rem;}
         .content-03 > .container {width:inherit;}
         .content-03 .container .text-container .title{color:#58bbb6; font-size:200%; padding-top:1rem;}
