@@ -39,9 +39,13 @@
         }
 
         /* content news inside */
-        .content-news-inside > .container {width:inherit;}
-        .content-news-inside .container .tag{padding:0.125rem 0.5rem; font-size:80%;border-radius: 5px; display:inline-block; text-align:center; color:#fff; margin-top:0.625rem;}
-        .content-news-inside .container .content ul{list-style:none;}
+        .content-03 {padding-top:1rem;}
+        .content-03 > .container {width:inherit;}
+        .content-03 .container .text-container .title{color:#58bbb6; font-size:200%; padding-top:1rem;}
+        .content-03 .container .text-container .content {font-size:120%;}
+        .content-03 .container .text-container .content p {margin:0;}
+        .content-03 .container .tag{padding:0.125rem 0.5rem; font-size:80%;border-radius: 5px; display:inline-block; text-align:center; color:#fff; margin-top:0.625rem;}
+        .content-03 .container .content ul{list-style:none;}
 
         /* Right banner */
         .banner-top{height:50%; }
@@ -102,8 +106,7 @@
                             </div>
                         </div>
                     </section>
-                    <div style="padding-top:2rem;"></div>
-                    <section class="content-news-inside">
+                    <section class="content-03">
                         <div class="container">
                             <div class="tag" style="background-color: #cfa143;">แม่และเด็ก</div>
                             <div class="text-container">
