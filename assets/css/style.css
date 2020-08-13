@@ -1,7 +1,7 @@
 /* Reset */
 html, body{
     padding:0; margin:0; overflow-x:hidden; overflow-y:auto; font-family:'DB Ozone X';
-    font-size:16px; font-weight:300; line-height:1.15;
+    font-size:16px; font-weight:300; line-height:1.1;
 }
 *{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; outline:none;}
 img{display:block; border:0;}
@@ -11,9 +11,29 @@ img{display:block; border:0;}
 
 
 /* Buttons */
-.btn, .btn:focus{border:1px solid transparent; box-shadow:none; transition:all .3s;}
-.btn:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.04);}
-.btn:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.08);}
+.btns{display:block; width:100%; margin:.875rem 0 0 0;}
+.btn, .btn:focus{
+    text-decoration:none; cursor:pointer; text-align:center; 
+    border-radius:.3125rem; border:1px solid transparent; box-shadow:none; transition:all .3s;
+}
+.btn:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+
+.btn.btn-action, .btn.btn-action:focus{
+    display:inline-block; position:relative; font-size:1.1875rem; font-weight:300;
+    min-width:9.25rem; padding:.3125rem .875rem; margin:.125rem 0;
+}
+.btn.btn-action.btn-sm, .btn.btn-action.btn-sm:focus{
+    font-size:1.0625rem; padding:.25rem .75rem; min-width:8.25rem;
+}
+
+.btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{
+    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:48%;
+}
+.btn.btn-primary.prev-icon::before{content:'\f053'; margin:0 .5rem 0 0;}
+.btn.btn-primary.next-icon::after{content:'\f054'; margin:0 0 0 .5rem;}
+.btn.btn-primary:hover{box-shadow:none;}
+.btn.btn-primary:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
 
 /* Hamburger */
@@ -77,8 +97,26 @@ img{display:block; border:0;}
 }
 
 
+/* Special & Typography */
+.ss-date{font-size:1.1875rem; font-weight:300; margin:.625rem 0 0 0;}
+h2, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h5, .ss-h5{
+    display:block; text-decoration:none; font-weight:300;
+}
+h2, .ss-h2{font-size:2.25rem; margin:.75rem 0 0 0;}
+h5, .ss-h5{font-size:1.3125rem; margin:.625rem 0 0 0;}
+p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
+.ss-date + *{margin:0;}
+@media screen and (max-width:991.98px){
+    h2, .ss-h2{font-size:2rem;}
+}
+@media screen and (max-width:767.98px){
+    h2, .ss-h2{font-size:1.8125rem;}
+    p, .ss-p{font-size:1.1875rem;}
+}
+
 /* Special Header */
-.ss-header{position:relative; display:block; font-size:1.3125rem; font-weight:300;}
+.ss-header{position:relative; display:block; font-size:1.3125rem; font-weight:300; margin:2.75rem 0 0 0;}
+.ss-header:first-child{margin:0;}
 .ss-header > *{margin:0;}
 .ss-header > h1{font-size:2.5rem; font-weight:400; line-height:.8;}
 @media screen and (min-width:768px){
@@ -97,3 +135,71 @@ img{display:block; border:0;}
         display:inline; background-image:none!important; font-size:2.125rem; font-weight:400;
     }
 }
+
+/* Special Image */
+.ss-img{display:block; position:relative; padding:50% 0 0 0; border-radius:.625rem; overflow:hidden;}
+.ss-img.square{padding:100% 0 0 0;}
+.ss-img > .img-bg{
+    position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+    background-position:center; background-repeat:no-repeat; transition:transform .45s;
+}
+.ss-img:hover > .img-bg{transform:scale(1.1);}
+
+.ss-img > .socials{
+    position:absolute; top:0; bottom:0; left:0; right:0; background:rgba(0,0,0,.5);
+    display:flex; align-items:center; justify-content:center; opacity:0;
+    pointer-events:none; transition:opacity .3s;
+}
+.ss-img:hover > .socials{opacity:1; pointer-events:auto;}
+.ss-img > .socials ul{margin:0; padding:0; list-style:none; display:block;}
+.ss-img > .socials li{display:inline-block; margin:.0625rem;}
+.ss-img > .socials .social{
+    display:block; text-decoration:none; width:2.125rem; height:2.125rem; border-radius:50%;
+    color:#fff; text-align:center; line-height:2.375rem; font-size:.875rem;
+}
+.ss-img > .socials .social.social-fw{background:#3b5999;}
+.ss-img > .socials .social.social-tw{background:#40cce5;}
+.ss-img > .socials .social.social-ig{
+    background-image:linear-gradient(to bottom, #d62976, #feda75);
+}
+
+.ss-img .tag{
+    position:absolute; bottom:2rem; left:0; min-width:35%; padding:0 4rem 0 .75rem;
+    display:flex; align-items:center; font-weight:300; line-height:1;
+}
+.ss-img .tag::before, .ss-img .tag::after{content:''; position:absolute; left:0; right:0; height:1px;}
+.ss-img .tag::before{top:0;}
+.ss-img .tag::after{bottom:0;}
+.ss-img .tag .date{font-size:3.625rem; margin:0 .625rem 0 0;}
+.ss-img .tag .month, .ss-img .tag .year{font-size:1.125rem;}
+
+@media screen and (max-width:991.98px){
+    .ss-img .tag .date{font-size:3.5rem; margin:0 .5625rem 0 0;}
+    .ss-img .tag .month, .ss-img .tag .year{font-size:1.0625rem;}
+}
+@media screen and (max-width:767.98px){
+    .ss-img{padding:60% 0 0 0;}
+    .ss-img .tag{bottom:1rem; padding:0 4rem 0 .625rem;}
+}
+@media screen and (max-width:575.98px){
+    .ss-img.square{padding:60% 0 0 0;}
+}
+
+/* Special Tags */
+.ss-tags{width:100%; margin:.5rem 0;}
+.ss-tags > .ss-tag{
+    display:inline-block; min-width:5.5rem; font-size:.93775rem; padding:.125rem 1rem;
+    border-radius:.1875rem; text-align:center; margin:.125rem 0; font-weight:300;
+    text-decoration:none;
+}
+.ss-tags > .ss-tag.type-1::before{content:'ฟันยิ่งดี';}
+.ss-tags > .ss-tag.type-2::before{content:'COVID-19';}
+.ss-tags > .ss-tag.type-3::before{content:'สารสุขชัวร์';}
+.ss-tags > .ss-tag.type-4::before{content:'แม่เล็กเด็ก';}
+.ss-tags > .ss-tag.type-5::before{content:'อนามัยวัยรุ่น';}
+.ss-tags > .ss-tag.type-6::before{content:'อนามัยวัยทำงาน';}
+.ss-tags > .ss-tag.type-7::before{content:'อนามัยผู้สูงอายุ';}
+.ss-tags > .ss-tag.type-8::before{content:'โภชนาการ';}
+.ss-tags > .ss-tag.type-9::before{content:'การออกกำลังกาย';}
+.ss-tags > .ss-tag.type-10::before{content:'ทันตสาธารณะสุข';}
+.ss-tags > .ss-tag.type-11::before{content:'อนามัยสิ่งแวดล้อม';}

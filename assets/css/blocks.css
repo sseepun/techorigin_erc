@@ -4,7 +4,7 @@
 .banner-01 > .slide-container{position:relative; width:100%;}
 .banner-01 .slide{
     height:calc(100vh - 180px); display:flex; align-items:center; text-align:center; line-height:1;
-    background-size:cover; background-position:center; padding:0 0 3rem 0;
+    background-size:cover; background-position:center; background-repeat:no-repeat; padding:0 0 3rem 0;
 }
 .banner-01 h1{font-size:4.5rem; font-weight:600; margin:0; letter-spacing:.875rem; line-height:.75;}
 .banner-01 h2{font-size:3.25rem; font-weight:100; margin:0; letter-spacing:.0625rem;}

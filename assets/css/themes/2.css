@@ -3,6 +3,11 @@ html, body{background:#000; color:#ffff00;}
 .btn{border-color:#ffff00;}
 
 
+/* Buttons */
+.btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{color:#000;}
+.btn.btn-primary{color:#000; background:#ffff00;}
+
+
 /* Hamburger */
 .hamburger > *{background:#414243;}
 
@@ -74,6 +79,7 @@ nav.footer .top-footer, nav.footer .top-footer .content{border-color:#ffff00;}
 nav.footer .top-footer .content::after{background:#ffff00;}
 nav.footer .content .socials a{border-color:#ffff00;}
 nav.footer .content .socials a:hover{background:#ffff00; color:#000;}
+nav.footer p{color:#ffff00;}
 
 
 /* Tab */
@@ -91,9 +97,23 @@ nav.footer .content .socials a:hover{background:#ffff00; color:#000;}
 }
 
 
+/* Special & Typography */
+.ss-date{color:#ffff00;}
+h1, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h4, .ss-h5{color:#ffff00;}
+p, .ss-p{color:#ffff00;}
+
 /* Special Header */
 .ss-header{color:#ffff00;}
 .ss-header > .ss{color:#ffff00!important;}
+
+/* Special Image */
+.ss-img .tag{color:#ffff00; background:linear-gradient(to right, #000, rgba(255,255,255,0));}
+.ss-img .tag::before, .ss-img .tag::after{
+    background:linear-gradient(to right, #000, #000, rgba(255,255,255,0));
+}
+
+/* Special Tags */
+.ss-tags > .ss-tag{color:#000; background:#ffff00;}
 
 
 /* Banner 01 */
