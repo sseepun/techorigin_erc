@@ -39,8 +39,9 @@
         }
 
         /* content news inside */
+        .content-news-inside > .container {width:inherit;}
         .content-news-inside .container .tag{padding:0.125rem 0.5rem; font-size:80%;border-radius: 5px; display:inline-block; text-align:center; color:#fff; margin-top:0.625rem;}
-
+        .content-news-inside .container .content ul{list-style:none;}
 
         /* Right banner */
         .banner-top{height:50%; }
@@ -120,41 +121,6 @@
                             </div>
                         </div>
                     </section>
-                    <!-- ไฟล์เอกสารที่เกี่ยวข้อง -->
-                    <section class="related-files">
-                        <div class="title">ไฟล์เอกสารที่เกี่ยวข้อง</div>
-                        <div class="separator"></div>
-                        <div class="container">
-                            <div class="grids">
-                                <div class="grid">
-                                    <div class="grids">
-                                        <div class="grid lg-75">
-                                            <div class="title">ประกาศกรมอนามัย ฉบับที่ 27/04.pdf</div>
-                                            <div class="size">
-                                                ขนาดไฟล์ 30.31 MB
-                                            </div>
-                                            <div class="download-count">
-                                                จำนวนดาวน์โหลด 200 ครั้ง
-                                            </div>
-                                        </div>
-                                        <div class="grid lg-25">
-                                            <!-- download button -->
-                                            <div class="btn-container">
-                                                <a href="#">คลิกเพื่อดาวน์โหลด</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        </div>
-                    </section>
-                    <!-- รูปภาพที่เกี่ยวข้อง -->
-                    <section class="related-pic"></section>
-                    <!-- ข่าวสารที่เกี่ยวข้อง -->
-                    <section class="related-news"></section>
-
                 </section>
                 <!-- Right banner -->
                 <section class="grid lg-25 right-banner">
