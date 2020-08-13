@@ -49,12 +49,12 @@
 
                     <div class="menu icon-menu">
                         <a href="#">
-                            <i class="fas fa-home"></i>
+                            <div><i class="fas fa-home"></i></div>
                         </a>
                     </div>
 
                     <div class="menu has-children">
-                        <a href="#">รู้จักกรมอนามัย</a>
+                        <a href="#"><div>รู้จักกรมอนามัย</div></a>
                         <div class="submenu-container expand-adaptive">
                             <div class="wrapper">
                                 <div class="hero">
@@ -172,7 +172,7 @@
                     </div>
 
                     <div class="menu has-children">
-                        <a href="#">ข่าวสาร</a>
+                        <a href="#"><div>ข่าวสาร</div></a>
                         <div class="submenu-container expand-left">
                             <div class="wrapper">
                                 <div class="hero">
@@ -233,7 +233,7 @@
                     </div>
 
                     <div class="menu has-children">
-                        <a href="#">บริการประชาชน</a>
+                        <a href="#"><div>บริการประชาชน</div></a>
                         <div class="submenu-container">
                             <div class="wrapper">
                                 <div class="hero">
@@ -258,12 +258,12 @@
                     </div>
 
                     <div class="menu">
-                        <a href="#">ติดต่อกรม</a>
+                        <a href="#"><div>ติดต่อกรม</div></a>
                     </div>
 
                     <div class="menu icon-menu">
                         <a href="#">
-                            <i class="fas fa-search"></i>
+                            <div><i class="fas fa-search"></i></div>
                         </a>
                     </div>
 

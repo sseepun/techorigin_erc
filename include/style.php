@@ -1,10 +1,12 @@
 <style>
     :root{
         --tscale:1;
-        --color0:#5abbb7;
-        --color1:#399bac;
-        --color2:#b9d34f;
-        --color3:#c0c1b9;
+        --color0:#47484d;
+        --color1:#c0ca67;
+        --color2:#1d684a;
+        --color3:#284e51;
+        --color4:#0d838d;
+        --color5:#d7d8d0;
     }
 </style>
 <link rel="stylesheet" href="./assets/lib/semantic-ui/components/transition.min.css" />

@@ -82,7 +82,7 @@ $(function(){ 'use strict';
             var self = $(this);
             self.find('> .slides').slick({
                 centerMode: true, centerPadding: 0, slidesToShow: 1, 
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 900,
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
                 arrows: false, dots: true, appendDots: self.find('.dots')
             });
         });
