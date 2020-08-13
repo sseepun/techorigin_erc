@@ -76,6 +76,21 @@ nav.footer .content .socials a{border-color:#ffff00;}
 nav.footer .content .socials a:hover{background:#ffff00; color:#000;}
 
 
+/* Tab */
+.tab-container .tabs::before{background:#ffff00;}
+.tab-container .tab{border-color:#ffff00; color:#ffff00;}
+.tab-container .tab.active{border-color:#ffff00; background:#000;}
+.tab-container .tab .icon{color:#000; background:#ffff00;}
+@media screen and (min-width:768px){
+    .tab-container .tab{
+        border-top-color:transparent; border-bottom-color:transparent;
+        border-right-color:transparent;
+    }
+    .tab-container .tab.active + .tab{border-left-color:transparent;}
+    .tab-container .tab:first-child:not(.active){border-left-color:transparent;}
+}
+
+
 /* Special Header */
 .ss-header{color:#ffff00;}
 .ss-header > .ss{color:#ffff00!important;}

@@ -39,7 +39,8 @@ nav.topnav .top-menu > .option .btn{
 }
 nav.topnav .bottom-menu{display:flex; align-items:center;}
 nav.topnav .top-menu > .menu-option{
-    display:block; height:2.875rem; width:3.75rem; text-align:center; line-height:2.875rem; font-size:1rem;
+    display:block; height:2.875rem; width:3.75rem; text-align:center; line-height:2.875rem;
+    font-size:1rem; transition:color .3s;
 }
 
 nav.topnav .ui.fluid.dropdown{width:8.5rem; padding:.375rem .5rem; min-height:0;}

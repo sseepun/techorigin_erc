@@ -54,9 +54,64 @@
 
     <section style="padding:4rem 0;">
         <div class="container">
+
             <div class="ss-header">
                 <div class="ss">ข่</div><h1>าวประชาสัมพันธ์</h1>
                 <p>อัพเดททุกสาระ ข่าวสารเพื่อสุขภาพ มั่นใจไม่ตกเทรนด์</p>
+            </div>
+
+            <div class="grids">
+                <div class="grid sm-100 lg-70 xl-75">
+                    <div class="tab-container">
+                        <div class="tabs">
+                            <div class="tab active" data-tab="1">
+                                <div class="icon"><i class="far fa-building"></i></div>
+                                <div class="text-container">
+                                    <div class="title">
+                                        <span>01.</span> ข่าวจากหน่วยงานส่วนกลาง
+                                    </div>
+                                    <div class="desc">กรมอนามัย</div>
+                                </div>
+                            </div>
+                            <div class="tab" data-tab="2">
+                                <div class="icon"><i class="far fa-building"></i></div>
+                                <div class="text-container">
+                                    <div class="title">
+                                        <span>02.</span> ข่าวจากหน่วยงานส่วนกลาง
+                                    </div>
+                                    <div class="desc">กรมอนามัย</div>
+                                </div>
+                            </div>
+                            <div class="tab" data-tab="3">
+                                <div class="icon"><i class="far fa-building"></i></div>
+                                <div class="text-container">
+                                    <div class="title">
+                                        <span>03.</span> ข่าวจากหน่วยงานส่วนกลาง
+                                    </div>
+                                    <div class="desc">กรมอนามัย</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-contents">
+
+                            <div class="tab-content active" data-tab="1">
+                                <h1>Tab 1</h1>
+                            </div>
+
+                            <div class="tab-content" data-tab="2">
+                                <h1>Tab 2</h1>
+                            </div>
+
+                            <div class="tab-content" data-tab="3">
+                                <h1>Tab 3</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grid sm-100 lg-30 xl-25" style="background:orange;">
+
+                </div>
             </div>
 
         </div>
