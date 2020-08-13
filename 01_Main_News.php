@@ -8,39 +8,41 @@
     <?php include_once('include/topnav.php'); ?> 
     
     <style>
+        .main-news-01 {padding: 7.5rem 0;}
         .main-news-01 .container .right-banner {min-height:100vh;}
         
         /* Banner 02 */
         .banner-02 .container {width: inherit; position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
-        .banner-02 .date{background-color: #1e6b65; border-radius:50%;position:absolute;top:10%;
-            left: -2.8125rem;
-            height:5.625rem;
-            width:5.625rem; 
-            -webkit-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
-            -moz-box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);
-            box-shadow: 0.3125rem 0.3125rem 1.1875rem 0rem rgba(156, 156, 156, 1);}
-        .banner-02 .date .inset{
-            -webkit-box-shadow:inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11, 61, 55, 1);
-            -moz-box-shadow: inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11, 61, 55, 1);
-            box-shadow: inset 0.3125rem 0.3125rem 1.1875rem 0rem rgba(11,61, 55, 1);
-            position:absolute; width:100%; height:100%; border-radius:50%; 
+        /* date display */
+        .date-display {transform: scale(0.8); transform-origin:bottom left;  position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
         }
-        .banner-02 .date .date-display {position:absolute; color:#fff; text-align:center; top: 5%; left:25%;}
-        .banner-02 .date .date-display .separator {width: 100%; height: 0.03125rem; background: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255, 255,255, 0.7),rgba(255, 255,255, 0.7), rgba(255, 255,255, 0.7), rgba(255, 255,255, 0.7),rgba(255, 255,255, 0.7),rgba(255, 255, 255, 0));}
-        .banner-02 .date .date-display .day {font-size: 200%; font-weight: bold;}
-        .banner-02 .date .date-display .month {padding-top: 0.25rem;}
-        .banner-02 .date .date-display .year {font-weight:bold;}
+        /* Effect borders */
+        .date-display::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.125rem;}
+        .date-display::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.125rem;}
+        .date-display .wrapper::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.0625rem;}
+        .date-display .wrapper::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.0625rem;}
+        .date-display .wrapper {position:relative; width:100%; height:100%; display:flex; flex-wrap:wrap;}
+        .date-display .day-container{width: 20%; height: inherit;}
+        .date-display .day-container .day {font-size:400%; height:inherit; display:flex; align-items:center; justify-content:flex-end;}
+        .date-display .month-year-container {width:80%; position:relative; padding-left:0.5rem;}
+        .date-display .month-year-container .month { width:100%; font-size:150%; position:absolute; top:calc(50% - 1.4rem);}
+        .date-display .month-year-container .year { width:100%; font-size:150%; position:absolute; top: calc(50% - 0.3rem);}
         /* date responsive */
-        @media screen and (min-width: 1200px) {
-            .banner-02 .date {transform: scale(1);}
-        }
-        @media screen and (max-width: 1199.98px) and (min-width: 768px) {
-            .banner-02 .date {transform: scale(0.75);}
+        @media screen and (max-width: 991.98px) and (min-width: 768px) {
+            .date-display .day-container .day {font-size:200%;}
+            .date-display .month-year-container .month, .date-display .month-year-container .year   {font-size:100%; }
+            .date-display .month-year-container .month  {top:calc(50% - 0.9rem);}
         }
         @media screen and (max-width: 767.98px){
-            .banner-02 .date {transform: scale(0.6);}
+            .date-display .day-container .day {font-size:150%;}
+            .date-display .month-year-container .month, .date-display .month-year-container .year  {font-size:80%;}
+            .date-display .month-year-container .month {top: calc(50% - 0.8rem);}
+            .date-display .month-year-container .year {top: calc(50% - 0.2rem);}
+        }
+        @media screen and (max-width: 576px) {
+            .date-display {width:25%;}
         }
         /* Content 02 */
         .content-02 {overflow:hidden;}
@@ -56,7 +58,7 @@
         }
         .content-02 .grids .grid .img-container:hover .img-bg::before{opacity:1;}
         .content-02 .grids .grid .img-container .socials {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; z-index:2; position:absolute; top:0; bottom:0;left:0; right:0; padding:0;}
-        .content-02 .grids .grid .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; padding: 5%; font-size:80%; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
+        .content-02 .grids .grid .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; height:2rem; width:2rem; font-size:100%; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
         .content-02 .grids .grid .img-container .socials > a:nth-child(2n+1) {transform: translateY(-.75rem);}
         .content-02 .grids .grid .img-container .socials > a:nth-child(2n) {transform: translateY(.75rem);}
         .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n+1), .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n) {
@@ -98,31 +100,32 @@
         .banner-bottom .text-container > span:nth-child(2) {font-size:180%;}
         .banner-bottom .text-container > span:nth-child(3) {font-size:300%; color:#b2c43a;}
     </style>
-    <div style="padding-top:120px;"></div>
     <section class="main-news-01">
         <div class="container">
             <div class="grids">
-                <section class="grid lg-75">
+                <div class="grid lg-75">
                     <!-- Banner 02 -->
-                    <section class="banner-02">
+                    <div class="banner-02">
                         <div class="container">
                             <div class="img-container">
                                 <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
                                 </div>
                             </div>
-                            <div class="date">
-                                <div class="inset"></div>
-                                <div class="date-display">
-                                    <div class="day">8</div>
-                                    <div class="separator"></div>
-                                    <div class="month">กรกฎาคม</div>
-                                    <div class="year">2563</div>
+                            <div class="date-display">
+                                <div class="wrapper">
+                                    <div class="day-container">
+                                        <div class="day">28</div>
+                                    </div>
+                                    <div class="month-year-container">
+                                        <div class="month">กรกฎาคม</div>
+                                        <div class="year">2563</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                     <!-- Content 02 -->
-                    <section class="content-02">
+                    <div class="content-02">
                         <div class="container">
                             <div class="text-container">
                                 <div class="tag" style="background-color: #cfa143;">โภชนาการ</div>
@@ -162,10 +165,10 @@
                                 <?php }?> 
                             </div>
                         </div>
-                    </section>
-                </section>
+                    </div>
+                </div>
                 <!-- Right banner -->
-                <section class="grid lg-25 right-banner">
+                <div class="grid lg-25 right-banner">
                     <div class="banner-top">
                         <div class="img-container">
                             <img src="./assets/img/default/kid.png" alt="kid">
@@ -227,7 +230,7 @@
                             <span>ทุกวัน</span>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </section>
