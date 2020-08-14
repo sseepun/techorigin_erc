@@ -4,8 +4,22 @@ html, body{background:#000; color:#fff;}
 
 
 /* Buttons */
-.btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{color:#000;}
 .btn.btn-primary{color:#000; background:#fff;}
+.btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{color:#000;}
+.btn.btn-secondary{color:#000; background:#fff;}
+.btn.btn-secondary.prev-icon::before, .btn.btn-secondary.next-icon::after{color:#000;}
+
+
+/* Fields & Inputs */
+.field label{color:#fff;}
+.field > .control.checkbox-control > label::before,
+.field > .control.radio-control > label::before{border-color:#fff;}
+.field > .control.checkbox-control > input[type=checkbox]:checked + label::before,
+.field > .control.radio-control > input[type=radio]:checked + label::before{border-color:#fff;}
+.field > .control.checkbox-control > label::after,
+.field > .control.radio-control > label::after{background:transparent;}
+.field > .control.checkbox-control > input[type=checkbox]:checked + label::after,
+.field > .control.radio-control > input[type=radio]:checked + label::after{background:#fff;}
 
 
 /* Hamburger */
@@ -18,7 +32,7 @@ nav.topnav .logo{color:#fff;}
 nav.topnav .top-menu{background:#000;}
 nav.topnav .top-menu > .option p{color:#fff;}
 nav.topnav .top-menu > .option .btn{background:#fff; color:#000;}
-nav.topnav .top-menu > .option .btn[data-theme="0"]{background:#fff; color:#5abbb7;}
+nav.topnav .top-menu > .option .btn[data-theme="0"]{background:#fff; color:#1d684a;}
 nav.topnav .top-menu > .option .btn[data-theme="1"]{background:#010101; color:#fff;}
 nav.topnav .top-menu > .option .btn[data-theme="2"]{background:#010101; color:#ffff00;}
 nav.topnav .top-menu > .menu-option{color:#fff; background:#000;}
@@ -79,7 +93,22 @@ nav.footer .top-footer, nav.footer .top-footer .content{border-color:#fff;}
 nav.footer .top-footer .content::after{background:#fff;}
 nav.footer .content .socials a{border-color:#fff;}
 nav.footer .content .socials a:hover{background:#fff; color:#000;}
-nav.footer p{color:#fff;}
+nav.footer p, nav.footer h1{color:#fff;}
+
+
+/* Calendar */
+.calendar-container{background:#000; border-color:#fff!important;}
+.calendar-container .calendar header .month{color:#fff;}
+.calendar-container .calendar header .month .year{color:#fff;}
+.calendar-container .calendar header .simple-calendar-btn{color:#fff;}
+.calendar-container .calendar table{border-color:#fff;}
+.calendar-container .calendar thead td{color:#fff;}
+.calendar-container .calendar .day{color:#fff;}
+.calendar-container .calendar .day.today{color:#000; background:#fff;}
+.calendar-container .calendar .day.has-event{color:#000; background:#fff;}
+.calendar-container .calendar .event-container,
+.calendar-container .calendar .filler{background:#000;}
+.calendar-container .calendar .event-container .event{color:#000; background:#fff;}
 
 
 /* Tab */
@@ -97,13 +126,22 @@ nav.footer p{color:#fff;}
 }
 
 
+/* Pagination */
+.pagination{border-color:#fff!important;}
+.pagination .page-btn{color:#fff;}
+.pagination .page-btn:hover, .pagination .page-btn.active{color:#000; background:#fff;}
+.pagination .page-btn.page-first, .pagination .page-btn.page-prev, .pagination .page-btn.page-next,
+.pagination .page-btn.page-last{color:#fff; border-color:#fff;}
+.pagination .page-btn:hover::before, .pagination .page-btn:hover::after{color:#000;}
+
+
 /* Special & Typography */
 .ss-date{color:#fff;}
 h1, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h4, .ss-h5{color:#fff;}
 p, .ss-p{color:#fff;}
 
 /* Special Header */
-.ss-header{color:#fff;}
+.ss-header, .ss-header > h1{color:#fff;}
 .ss-header > .ss{color:#fff!important;}
 
 /* Special Image */

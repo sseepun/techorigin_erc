@@ -4,9 +4,23 @@ html, body{background:transparent; color:#000;}
 
 
 /* Buttons */
+.btn.btn-primary{color:#fff; background:#47484d; background:var(--color0);}
+.btn.btn-primary:hover{background:#0d838d; background:var(--color4);}
 .btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{color:#6bc6bf;}
-.btn.btn-primary{color:#fff; background:#47484d;}
-.btn.btn-primary:hover{background:#0d919d;}
+.btn.btn-secondary{color:#fff; background:#0d838d; background:var(--color4);}
+.btn.btn-secondary.prev-icon::before, .btn.btn-secondary.next-icon::after{color:#6bc6bf;}
+
+
+/* Fields & Inputs */
+.field label{color:#000;}
+.field > .control.checkbox-control > label::before,
+.field > .control.radio-control > label::before{border-color:#000;}
+.field > .control.checkbox-control > input[type=checkbox]:checked + label::before,
+.field > .control.radio-control > input[type=radio]:checked + label::before{border-color:#000;}
+.field > .control.checkbox-control > label::after,
+.field > .control.radio-control > label::after{background:transparent;}
+.field > .control.checkbox-control > input[type=checkbox]:checked + label::after,
+.field > .control.radio-control > input[type=radio]:checked + label::after{background:#000;}
 
 
 /* Hamburger */
@@ -34,7 +48,7 @@ nav.topnav .logo{color:#393939;}
 nav.topnav .top-menu{background:#ebebeb;}
 nav.topnav .top-menu > .option p{color:#393939;}
 nav.topnav .top-menu > .option .btn{background:#fff; color:#000;}
-nav.topnav .top-menu > .option .btn[data-theme="0"]{background:#fff; color:#47484d;}
+nav.topnav .top-menu > .option .btn[data-theme="0"]{background:#fff; color:#1d684a;}
 nav.topnav .top-menu > .option .btn[data-theme="1"]{background:#010101; color:#fff;}
 nav.topnav .top-menu > .option .btn[data-theme="2"]{background:#010101; color:#ffff00;}
 nav.topnav .top-menu > .menu-option{color:#fff; background:#1d684a; background:var(--color2);}
@@ -119,7 +133,24 @@ nav.footer .top-footer, nav.footer .top-footer .content{border-color:rgba(255,25
 nav.footer .top-footer .content::after{background:#fff;}
 nav.footer .content .socials a{border-color:#fff;}
 nav.footer .content .socials a:hover{background:#fff; color:#284e51; color:var(--color3);}
-nav.footer p{color:#fff;}
+nav.footer p, nav.footer h1{color:#fff;}
+
+
+/* Calendar */
+.calendar-container{background:#fff; border-color:#cecece!important;}
+.calendar-container .calendar header .month{color:#000;}
+.calendar-container .calendar header .month .year{color:#000;}
+.calendar-container .calendar header .simple-calendar-btn{color:#959597;}
+.calendar-container .calendar table{border-color:#cecece;}
+.calendar-container .calendar thead td{color:#0d838d; color:var(--color4);}
+.calendar-container .calendar .day{color:#000;}
+.calendar-container .calendar .day.today{color:#fff; background:#0d838d; background:var(--color4);}
+.calendar-container .calendar .day.has-event{color:#fff; background:#c0ca67; background:var(--color1);}
+.calendar-container .calendar .event-container,
+.calendar-container .calendar .filler{background:#615f6a;}
+.calendar-container .calendar .event-container .event{
+    color:#fff; background:#0d838d; background:var(--color4);
+}
 
 
 /* Tab */
@@ -142,14 +173,27 @@ nav.footer p{color:#fff;}
 }
 
 
+/* Pagination */
+.pagination{border-color:#d8d8d8!important;}
+.pagination .page-btn{color:#494949;}
+.pagination .page-btn:hover, .pagination .page-btn.active{
+    color:#fff; background:#0d838d; background:var(--color4);
+}
+.pagination .page-btn.page-first, .pagination .page-btn.page-prev, .pagination .page-btn.page-next,
+.pagination .page-btn.page-last{color:#494949; border-color:#d8d8d8;}
+.pagination .page-btn:hover::before, .pagination .page-btn:hover::after{color:#fff;}
+
+
 /* Special & Typography */
 .ss-date{color:#808080;}
 h1, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h4, .ss-h5{color:#000;}
 p, .ss-p{color:#3a3a3a;}
 
 /* Special Header */
-.ss-header{color:#363636;}
+.ss-header, .ss-header > h1{color:#363636;}
 .ss-header > .ss{background-image:linear-gradient(to bottom, #c0ca67, #1d684a);}
+.ss-header.white, .ss-header.white > h1{color:#fff;}
+.ss-header.white > .ss{color:#fff;}
 
 /* Special Image */
 .ss-img .tag{

@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="./assets/fonts/includes.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 <link rel="stylesheet" href="./assets/lib/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" href="./assets/lib/simple-calendar/simple-calendar.min.css">
 
 <link rel="stylesheet" href="./assets/css/style.css" />
 <link rel="stylesheet" href="./assets/css/grids.css" />
