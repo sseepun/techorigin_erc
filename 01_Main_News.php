@@ -11,39 +11,6 @@
         .main-news-01 {padding: 7.5rem 0;}
         .main-news-01 .container .right-banner {min-height:100vh;}
         
-        /* Banner 02 */
-        .banner-02 .container {width: inherit; position:relative;}
-        .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
-        .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
-        /* date display */
-        .date-display {transform: scale(0.8); transform-origin:bottom left;  position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
-        }
-        /* Effect borders */
-        .date-display::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.125rem;}
-        .date-display::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.125rem;}
-        .date-display .wrapper::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.0625rem;}
-        .date-display .wrapper::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.0625rem;}
-        .date-display .wrapper {position:relative; width:100%; height:100%; display:flex; flex-wrap:wrap;}
-        .date-display .day-container{width: 20%; height: inherit;}
-        .date-display .day-container .day {font-size:400%; height:inherit; display:flex; align-items:center; justify-content:flex-end;}
-        .date-display .month-year-container {width:80%; position:relative; padding-left:0.5rem;}
-        .date-display .month-year-container .month { width:100%; font-size:150%; position:absolute; top:calc(50% - 1.4rem);}
-        .date-display .month-year-container .year { width:100%; font-size:150%; position:absolute; top: calc(50% - 0.3rem);}
-        /* date responsive */
-        @media screen and (max-width: 991.98px) and (min-width: 768px) {
-            .date-display .day-container .day {font-size:200%;}
-            .date-display .month-year-container .month, .date-display .month-year-container .year   {font-size:100%; }
-            .date-display .month-year-container .month  {top:calc(50% - 0.9rem);}
-        }
-        @media screen and (max-width: 767.98px){
-            .date-display .day-container .day {font-size:150%;}
-            .date-display .month-year-container .month, .date-display .month-year-container .year  {font-size:80%;}
-            .date-display .month-year-container .month {top: calc(50% - 0.8rem);}
-            .date-display .month-year-container .year {top: calc(50% - 0.2rem);}
-        }
-        @media screen and (max-width: 576px) {
-            .date-display {width:25%;}
-        }
         /* Content 02 */
         .content-02 {overflow:hidden;}
         .content-02 .container {width:inherit;}
@@ -64,7 +31,6 @@
         .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n+1), .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n) {
             opacity: 1; transform: translateY(0); pointer-events:auto;
         }
-        .content-02 .grids .grid .tag, .content-02 .text-container .tag {padding:0.125rem 0.5rem; font-size:80%;border-radius: 5px; display:inline-block; text-align:center; color:#fff; margin-top:0.625rem;}
         .content-02 .grids .grid .date {font-size: 90%;}
         .content-02 .grids .grid .text-container > p {margin: 0;}
 
@@ -104,31 +70,25 @@
         <div class="container">
             <div class="grids">
                 <div class="grid lg-75">
-                    <!-- Banner 02 -->
-                    <div class="banner-02">
-                        <div class="container">
-                            <div class="img-container">
-                                <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
-                                </div>
-                            </div>
-                            <div class="date-display">
-                                <div class="wrapper">
-                                    <div class="day-container">
-                                        <div class="day">28</div>
-                                    </div>
-                                    <div class="month-year-container">
-                                        <div class="month">กรกฎาคม</div>
-                                        <div class="year">2563</div>
-                                    </div>
-                                </div>
+
+                    <a class="ss-img" href="#">
+                        <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                        <div class="tag">
+                            <div class="date">28</div>
+                            <div class="text-container">
+                                <div class="month">กรกฎาคม</div>
+                                <div class="year">2563</div>
                             </div>
                         </div>
+                    </a>
+                    <div class="ss-tags">
+                        <div class="ss-tag type-4"></div>
                     </div>
+
                     <!-- Content 02 -->
                     <div class="content-02">
                         <div class="container">
                             <div class="text-container">
-                                <div class="tag" style="background-color: #cfa143;">โภชนาการ</div>
                                 <h2>การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</h2>
                                 <p>
                                     สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
@@ -153,8 +113,8 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="tag" style="background-color:#2c9f76;">
-                                                อนามัยสิ่งแวดล้อม
+                                            <div class="ss-tags">
+                                                <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
                                             </div>
                                             <div class="date">02.04.2563</div>
                                             <div class="text-container">

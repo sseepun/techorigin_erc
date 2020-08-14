@@ -1,6 +1,5 @@
 <style>
     :root{
-        --tscale:1;
         --color0:#47484d;
         --color1:#c0ca67;
         --color2:#1d684a;
