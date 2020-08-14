@@ -9,7 +9,11 @@
         /* Banner 03 */
         .banner-03 {position:relative; width:100%;}
         .banner-03 > .slide-container {position:relative; width:100%;}
-        .banner-03 .slide {background-size:cover; background-position:center; background-repeat:no-repeat; padding: 0 0 3rem 0; height: 20vh;}
+        .banner-03 .slide-container .preview-container {display:block; position:relative; width:100%; overflow:hidden; height:40vh;}
+        .banner-03 .slide-container .preview-container .slide {height:40vh;}
+        .banner-03 .slide-container .preview-container .slick-list {width:100%; height:100%;}
+        .banner-03 .slide-container > .slides {display:block; position:relative; width:100%; overflow:hidden; height:15vh;-webkit-mask-image:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));}  
+        .banner-03 .slide {background-size:cover; background-position:center; background-repeat:no-repeat; padding: 0 0 15vh 0;display:flex; align-items:center; overflow:hidden;}
     </style>
     </head>
 <body>
@@ -29,10 +33,14 @@
                     <!-- Banner 03 -->
                     <div class="banner-03">
                         <div class="slide-container">
-                            <div class="preview-container"></div>
+                            <div class="preview-container">
+                                <?php for($i = 1; $i<5; $i++){?>
+                                    <div class="slide" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
+                                <?php }?>
+                            </div>
                             <div class="slides">
-                                <?php for($i = 0; $i<8; $i++){?>
-                                    <div class="slide" style="background-image:url('./assets/img/banner/01.jpg');"></div>
+                                <?php for($i = 1; $i<5; $i++){?>
+                                    <div class="slide" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
                                 <?php }?>
                             </div>
                         </div>
@@ -46,7 +54,7 @@
                     <p><span class="color4">ทั้งนี้ ผู้ประกอบการต้องมีมาตราการเข้มเพื่อลดการแพร่กระจายเชื้อโควิด-19 โดยยังคงขอให้ยึดถือและปฏิบัติตามคำแนะนำ</span> ดังนี้ 1) จัดให้มีจุดคัดกรองผู้รับบริการ ผู้ปฏิบัติงาน โดยจัดระบบคัดกรองและการจัดระบบเว้นระยะห่างระหว่างกันของผู้มารับบริการ 2) จัดให้มีจุดบริการเจลแอลกอฮอล์ไว้ในบริเวณพื้นที่ให้บริการ 3) ดูแลสุขลักษณะอุปกรณ์สิ่งของ เครื่องใช้ ให้สะอาด ไม่เป็นแหล่งแพร่ กระจายเชื้อโรคด้วยการทำความสะอาดพื้นที่โดยรอบอุปกรณ์ เครื่องใช้ และจุดที่มีการใช้ร่วมกัน จุดชำระเงิน โดยทำความสะอาด ด้วยน้ำยาทำความสะอาดหรือสารฆ่าเชื้อ เช่นแอลกอฮอล์ 70 เปอร์เซ็นต์ น้ำยาฆ่าเชื้อที่มีส่วนผสมของคลอรีน เป็นต้น 4) ผู้ประกอบการ ของ ห้างสรรพสินค้าควรให้ความร๔้ คำแนะนำ หรือจัดหาสื่อประชาสัมพันธ์การป้องกันและการลดความเสี่ยง จากการแพร่กระจายเชื้อ COVID-19 ให้กับผู้ปฏิบัติงานและลูกค้าผู้รับบริการ ทั้งนี้ หากพบว่าผู้ปฏิบัติงานมีอาการป่วย มีไข้ ไอ จาม มีน้ำมูก หรือเหนื่อยหอบ ให้หยุดปฏิบัติงาน แจ้งหัวหน้างานและพบแพทย์ทันที รองอธิบดีกรมอนามัยกล่าว</p>
 
 
-                     <!-- Related Albums -->
+                    <!-- Related Albums -->
                      <a href="#" class="ss-h2"><i class="far fa-building"></i> อัลบั้มรูปภาพที่เกี่ยวข้อง</a>
                     <div class="grids">
                         <?php for($i=0; $i<4; $i++){?>
@@ -96,8 +104,12 @@
             if($('.banner-03').length){
                 $('.banner-03 > .slide-container').each(function(){
                     var self = $(this);
+                    console.log(self.find('> .preview-container .arrows'));
                     self.find('> .slides').slick({
-                        slidesToShow: 6, centerMode: true, arrows: false, dots: false, 
+                        slidesToShow: 3, centerMode:true, asNavFor: '.preview-container', focusOnSelect:true, arrows:false, dots:false
+                    });
+                    self.find('> .preview-container').slick({
+                        slidesToShow: 1, slidesToScroll: 1, arrows: true, asNavFor: '.slides'
                     });
                 });
             }
