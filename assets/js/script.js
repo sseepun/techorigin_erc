@@ -75,6 +75,30 @@ $(function(){ 'use strict';
         $('#css-theme').attr('href', './assets/css/themes/'+$(this).data('theme')+'.css'); 
     });
 
+    
+    // Calendar
+    if($('.calendar-container > .calendar-wrapper').length){
+        $('.calendar-container > .calendar-wrapper').simpleCalendar({
+            months: [
+                'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 
+                'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
+            ],
+            days: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'],
+            displayYear: false,
+            fixedStartDay: 0,
+            displayEvent: true,
+            disableEventDetails: false,
+            disableEmptyDetails: true,
+            events: [
+                {
+                    startDate: new Date('08-18-2020'),
+                    endDate: new Date('08-18-2020'),
+                    summary: 'กิจกรรมที่ 1'
+                }
+            ]
+        });
+    }
+
 
     // Tab
     $('.tab-container').each(function(){

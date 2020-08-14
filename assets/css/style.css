@@ -24,16 +24,42 @@ img{display:block; border:0;}
     min-width:9.25rem; padding:.3125rem .875rem; margin:.125rem 0;
 }
 .btn.btn-action.btn-sm, .btn.btn-action.btn-sm:focus{
-    font-size:1.0625rem; padding:.25rem .75rem; min-width:8.25rem;
+    font-size:1.0625rem; padding:.25rem .875rem; min-width:6.5rem;
 }
 
-.btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{
-    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:48%;
-}
-.btn.btn-primary.prev-icon::before{content:'\f053'; margin:0 .5rem 0 0;}
-.btn.btn-primary.next-icon::after{content:'\f054'; margin:0 0 0 .5rem;}
 .btn.btn-primary:hover{box-shadow:none;}
 .btn.btn-primary:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+
+.btn.prev-icon::before, .btn.next-icon::after{
+    font-family:'Font Awesome 5 Free'; font-weight:900; font-size:48%;
+}
+.btn.prev-icon::before{content:'\f053'; margin:0 .5rem 0 0;}
+.btn.next-icon::after{content:'\f054'; margin:0 0 0 .5rem;}
+
+
+/* Fields & Inputs */
+.field{margin:.625rem 0 0 0;}
+.field label{font-size:1.3125rem; font-weight:400; margin:0;}
+
+.field > .control{position:relative; width:100%; margin:.25rem 0 0 0;}
+.field > .control:first-child{margin:0;}
+
+.field > .control.checkbox-control, .field > .control.radio-control{display:flex;}
+.field > .control.checkbox-control > input[type=checkbox],
+.field > .control.radio-control > input[type=radio]{position:absolute; opacity:0;}
+.field > .control.checkbox-control > label,
+.field > .control.radio-control > label{padding:0 0 0 1.625rem; cursor:pointer;}
+.field > .control.checkbox-control > label::before, .field > .control.checkbox-control > label::after,
+.field > .control.radio-control > label::before, .field > .control.radio-control > label::after{
+    content:''; display:block; position:absolute; border-radius:50%;
+}
+.field > .control.checkbox-control > label::before, .field > .control.radio-control > label::before{
+    top:.1875rem; left:0; width:.75rem; height:.75rem; border:1px solid transparent;
+    transition:border-color .3s;
+}
+.field > .control.checkbox-control > label::after, .field > .control.radio-control > label::after{
+    top:.375rem; left:.1875rem; width:.5rem; height:.5rem; transition:background .3s;
+}
 
 
 /* Hamburger */
@@ -66,6 +92,62 @@ img{display:block; border:0;}
     .container{width:calc(100% - 30px);}
 }
 
+/* Section */
+.section-padding{padding:4rem 0;}
+@media screen and (max-width:991.98px){
+    .section-padding{padding:3rem 0;}
+}
+@media screen and (max-width:575.98px){
+    .section-padding{padding:2.5rem 0;}
+}
+
+
+/* General */
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+
+
+/* Calendar */
+.calendar-container{width:100%; padding:1rem;}
+.calendar-container.border-top{border-top:1px solid transparent;}
+.calendar-container.border-bottom{border-bottom:1px solid transparent;}
+.calendar-container .calendar header .month{font-size:2.125rem;}
+.calendar-container .calendar header .month .year{font-size:1.375rem; font-weight:200;}
+.calendar-container .calendar header .simple-calendar-btn{
+    border-color:transparent; transform:none; margin:0; background:none;
+    font-size:1.0625rem; transition:opacity .3s;
+}
+.calendar-container .calendar header .simple-calendar-btn:hover{opacity:.6;}
+.calendar-container .calendar header .simple-calendar-btn::before{display:none!important;}
+.calendar-container .calendar header .simple-calendar-btn::after{
+    font-family:'Font Awesome 5 Free'; font-weight:900;
+}
+.calendar-container .calendar header .btn-prev::after{content:'\f060';}
+.calendar-container .calendar header .btn-next::after{content:'\f061';}
+.calendar-container .calendar table{border-top:1px solid transparent; margin:.5rem 0 0 0;}
+.calendar-container .calendar td{padding:0; font-size:1rem;}
+.calendar-container .calendar thead td{
+    padding:.5rem 0 .375rem 0; font-size:1.125rem; font-weight:600;
+}
+.calendar-container .calendar .day{
+    width:2.3125rem; height:auto; line-height:1.5; border-radius:.25rem;
+    border-color:transparent; transition:border-color .3s;
+}
+.calendar-container .calendar .day.has-event::after{display:none;}
+.calendar-container .calendar .day.wrong-month{opacity:.35;}
+.calendar-container .calendar .event-container .event{
+    padding:.5rem 1rem; margin-bottom:.5rem; font-size:1.0625rem; font-weight:300;
+}
+.calendar-container .calendar .event-container .event-date{margin-bottom:.3125rem;}
+.calendar-container .calendar .event-container .event-summary{font-size:1.25rem; font-weight:500;}
+@media screen and (max-width:991.98px){
+    .calendar-container .calendar header .month{font-size:2rem;}
+    .calendar-container .calendar header .month .year{font-size:1.3125rem;}
+    .calendar-container .calendar header .simple-calendar-btn{font-size:.9375rem;}
+}
+
+
 
 /* Tab */
 .tab-container{position:relative; display:block; width:100%;}
@@ -97,20 +179,55 @@ img{display:block; border:0;}
 }
 
 
+/* Pagination */
+.pagination{width:100%; padding:.625rem 0; text-align:center; margin:1.8125rem 0 0 0;}
+.pagination.border-top{border-top:1px solid transparent;}
+.pagination.border-bottom{border-bottom:1px solid transparent;}
+.pagination > .wrapper{
+    display:flex; width:100%; align-items:center; justify-content:center; flex-wrap:wrap;
+}
+.pagination .page-btn{
+    display:inline-block; text-decoration:none; height:1.75rem; width:1.75rem; text-align:center;
+    line-height:1.75rem; font-size:1.25rem; border-radius:.25rem; font-weight:300; padding:0;
+    margin:.125rem; transition:background .3s, color .3s;
+}
+.pagination .page-btn.active{font-weight:500;}
+.pagination .page-btn.page-first, .pagination .page-btn.page-prev, .pagination .page-btn.page-next,
+.pagination .page-btn.page-last{
+    width:1.3125rem; border:1px solid transparent; line-height:1.4375rem;
+}
+.pagination .page-btn.page-first::before, .pagination .page-btn.page-first::after, 
+.pagination .page-btn.page-prev::before, .pagination .page-btn.page-next::before,
+.pagination .page-btn.page-last::before, .pagination .page-btn.page-last::after{
+    font-family:'Font Awesome 5 Free'; font-weight:900;
+    font-size:.5625rem; transition:color .3s;
+}
+.pagination .page-btn.page-first::before, .pagination .page-btn.page-first::after,
+.pagination .page-btn.page-prev::before{content:'\f053';}
+.pagination .page-btn.page-last::before, .pagination .page-btn.page-last::after,
+.pagination .page-btn.page-next::before{content:'\f054';}
+
+
 /* Special & Typography */
 .ss-date{font-size:1.1875rem; font-weight:300; margin:.625rem 0 0 0;}
 h2, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h5, .ss-h5{
     display:block; text-decoration:none; font-weight:300;
 }
 h2, .ss-h2{font-size:2.25rem; margin:.75rem 0 0 0;}
+h3, .ss-h3{font-size:1.8125rem; margin:.6875rem 0 0 0;}
+h4, .ss-h4{font-size:1.5625rem; margin:.625rem 0 0 0;}
 h5, .ss-h5{font-size:1.3125rem; margin:.625rem 0 0 0;}
 p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-date + *{margin:0;}
 @media screen and (max-width:991.98px){
     h2, .ss-h2{font-size:2rem;}
+    h3, .ss-h3{font-size:1.75rem; margin:.6275rem 0 0 0;}
+    h4, .ss-h4{font-size:1.5rem;}
 }
 @media screen and (max-width:767.98px){
     h2, .ss-h2{font-size:1.8125rem;}
+    h3, .ss-h3{font-size:1.625rem;}
+    h4, .ss-h4{font-size:1.4375rem;}
     p, .ss-p{font-size:1.1875rem;}
 }
 
@@ -126,11 +243,13 @@ p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     }
 }
 @media screen and (max-width:991.98px){
+    .ss-header{margin:2.25rem 0 0 0;}
     .ss-header{font-size:1.25rem;}
     .ss-header > .ss{font-size:5.125rem; transform:translateY(-.25rem);}
     .ss-header > h1{font-size:2.25rem;}
 }
 @media screen and (max-width:767.98px){
+    .ss-header{margin:1.8125rem 0 0 0;}
     .ss-header > .ss, .ss-header > h1{
         display:inline; background-image:none!important; font-size:2.125rem; font-weight:400;
     }
@@ -139,6 +258,8 @@ p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 /* Special Image */
 .ss-img{display:block; position:relative; padding:50% 0 0 0; border-radius:.625rem; overflow:hidden;}
 .ss-img.square{padding:100% 0 0 0;}
+.ss-img.vertical{padding:140% 0 0 0;}
+.ss-img.bradius-0{border-radius:0;}
 .ss-img > .img-bg{
     position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
     background-position:center; background-repeat:no-repeat; transition:transform .45s;
@@ -192,6 +313,7 @@ p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     border-radius:.1875rem; text-align:center; margin:.125rem 0; font-weight:300;
     text-decoration:none;
 }
+.ss-tags > .ss-tag::before{font-family:'DB Ozone X';}
 .ss-tags > .ss-tag.type-1::before{content:'ฟันยิ่งดี';}
 .ss-tags > .ss-tag.type-2::before{content:'COVID-19';}
 .ss-tags > .ss-tag.type-3::before{content:'สารสุขชัวร์';}
