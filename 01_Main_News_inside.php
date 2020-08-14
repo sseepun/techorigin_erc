@@ -89,7 +89,7 @@
                 <p><strong>กรมอนามัย</strong> พร้อมให้ข้อมูลข่าวสารที่มีประโยชน์สำหรับคุณ</p>
             </div>
             <div class="grids">
-                <div class="grid lg-75 md-100">
+                <div class="grid lg-75 md-100 sm-100">
                     <!-- Banner 02 -->
                     <div class="banner-02">
                         <div class="container">
@@ -162,7 +162,7 @@
                     </div>
                 </div>
                 <!-- Right banner -->
-                <div class="grid lg-25 md-100 right-banner">
+                <div class="grid lg-25 md-100 sm-100 right-banner">
                     <div class="banner-top">
                         <div class="img-container">
                             <img src="./assets/img/default/kid.png" alt="kid">
