@@ -8,7 +8,7 @@
     <?php include_once('include/topnav.php'); ?> 
     
     <style>
-        .main-news-01 {padding: 7.5rem 0;}
+        .main-news-01 {padding: 4rem 0;}
         .main-news-01 .container .right-banner {min-height:100vh;}
         
         /* Content 02 */
@@ -25,13 +25,12 @@
         }
         .content-02 .grids .grid .img-container:hover .img-bg::before{opacity:1;}
         .content-02 .grids .grid .img-container .socials {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; z-index:2; position:absolute; top:0; bottom:0;left:0; right:0; padding:0;}
-        .content-02 .grids .grid .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; height:2rem; width:2rem; font-size:100%; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
+        .content-02 .grids .grid .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; height:2.125rem; width:2.125rem; font-size:100%; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
         .content-02 .grids .grid .img-container .socials > a:nth-child(2n+1) {transform: translateY(-.75rem);}
         .content-02 .grids .grid .img-container .socials > a:nth-child(2n) {transform: translateY(.75rem);}
         .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n+1), .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n) {
             opacity: 1; transform: translateY(0); pointer-events:auto;
         }
-        .content-02 .grids .grid .date {font-size: 90%;}
         .content-02 .grids .grid .text-container > p {margin: 0;}
 
         /* Right banner */
@@ -68,9 +67,13 @@
     </style>
     <section class="main-news-01">
         <div class="container">
+            <!-- Special Header -->
+            <div class="ss-header">
+                <div class="ss">ข่</div><h1>าวประชาสัมพันธ์</h1>
+                <p><strong>กรมอนามัย</strong> พร้อมให้ข้อมูลข่าวสารที่มีประโยชน์สำหรับคุณ</p>
+            </div>
             <div class="grids">
-                <div class="grid lg-75">
-
+                <div class="grid lg-75 md-100">
                     <a class="ss-img" href="#">
                         <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
                         <div class="tag">
@@ -88,16 +91,14 @@
                     <!-- Content 02 -->
                     <div class="content-02">
                         <div class="container">
-                            <div class="text-container">
-                                <h2>การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</h2>
-                                <p>
-                                    สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
-                                    นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
-                                </p>
-                            </div>  
+                            <a href="#" class="ss-h2">การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</a>
+                            <p>
+                                สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
+                                นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
+                            </p>
                             <div class="grids">
                                 <?php for($i = 1; $i<13;$i++){?>
-                                    <div class="grid lg-25">
+                                    <div class="grid md-25 card">
                                         <div class="wrapper">
                                             <div class="img-container">
                                                 <div class="img-bg" style="background-image:url('./assets/img/default/blog-01.jpg');"></div>
@@ -116,10 +117,10 @@
                                             <div class="ss-tags">
                                                 <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
                                             </div>
-                                            <div class="date">02.04.2563</div>
-                                            <div class="text-container">
-                                                <p>กรมอนามัย แนะ สปาสัตว์ สถานรับฝากเลี้ยง ปฏิบัติตามข้อแนะนำ ป้องกันโควิด-19</p>
-                                            </div>
+                                            <div class="ss-date">02.04.2563</div>
+                                            <a href="#" class="ss-h5">
+                                                กรมอนามัย แนะ สปาสัตว์ สถานรับฝากเลี้ยง ปฏิบัติตามข้อแนะนำ ป้องกันโควิด-19
+                                            </a>
                                         </div>
                                     </div>
                                 <?php }?> 
@@ -128,7 +129,7 @@
                     </div>
                 </div>
                 <!-- Right banner -->
-                <div class="grid lg-25 right-banner">
+                <div class="grid lg-25 md-100 right-banner">
                     <div class="banner-top">
                         <div class="img-container">
                             <img src="./assets/img/default/kid.png" alt="kid">
