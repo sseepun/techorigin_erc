@@ -8,6 +8,8 @@ html, body{background:#000; color:#ffff00;}
 .btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{color:#000;}
 .btn.btn-secondary{color:#000; background:#ffff00;}
 .btn.btn-secondary.prev-icon::before, .btn.btn-secondary.next-icon::after{color:#000;}
+.btn.btn-success{color:#000; background:#ffff00;}
+.btn.btn-success.prev-icon::before, .btn.btn-success.next-icon::after{color:#000;}
 
 
 /* Fields & Inputs */
@@ -24,6 +26,26 @@ html, body{background:#000; color:#ffff00;}
 
 /* Hamburger */
 .hamburger > *{background:#414243;}
+
+
+/* Colors */
+.color0{color:#47484d!important; color:var(--color0)!important;}
+.color1{color:#1d684a!important; color:var(--color1)!important;}
+.color2{color:#c0ca67!important; color:var(--color2)!important;}
+.color3{color:#284e51!important; color:var(--color3)!important;}
+.color4{color:#0d838d!important; color:var(--color4)!important;}
+.color5{color:#d7d8d0!important; color:var(--color5)!important;}
+.bg-color0{background:#47484d!important; background:var(--color0)!important;}
+.bg-color1{background:#1d684a!important; background:var(--color1)!important;}
+.bg-color2{background:#c0ca67!important; background:var(--color2)!important;}
+.bg-color0{background:#284e51!important; background:var(--color3)!important;}
+.bg-color4{background:#0d838d!important; background:var(--color4)!important;}
+.bg-color5{background:#d7d8d0!important; background:var(--color5)!important;}
+
+.color-white{color:#ffff00!important;}
+.color-black{color:#ffff00!important;}
+.bg-white{background:#ffff00!important;}
+.bg-black{background:#ffff00!important;}
 
 
 /* Topnav */
@@ -111,6 +133,11 @@ nav.footer p, nav.footer h1{color:#ffff00;}
 .calendar-container .calendar .event-container .event{color:#000; background:#ffff00;}
 
 
+/* Table */
+table.table td{color:#ffff00; border-color:#ffff00;}
+table.table .icon.icon-download, table.table .icon.icon-dot{color:#000; background:#ffff00;}
+
+
 /* Tab */
 .tab-container .tabs::before{background:#ffff00;}
 .tab-container .tab{border-color:#ffff00; color:#ffff00;}
@@ -143,18 +170,31 @@ p, .ss-p{color:#ffff00;}
 /* Special Header */
 .ss-header, .ss-header > h1{color:#ffff00;}
 .ss-header > .ss{color:#ffff00!important;}
+.ss-header.color-white, .ss-header.color-white > .ss, .ss-header.color-white > h1,
+.ss-header.color-white > p{color:#ffff00;}
+.ss-header.color-white-info, .ss-header.color-white-info > h1,
+.ss-header.color-white-info > p{color:#ffff00;}
 
-/* Special Image */
-.ss-img .tag{color:#ffff00; background:linear-gradient(to right, #000, rgba(255,255,255,0));}
-.ss-img .tag::before, .ss-img .tag::after{
+/* Special Image & Video */
+.ss-img .tag, .ss-video .tag{
+    color:#ffff00; background:linear-gradient(to right, #000, rgba(255,255,255,0));
+}
+.ss-img .tag::before, .ss-img .tag::after, .ss-video .tag::before, .ss-video .tag::after{
     background:linear-gradient(to right, #000, #000, rgba(255,255,255,0));
 }
+.ss-video .play-icon{border-color:#ffff00; color:#ffff00;}
+
+/* Special Side Menu */
+.ss-side-menu .menu .text-container > *{color:#000;}
+.ss-side-menu .menu .text-container.color-white > *{color:#ffff00;}
+.ss-side-menu .menu .text-container.color-black > *{color:#000;}
 
 /* Special Tags */
 .ss-tags > .ss-tag{color:#000; background:#ffff00;}
 
 
 /* Banner 01 */
+.banner-01{border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;}
 .banner-01 .dots{background:#000;}
 .banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after, .banner-01 .dots button{
     background:#ffff00;
@@ -171,3 +211,38 @@ p, .ss-p{color:#ffff00;}
 .content-01 .content .text-container::before{background:#000;}
 .content-01 .content .text-container{color:#ffff00;}
 .content-01 .content:hover .text-container h1{color:#ffff00;}
+
+
+/* Content 02 */
+.content-02 .content{background:#000;}
+.content-02 .content:nth-child(2){border-color:#ffff00;}
+.content-02 .question-container .ss-header{border-color:#ffff00;}
+.content-02 .question-body{color:#ffff00;}
+.content-02 .question-body .field label{color:#ffff00;}
+.content-02 .question-body .field > .control.radio-control > label::before{border-color:#ffff00;}
+.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::before{
+    border-color:#ffff00;
+}
+.content-02 .question-body .field > .control.radio-control > label::after{background:transparent;}
+.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::after{
+    background:#ffff00;
+}
+.content-02 .info-card, .content-02 .info-card + .btns{border-color:#ffff00;}
+
+
+/* Call to Action 01 */
+.call-01{background:none!important; border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;}
+.call-01 p{color:#ffff00;}
+.call-01 h3{color:#ffff00;}
+
+
+/* Call to Action 02 */
+.call-02{border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;}
+.call-02 .ss-h5{color:#ffff00;}
+.call-02 .hamburger > *{background:#ffff00;}
+.call-02 h5{color:#ffff00;}
+
+
+/* Client 01 */
+.client-01{border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;}
+.client-01 .client{color:#ffff00;}

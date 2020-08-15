@@ -8,6 +8,8 @@ html, body{background:#000; color:#fff;}
 .btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{color:#000;}
 .btn.btn-secondary{color:#000; background:#fff;}
 .btn.btn-secondary.prev-icon::before, .btn.btn-secondary.next-icon::after{color:#000;}
+.btn.btn-success{color:#000; background:#fff;}
+.btn.btn-success.prev-icon::before, .btn.btn-success.next-icon::after{color:#000;}
 
 
 /* Fields & Inputs */
@@ -24,6 +26,26 @@ html, body{background:#000; color:#fff;}
 
 /* Hamburger */
 .hamburger > *{background:#414243;}
+
+
+/* Colors */
+.color0{color:#47484d!important; color:var(--color0)!important;}
+.color1{color:#1d684a!important; color:var(--color1)!important;}
+.color2{color:#c0ca67!important; color:var(--color2)!important;}
+.color3{color:#284e51!important; color:var(--color3)!important;}
+.color4{color:#0d838d!important; color:var(--color4)!important;}
+.color5{color:#d7d8d0!important; color:var(--color5)!important;}
+.bg-color0{background:#47484d!important; background:var(--color0)!important;}
+.bg-color1{background:#1d684a!important; background:var(--color1)!important;}
+.bg-color2{background:#c0ca67!important; background:var(--color2)!important;}
+.bg-color0{background:#284e51!important; background:var(--color3)!important;}
+.bg-color4{background:#0d838d!important; background:var(--color4)!important;}
+.bg-color5{background:#d7d8d0!important; background:var(--color5)!important;}
+
+.color-white{color:#fff!important;}
+.color-black{color:#fff!important;}
+.bg-white{background:#fff!important;}
+.bg-black{background:#fff!important;}
 
 
 /* Topnav */
@@ -111,6 +133,11 @@ nav.footer p, nav.footer h1{color:#fff;}
 .calendar-container .calendar .event-container .event{color:#000; background:#fff;}
 
 
+/* Table */
+table.table td{color:#fff; border-color:#fff;}
+table.table .icon.icon-download, table.table .icon.icon-dot{color:#000; background:#fff;}
+
+
 /* Tab */
 .tab-container .tabs::before{background:#fff;}
 .tab-container .tab{border-color:#fff; color:#fff;}
@@ -143,18 +170,31 @@ p, .ss-p{color:#fff;}
 /* Special Header */
 .ss-header, .ss-header > h1{color:#fff;}
 .ss-header > .ss{color:#fff!important;}
+.ss-header.color-white, .ss-header.color-white > .ss, .ss-header.color-white > h1,
+.ss-header.color-white > p{color:#fff;}
+.ss-header.color-white-info, .ss-header.color-white-info > h1,
+.ss-header.color-white-info > p{color:#fff;}
 
-/* Special Image */
-.ss-img .tag{color:#fff; background:linear-gradient(to right, #000, rgba(255,255,255,0));}
-.ss-img .tag::before, .ss-img .tag::after{
+/* Special Image & Video */
+.ss-img .tag, .ss-video .tag{
+    color:#fff; background:linear-gradient(to right, #000, rgba(255,255,255,0));
+}
+.ss-img .tag::before, .ss-img .tag::after, .ss-video .tag::before, .ss-video .tag::after{
     background:linear-gradient(to right, #000, #000, rgba(255,255,255,0));
 }
+.ss-video .play-icon{border-color:#fff; color:#fff;}
+
+/* Special Side Menu */
+.ss-side-menu .menu .text-container > *{color:#000;}
+.ss-side-menu .menu .text-container.color-white > *{color:#fff;}
+.ss-side-menu .menu .text-container.color-black > *{color:#000;}
 
 /* Special Tags */
 .ss-tags > .ss-tag{color:#000; background:#fff;}
 
 
 /* Banner 01 */
+.banner-01{border-top:1px solid #fff; border-bottom:1px solid #fff;}
 .banner-01 .dots{background:#000;}
 .banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after, .banner-01 .dots button{
     background:#fff;
@@ -171,3 +211,38 @@ p, .ss-p{color:#fff;}
 .content-01 .content .text-container::before{background:#000;}
 .content-01 .content .text-container{color:#fff;}
 .content-01 .content:hover .text-container h1{color:#fff;}
+
+
+/* Content 02 */
+.content-02 .content{background:#000;}
+.content-02 .content:nth-child(2){border-color:#fff;}
+.content-02 .question-container .ss-header{border-color:#fff;}
+.content-02 .question-body{color:#fff;}
+.content-02 .question-body .field label{color:#fff;}
+.content-02 .question-body .field > .control.radio-control > label::before{border-color:#fff;}
+.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::before{
+    border-color:#fff;
+}
+.content-02 .question-body .field > .control.radio-control > label::after{background:transparent;}
+.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::after{
+    background:#fff;
+}
+.content-02 .info-card, .content-02 .info-card + .btns{border-color:#fff;}
+
+
+/* Call to Action 01 */
+.call-01{background:none!important; border-top:1px solid #fff; border-bottom:1px solid #fff;}
+.call-01 p{color:#fff;}
+.call-01 h3{color:#fff;}
+
+
+/* Call to Action 02 */
+.call-02{border-top:1px solid #fff; border-bottom:1px solid #fff;}
+.call-02 .ss-h5{color:#fff;}
+.call-02 .hamburger > *{background:#fff;}
+.call-02 h5{color:#fff;}
+
+
+/* Client 01 */
+.client-01{border-top:1px solid #fff; border-bottom:1px solid #fff;}
+.client-01 .client{color:#fff;}

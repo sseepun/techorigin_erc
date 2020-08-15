@@ -1,6 +1,6 @@
 /* Topnav */
 nav.topnav{
-    position:fixed; top:0; left:0; width:100vw;  border-bottom:1px solid transparent; z-index:95; 
+    position:fixed; top:0; left:0; width:100%; border-bottom:1px solid transparent; z-index:95; 
     transition:box-shadow .3s, top .3s;
 }
 nav.topnav.sticky{box-shadow:rgba(58,45,45,.03) 0px 10px 20px; top:-2.875rem;}
@@ -225,7 +225,7 @@ nav.sidenav .submenu .child > a{
 nav.sidenav .has-children > a{padding:1rem 4.75rem 1rem 1rem!important;}
 
 nav.sidenav ~ .sidenav-filter{
-    display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; cursor:pointer; z-index:97;
+    display:none; position:fixed; top:0; left:0; width:100%; height:100vh; cursor:pointer; z-index:97;
     background:#000; opacity:0; pointer-events:none; transition:opacity .5s;
 }
 

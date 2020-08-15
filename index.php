@@ -4,87 +4,22 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
 <style>
-/* Content 02 */
-.content-02 .contents{width:100%; display:flex; flex-wrap:wrap;}
-.content-02 .content{width:calc(100% / 3); display:block; position:relative;}
-.content-02 .content:nth-child(2){border-left:1px solid transparent; border-right:1px solid transparent;}
-.content-02 .question-container .ss-header{
-    padding:1rem 1.5rem 2rem 1.5rem; margin:.875rem 0 0 0; border-bottom:1px solid transparent;
+/* Slot */
+.slot{
+    position:relative; width:100%; padding:1.5rem 1.5rem 5rem 1.5rem; overflow:visible;
+    border-radius:.625rem .625rem 0 0; transform:translateY(-.625rem);
 }
-.content-02 .question-body{padding:1rem 1.5rem 2rem 1.5rem;}
-.content-02 .question{font-size:1.4375rem; font-weight:300;}
-.content-02 .answers{padding:.5rem 0;}
-.content-02 .info-card{padding:1rem 1.5rem 0 1.5rem; border-bottom:1px solid transparent;}
-.content-02 .info-card + .btns{border-bottom:1px solid transparent; margin:0; padding:.875rem 0;}
-@media screen and (max-width:991.98px){
-    .content-02 .content{width:50%;}
-    .content-02 .content:nth-child(2){border-right:0; border-bottom:1px solid transparent;}
-    .content-02 .content:nth-child(3){width:100%;}
-}
-@media screen and (max-width:575.98px){
-    .content-02 .content{width:100%;}
-    .content-02 .content:nth-child(2){border-left:0;}
-}
-
-
-.content-02{
-    background-image:linear-gradient(to bottom, rgba(0,0,0,0), #f1f3f2, #a8b7ba);
-}
-.content-02 .content{background:#fff;}
-.content-02 .content:nth-child(2){border-color:#cecece;}
-
-.content-02 .question-container{background:#1d6358;}
-.content-02 .question-container .ss-header{border-color:rgba(255,255,255,.4);}
-.content-02 .question-body{color:#fff;}
-.content-02 .question-body .field label{color:#fff;}
-.content-02 .question-body .field > .control.radio-control > label::before{border-color:#fff;}
-.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::before{
-    border-color:#c0ca67; border-color:var(--color1);
-}
-.content-02 .question-body .field > .control.radio-control > label::after{background:#fff;}
-.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::after{
-    background:#c0ca67; background:var(--color1);
-}
-
-.content-02 .info-card, .content-02 .info-card + .btns{border-color:#cecece;}
-
-
-/* Table */
-.table-wrapper{width:100%; overflow-x:auto; overflow-y:hidden; padding:.875rem 0;}
-table.table{width:100%;}
-table.table td{
-    padding:.375rem .625rem .375rem 0; font-size:1.3125rem; font-weight:300;
-    border-bottom:1px solid transparent;
-}
-table.table td:last-child{padding:.375rem 0 .375rem 0; text-align:right;}
-table.table tbody > tr:last-child > td{border-color:transparent;}
-table.table .icon{
-    display:inline-block; width:1.75rem; height:1.75rem; border-radius:.25rem;
-    font-size:.875rem; text-align:center; line-height:1.75rem;
-}
-table.table .icon::before{font-family:'Font Awesome 5 Free'; font-weight:900;}
-table.table .icon.icon-download::before{content:'\f019';}
-table.table .icon.icon-dot{width:.5rem; height:.5rem; border-radius:0;}
-table.table .img-icon{display:inline-block; height:1.25rem; width:auto;}
-
-table.table.asset-table td:nth-child(2){min-width:8rem;}
-table.table.asset-table td:nth-child(3){min-width:3.5rem;}
-
-@media screen and (max-width:991.98px){
-    table.table td{font-size:1.25rem;}
-}
-
-
-table.table td{color:#000; border-color:#dddddd;}
-table.table .icon.icon-download, table.table .icon.icon-dot{
-    color:#fff; background:#0d838d; background:var(--color4);
+.slot:first-child{transform:translateY(0);}
+.slot:last-child{
+    padding:1.5rem 1.5rem 10rem 1.5rem;
+    -webkit-mask-image:linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, #000, #000,
+        rgba(0,0,0,.5), rgba(0,0,0,0));
 }
 </style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
 
-    <!-- Banner 01 -->
     <section class="banner-01">
         <div class="slide-container">
             <div class="slides">
@@ -347,8 +282,41 @@ table.table .icon.icon-download, table.table .icon.icon-dot{
 
                 </div>
 
-                <div class="grid sm-100 lg-30 xl-25" style="background:orange;">
+                <div class="grid sm-100 lg-30 xl-25">
+                    <!-- Slot -->
+                    <div class="slot" style="background:#272c30;">
+                        <div class="ss-header color-white-info">
+                            <div class="ss">วี</div><h1 class="fw-300">ดิโอ</h1>
+                            <p>& สื่อมัลติมีเดีย</p>
+                        </div>
+                        <div class="ss-video bradius-0">
+                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                            <div class="play-container">
+                                <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ss-tags">
+                            <div class="ss-tag type-3"></div>
+                            <div class="ss-tag type-4"></div>
+                        </div>
+                        <div class="ss-date">02.04.2563</div>
+                        <a class="ss-h3 color-white" href="#">
+                            การปฏิบัติด้านสุขอนามัยในห้างสรรพสินค้าและศูนย์การค้า
+                        </a>
+                        <p class="color-white">
+                            ห้างสรรพสินค้าและศูนย์การค้าเป็นแหล่งนัดพบที่มีคนมาใช้บริการมากมาย...
+                        </p>
+                        <div class="btns">
+                            <a class="btn btn-action btn-secondary next-icon" href="#">
+                                ดูวิดีโอทั้งหมด
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slot" style="background:#1d5c7d; height:600px;">
 
+                    </div>
                 </div>
             </div>
 
@@ -375,7 +343,7 @@ table.table .icon.icon-download, table.table .icon.icon-dot{
                     </div>
 
                     <div class="question-container">
-                        <div class="ss-header white">
+                        <div class="ss-header color-white">
                             <div class="ss">ร่</div><h1>วมแสดงความคิดเห็น</h1>
                         </div>
                         <div class="question-body">
@@ -466,6 +434,38 @@ table.table .icon.icon-download, table.table .icon.icon-dot{
                 </div>
 
                 <div class="content">
+
+                    <div class="ss-side-menu">
+                        <a class="menu" href="#">
+                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                            <div class="text-container">
+                                <h3>ข่าวสาร</h3>
+                                <p>การจัดซื้อจัดจ้าง</p>
+                            </div>
+                        </a>
+                        <a class="menu" href="#">
+                            <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                            <div class="text-container text-right">
+                                <p>การเปิดเผย</p>
+                                <h3>ราคากลาง</h3>
+                            </div>
+                        </a>
+                        <a class="menu" href="#">
+                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                            <div class="text-container">
+                                <h3>แผน-ผล</h3>
+                                <p>การจัดซื้อจัดจ้าง</p>
+                            </div>
+                        </a>
+                        <a class="menu menu-lg" href="#">
+                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                            <div class="text-container text-right color-white">
+                                <h3>ผลสรุป</h3>
+                                <p>การดำเนินงานจัดซื้อจัดจ้าง</p>
+                            </div>
+                        </a>
+                    </div>
+
                     <div class="info-card">
                         <div class="ss-date">02.04.2563</div>
                         <a class="ss-h4" href="#">
@@ -523,6 +523,69 @@ table.table .icon.icon-download, table.table .icon.icon-dot{
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+    
+    <section class="call-01" style="background-image:url('./assets/img/default/banner-01.jpg');">
+        <div class="container">
+            <div class="contents">
+                <div class="text-container">
+                    <h3 class="fw-400">ลงทะเบียนรับข้อมูลเพื่อสุขภาพ</h3>
+                    <p>
+                        ลงทะเบียนสำหรับบันทึกข้อมูลสุขภาพของคุณ <br>
+                        <span class="text-lg fw-500">(Your Health Record)</span> 
+                        แบบออนไลน์ได้ใน
+                    </p>
+                    <div class="ss-header ss-header-lg color-white-info">
+                        <div class="ss"><i>3</i></div> 
+                        <h1 class="fw-300">ขั้นตอน</h1>
+                        <div class="btns">
+                            <a class="btn btn-action btn-sm btn-secondary" href="#">
+                                ลงทะเบียน
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <img class="hero" src="./assets/img/hero/04.png" alt="Call 01 Hero" />
+            </div>
+        </div>
+    </section>
+
+    <section class="call-02">
+        <div class="container">
+            <div class="contents">
+                <div class="content">
+                    <a class="ss-h5 fw-400" href="#">
+                        ลิงค์หน่วยงานภายในกระทรวงสาธารณสุข
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="menu">
+                        <div class="hamburger">
+                            <div></div><div></div><div></div>
+                        </div>
+                        <h5 class="fw-400">
+                            ลิงค์หน่วยงานภายนอกกระทรวงสาธารณสุข
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-01">
+        <div class="container">
+            <div class="clients">
+                <?php for($i=0; $i<6; $i++){?>
+                    <a class="client" href="#">
+                        <img src="./assets/img/default/client-01.jpg" alt="Client 01 <?php echo $i; ?>" />
+                        <div class="name">
+                            ศาลปกครอง <br>
+                            สาระดีดีจากศาลปกครอง
+                        </div>
+                    </a>
+                <?php }?>
             </div>
         </div>
     </section>
