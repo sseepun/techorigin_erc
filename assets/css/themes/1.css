@@ -129,6 +129,7 @@ nav.footer p, nav.footer h1{color:#fff;}
 /* Table */
 table.table td{color:#fff; border-color:#fff;}
 table.table .icon.icon-download, table.table .icon.icon-dot{color:#000; background:#fff;}
+table.table.about-table td:nth-child(3){border-color:#fff;}
 
 
 /* Tab */
@@ -159,6 +160,28 @@ table.table .icon.icon-download, table.table .icon.icon-dot{color:#000; backgrou
 .ss-date{color:#fff;}
 h1, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h4, .ss-h5{color:#fff;}
 h6, .ss-h6, p, .ss-p{color:#fff;}
+
+/* Special Banner */
+.ss-banner{background-image:linear-gradient(to right, #000, rgba(255,255,255,0));}
+.ss-banner.to-left{background-image:linear-gradient(to left, #000, rgba(255,255,255,0));}
+.ss-banner *{color:#fff; text-decoration:none; margin:0;}
+.ss-banner::before, .ss-banner::after{
+    background-image:linear-gradient(to right, #000, #fff, rgba(255,255,255,0));
+}
+.ss-banner.to-left::before, .ss-banner.to-left::after{
+    background-image:linear-gradient(to left, #000, #fff, rgba(255,255,255,0));
+}
+.ss-banner ul li{border-color:#fff;}
+@media screen and (max-width:767.98px){
+    .ss-banner, .ss-banner.to-left{
+        background-image:linear-gradient(to right, rgba(255,255,255,0), #000, 
+            #000, rgba(255,255,255,0));
+    }
+    .ss-banner::before, .ss-banner::after, .ss-banner.to-left::before, .ss-banner.to-left::after{
+        background-image:linear-gradient(to right, rgba(255,255,255,0), #000, #fff,
+        #fff, #000, rgba(255,255,255,0));
+    }
+}
 
 /* Special Header */
 .ss-header, .ss-header > h1{color:#fff;}

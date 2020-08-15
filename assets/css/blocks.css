@@ -217,3 +217,25 @@
 @media screen and (max-width:575.98px){
     .client-01 .client{width:calc((100% - 1.5rem) / 2); margin:.75rem 0;}
 }
+
+
+/* About 01 */
+.about-01{
+    background-size:cover; background-position:center; background-repeat:no-repeat; overflow:hidden;
+}
+.about-01 .ss-header{margin:2rem 0 0 0;}
+.about-01 .contents{display:flex; justify-content:center; align-items:flex-end; width:100%;}
+.about-01 .content{position:relative;}
+.about-01 .content .text-container{padding:2rem 0; transform:translateX(4.25rem);}
+.about-01 .content .ss-banner{padding-right:5rem;}
+.about-01 .content .hero{display:block; width:auto; height:32rem;}
+@media screen and (max-width:991.98px){
+    .about-01 .content .hero{height:29rem;}
+}
+@media screen and (max-width:767.98px){
+    .about-01{padding:2rem 0 0 0;}
+    .about-01 .contents{flex-wrap:wrap;}
+    .about-01 .content{width:100%;}
+    .about-01 .content .text-container{padding:1.25rem 0; transform:translateX(0);}
+    .about-01 .content .hero{height:24rem; margin:0 auto;}
+}

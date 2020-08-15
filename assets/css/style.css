@@ -169,6 +169,12 @@ img{display:block; border:0;}
 
 .no-margin{margin:0!important;}
 
+.d-block{display:block;}
+.d-flex{display:flex;}
+.d-inline{display:inline;}
+.d-inline-block{display:inline-block;}
+.d-none{display:none;}
+
 
 /* Calendar */
 .calendar-container{width:100%; padding:1rem;}
@@ -212,7 +218,7 @@ img{display:block; border:0;}
 
 /* Table */
 .table-wrapper{width:100%; overflow-x:auto; overflow-y:hidden; padding:.875rem 0;}
-table.table{width:100%;}
+table.table{width:100%; border-spacing:0;}
 table.table td{
     padding:.375rem .625rem .375rem 0; font-size:1.3125rem; font-weight:300;
     border-bottom:1px solid transparent;
@@ -230,6 +236,13 @@ table.table .img-icon{display:inline-block; height:1rem; width:auto;}
 
 table.table.asset-table td:nth-child(2){min-width:8rem;}
 table.table.asset-table td:nth-child(3){min-width:3.5rem;}
+
+table.table.about-table td{border-bottom:0px;}
+table.table.about-table td:nth-child(3){border-left:1px solid transparent; padding-left:.625rem;}
+table.table.about-table td:last-child{text-align:left;}
+table.table.about-table td:nth-child(2){min-width:6.25rem;}
+table.table.about-table td:nth-child(3){min-width:10rem;}
+table.table.about-table td:nth-child(4){min-width:7rem;}
 
 @media screen and (max-width:991.98px){
     table.table td{font-size:1.25rem;}
@@ -344,6 +357,32 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     h3, .ss-h3{font-size:1.625rem;}
     h4, .ss-h4{font-size:1.4375rem;}
     p, .ss-p{font-size:1.1875rem;}
+}
+
+/* Special Banner */
+.ss-banner{position:relative; padding:.75rem 3rem .75rem 1rem;}
+.ss-banner.to-left{padding:.75rem 1rem .75rem 3rem; text-align:right;}
+.ss-banner::before, .ss-banner::after{content:''; position:absolute; left:0; right:0; height:1px;}
+.ss-banner::before{top:0;}
+.ss-banner::after{bottom:0;}
+.ss-banner ul{padding:0; margin:0; list-style:none; display:flex; align-items:center; flex-wrap:wrap;}
+.ss-banner.to-left ul{justify-content:flex-end;}
+.ss-banner ul li{
+    display:flex; align-items:center; padding:.25rem 1rem; border-right:1px solid transparent;
+}
+.ss-banner ul li:last-child{padding-right:0; border-right:0px;}
+.ss-banner ul li .icon{
+    width:1rem; height:1rem; font-size:.625rem; line-height:2; text-align:center;
+    border-radius:.1875rem; margin:0 .25rem 0 0;
+}
+@media screen and (max-width:991.98px){
+    .ss-banner ul{display:block;}
+    .ss-banner ul li{padding-left:0; padding-right:0; border-right:0px;}
+    .ss-banner *{text-align:center;}
+    .ss-banner ul li{justify-content:center;}
+}
+@media screen and (max-width:767.98px){
+    .ss-banner{display:block!important; padding:.75rem 1.25rem!important;}
 }
 
 /* Special Header */

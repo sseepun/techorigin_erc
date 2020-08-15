@@ -151,6 +151,7 @@ table.table td{color:#000; border-color:#dddddd;}
 table.table .icon.icon-download, table.table .icon.icon-dot{
     color:#fff; background:#0d838d; background:var(--color4);
 }
+table.table.about-table td:nth-child(3){border-color:#c8c8c8;}
 
 
 /* Tab */
@@ -183,6 +184,28 @@ table.table .icon.icon-download, table.table .icon.icon-dot{
 .pagination .page-btn.page-last{color:#494949; border-color:#d8d8d8;}
 .pagination .page-btn:hover::before, .pagination .page-btn:hover::after{color:#fff;}
 
+
+/* Special Banner */
+.ss-banner{background-image:linear-gradient(to right, #0d838d, rgba(255,255,255,0));}
+.ss-banner.to-left{background-image:linear-gradient(to left, #0d838d, rgba(255,255,255,0));}
+.ss-banner *{color:#fff; text-decoration:none; margin:0;}
+.ss-banner::before, .ss-banner::after{
+    background-image:linear-gradient(to right, #0d838d, #c0ca67, rgba(255,255,255,0));
+}
+.ss-banner.to-left::before, .ss-banner.to-left::after{
+    background-image:linear-gradient(to left, #0d838d, #c0ca67, rgba(255,255,255,0));
+}
+.ss-banner ul li{border-color:#1d684a; border-color:var(--color2);}
+@media screen and (max-width:767.98px){
+    .ss-banner, .ss-banner.to-left{
+        background-image:linear-gradient(to right, rgba(255,255,255,0), #0d838d, 
+            #0d838d, rgba(255,255,255,0));
+    }
+    .ss-banner::before, .ss-banner::after, .ss-banner.to-left::before, .ss-banner.to-left::after{
+        background-image:linear-gradient(to right, rgba(255,255,255,0), #0d838d, #c0ca67,
+        #c0ca67, #0d838d, rgba(255,255,255,0));
+    }
+}
 
 /* Special & Typography */
 .ss-date{color:#808080;}
