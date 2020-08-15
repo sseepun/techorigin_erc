@@ -98,6 +98,27 @@ img{display:block; border:0;}
 }
 
 
+/* Breadcrumb */
+.breadcrumb{width:100%;}
+.breadcrumb .wrapper{position:relative;}
+.breadcrumb .breadcrumb-container{
+    position:absolute; top:0; right:0; border-radius:0 0 .875rem .875rem; padding:.25rem .625rem;
+    border-left:1px solid transparent; border-bottom:1px solid transparent;
+    border-right:1px solid transparent; 
+}
+.breadcrumb a{
+    display:inline-block; text-decoration:none; margin:.125rem .5rem; font-size:1.0625rem;
+    transition:color .3s;
+}
+.breadcrumb a::before{
+    content:'\f054'; font-family:'Font Awesome 5 Free'; font-weight:900; font-size:48%;
+    margin:0 .375rem 0 0;
+}
+@media screen and (max-width:767.98px){
+    .breadcrumb a{font-size:1rem;}
+}
+
+
 /* Container */
 .container{width:1140px; margin-left:auto; margin-right:auto;}
 @media screen and (max-width:1199.98px){
@@ -304,14 +325,14 @@ table.table.asset-table td:nth-child(3){min-width:3.5rem;}
 
 /* Special & Typography */
 .ss-date{font-size:1.1875rem; font-weight:300; margin:.625rem 0 0 0;}
-h2, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h5, .ss-h5{
+h2, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h5, .ss-h5, h6, .ss-h6{
     display:block; text-decoration:none; font-weight:300;
 }
 h2, .ss-h2{font-size:2.25rem; margin:.75rem 0 0 0;}
 h3, .ss-h3{font-size:1.8125rem; margin:.6875rem 0 0 0;}
 h4, .ss-h4{font-size:1.5625rem; margin:.625rem 0 0 0;}
 h5, .ss-h5{font-size:1.3125rem; margin:.625rem 0 0 0;}
-p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
+h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-date + *{margin:0;}
 @media screen and (max-width:991.98px){
     h2, .ss-h2{font-size:2rem;}

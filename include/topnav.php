@@ -2,7 +2,7 @@
 <nav class="topnav">
     <div class="container">
         <div class="wrapper">
-            <a href="index.html" class="logo">
+            <a href="./" class="logo">
                 <img src="./assets/img/logo.png" alt="Logo" />
                 <div class="text">
                     <h1>กรมอนามัย</h1>
@@ -10,6 +10,7 @@
                 </div>
             </a>
             <div class="menu-container">
+
                 <div class="top-menu">
                     <div class="option">
                         <p>ขนาดตัวอักษร</p>
@@ -45,15 +46,16 @@
                         <i class="fas fa-sitemap"></i>
                     </a>
                 </div>
+
                 <div class="bottom-menu">
 
-                    <div class="menu icon-menu">
-                        <a href="#">
+                    <div class="menu icon-menu <?php if(!empty($topnavActive) && $topnavActive=='Home')echo 'active'; ?>">
+                        <a href="./">
                             <div><i class="fas fa-home"></i></div>
                         </a>
                     </div>
 
-                    <div class="menu has-children">
+                    <div class="menu has-children <?php if(!empty($topnavActive) && $topnavActive=='About')echo 'active'; ?>">
                         <a href="#"><div>รู้จักกรมอนามัย</div></a>
                         <div class="submenu-container expand-adaptive">
                             <div class="wrapper">
@@ -171,7 +173,7 @@
                         </div>
                     </div>
 
-                    <div class="menu has-children">
+                    <div class="menu has-children <?php if(!empty($topnavActive) && $topnavActive=='News')echo 'active'; ?>">
                         <a href="#"><div>ข่าวสาร</div></a>
                         <div class="submenu-container expand-left">
                             <div class="wrapper">
@@ -232,7 +234,7 @@
                         </div>
                     </div>
 
-                    <div class="menu has-children">
+                    <div class="menu has-children <?php if(!empty($topnavActive) && $topnavActive=='Services')echo 'active'; ?>">
                         <a href="#"><div>บริการประชาชน</div></a>
                         <div class="submenu-container">
                             <div class="wrapper">
@@ -257,17 +259,18 @@
                         </div>
                     </div>
 
-                    <div class="menu">
+                    <div class="menu <?php if(!empty($topnavActive) && $topnavActive=='Contact')echo 'active'; ?>">
                         <a href="#"><div>ติดต่อกรม</div></a>
                     </div>
 
-                    <div class="menu icon-menu">
+                    <div class="menu icon-menu <?php if(!empty($topnavActive) && $topnavActive=='Search')echo 'active'; ?>">
                         <a href="#">
                             <div><i class="fas fa-search"></i></div>
                         </a>
                     </div>
 
                 </div>
+
                 <div class="mobile-menu">
                     <div class="sidenav-btn">
                         <div class="hamburger">
@@ -275,6 +278,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

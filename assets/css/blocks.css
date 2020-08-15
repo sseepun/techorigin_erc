@@ -93,7 +93,7 @@
 }
 .content-01 .content:hover .text-container::after{background:transparent!important;}
 .content-01 .content:last-child .text-container::after{display:none;}
-.content-01 .content p{
+.content-01 .content h6{
     margin:.9375rem 0 0 0; font-size:1.125rem; font-weight:300; z-index:2; transition:color .3s;
 }
 .content-01 .content:hover p{color:transparent;}
@@ -113,7 +113,7 @@
 
 @media screen and (max-width:991.98px){
     .content-01 .content .text-container{padding:1.0625rem .125rem;}
-    .content-01 .content p{font-size:1rem;}
+    .content-01 .content h6{font-size:1rem;}
 }
 @media screen and (max-width:767.98px){
     .content-01{box-shadow:none; margin:0; padding:1.5rem 0 .5rem 0;}
@@ -123,7 +123,7 @@
     }
     .content-01 .content .text-container{padding:65% 1rem 20% 1rem; z-index:2;}
     .content-01 .content .text-container::after{background:transparent!important;}
-    .content-01 .content p{font-size:1.25rem; margin:0;}
+    .content-01 .content h6{font-size:1.25rem; margin:0;}
     .content-01 .content .banner{
         top:0!important; bottom:0!important; font-size:2.75rem!important; z-index:1;
         padding:0 0 20% 0!important;
@@ -207,7 +207,7 @@
 }
 .client-01 .client:hover{opacity:.75;}
 .client-01 .client img{display:block; width:100%; height:auto; border-radius:.375rem;}
-.client-01 .client .name{font-size:1.125rem; margin:.75rem 0 0 0;}
+.client-01 .client .name{font-size:1.125rem; margin:.75rem 0 0 0; font-weight:300;}
 @media screen and (max-width:991.98px){
     .client-01 .client{width:calc((100% - 3rem) / 3);}
 }

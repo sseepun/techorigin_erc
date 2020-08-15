@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
@@ -30,14 +30,14 @@
         </div>
     </section>
 
-    <section class="content-01">
+    <section class="content-01"  data-aos="fade-up" data-aos-delay="0">
         <div class="container">
             <div class="contents">
                 <?php for($i=0; $i<8; $i++){?>
                     <a class="content" href="#">
                         <div class="wrapper">
                             <div class="text-container">
-                                <p>ระเบียงคุณธรรม</p>
+                                <h6>ระเบียงคุณธรรม</h6>
                             </div>
                             <div class="banner">
                                 <i class="icon far fa-chart-bar"></i>
@@ -54,13 +54,13 @@
         <div class="container">
 
             <!-- Special Header -->
-            <div class="ss-header">
+            <div class="ss-header" data-aos="fade-up" data-aos-delay="0">
                 <div class="ss">ข่</div><h1>าวประชาสัมพันธ์</h1>
                 <p>อัพเดททุกสาระ ข่าวสารเพื่อสุขภาพ มั่นใจไม่ตกเทรนด์</p>
             </div>
 
             <div class="grids">
-                <div class="grid sm-100 lg-70 xl-75">
+                <div class="grid sm-100 lg-70 xl-75" data-aos="fade-up" data-aos-delay="300">
 
                     <!-- Tab -->
                     <div class="tab-container">
@@ -268,7 +268,7 @@
 
                 </div>
 
-                <div class="grid sm-100 lg-30 xl-25">
+                <div class="grid sm-100 lg-30 xl-25" data-aos="fade-up" data-aos-delay="600">
                     <!-- Slots -->
                     <div class="slots bg-color4">
                         <div class="slot bg-color0">
@@ -325,7 +325,7 @@
         <div class="container">
             <div class="contents">
 
-                <div class="content">
+                <div class="content" data-aos="fade-up" data-aos-delay="0">
                     <div class="ss-img square bradius-0">
                         <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
                     </div>
@@ -386,7 +386,7 @@
                     </div>
                 </div>
 
-                <div class="content">
+                <div class="content" data-aos="fade-up" data-aos-delay="300">
                     <div class="ss-img vertical bradius-0">
                         <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
                     </div>
@@ -431,7 +431,7 @@
                     </div>
                 </div>
 
-                <div class="content">
+                <div class="content" data-aos="fade-up" data-aos-delay="600">
 
                     <div class="ss-side-menu">
                         <a class="menu" href="#">
@@ -525,7 +525,7 @@
         </div>
     </section>
 
-    <section class="section-padding">
+    <section class="section-padding" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
             <div class="ss-header">
                 <div class="ss">ข่</div><h1>าวสารกรมอนามัยและอื่นๆ</h1>
@@ -625,7 +625,7 @@
     
     <section class="call-01" style="background-image:url('./assets/img/default/banner-01.jpg');">
         <div class="container">
-            <div class="contents">
+            <div class="contents" data-aos="fade-up" data-aos-delay="0">
                 <div class="text-container">
                     <h3 class="fw-400">ลงทะเบียนรับข้อมูลเพื่อสุขภาพ</h3>
                     <p>
@@ -650,7 +650,7 @@
 
     <section class="call-02">
         <div class="container">
-            <div class="contents">
+            <div class="contents" data-aos="fade-up" data-aos-delay="0">
                 <div class="content">
                     <a class="ss-h5 fw-400" href="#">
                         ลิงค์หน่วยงานภายในกระทรวงสาธารณสุข
@@ -672,14 +672,14 @@
 
     <section class="client-01">
         <div class="container">
-            <div class="clients">
+            <div class="clients" data-aos="fade-up" data-aos-delay="0">
                 <?php for($i=0; $i<6; $i++){?>
                     <a class="client" href="#">
                         <img src="./assets/img/default/client-01.jpg" alt="Client 01 <?php echo $i; ?>" />
-                        <div class="name">
+                        <h6 class="name">
                             ศาลปกครอง <br>
                             สาระดีดีจากศาลปกครอง
-                        </div>
+                        </h6>
                     </a>
                 <?php }?>
             </div>

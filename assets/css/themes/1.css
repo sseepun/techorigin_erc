@@ -28,6 +28,12 @@ html, body{background:#000; color:#fff;}
 .hamburger > *{background:#414243;}
 
 
+/* Breadcrumb */
+.breadcrumb a{color:#fff;}
+.breadcrumb .breadcrumb-container{background:#000; border-color:#fff;}
+.breadcrumb a:hover, .breadcrumb a:last-child{color:#fff;}
+
+
 /* Colors */
 .color-white{color:#fff!important;}
 .color-black{color:#fff!important;}
@@ -152,7 +158,7 @@ table.table .icon.icon-download, table.table .icon.icon-dot{color:#000; backgrou
 /* Special & Typography */
 .ss-date{color:#fff;}
 h1, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h4, .ss-h5{color:#fff;}
-p, .ss-p{color:#fff;}
+h6, .ss-h6, p, .ss-p{color:#fff;}
 
 /* Special Header */
 .ss-header, .ss-header > h1{color:#fff;}
@@ -193,7 +199,7 @@ p, .ss-p{color:#fff;}
 
 /* Content 01 */
 .content-01 .content .text-container::after{background:#fff;}
-.content-01 .content .order, .content-01 .content:hover .order, .content-01 .content p,
+.content-01 .content .order, .content-01 .content:hover .order, .content-01 .content h6,
 .content-01 .content .banner{color:#fff;}
 .content-01 .content:nth-child(8n+1) .banner{background:#96ac40;}
 .content-01 .content:nth-child(8n+2) .banner{background:#ecd150;}
@@ -205,7 +211,7 @@ p, .ss-p{color:#fff;}
 .content-01 .content:nth-child(8n) .banner{background:#0d838d;}
 @media screen and (max-width:767.98px){
     .content-01 .content .order{color:#fff!important;}
-    .content-01 .content p, .content-01 .content:hover p{color:#fff;}
+    .content-01 .content h6, .content-01 .content:hover p{color:#fff;}
 }
 
 

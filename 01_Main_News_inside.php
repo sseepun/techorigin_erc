@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
