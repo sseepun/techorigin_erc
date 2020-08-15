@@ -29,19 +29,6 @@ html, body{background:#000; color:#fff;}
 
 
 /* Colors */
-.color0{color:#47484d!important; color:var(--color0)!important;}
-.color1{color:#1d684a!important; color:var(--color1)!important;}
-.color2{color:#c0ca67!important; color:var(--color2)!important;}
-.color3{color:#284e51!important; color:var(--color3)!important;}
-.color4{color:#0d838d!important; color:var(--color4)!important;}
-.color5{color:#d7d8d0!important; color:var(--color5)!important;}
-.bg-color0{background:#47484d!important; background:var(--color0)!important;}
-.bg-color1{background:#1d684a!important; background:var(--color1)!important;}
-.bg-color2{background:#c0ca67!important; background:var(--color2)!important;}
-.bg-color0{background:#284e51!important; background:var(--color3)!important;}
-.bg-color4{background:#0d838d!important; background:var(--color4)!important;}
-.bg-color5{background:#d7d8d0!important; background:var(--color5)!important;}
-
 .color-white{color:#fff!important;}
 .color-black{color:#fff!important;}
 .bg-white{background:#fff!important;}
@@ -205,15 +192,25 @@ p, .ss-p{color:#fff;}
 
 
 /* Content 01 */
-.content-01 .content .banner > .icon{color:#fff;}
-.content-01 .content .banner > .order{color:#fff;}
-.content-01 .content .banner,
-.content-01 .content .text-container::before{background:#000;}
-.content-01 .content .text-container{color:#fff;}
-.content-01 .content:hover .text-container h1{color:#fff;}
+.content-01 .content .text-container::after{background:#fff;}
+.content-01 .content .order, .content-01 .content:hover .order, .content-01 .content p,
+.content-01 .content .banner{color:#fff;}
+.content-01 .content:nth-child(8n+1) .banner{background:#96ac40;}
+.content-01 .content:nth-child(8n+2) .banner{background:#ecd150;}
+.content-01 .content:nth-child(8n+3) .banner{background:#5b8bb1;}
+.content-01 .content:nth-child(8n+4) .banner{background:#58c8bc;}
+.content-01 .content:nth-child(8n+5) .banner{background:#fe9a42;}
+.content-01 .content:nth-child(8n+6) .banner{background:#d0505d;}
+.content-01 .content:nth-child(8n+7) .banner{background:#f0c195;}
+.content-01 .content:nth-child(8n) .banner{background:#0d838d;}
+@media screen and (max-width:767.98px){
+    .content-01 .content .order{color:#fff!important;}
+    .content-01 .content p, .content-01 .content:hover p{color:#fff;}
+}
 
 
 /* Content 02 */
+.content-02{border-bottom:1px solid #fff;}
 .content-02 .content{background:#000;}
 .content-02 .content:nth-child(2){border-color:#fff;}
 .content-02 .question-container .ss-header{border-color:#fff;}

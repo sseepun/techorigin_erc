@@ -3,19 +3,6 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-<style>
-/* Slot */
-.slot{
-    position:relative; width:100%; padding:1.5rem 1.5rem 5rem 1.5rem; overflow:visible;
-    border-radius:.625rem .625rem 0 0; transform:translateY(-.625rem);
-}
-.slot:first-child{transform:translateY(0);}
-.slot:last-child{
-    padding:1.5rem 1.5rem 10rem 1.5rem;
-    -webkit-mask-image:linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, #000, #000,
-        rgba(0,0,0,.5), rgba(0,0,0,0));
-}
-</style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
@@ -43,26 +30,25 @@
         </div>
     </section>
 
-    <!-- Content 01 -->
-    <!-- <section class="content-01">
+    <section class="content-01">
         <div class="container">
             <div class="contents">
                 <?php for($i=0; $i<8; $i++){?>
                     <a class="content" href="#">
                         <div class="wrapper">
+                            <div class="text-container">
+                                <p>ระเบียงคุณธรรม</p>
+                            </div>
                             <div class="banner">
                                 <i class="icon far fa-chart-bar"></i>
-                                <div class="order"><?php echo sprintf('%02d', $i+1); ?></div>
                             </div>
-                            <div class="text-container">
-                                <h1>ระเบียงคุณธรรม</h1>
-                            </div>
+                            <div class="order"><?php echo sprintf('%02d', $i+1); ?></div>
                         </div>
                     </a>
                 <?php }?>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="section-padding">
         <div class="container">
@@ -283,39 +269,51 @@
                 </div>
 
                 <div class="grid sm-100 lg-30 xl-25">
-                    <!-- Slot -->
-                    <div class="slot" style="background:#272c30;">
-                        <div class="ss-header color-white-info">
-                            <div class="ss">วี</div><h1 class="fw-300">ดิโอ</h1>
-                            <p>& สื่อมัลติมีเดีย</p>
-                        </div>
-                        <div class="ss-video bradius-0">
-                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
-                            <div class="play-container">
-                                <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
-                                    <i class="fas fa-play"></i>
+                    <!-- Slots -->
+                    <div class="slots bg-color4">
+                        <div class="slot bg-color0">
+                            <div class="ss-header color-white-info">
+                                <div class="ss">วี</div><h1 class="fw-300">ดิโอ</h1>
+                                <p>& สื่อมัลติมีเดีย</p>
+                            </div>
+                            <div class="ss-video bradius-0">
+                                <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                <div class="play-container">
+                                    <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ss-tags">
+                                <div class="ss-tag type-3"></div>
+                                <div class="ss-tag type-4"></div>
+                            </div>
+                            <div class="ss-date color-white">02.04.2563</div>
+                            <a class="ss-h3 color-white" href="#">
+                                การปฏิบัติด้านสุขอนามัยในห้างสรรพสินค้าและศูนย์การค้า
+                            </a>
+                            <p class="color-white">
+                                ห้างสรรพสินค้าและศูนย์การค้าเป็นแหล่งนัดพบที่มีคนมาใช้บริการมากมาย...
+                            </p>
+                            <div class="btns">
+                                <a class="btn btn-action btn-secondary next-icon" href="#">
+                                    ดูวิดีโอทั้งหมด
                                 </a>
                             </div>
                         </div>
-                        <div class="ss-tags">
-                            <div class="ss-tag type-3"></div>
-                            <div class="ss-tag type-4"></div>
+                        <div class="slot bg-color4">
+                            <div class="ss-header color-white">
+                                <div class="ss">อั</div><h1 class="fw-300">ลบั้มภาพ</h1>
+                                <p>พร้อมอัพเดท</p>
+                            </div>
+                            <p class="color-white no-margin">สาระสุขภาพทันสมัยให้คุณเข้าใจง่าย</p>
+                            <h2 class="color1 no-margin">ไม่ตกเทรนด์!</h2>
+                            <div class="btns">
+                                <a class="btn btn-action btn-primary next-icon" href="#">
+                                    อัลบั้มภาพทั้งหมด
+                                </a>
+                            </div>
                         </div>
-                        <div class="ss-date">02.04.2563</div>
-                        <a class="ss-h3 color-white" href="#">
-                            การปฏิบัติด้านสุขอนามัยในห้างสรรพสินค้าและศูนย์การค้า
-                        </a>
-                        <p class="color-white">
-                            ห้างสรรพสินค้าและศูนย์การค้าเป็นแหล่งนัดพบที่มีคนมาใช้บริการมากมาย...
-                        </p>
-                        <div class="btns">
-                            <a class="btn btn-action btn-secondary next-icon" href="#">
-                                ดูวิดีโอทั้งหมด
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slot" style="background:#1d5c7d; height:600px;">
-
                     </div>
                 </div>
             </div>
@@ -523,6 +521,104 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="ss-header">
+                <div class="ss">ข่</div><h1>าวสารกรมอนามัยและอื่นๆ</h1>
+                <p>รับทราบทุกสถาณการณ์ข่าวสารทั้งหน่วยงานภายในและส่วนภูมิภาค</p>
+            </div>
+            <div class="tab-container">
+                <div class="tabs">
+                    <div class="tab active" data-tab="1">
+                        <div class="icon"><i class="far fa-building"></i></div>
+                        <div class="text-container">
+                            <div class="title">
+                                <span>01.</span> ข่าวจากหน่วยงานส่วนกลาง
+                            </div>
+                            <div class="desc">กรมอนามัย</div>
+                        </div>
+                    </div>
+                    <div class="tab" data-tab="2">
+                        <div class="icon"><i class="far fa-building"></i></div>
+                        <div class="text-container">
+                            <div class="title">
+                                <span>02.</span> ข่าวจากหน่วยงานส่วนกลาง
+                            </div>
+                            <div class="desc">กรมอนามัย</div>
+                        </div>
+                    </div>
+                    <div class="tab" data-tab="3">
+                        <div class="icon"><i class="far fa-building"></i></div>
+                        <div class="text-container">
+                            <div class="title">
+                                <span>03.</span> ข่าวจากหน่วยงานส่วนกลาง
+                            </div>
+                            <div class="desc">กรมอนามัย</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents">
+                    <?php for($i=1; $i<4; $i++){?>
+                        <div class="tab-content <?php if($i==1)echo 'active'; ?>" data-tab="<?php echo $i; ?>">
+                            <div class="grids">
+                                <?php for($j=0; $j<3; $j++){?>
+                                    <div class="grid sm-1-3">
+                                        <div class="ss-card">
+                                            <div class="block">
+                                                <div class="ss-img square">
+                                                    <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                                    <div class="socials">
+                                                        <ul>
+                                                            <li><a class="social social-fw" href="#">
+                                                                <i class="fab fa-facebook-f"></i>
+                                                            </a></li>
+                                                            <li><a class="social social-tw" href="#">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a></li>
+                                                            <li><a class="social social-ig" href="#">
+                                                                <i class="fab fa-instagram"></i>
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="block">
+                                                <div class="ss-tags">
+                                                    <div class="ss-tag type-10"></div>
+                                                </div>
+                                                <div class="ss-date">02.04.2563</div>
+                                                <a class="ss-h5" href="#">
+                                                    กรมอนามัย แนะ 10 วิธีกินแบบพอเพียงช่วงโควิด 19
+                                                    สร้างร่างกายแข็งแรง ไร้พุง
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php }?>
+                            </div>
+                        </div>
+                    <?php }?>
+                    <div class="pagination no-margin">
+                        <div class="wrapper">
+                            <a href="#" class="page-btn page-first disabled"></a>
+                            <a href="#" class="page-btn page-prev disabled"></a>
+                            <a href="#" class="page-btn active">01</a>
+                            <a href="#" class="page-btn">02</a>
+                            <a href="#" class="page-btn">03</a>
+                            <a href="#" class="page-btn">04</a>
+                            <a href="#" class="page-btn">05</a>
+                            <a href="#" class="page-btn page-next"></a>
+                            <a href="#" class="page-btn page-last"></a>
+                            <a class="btn btn-action btn-sm btn-primary next-icon" href="#">
+                                หน้าข่าวทั้งหมด
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
