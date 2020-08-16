@@ -50,8 +50,6 @@
         .content-04 {padding-top:2rem;}
         .content-04 .text-container {display:flex; flex-wrap:wrap;}
         .content-04 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
-        .content-04 .text-container .icon.type-3 {background-color:var(--color3);}
-        .content-04 .text-container .icon.type-4 {background-color:var(--color4);}
         /* Reverse icon direction */
         .content-04 .text-container .icon .far.fa-images {transform: rotateY(180deg);}
         .content-04 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
@@ -147,7 +145,7 @@
                     <!-- Related files -->
                     <div class="content-04">
                         <div class="text-container">
-                            <div class="icon type-3"><i class="far fa-file-alt"></i></div>
+                            <div class="icon bg-color3"><i class="far fa-file-alt"></i></div>
                             <div class="title">ไฟล์ที่เกี่ยวข้อง</div>
                         </div>
                         <!-- Asset Table -->
@@ -180,7 +178,7 @@
                     <!-- Related News -->
                     <div class="content-04">
                         <div class="text-container">
-                            <div class="icon type-4"><i class="far fa-images"></i></div>
+                            <div class="icon bg-color4"><i class="far fa-images"></i></div>
                             <div class="title">ข่าวที่เกี่ยวข้อง</div>
                         </div>
                         <div class="grids">
