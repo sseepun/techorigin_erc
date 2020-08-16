@@ -46,6 +46,13 @@
         .content-03 .container ul {font-size:125%;}
         .content-03 .container .content ul{list-style:none;}
 
+        /* content-04 */
+        .content-04 .text-container {display:flex; flex-wrap:wrap;}
+        .content-04 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; background-color: var(--color4); border-radius: .3125rem;}
+        /* Reverse icon direction */
+        .content-04 .text-container .icon .far.fa-images {transform: rotateY(180deg);}
+        .content-04 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
+
         /* Right banner */
         .banner-top{height:50%; }
         .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
@@ -127,39 +134,69 @@
                         </div>
                     </div>
 
-
-                    <!-- Related News -->
-                    <a href="#" class="ss-h2"><i class="far fa-building"></i> ข่าวที่เกี่ยวข้อง</a>
-                    <div class="grids">
-                        <?php for($i=0; $i<4; $i++){?>
-                            <div class="grid md-25 card">
-                                <div class="ss-img square">
-                                    <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
-                                    <div class="socials">
-                                        <ul>
-                                            <li><a href="#" class="social social-fw">
-                                                <i class="fab fa-facebook f"></i>
-                                            </a></li>
-                                            <li><a href="#" class="social social-tw">
-                                                <i class="fab fa-twitter"></i>
-                                            </a></li>
-                                            <li><a href="#" class="social social-ig">
-                                                <i class="fab fa-instagram"></i>
-                                            </a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                                <div class="ss-tags">
-                                    <div class="ss-tag type-6"></div>
-                                </div>
-                                <div class="ss-date">02.04.2564</div>
-                                <a href="#" class="ss-h5">
-                                    กรมอนามัย เตือน คนติดหวานแม้ดื่มสูตรน้ำตาล 0% เสี่ยงอ้วน
-                                </a>
-                            </div>
-                        <?php }?>
+                    <!-- Related files -->
+                    <div class="content-04">
+                        <div class="text-container">
+                            <div class="icon"><i class="far fa-building"></i></div>
+                            <div class="title">ไฟล์ที่เกี่ยวข้อง</div>
+                        </div>
+                        <!-- Asset Table -->
+                        <div class="table-wrapper" data-simplebar>
+                            <table class="table asset-table">
+                                <tbody>
+                                    <tr>
+                                        <td><img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" /></td>
+                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                        <td>15 MB</td>
+                                        <td>
+                                            <a href="#">
+                                                <img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+                    
+                    <!-- Related News -->
+                    <div class="content-04">
+                        <div class="text-container">
+                            <div class="icon"><i class="far fa-images"></i></div>
+                            <div class="title">ข่าวที่เกี่ยวข้อง</div>
+                        </div>
+                        <div class="grids">
+                            <?php for($i=0; $i<4; $i++){?>
+                                <div class="grid md-25 card">
+                                    <div class="ss-img square">
+                                        <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                        <div class="socials">
+                                            <ul>
+                                                <li><a href="#" class="social social-fw">
+                                                    <i class="fab fa-facebook f"></i>
+                                                </a></li>
+                                                <li><a href="#" class="social social-tw">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a></li>
+                                                <li><a href="#" class="social social-ig">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ss-tags">
+                                        <div class="ss-tag type-6"></div>
+                                    </div>
+                                    <div class="ss-date">02.04.2564</div>
+                                    <a href="#" class="ss-h5">
+                                        กรมอนามัย เตือน คนติดหวานแม้ดื่มสูตรน้ำตาล 0% เสี่ยงอ้วน
+                                    </a>
+                                </div>
+                            <?php }?>
+                        </div>
+                    </div>
+                    
                 </div>
                 <!-- Right banner -->
                 <div class="grid lg-25 md-100 sm-100 right-banner">
