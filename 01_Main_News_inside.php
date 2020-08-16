@@ -47,12 +47,22 @@
         .content-03 .container .content ul{list-style:none;}
 
         /* content-04 */
+        .content-04 {padding-top:2rem;}
         .content-04 .text-container {display:flex; flex-wrap:wrap;}
-        .content-04 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; background-color: var(--color4); border-radius: .3125rem;}
+        .content-04 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
+        .content-04 .text-container .icon.type-3 {background-color:var(--color3);}
+        .content-04 .text-container .icon.type-4 {background-color:var(--color4);}
         /* Reverse icon direction */
         .content-04 .text-container .icon .far.fa-images {transform: rotateY(180deg);}
         .content-04 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
-
+        /* Table */
+        .content-04 .table-wrapper .table.file-table td {position:relative; border:none;}
+        .content-04 .table-wrapper .table.file-table td::before { content:''; position:absolute; top:0; background:var(--color5); width:100%; height:.0625rem;}
+        .content-04 .table-wrapper .table.file-table td:first-child {width:2.5rem;}
+        .content-04 .table-wrapper .table.file-table td:last-child {text-align:left; display:flex; justify-content:flex-end; align-items:center;}
+        .content-04 .table-wrapper .table.file-table .img-icon {height:2.5rem;}
+        .content-04 .table-wrapper .table.file-table a.download-btn { font-size:70%; text-decoration:none; background-color: var(--color3); padding:.25rem; color:#fff; border-radius: .3125rem;}
+        .content-04 .table-wrapper .table.file-table a.download-btn i {font-size:70%; color:var(--color3); background-color:#fff; padding:.25rem; border-radius:.25rem;}
         /* Right banner */
         .banner-top{height:50%; }
         .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
@@ -137,20 +147,28 @@
                     <!-- Related files -->
                     <div class="content-04">
                         <div class="text-container">
-                            <div class="icon"><i class="far fa-building"></i></div>
+                            <div class="icon type-3"><i class="far fa-file-alt"></i></div>
                             <div class="title">ไฟล์ที่เกี่ยวข้อง</div>
                         </div>
                         <!-- Asset Table -->
                         <div class="table-wrapper" data-simplebar>
-                            <table class="table asset-table">
+                            <table class="table file-table">
                                 <tbody>
                                     <tr>
                                         <td><img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" /></td>
-                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
-                                        <td>15 MB</td>
+                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้ <br> ขนาดไฟล์ 30.31 MB   จำนวนดาวน์โหลด 200 ครั้ง</td>
                                         <td>
-                                            <a href="#">
-                                                <img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" />
+                                            <a href="#" class="download-btn">
+                                                <i class="fas fa-arrow-down"></i> คลิกเพื่อดาวน์โหลด
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" /></td>
+                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้ <br> ขนาดไฟล์ 30.31 MB   จำนวนดาวน์โหลด 200 ครั้ง</td>
+                                        <td>
+                                            <a href="#" class="download-btn">
+                                                <i class="fas fa-arrow-down"></i> คลิกเพื่อดาวน์โหลด
                                             </a>
                                         </td>
                                     </tr>
@@ -162,7 +180,7 @@
                     <!-- Related News -->
                     <div class="content-04">
                         <div class="text-container">
-                            <div class="icon"><i class="far fa-images"></i></div>
+                            <div class="icon type-4"><i class="far fa-images"></i></div>
                             <div class="title">ข่าวที่เกี่ยวข้อง</div>
                         </div>
                         <div class="grids">
