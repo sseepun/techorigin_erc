@@ -59,10 +59,8 @@
         .content-04 .table-wrapper .table.file-table td:first-child {width:2.5rem;}
         .content-04 .table-wrapper .table.file-table td:last-child {text-align:left; display:flex; justify-content:flex-end; align-items:center;}
         .content-04 .table-wrapper .table.file-table .img-icon {height:2.5rem;}
-        .content-04 .table-wrapper .table.file-table a.download-btn { font-size:70%; text-decoration:none; background-color: var(--color3); padding:.25rem; color:#fff; border-radius: .3125rem;}
-        .content-04 .table-wrapper .table.file-table a.download-btn i {font-size:70%; color:var(--color3); background-color:#fff; padding:.25rem; border-radius:.25rem;}
-        /* Related photos */
-        .content-04 .ss-img.rect {border-radius:0 !important;}
+        .content-04 .table-wrapper .table.file-table a.download-btn { font-size:70%; text-decoration:none; padding:.25rem; color:#fff; border-radius: .3125rem;}
+        .content-04 .table-wrapper .table.file-table a.download-btn i {font-size:70%;  background-color:#fff; padding:.25rem; border-radius:.25rem;}
         
         /* gallery-01 */
         .gallery-01 {padding-top:2rem;}
@@ -180,8 +178,8 @@
                                         <td><img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" /></td>
                                         <td>ดาวน์โหลดอินโฟกราฟฟิกนี้ <br> ขนาดไฟล์ 30.31 MB   จำนวนดาวน์โหลด 200 ครั้ง</td>
                                         <td>
-                                            <a href="#" class="download-btn">
-                                                <i class="fas fa-arrow-down"></i> คลิกเพื่อดาวน์โหลด
+                                            <a href="#" class="download-btn bg-color4">
+                                                <i class="fas fa-arrow-down color4"></i> คลิกเพื่อดาวน์โหลด
                                             </a>
                                         </td>
                                     </tr>
@@ -189,8 +187,8 @@
                                         <td><img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" /></td>
                                         <td>ดาวน์โหลดอินโฟกราฟฟิกนี้ <br> ขนาดไฟล์ 30.31 MB   จำนวนดาวน์โหลด 200 ครั้ง</td>
                                         <td>
-                                            <a href="#" class="download-btn">
-                                                <i class="fas fa-arrow-down"></i> คลิกเพื่อดาวน์โหลด
+                                            <a href="#" class="download-btn bg-color4">
+                                                <i class="fas fa-arrow-down color4"></i> คลิกเพื่อดาวน์โหลด
                                             </a>
                                         </td>
                                     </tr>
