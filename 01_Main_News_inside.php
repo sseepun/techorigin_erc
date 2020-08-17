@@ -54,8 +54,10 @@
         .content-04 .text-container .icon .far.fa-images {transform: rotateY(180deg);}
         .content-04 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
         /* Table */
+        .content-04 .table-wrapper .table.file-table::before { content:''; position:absolute; top:0.4375rem; left:0; background:var(--color5); width:100%; height:.0625rem;}
         .content-04 .table-wrapper .table.file-table td {position:relative; border:none;}
-        .content-04 .table-wrapper .table.file-table td::before { content:''; position:absolute; top:0; background:var(--color5); width:100%; height:.0625rem;}
+        .content-04 .table-wrapper .table.file-table tr {transform:scale(1);} /* position:relative does not work with tr */
+        .content-04 .table-wrapper .table.file-table tr::after { content:''; position:absolute; bottom:0; left:0; background:var(--color5); width:100%; height:.0625rem;}
         .content-04 .table-wrapper .table.file-table td:first-child {width:2.5rem;}
         .content-04 .table-wrapper .table.file-table td:last-child {text-align:left; display:flex; justify-content:flex-end; align-items:center;}
         .content-04 .table-wrapper .table.file-table .img-icon {height:2.5rem;}
