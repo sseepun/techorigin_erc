@@ -6,7 +6,7 @@
     <style>
         .main-news-inside {padding:2rem 0;}
         /* Banner 02 */
-        .banner-02 .container {width: inherit; position:relative;}
+        .banner-02 { position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
         /* date display */
@@ -129,7 +129,6 @@
                 <div class="grid lg-75 md-100 sm-100">
                     <!-- Banner 02 -->
                     <div class="banner-02">
-                        <div class="container">
                             <div class="img-container">
                                 <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
                                 </div>
@@ -145,7 +144,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <div class="content-03">
                         <div class="container">
