@@ -50,8 +50,6 @@
         .content-04 {padding-top:2rem;}
         .content-04 .text-container {display:flex; flex-wrap:wrap;}
         .content-04 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
-        /* Reverse icon direction */
-        .content-04 .text-container .icon .far.fa-images {transform: rotateY(180deg);}
         .content-04 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
         /* Table */
         .content-04 .table-wrapper .table.file-table::before { content:''; position:absolute; top:0.4375rem; left:0; background:var(--color5); width:100%; height:.0625rem;}
@@ -63,6 +61,30 @@
         .content-04 .table-wrapper .table.file-table .img-icon {height:2.5rem;}
         .content-04 .table-wrapper .table.file-table a.download-btn { font-size:70%; text-decoration:none; background-color: var(--color3); padding:.25rem; color:#fff; border-radius: .3125rem;}
         .content-04 .table-wrapper .table.file-table a.download-btn i {font-size:70%; color:var(--color3); background-color:#fff; padding:.25rem; border-radius:.25rem;}
+        /* Related photos */
+        .content-04 .ss-img.rect {border-radius:0 !important;}
+        
+        /* gallery-01 */
+        .gallery-01 {padding-top:2rem;}
+        .gallery-01 .grids {justify-content: flex-start;}
+        .gallery-01 .grid{width:25%;}
+        .gallery-01 .text-container {display:flex; flex-wrap:wrap;}
+        .gallery-01 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
+        /* Reverse icon direction */
+        .gallery-01 .text-container .icon .far.fa-images {transform: rotateY(180deg);}
+        .gallery-01 .text-container .title{font-size: 2.25rem; padding-left: 1rem; }
+        .gallery-01 .img-container {position:relative; padding: 60% 0 0 0; margin-right: .25rem; cursor:pointer; overflow:hidden;}
+        .gallery-01 .img-container::before { content: ''; position:absolute; top:0; bottom:0; left:0; right:0; background: transparent; transition: background .4s;}
+        .gallery-01 .grid:nth-child(4n) .img-container{margin-right:0;}
+        .gallery-01 .img-bg {position:absolute; top:0; left:0; right:0; bottom:0; background-position:center; background-size:cover; transition: transform .4s;}
+        .gallery-01 .img-container:hover::before { background:rgba(0,0,0,0.5); z-index:1;}
+        .gallery-01 .img-container:hover .img-bg {transform: scale(1.1);}
+        /* gallery-01 responsive */
+        @media screen and (min-width: 576px) and (max-width: 767.98px){
+            .gallery-01 .grid {width: 50%;}
+            .gallery-01 .grid:nth-child(2n) .img-container{margin-right:0;}
+        }
+
         /* Right banner */
         .banner-top{height:50%; }
         .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
@@ -176,11 +198,28 @@
                             </table>
                         </div>
                     </div>
+
+                    <!-- Related photos -->
+                    <div class="gallery-01">
+                        <div class="text-container">
+                            <div class="icon bg-color4"><i class="far fa-images"></i></div>
+                            <div class="title">รูปภาพที่เกี่ยวข้อง</div>
+                        </div>
+                        <div class="grids">
+                            <?php for($i=0; $i<6; $i++){?>
+                                <div class="grid">
+                                    <div class="img-container">
+                                        <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                    </div>
+                                </div>
+                            <?php }?>
+                        </div>
+                    </div>
                     
                     <!-- Related News -->
                     <div class="content-04">
                         <div class="text-container">
-                            <div class="icon bg-color4"><i class="far fa-images"></i></div>
+                            <div class="icon bg-color5"><i class="fas fa-book"></i></div>
                             <div class="title">ข่าวที่เกี่ยวข้อง</div>
                         </div>
                         <div class="grids">
