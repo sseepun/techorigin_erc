@@ -211,10 +211,10 @@
                         <p>อัพเดททุกสาระ ข่าวสารเพื่อสุขภาพ มั่นใจไม่ตกเทรนด์</p>
                     </div>
                     
-                    <!-- Cards -->
+                    <!-- Special Card 2 -->
                     <div class="grids">
                         <?php for($i=0; $i<4; $i++){?>
-                            <div class="grid md-25 card">
+                            <div class="grid md-25 ss-card-2">
                                 <div class="ss-img square">
                                     <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
                                     <div class="socials">
@@ -232,7 +232,7 @@
                                     </div>
                                 </div>
                                 <div class="ss-tags">
-                                    <div class="ss-tag type-6"></div>
+                                    <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
                                 </div>
                                 <div class="ss-date">02.04.2563</div>
                                 <a class="ss-h5" href="#">
@@ -567,6 +567,8 @@
                             <?php for($i=1; $i<4; $i++){?>
                                 <div class="tab-content <?php if($i==1)echo 'active'; ?>" data-tab="<?php echo $i; ?>">
                                     <div class="grids">
+
+                                        <!-- Special Card -->
                                         <?php for($j=0; $j<3; $j++){?>
                                             <div class="grid sm-1-3">
                                                 <div class="ss-card">
@@ -601,6 +603,7 @@
                                                 </div>
                                             </div>
                                         <?php }?>
+
                                     </div>
                                 </div>
                             <?php }?>

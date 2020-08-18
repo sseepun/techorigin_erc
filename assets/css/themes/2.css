@@ -209,6 +209,19 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .ss-tags > .ss-tag{color:#000; background:#ffff00;}
 
 
+/* List Header */
+.list-header{border-color:#ffff00;}
+.list-header > .block{color:#ffff00;}
+.list-header select, .list-header input[type=text]{background:#ffff00; color:#000;}
+.list-header button[type=submit]{color:#000; background:#ffff00;}
+.list-header .options > a{color:#000; background:#ffff00;}
+
+/* List Footer */
+.list-footer{border-color:#ffff00;}
+.list-footer > .block{color:#ffff00;}
+.list-footer select{background:#ffff00; color:#000;}
+
+
 /* Banner 01 */
 .banner-01{border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;}
 .banner-01 .dots{background:#000;}

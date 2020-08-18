@@ -5,6 +5,8 @@ html, body{
 }
 *{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; outline:none;}
 img{display:block; border:0;}
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
+input[type=phone], select, textarea{font-family:'DB Ozone X';}
 @media screen and (max-width:1199.98px){
     html.sidenav-opened, body.sidenav-opened{overflow-y:hidden!important;}
 }
@@ -105,7 +107,7 @@ img{display:block; border:0;}
 .breadcrumb .breadcrumb-container{
     position:absolute; top:0; right:0; border-radius:0 0 .875rem .875rem; padding:.25rem .625rem;
     border-left:1px solid transparent; border-bottom:1px solid transparent;
-    border-right:1px solid transparent; 
+    border-right:1px solid transparent; text-align:center; min-width:16rem;
 }
 .breadcrumb a{
     display:inline-block; text-decoration:none; margin:.125rem .5rem; font-size:1.0625rem;
@@ -493,6 +495,12 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .ss-card > .block:nth-child(2){margin:.75rem 0 0 0;}
 }
 
+.ss-card-2 .btns{opacity:0; transition:opacity .3s;}
+.ss-card-2:hover .btns{opacity:1;}
+@media screen and (max-width:767.98px){
+    .ss-card-2 .btns{opacity:1;}
+}
+
 /* Special Side Menu */
 .ss-side-menu{width:100%;}
 .ss-side-menu .menu{
@@ -546,3 +554,54 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-tags > .ss-tag.type-9::before{content:'การออกกำลังกาย';}
 .ss-tags > .ss-tag.type-10::before{content:'ทันตสาธารณะสุข';}
 .ss-tags > .ss-tag.type-11::before{content:'อนามัยสิ่งแวดล้อม';}
+
+
+/* List Header */
+.list-header{
+    width:100%; display:flex; align-items:center; justify-content:space-between;
+    padding:.125rem 0; margin:0 0 .5rem 0;
+}
+.list-header > .block, .list-header form{display:flex; align-items:center;}
+.list-header .text-wrapper{text-align:center; font-size:1.25rem; padding:.375rem 0; font-weight:300;}
+.list-header select, .list-header input[type=text]{
+    border:1px solid transparent; box-shadow:none; outline:none; border-radius:.25rem;
+    padding:.375rem 1.125rem .375rem .375rem; font-size:1.125rem; font-weight:300;
+    margin:0; transition:border-color .3s;
+}
+.list-header select{margin:0 0 0 .25rem;}
+.list-header input[type=text]{margin:0 .25rem 0 0;}
+.list-header button[type=submit], .list-header .options > a{
+    display:inline-block; width:2.225rem; height:2.225rem; border:0; text-align:center;
+    line-height:2.225rem; font-size:1rem; margin:0;
+}
+.list-header .options > a{line-height:2.5rem;}
+@media screen and (max-width:767.98px){
+    .list-header{
+        flex-wrap:wrap; justify-content:center; padding:.625rem 0; margin:0 0 1.5rem 0;
+        border-top:1px solid transparent; border-bottom:1px solid transparent;
+    }
+    .list-header > .block, .list-header form{width:100%; justify-content:center;}
+    .list-header .text-wrapper{width:100%;}
+}
+
+/* List Footer */
+.list-footer{
+    width:100%; display:flex; align-items:center; justify-content:space-between;
+    border-top:1px solid transparent; padding:.125rem 0; margin:1.875rem 0 0 0;
+}
+.list-footer > .block{display:flex; align-items:center;}
+.list-footer .pagination{margin:0;}
+.list-footer .text-wrapper{text-align:center; font-size:1.25rem; padding:.375rem 0; font-weight:300;}
+.list-footer select{
+    border:1px solid transparent; box-shadow:none; outline:none; border-radius:.25rem;
+    padding:.375rem 1.125rem .375rem .375rem; font-size:1.125rem; font-weight:300;
+    margin:0 0 0 .25rem; transition:border-color .3s;
+}
+@media screen and (max-width:767.98px){
+    .list-footer{
+        flex-wrap:wrap; justify-content:center; padding:.625rem 0; margin:1.5rem 0 0 0;
+        border-bottom:1px solid transparent;
+    }
+    .list-footer > .block{width:100%;}
+    .list-footer .text-wrapper{width:100%;}
+}

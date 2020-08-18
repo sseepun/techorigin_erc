@@ -8,18 +8,14 @@
 </head>
 <body>
     <?php $topnavActive = 'About'; include_once('include/topnav.php'); ?>
-
-    <section class="breadcrumb">
-        <div class="container">
-            <div class="wrapper">
-                <div class="breadcrumb-container">
-                    <a href="./">หน้าแรก</a>
-                    <a href="#">รู้จักกรมอนามัย</a>
-                    <a href="#">ผู้บริหารกรมอนามัย</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+        $breadcrumb = [
+            [ 'name' => 'หน้าแรก', 'url' => './' ],
+            [ 'name' => 'รู้จักกรมอนามัย', 'url' => '#' ],
+            [ 'name' => 'ผู้บริหารกรมอนามัย', 'url' => '#' ]
+        ];
+        include_once('component/breadcrumb.php');
+    ?>
 
     <section class="about-01" style="background-image:url('./assets/img/default/banner-01.jpg');">
         <div class="container">

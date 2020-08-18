@@ -41,6 +41,10 @@ $(function(){ 'use strict';
 
         // Generate sidenav
         sidenavMenus.html( topnav.find('.bottom-menu').html() );
+
+        sidenavMenus.find('.menu.icon-menu > a').eq(0).html('หน้าแรก');
+        sidenavMenus.find('.menu.icon-menu').eq(0).removeClass('icon-menu');
+
         sidenavMenus.find('.menu.icon-menu').remove();
         sidenavMenus.find('.has-children').each(function(){
             $(this).append('<div class="dropdown-toggle"><i class="fas fa-chevron-right"></i></div>');
