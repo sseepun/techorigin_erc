@@ -41,7 +41,7 @@
         <div class="container">
             <!-- Special Header -->
             <div class="ss-header">
-                <div class="ss">ว</div><h1>ารสารออนไลน์สุขภาพ | 04. แม่และเด็ก</h1>
+                <div class="ss">ว</div><h1><span class="color2">ารสารออนไลน์สุขภาพ</span> <span class="fw-300">| 04. แม่และเด็ก</span></h1>
                 <p><strong>กรมอนามัย</strong> ส่งมอบความรู้ที่ถูกต้อง เหมาะสมในวิถีชีวิตสู่การสุขภาพดี</p>
             </div>
             <div class="grids">

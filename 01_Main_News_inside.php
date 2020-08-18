@@ -122,7 +122,7 @@
         <div class="container">
             <!-- Special Header -->
             <div class="ss-header">
-                <div class="ss">ข่</div><h1>าวประชาสัมพันธ์</h1>
+                <div class="ss">ข่</div><h1 class="color2">าวประชาสัมพันธ์</h1>
                 <p><strong>กรมอนามัย</strong> พร้อมให้ข้อมูลข่าวสารที่มีประโยชน์สำหรับคุณ</p>
             </div>
             <div class="grids">

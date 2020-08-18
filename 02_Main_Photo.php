@@ -72,7 +72,7 @@
                 <div class="grid lg-75 md-100 sm-100">
                     <!-- Special Header -->
                     <div class="ss-header">
-                        <div class="ss">ค</div><h1>ลังภาพ</h1>
+                        <div class="ss">ค</div><h1 class="color2">ลังภาพ</h1>
                         <p><strong>กรมอนามัย</strong> อัพเดท รวบรวม ภาพกิจกรรมหรือข้อมูลเพื่อประชาชน</p>
                     </div>
                     <!-- Banner 02 -->
