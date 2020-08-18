@@ -90,41 +90,58 @@
 
                     <!-- Content 02 -->
                     <div class="content-02">
-                        <div class="container">
-                            <a href="#" class="ss-h2">การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</a>
-                            <p>
-                                สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
-                                นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
-                            </p>
-                            <div class="grids">
-                                <?php for($i = 1; $i<13;$i++){?>
-                                    <div class="grid md-25 card">
-                                        <div class="wrapper">
-                                            <div class="img-container">
-                                                <div class="img-bg" style="background-image:url('./assets/img/default/blog-01.jpg');"></div>
-                                                <div class="socials">
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </div>
+                        <a href="#" class="ss-h2">การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</a>
+                        <p>
+                            สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
+                            นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
+                        </p>
+                        <div class="grids">
+                            <?php for($i = 1; $i<13;$i++){?>
+                                <div class="grid md-25 card">
+                                    <div class="wrapper">
+                                        <div class="img-container">
+                                            <div class="img-bg" style="background-image:url('./assets/img/default/blog-01.jpg');"></div>
+                                            <div class="socials">
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
                                             </div>
-                                            <div class="ss-tags">
-                                                <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
-                                            </div>
-                                            <div class="ss-date">02.04.2563</div>
-                                            <a href="#" class="ss-h5">
-                                                กรมอนามัย แนะ สปาสัตว์ สถานรับฝากเลี้ยง ปฏิบัติตามข้อแนะนำ ป้องกันโควิด-19
-                                            </a>
                                         </div>
+                                        <div class="ss-tags">
+                                            <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
+                                        </div>
+                                        <div class="ss-date">02.04.2563</div>
+                                        <a href="#" class="ss-h5">
+                                            กรมอนามัย แนะ สปาสัตว์ สถานรับฝากเลี้ยง ปฏิบัติตามข้อแนะนำ ป้องกันโควิด-19
+                                        </a>
                                     </div>
-                                <?php }?> 
-                            </div>
+                                </div>
+                            <?php }?> 
+                        </div>
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div class="pagination border-top border-bottom">
+                        <div class="wrapper">
+                            <a href="#" class="page-btn page-first disabled"></a>
+                            <a href="#" class="page-btn page-prev disabled"></a>
+                            <a href="#" class="page-btn active">01</a>
+                            <a href="#" class="page-btn">02</a>
+                            <a href="#" class="page-btn">03</a>
+                            <a href="#" class="page-btn">04</a>
+                            <a href="#" class="page-btn">05</a>
+                            <a href="#" class="page-btn page-next"></a>
+                            <a href="#" class="page-btn page-last"></a>
+                            <a class="btn btn-action btn-sm btn-primary next-icon" href="#">
+                                หน้าข่าวทั้งหมด
+                            </a>
                         </div>
                     </div>
                 </div>

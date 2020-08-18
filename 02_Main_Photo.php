@@ -4,7 +4,8 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <style>
-        .main-photo-2list {padding:7.5rem 0;}
+        .main-photo { padding: 7.5rem 0;}
+
         /* Banner 02 */
         .banner-02 { position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
@@ -39,74 +40,92 @@
             .date-display {width:25%;}
         }
 
-        /* Custom CSS for Content-05 */
-        .content-05 .grid > .wrapper {display:flex; flex-direction:column; height:100%; justify-content:space-between;}
-       
+        /* Content 02 */
+        .content-02 {overflow:hidden;}
+        .content-02 .text-container{width:100%; height:auto;}
+        .content-02 .text-container h2, .content-02 .text-container p{margin:0;}
+        .content-02 .text-container h2 {font-weight:normal; font-size:160%;}
+        .content-02 .contents {display:flex; flex-wrap:wrap; width:100%; height: auto; justify-content:space-between;}
+        .content-02 .grids .grid .img-container {position:relative; width:100%; padding:80% 0 0 0;}
+        .content-02 .grids .grid .img-container .img-bg {border-radius:10px; position:absolute; top:0; left:0; right:0; bottom:0;background-position:center; background-size:cover;}
+        .content-02 .grids .grid .img-container .img-bg::before{
+            content: ''; position:absolute; background: #97a246; opacity:0; transition: opacity .5s; border-radius:10px; width:100%; height:100%;
+        }
+        .content-02 .grids .grid .img-container:hover .img-bg::before{opacity:1;}
+        .content-02 .grids .grid .img-container .socials {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; z-index:2; position:absolute; top:0; bottom:0;left:0; right:0; padding:0;}
+        .content-02 .grids .grid .img-container .socials > a {background-color:#fffffd;pointer-events:none; display:flex; justify-content:center; align-items:center; text-decoration: none; color: #5b5966; opacity:0; height:2.125rem; width:2.125rem; font-size:100%; margin:0 .25rem; border-radius:50%; transition: transform ease .5s, opacity ease .5s;}
+        .content-02 .grids .grid .img-container .socials > a:nth-child(2n+1) {transform: translateY(-.75rem);}
+        .content-02 .grids .grid .img-container .socials > a:nth-child(2n) {transform: translateY(.75rem);}
+        .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n+1), .content-02 .grids .grid .img-container:hover .socials > a:nth-child(2n) {
+            opacity: 1; transform: translateY(0); pointer-events:auto;
+        }
+        .content-02 .grids .grid .text-container > p {margin: 0;}
+
     </style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?> 
 
-
-    <section class="main-photo-2list">
+    <section class="main-photo">
         <div class="container">
-            <!-- Special Header -->
-            <div class="ss-header">
-                <div class="ss">ค</div><h1>ลังภาพ</h1>
-                <p><strong>กรมอนามัย</strong> อัพเดท รวบรวม ภาพกิจกรรมหรือข้อมูลเพื่อประชาชน</p>
-            </div>
             <div class="grids">
                 <div class="grid lg-75 md-100 sm-100">
-                    <!-- Left side -->
+                    <!-- Special Header -->
+                    <div class="ss-header">
+                        <div class="ss">ค</div><h1>ลังภาพ</h1>
+                        <p><strong>กรมอนามัย</strong> อัพเดท รวบรวม ภาพกิจกรรมหรือข้อมูลเพื่อประชาชน</p>
+                    </div>
                     <!-- Banner 02 -->
                     <div class="banner-02">
-                        <div class="img-container">
-                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
-                            </div>
-                        </div>
-                        <div class="date-display">
-                            <div class="wrapper">
-                                <div class="day-container">
-                                    <div class="day">28</div>
+                                <div class="img-container">
+                                    <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
+                                    </div>
                                 </div>
-                                <div class="month-year-container">
-                                    <div class="month">กรกฎาคม</div>
-                                    <div class="year">2563</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-05">
-                        <div class="grids">
-                            <?php for($i = 0; $i<6; $i++){?>
-                                <div class="grid lg-100 md-50 sm-100">
-                                    <div class="grids">
-                                        <div class="grid lg-20">
-                                            <div class="ss-img square">
-                                                <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
-                                            </div>
+                                <div class="date-display">
+                                    <div class="wrapper">
+                                        <div class="day-container">
+                                            <div class="day">28</div>
                                         </div>
-                                        <div class="grid lg-80">
-                                            <div class="wrapper">
-                                                <div class="info">
-                                                    <div class="ss-tags">
-                                                        <div class="ss-tag type-<?php echo ($i+1)%7; ?>"></div>
-                                                    </div>
-                                                    <div class="ss-date">02.04.2564</div>
-                                                    <p>มาตราการผ่อนปรนสถานประกอบการ ประเภทสถานที่ ออกกำลังกายหรือฟิตเนส ป้องกันการแพร่ระบาด...</p>
-                                                </div>
-                                                <div class="btns">
-                                                    <a class="btn btn-action btn-primary next-icon" href="#">
-                                                        รายละเอียด
-                                                    </a>
-                                                </div>
-                                            </div>
+                                        <div class="month-year-container">
+                                            <div class="month">กรกฎาคม</div>
+                                            <div class="year">2563</div>
                                         </div>
                                     </div>
                                 </div>
-                            <?php }?>
+                            </div>
+                    <!-- Content 02 -->
+                    <div class="content-02">
+                        <div class="grids">
+                            <?php for($i = 1; $i<13;$i++){?>
+                                <div class="grid md-25 card">
+                                    <div class="wrapper">
+                                        <div class="img-container">
+                                            <div class="img-bg" style="background-image:url('./assets/img/default/blog-01.jpg');"></div>
+                                            <div class="socials">
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="ss-tags">
+                                            <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
+                                        </div>
+                                        <div class="ss-date">02.04.2563</div>
+                                        <a href="#" class="ss-h5">
+                                            กรมอนามัย แนะ สปาสัตว์ สถานรับฝากเลี้ยง ปฏิบัติตามข้อแนะนำ ป้องกันโควิด-19
+                                        </a>
+                                    </div>
+                                </div>
+                            <?php }?> 
                         </div>
                     </div>
+
                     <!-- Pagination -->
                     <div class="pagination border-top border-bottom">
                         <div class="wrapper">
@@ -174,9 +193,10 @@
                     </div>
                 </div>
             </div>
+
+            
         </div>
     </section>
-
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
