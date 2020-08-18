@@ -4,7 +4,7 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <style>
-        .main-photo-inside {padding:7.5rem 0;}
+        .main-photo-inside {padding:2.5rem 0;}
 
         /* Banner 03 */
         .banner-03 {position:relative; width:100%;}
@@ -21,10 +21,9 @@
         .banner-03 .slide-container .slides-nav .slide.slick-current { border: .125rem solid var(--color4); }
         .banner-03 .slide-container .slides-nav .slide:last-child{display:none;}
         .banner-03 .slide-container .preview-container .arrows {position:absolute; padding:0 .5rem; display:flex; width:100%; justify-content: space-between; color:#fff; top:calc(50% - 1.25rem); font-size:125%; }
-        .banner-03 .slide-container .preview-container .arrows .prev, .banner-03 .slide-container .preview-container .arrows .next {transition: all .4s; opacity:0; transform: translateY(10px); width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; cursor:pointer; background: var(--color4); padding:.5rem;}
+        .banner-03 .slide-container .preview-container .arrows .prev, .banner-03 .slide-container .preview-container .arrows .next {transition: all .4s; opacity:0; transform: translateY(.625rem); width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; cursor:pointer; background: var(--color4); padding:.5rem;}
         .banner-03 .slide-container .preview-container:hover .arrows .prev, .banner-03 .slide-container .preview-container:hover .arrows .next {opacity: .8; transform: translateY(0);}
         .banner-03 .slide-container .preview-container .arrows .prev:hover, .banner-03 .slide-container .preview-container .arrows .next:hover {opacity:1;}
-        /* content-04 */
         /* content-04 */
         .content-04 {padding-top:2rem;}
         .content-04 .text-container {display:flex; flex-wrap:wrap;}
@@ -151,7 +150,7 @@
                                     </div>
                                     
                                     <div class="ss-tags">
-                                        <div class="ss-tag type-6"></div>
+                                        <div class="ss-tag type-<?php echo ($i+1)%6; ?>"></div>
                                     </div>
                                     <div class="ss-date">02.04.2564</div>
                                     <a href="#" class="ss-h5">
@@ -224,7 +223,6 @@
             if($('.banner-03').length){
                 $('.banner-03 > .slide-container').each(function(){
                     var self = $(this);
-                    console.log(self.find('> .preview-container .arrows'));
                     self.find('> .slides-nav .slides').slick({
                         draggable: false, slidesToShow: 3, centerMode:true, asNavFor: '.preview-container .slides', focusOnSelect:true, arrows:true,  dots:false, prevArrow: self.find('> .arrows .prev'), nextArrow: self.find('> .arrows .next')
                     });

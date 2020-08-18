@@ -8,7 +8,7 @@
     <?php include_once('include/topnav.php'); ?> 
     
     <style>
-        .main-news-01 {padding: 4rem 0;}
+        .main-news-01 {padding: 2.5rem 0;}
         .main-news-01 .container .right-banner {min-height:100vh;}
         
         /* Content 02 */

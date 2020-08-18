@@ -4,7 +4,7 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <style>
-        .main-photo { padding: 7.5rem 0;}
+        .main-photo { padding: 2.5rem 0;}
 
         /* Banner 02 */
         .banner-02 { position:relative;}
