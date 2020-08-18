@@ -10,7 +10,51 @@
     <style>
         .main-news-01 {padding: 2.5rem 0;}
         .main-news-01 .container .right-banner {min-height:100vh;}
-        
+        /* Banner 05 */
+        .banner-05 {position:relative; width:100%; height:50vh;}
+        .banner-05 .slide-container, .banner-05 .slide-container .slides, .banner-05 .slide-container .slides .slick-list, .banner-05 .slide-container .slides .slick-list .slick-track, .banner-05 .slide-container .slides .slick-list .slick-track .slide{
+            position:relative; width:inherit; height:inherit;
+        }
+        .main-news-01 .dots {
+            position:relative; display:flex; justify-content:center; align-items:center; padding: 1.5rem 0; overflow:hidden;
+        }
+        .main-news-01 .dots > .slick-dots {
+            display:flex; position:relative; margin:0; padding:0; list-style:none; align-items:center;
+        }
+        .main-news-01 .dots > .slick-dots button {display:none;}
+        .main-news-01 .dots li {
+            position:relative; display:block; width:.75rem; height:.75rem; background:var(--color5); margin: 0 .25rem; cursor:pointer; border-radius:.125rem;
+        }
+        .main-news-01 .dots li.slick-active {background:var(--color4)}
+        /* date display */
+        .date-display {transform: scale(0.8); transform-origin:bottom left;  position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
+        }
+        /* Effect borders */
+        .date-display::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.125rem;}
+        .date-display::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.125rem;}
+        .date-display .wrapper::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.0625rem;}
+        .date-display .wrapper::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.0625rem;}
+        .date-display .wrapper {position:relative; width:100%; height:100%; display:flex; flex-wrap:wrap;}
+        .date-display .day-container{width: 20%; height: inherit;}
+        .date-display .day-container .day {font-size:400%; height:inherit; display:flex; align-items:center; justify-content:flex-end;}
+        .date-display .month-year-container {width:80%; position:relative; padding-left:0.5rem;}
+        .date-display .month-year-container .month { width:100%; font-size:150%; position:absolute; top:calc(50% - 1.4rem);}
+        .date-display .month-year-container .year { width:100%; font-size:150%; position:absolute; top: calc(50% - 0.3rem);}
+        /* date responsive */
+        @media screen and (max-width: 991.98px) and (min-width: 768px) {
+            .date-display .day-container .day {font-size:200%;}
+            .date-display .month-year-container .month, .date-display .month-year-container .year   {font-size:100%; }
+            .date-display .month-year-container .month  {top:calc(50% - 0.9rem);}
+        }
+        @media screen and (max-width: 767.98px){
+            .date-display .day-container .day {font-size:150%;}
+            .date-display .month-year-container .month, .date-display .month-year-container .year  {font-size:80%;}
+            .date-display .month-year-container .month {top: calc(50% - 0.8rem);}
+            .date-display .month-year-container .year {top: calc(50% - 0.2rem);}
+        }
+        @media screen and (max-width: 576px) {
+            .date-display {width:25%;}
+        }
         /* Content 02 */
         .content-02 {overflow:hidden;}
         .content-02 .container {width:inherit;}
@@ -32,38 +76,6 @@
             opacity: 1; transform: translateY(0); pointer-events:auto;
         }
         .content-02 .grids .grid .text-container > p {margin: 0;}
-
-        /* Right banner */
-        .banner-top{height:50%; }
-        .banner-top .img-container {height:100%; position:relative; overflow:visible;} 
-        /* light green filter */
-        .banner-top .img-container .filter {position:absolute; width:100%; top:40%; height:100%; background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(133, 185, 147, 1), rgba(133, 185, 147, 1), rgba(133, 185, 147, 1));}
-        .banner-top .img-container img {position:absolute; z-index:1; left:calc(50% - 9.375rem); top:-3rem; width:110%;}
-        .banner-top .img-container .img-bg{position:absolute; top:0; left:0; right:0; bottom:0; background-position:top center; background-size:cover; background-image:url('./assets/img/default/banner-02.jpg');}
-        .banner-top .img-container > .grids {position:absolute; bottom: 0; opacity:0;  transition: all ease .5s; z-index:2;}
-        .banner-top .img-container:hover > .grids {opacity:1; }
-        .banner-top .img-container > .grids .grid > .grids {padding: 0.25rem 0.5rem;}
-        .banner-top .img-container > .grids .grid > .grids:first-child {background: #659e75; transition: transform .5s; transform:translateY(10px);}
-        .banner-top .img-container > .grids .grid > .grids:nth-child(2) {background: #537d55;transition: transform .5s; transform:translateY(20px);}
-        .banner-top .img-container > .grids .grid > .grids:last-child {background: #535d38;transition: transform .5s; transform:translateY(30px);}
-        .banner-top .img-container:hover > .grids .grid > .grids:first-child,  .banner-top .img-container:hover > .grids .grid > .grids:nth-child(2), .banner-top .img-container:hover > .grids .grid > .grids:last-child{transform: translateY(0);}
-        .banner-top .img-container .grids .icon-wrapper {position:relative; width:100%; height:100%;}
-        .banner-top .img-container .grids .icon-wrapper .icon {position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
-        .banner-top .img-container > .grids .grid > .grids .grid .info {color:#fff;}
-        .banner-top .img-container > .grids .grid > .grids .grid .info .order, .banner-top .img-container > .grids .grid > .grids .grid .info .category{font-size:100%;}
-        .banner-top .img-container > .grids .grid > .grids .grid .info .title {font-size:120%;}
-        .banner-bottom{position:relative; height:50%; background: linear-gradient(to bottom, rgba(44, 133, 79, 1), rgba(32, 111, 66, 1), rgba(36, 82, 69, 1),  rgba(36, 82, 69, 1), rgba(255, 255, 255, 0));}
-        .banner-bottom .text-container {position:absolute; top:calc(50% - 5.625rem); text-align:center; display:flex; flex-wrap:wrap;}
-        .banner-bottom .text-container::before{
-            content: '\201C'; color:var(--color2); position:absolute; font-family:sans-serif; font-size:300%; top: calc(0% - 2rem); left: calc(50% - .5rem);
-        }
-        .banner-bottom .text-container::after{
-            content: '\201D'; color:var(--color2); position:absolute; font-family:sans-serif; font-size:300%; bottom: calc(0% - 4rem); right: calc(50% - .5rem);
-        }
-        .banner-bottom .text-container > span {width:100%; color:#fff;}
-        .banner-bottom .text-container > span:first-child, .banner-bottom .text-container > span:last-child {font-size: 250%;}
-        .banner-bottom .text-container > span:nth-child(2) {font-size:180%;}
-        .banner-bottom .text-container > span:nth-child(3) {font-size:300%; color:#b2c43a;}
     </style>
     <section class="main-news-01">
         <div class="container">
@@ -74,27 +86,39 @@
             </div>
             <div class="grids">
                 <div class="grid lg-75 md-100 sm-100">
-                    <a class="ss-img" href="#">
-                        <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
-                        <div class="tag">
-                            <div class="date">28</div>
-                            <div class="text-container">
-                                <div class="month">กรกฎาคม</div>
-                                <div class="year">2563</div>
+                    <!-- Banner-05 -->
+                    <div class="banner-05">
+                        <div class="slide-container">
+                            <div class="slides">
+                                <?php for($i = 1; $i < 5; $i++){?>
+                                    <div class="slide" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg'); background-size:cover; background-position:center;">
+                                        <div class="date-display">
+                                            <div class="wrapper">
+                                                <div class="day-container">
+                                                    <div class="day">28</div>
+                                                </div>
+                                                <div class="month-year-container">
+                                                    <div class="month">กรกฎาคม</div>
+                                                    <div class="year">2563</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php }?> 
                             </div>
                         </div>
-                    </a>
+                    </div>
                     <div class="ss-tags">
                         <div class="ss-tag type-4"></div>
                     </div>
-
+                    <a href="#" class="ss-h2">การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</a>
+                    <p>
+                        สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
+                        นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
+                    </p>
+                    <div class="dots"></div>
                     <!-- Content 02 -->
                     <div class="content-02">
-                        <a href="#" class="ss-h2">การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</a>
-                        <p>
-                            สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
-                            นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
-                        </p>
                         <div class="grids">
                             <?php for($i = 1; $i<13;$i++){?>
                                 <div class="grid md-25 card">
@@ -145,67 +169,51 @@
                         </div>
                     </div>
                 </div>
-                <!-- Right banner -->
-                <div class="grid lg-25 md-100 sm-100 right-banner">
-                    <div class="banner-top">
-                        <div class="img-container">
-                            <img src="./assets/img/default/kid.png" alt="kid">
-                            <div class="img-bg"></div>
-                            <div class="grids">
-                                <div class="grid all-100">
-                                    <div class="grids">
-                                        <div class="grid all-20 mt-0">
-                                            <div class="icon-wrapper">
-                                                <div class="icon" style="background-image:url('./assets/img/default/icon-01.jpg');"></div>
-                                            </div>
-                                        </div>
-                                        <div class="grid all-80 mt-0">
-                                            <div class="info">
-                                                <div class="order">01.</div>
-                                                <div class="title">ข่าวจากหน่วยงานส่วนกลาง</div>
-                                                <div class="category">กรมอนามัย</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grids">
-                                        <div class="grid all-20 mt-0">
-                                            <div class="icon-wrapper">
-                                                <div class="icon" style="background-image:url('./assets/img/default/icon-01.jpg');"></div>
-                                            </div>
-                                        </div>
-                                        <div class="grid all-80 mt-0">
-                                            <div class="info">
-                                                <div class="order">01.</div>
-                                                <div class="title">ข่าวจากหน่วยงานส่วนกลาง</div>
-                                                <div class="category">กรมอนามัย</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grids">
-                                        <div class="grid all-20 mt-0">
-                                            <div class="icon-wrapper">
-                                                <div class="icon" style="background-image:url('./assets/img/default/icon-01.jpg');"></div>
-                                            </div>
-                                        </div>
-                                        <div class="grid all-80 mt-0">
-                                            <div class="info">
-                                                <div class="order">01.</div>
-                                                <div class="title">ข่าวจากหน่วยงานส่วนกลาง</div>
-                                                <div class="category">กรมอนามัย</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
+                    <!-- Slots -->
+                    <div class="slots bg-color4">
+                        <div class="slot bg-color0">
+                            <div class="ss-header color-white-info">
+                                <div class="ss">วี</div><h1 class="fw-300">ดิโอ</h1>
+                                <p>& สื่อมัลติมีเดีย</p>
+                            </div>
+                            <div class="ss-video bradius-0">
+                                <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                <div class="play-container">
+                                    <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
+                                        <i class="fas fa-play"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="filter"></div>
+                            <div class="ss-tags">
+                                <div class="ss-tag type-3"></div>
+                                <div class="ss-tag type-4"></div>
+                            </div>
+                            <div class="ss-date color-white">02.04.2563</div>
+                            <a class="ss-h3 color-white" href="#">
+                                การปฏิบัติด้านสุขอนามัยในห้างสรรพสินค้าและศูนย์การค้า
+                            </a>
+                            <p class="color-white">
+                                ห้างสรรพสินค้าและศูนย์การค้าเป็นแหล่งนัดพบที่มีคนมาใช้บริการมากมาย...
+                            </p>
+                            <div class="btns">
+                                <a class="btn btn-action btn-secondary next-icon" href="#">
+                                    ดูวิดีโอทั้งหมด
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="banner-bottom">
-                        <div class="text-container">
-                            <span>กรมอนามัย</span>
-                            <span>เรามีสาระสุขภาพดีๆ</span>
-                            <span>ส่งตรงถึงคุณ</span>
-                            <span>ทุกวัน</span>
+                        <div class="slot bg-color4">
+                            <div class="ss-header color-white">
+                                <div class="ss">อั</div><h1 class="fw-300">ลบั้มภาพ</h1>
+                                <p>พร้อมอัพเดท</p>
+                            </div>
+                            <p class="color-white no-margin">สาระสุขภาพทันสมัยให้คุณเข้าใจง่าย</p>
+                            <h2 class="color1 no-margin">ไม่ตกเทรนด์!</h2>
+                            <div class="btns">
+                                <a class="btn btn-action btn-primary next-icon" href="#">
+                                    อัลบั้มภาพทั้งหมด
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,5 +223,16 @@
  
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
+    <script>
+        if($('.banner-05').length){
+            $('.banner-05 > .slide-container').each(function(){
+                var self = $(this);
+                self.find('> .slides').slick({
+                    slidesToShow: 1, slidesToScroll: 1, dots: true, draggable: false, appendDots: $('.dots'), arrows:false
+                });
+            });
+        }
+        
+    </script>
 </body>
 </html>
