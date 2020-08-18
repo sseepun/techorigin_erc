@@ -4,12 +4,23 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <style>
-        .main-photo { padding: 2.5rem 0;}
-
-        /* Banner 02 */
-        .banner-02 { position:relative;}
-        .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
-        .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
+        .main-ebook{padding:2.5rem 0;}
+        /* Banner 05 */
+        .banner-05 {position:relative; width:100%; height:50vh;}
+        .banner-05 .slide-container, .banner-05 .slide-container .slides, .banner-05 .slide-container .slides .slick-list, .banner-05 .slide-container .slides .slick-list .slick-track, .banner-05 .slide-container .slides .slick-list .slick-track .slide{
+            position:relative; width:inherit; height:inherit;
+        }
+        .main-ebook .dots {
+            position:relative; display:flex; justify-content:center; align-items:center; padding: 1.5rem 0; overflow:hidden;
+        }
+        .main-ebook .dots > .slick-dots {
+            display:flex; position:relative; margin:0; padding:0; list-style:none; align-items:center;
+        }
+        .main-ebook .dots > .slick-dots button {display:none;}
+        .main-ebook .dots li {
+            position:relative; display:block; width:.75rem; height:.75rem; background:var(--color5); margin: 0 .25rem; cursor:pointer; border-radius:.125rem;
+        }
+        .main-ebook .dots li.slick-active {background:var(--color4)}
         /* date display */
         .date-display {transform: scale(0.8); transform-origin:bottom left;  position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
         }
@@ -60,39 +71,42 @@
             opacity: 1; transform: translateY(0); pointer-events:auto;
         }
         .content-02 .grids .grid .text-container > p {margin: 0;}
-
     </style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?> 
-
-    <section class="main-photo">
+    <section class="main-ebook">
         <div class="container">
+            <!-- Special Header -->
+            <div class="ss-header">
+                <div class="ss">ว</div><h1><span class="color2">ารสารออนไลน์สุขภาพ</span> <span class="fw-300">| 04. แม่และเด็ก</span></h1>
+                <p><strong>กรมอนามัย</strong> ส่งมอบความรู้ที่ถูกต้อง เหมาะสมในวิถีชีวิตสู่การสุขภาพดี</p>
+            </div>
             <div class="grids">
                 <div class="grid lg-75 md-100 sm-100">
-                    <!-- Special Header -->
-                    <div class="ss-header">
-                        <div class="ss">ค</div><h1 class="color2">ลังภาพ</h1>
-                        <p><strong>กรมอนามัย</strong> อัพเดท รวบรวม ภาพกิจกรรมหรือข้อมูลเพื่อประชาชน</p>
-                    </div>
-                    <!-- Banner 02 -->
-                    <div class="banner-02">
-                        <div class="img-container">
-                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
+                    <!-- Banner-05 -->
+                    <div class="banner-05">
+                        <div class="slide-container">
+                            <div class="slides">
+                                <?php for($i = 1; $i < 5; $i++){?>
+                                    <div class="slide" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg'); background-size:cover; background-position:center;">
+                                        <div class="date-display">
+                                            <div class="wrapper">
+                                                <div class="day-container">
+                                                    <div class="day">28</div>
+                                                </div>
+                                                <div class="month-year-container">
+                                                    <div class="month">กรกฎาคม</div>
+                                                    <div class="year">2563</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php }?> 
                             </div>
                         </div>
-                        <div class="date-display">
-                            <div class="wrapper">
-                                <div class="day-container">
-                                    <div class="day">28</div>
-                                </div>
-                                <div class="month-year-container">
-                                    <div class="month">กรกฎาคม</div>
-                                    <div class="year">2563</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                    <div class="dots"></div>
                     <!-- Content 02 -->
                     <div class="content-02">
                         <div class="grids">
@@ -193,11 +207,21 @@
                     </div>
                 </div>
             </div>
-
-            
         </div>
     </section>
+
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
+    <script>
+        if($('.banner-05').length){
+            $('.banner-05 > .slide-container').each(function(){
+                var self = $(this);
+                self.find('> .slides').slick({
+                    slidesToShow: 1, slidesToScroll: 1, dots: true, draggable: false, appendDots: $('.dots'), arrows:false
+                });
+            });
+        }
+        
+    </script>
 </body>
 </html>
