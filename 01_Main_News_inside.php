@@ -4,9 +4,9 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <style>
-        .main-news-inside {padding:2rem 0;}
+        .main-news-inside {padding:2.5rem 0;}
         /* Banner 02 */
-        .banner-02 .container {width: inherit; position:relative;}
+        .banner-02 { position:relative;}
         .banner-02 .img-container {position:relative; width:100%; height:100%; padding: 50% 0 0 0;}
         .banner-02 .img-container .img-bg{border-radius: 10px; position:absolute; top:0; bottom:0; left:0; right:0; background-position:center; background-size:cover;}
         /* date display */
@@ -45,6 +45,43 @@
         .content-03 .container  p {margin:0;}
         .content-03 .container ul {font-size:125%;}
         .content-03 .container .content ul{list-style:none;}
+
+        /* content-04 */
+        .content-04 {padding-top:2rem;}
+        .content-04 .text-container {display:flex; flex-wrap:wrap;}
+        .content-04 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
+        .content-04 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
+        /* Table */
+        .content-04 .table-wrapper .table.file-table::before { content:''; position:absolute; top:0.4375rem; left:0; background:var(--color5); width:100%; height:.0625rem;}
+        .content-04 .table-wrapper .table.file-table td {position:relative; border:none;}
+        .content-04 .table-wrapper .table.file-table tr {transform:scale(1);} /* position:relative does not work with tr */
+        .content-04 .table-wrapper .table.file-table tr::after { content:''; position:absolute; bottom:0; left:0; background:var(--color5); width:100%; height:.0625rem;}
+        .content-04 .table-wrapper .table.file-table td:first-child {width:2.5rem;}
+        .content-04 .table-wrapper .table.file-table td:last-child {text-align:left; display:flex; justify-content:flex-end; align-items:center;}
+        .content-04 .table-wrapper .table.file-table .img-icon {height:2.5rem;}
+        .content-04 .table-wrapper .table.file-table a.download-btn { font-size:70%; text-decoration:none; padding:.25rem; color:#fff; border-radius: .3125rem;}
+        .content-04 .table-wrapper .table.file-table a.download-btn i {font-size:70%;  background-color:#fff; padding:.25rem; border-radius:.25rem;}
+        
+        /* gallery-01 */
+        .gallery-01 {padding-top:2rem;}
+        .gallery-01 .grids {justify-content: flex-start;}
+        .gallery-01 .grid{width:25%;}
+        .gallery-01 .text-container {display:flex; flex-wrap:wrap;}
+        .gallery-01 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
+        /* Reverse icon direction */
+        .gallery-01 .text-container .icon .far.fa-images {transform: rotateY(180deg);}
+        .gallery-01 .text-container .title{font-size: 2.25rem; padding-left: 1rem; }
+        .gallery-01 .img-container {position:relative; padding: 60% 0 0 0; margin-right: .25rem; cursor:pointer; overflow:hidden;}
+        .gallery-01 .img-container::before { content: ''; position:absolute; top:0; bottom:0; left:0; right:0; background: transparent; transition: background .4s;}
+        .gallery-01 .grid:nth-child(4n) .img-container{margin-right:0;}
+        .gallery-01 .img-bg {position:absolute; top:0; left:0; right:0; bottom:0; background-position:center; background-size:cover; transition: transform .4s;}
+        .gallery-01 .img-container:hover::before { background:rgba(0,0,0,0.5); z-index:1;}
+        .gallery-01 .img-container:hover .img-bg {transform: scale(1.1);}
+        /* gallery-01 responsive */
+        @media screen and (min-width: 576px) and (max-width: 767.98px){
+            .gallery-01 .grid {width: 50%;}
+            .gallery-01 .grid:nth-child(2n) .img-container{margin-right:0;}
+        }
 
         /* Right banner */
         .banner-top{height:50%; }
@@ -85,14 +122,13 @@
         <div class="container">
             <!-- Special Header -->
             <div class="ss-header">
-                <div class="ss">ข่</div><h1>าวประชาสัมพันธ์</h1>
+                <div class="ss">ข่</div><h1 class="color2">าวประชาสัมพันธ์</h1>
                 <p><strong>กรมอนามัย</strong> พร้อมให้ข้อมูลข่าวสารที่มีประโยชน์สำหรับคุณ</p>
             </div>
             <div class="grids">
-                <div class="grid lg-75 md-100">
+                <div class="grid lg-75 md-100 sm-100">
                     <!-- Banner 02 -->
                     <div class="banner-02">
-                        <div class="container">
                             <div class="img-container">
                                 <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');">
                                 </div>
@@ -108,7 +144,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <div class="content-03">
                         <div class="container">
@@ -127,42 +162,97 @@
                         </div>
                     </div>
 
+                    <!-- Related files -->
+                    <div class="content-04">
+                        <div class="text-container">
+                            <div class="icon bg-color3"><i class="far fa-file-alt"></i></div>
+                            <div class="title">ไฟล์ที่เกี่ยวข้อง</div>
+                        </div>
+                        <!-- Asset Table -->
+                        <div class="table-wrapper" data-simplebar>
+                            <table class="table file-table">
+                                <tbody>
+                                    <tr>
+                                        <td><img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" /></td>
+                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้ <br> ขนาดไฟล์ 30.31 MB   จำนวนดาวน์โหลด 200 ครั้ง</td>
+                                        <td>
+                                            <a href="#" class="download-btn bg-color4">
+                                                <i class="fas fa-arrow-down color4"></i> คลิกเพื่อดาวน์โหลด
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" /></td>
+                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้ <br> ขนาดไฟล์ 30.31 MB   จำนวนดาวน์โหลด 200 ครั้ง</td>
+                                        <td>
+                                            <a href="#" class="download-btn bg-color4">
+                                                <i class="fas fa-arrow-down color4"></i> คลิกเพื่อดาวน์โหลด
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-                    <!-- Related News -->
-                    <a href="#" class="ss-h2"><i class="far fa-building"></i> ข่าวที่เกี่ยวข้อง</a>
-                    <div class="grids">
-                        <?php for($i=0; $i<4; $i++){?>
-                            <div class="grid md-25 card">
-                                <div class="ss-img square">
-                                    <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
-                                    <div class="socials">
-                                        <ul>
-                                            <li><a href="#" class="social social-fw">
-                                                <i class="fab fa-facebook f"></i>
-                                            </a></li>
-                                            <li><a href="#" class="social social-tw">
-                                                <i class="fab fa-twitter"></i>
-                                            </a></li>
-                                            <li><a href="#" class="social social-ig">
-                                                <i class="fab fa-instagram"></i>
-                                            </a></li>
-                                        </ul>
+                    <!-- Related photos -->
+                    <div class="gallery-01">
+                        <div class="text-container">
+                            <div class="icon bg-color4"><i class="far fa-images"></i></div>
+                            <div class="title">รูปภาพที่เกี่ยวข้อง</div>
+                        </div>
+                        <div class="grids">
+                            <?php for($i=0; $i<6; $i++){?>
+                                <div class="grid">
+                                    <div class="img-container">
+                                        <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
                                     </div>
                                 </div>
-                                
-                                <div class="ss-tags">
-                                    <div class="ss-tag type-6"></div>
-                                </div>
-                                <div class="ss-date">02.04.2564</div>
-                                <a href="#" class="ss-h5">
-                                    กรมอนามัย เตือน คนติดหวานแม้ดื่มสูตรน้ำตาล 0% เสี่ยงอ้วน
-                                </a>
-                            </div>
-                        <?php }?>
+                            <?php }?>
+                        </div>
                     </div>
+                    
+                    <!-- Related News -->
+                    <div class="content-04">
+                        <div class="text-container">
+                            <div class="icon bg-color5"><i class="fas fa-book"></i></div>
+                            <div class="title">ข่าวที่เกี่ยวข้อง</div>
+                        </div>
+                        <div class="grids">
+                            <?php for($i=0; $i<4; $i++){?>
+                                <div class="grid md-25 card">
+                                    <div class="ss-img square">
+                                        <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                        <div class="socials">
+                                            <ul>
+                                                <li><a href="#" class="social social-fw">
+                                                    <i class="fab fa-facebook f"></i>
+                                                </a></li>
+                                                <li><a href="#" class="social social-tw">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a></li>
+                                                <li><a href="#" class="social social-ig">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ss-tags">
+                                        <div class="ss-tag type-6"></div>
+                                    </div>
+                                    <div class="ss-date">02.04.2564</div>
+                                    <a href="#" class="ss-h5">
+                                        กรมอนามัย เตือน คนติดหวานแม้ดื่มสูตรน้ำตาล 0% เสี่ยงอ้วน
+                                    </a>
+                                </div>
+                            <?php }?>
+                        </div>
+                    </div>
+                    
                 </div>
                 <!-- Right banner -->
-                <div class="grid lg-25 md-100 right-banner">
+                <!-- <div class="grid lg-25 md-100 sm-100 right-banner">
                     <div class="banner-top">
                         <div class="img-container">
                             <img src="./assets/img/default/kid.png" alt="kid">
@@ -222,6 +312,54 @@
                             <span>เรามีสาระสุขภาพดีๆ</span>
                             <span>ส่งตรงถึงคุณ</span>
                             <span>ทุกวัน</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
+                    <!-- Slots -->
+                    <div class="slots bg-color4">
+                        <div class="slot bg-color0">
+                            <div class="ss-header color-white-info">
+                                <div class="ss">วี</div><h1 class="fw-300">ดิโอ</h1>
+                                <p>& สื่อมัลติมีเดีย</p>
+                            </div>
+                            <div class="ss-video bradius-0">
+                                <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                <div class="play-container">
+                                    <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ss-tags">
+                                <div class="ss-tag type-3"></div>
+                                <div class="ss-tag type-4"></div>
+                            </div>
+                            <div class="ss-date color-white">02.04.2563</div>
+                            <a class="ss-h3 color-white" href="#">
+                                การปฏิบัติด้านสุขอนามัยในห้างสรรพสินค้าและศูนย์การค้า
+                            </a>
+                            <p class="color-white">
+                                ห้างสรรพสินค้าและศูนย์การค้าเป็นแหล่งนัดพบที่มีคนมาใช้บริการมากมาย...
+                            </p>
+                            <div class="btns">
+                                <a class="btn btn-action btn-secondary next-icon" href="#">
+                                    ดูวิดีโอทั้งหมด
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slot bg-color4">
+                            <div class="ss-header color-white">
+                                <div class="ss">อั</div><h1 class="fw-300">ลบั้มภาพ</h1>
+                                <p>พร้อมอัพเดท</p>
+                            </div>
+                            <p class="color-white no-margin">สาระสุขภาพทันสมัยให้คุณเข้าใจง่าย</p>
+                            <h2 class="color1 no-margin">ไม่ตกเทรนด์!</h2>
+                            <div class="btns">
+                                <a class="btn btn-action btn-primary next-icon" href="#">
+                                    อัลบั้มภาพทั้งหมด
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

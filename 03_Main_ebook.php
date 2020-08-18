@@ -3,29 +3,24 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-</head>
-<body>
-    <?php include_once('include/topnav.php'); ?> 
-    
     <style>
-        .main-news-01 {padding: 2.5rem 0;}
-        .main-news-01 .container .right-banner {min-height:100vh;}
+        .main-ebook{padding:2.5rem 0;}
         /* Banner 05 */
         .banner-05 {position:relative; width:100%; height:50vh;}
         .banner-05 .slide-container, .banner-05 .slide-container .slides, .banner-05 .slide-container .slides .slick-list, .banner-05 .slide-container .slides .slick-list .slick-track, .banner-05 .slide-container .slides .slick-list .slick-track .slide{
             position:relative; width:inherit; height:inherit;
         }
-        .main-news-01 .dots {
+        .main-ebook .dots {
             position:relative; display:flex; justify-content:center; align-items:center; padding: 1.5rem 0; overflow:hidden;
         }
-        .main-news-01 .dots > .slick-dots {
+        .main-ebook .dots > .slick-dots {
             display:flex; position:relative; margin:0; padding:0; list-style:none; align-items:center;
         }
-        .main-news-01 .dots > .slick-dots button {display:none;}
-        .main-news-01 .dots li {
+        .main-ebook .dots > .slick-dots button {display:none;}
+        .main-ebook .dots li {
             position:relative; display:block; width:.75rem; height:.75rem; background:var(--color5); margin: 0 .25rem; cursor:pointer; border-radius:.125rem;
         }
-        .main-news-01 .dots li.slick-active {background:var(--color4)}
+        .main-ebook .dots li.slick-active {background:var(--color4)}
         /* date display */
         .date-display {transform: scale(0.8); transform-origin:bottom left;  position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
         }
@@ -55,9 +50,9 @@
         @media screen and (max-width: 576px) {
             .date-display {width:25%;}
         }
+
         /* Content 02 */
         .content-02 {overflow:hidden;}
-        .content-02 .container {width:inherit;}
         .content-02 .text-container{width:100%; height:auto;}
         .content-02 .text-container h2, .content-02 .text-container p{margin:0;}
         .content-02 .text-container h2 {font-weight:normal; font-size:160%;}
@@ -77,12 +72,15 @@
         }
         .content-02 .grids .grid .text-container > p {margin: 0;}
     </style>
-    <section class="main-news-01">
+</head>
+<body>
+    <?php include_once('include/topnav.php'); ?> 
+    <section class="main-ebook">
         <div class="container">
             <!-- Special Header -->
             <div class="ss-header">
-                <div class="ss">ข่</div><h1 class="color2">าวประชาสัมพันธ์</h1>
-                <p><strong>กรมอนามัย</strong> พร้อมให้ข้อมูลข่าวสารที่มีประโยชน์สำหรับคุณ</p>
+                <div class="ss">ว</div><h1><span class="color2">ารสารออนไลน์สุขภาพ</span> <span class="fw-300">| 04. แม่และเด็ก</span></h1>
+                <p><strong>กรมอนามัย</strong> ส่งมอบความรู้ที่ถูกต้อง เหมาะสมในวิถีชีวิตสู่การสุขภาพดี</p>
             </div>
             <div class="grids">
                 <div class="grid lg-75 md-100 sm-100">
@@ -108,14 +106,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ss-tags">
-                        <div class="ss-tag type-4"></div>
-                    </div>
-                    <a href="#" class="ss-h2">การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</a>
-                    <p>
-                        สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
-                        นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
-                    </p>
                     <div class="dots"></div>
                     <!-- Content 02 -->
                     <div class="content-02">
@@ -149,7 +139,6 @@
                             <?php }?> 
                         </div>
                     </div>
-
 
                     <!-- Pagination -->
                     <div class="pagination border-top border-bottom">
@@ -220,7 +209,7 @@
             </div>
         </div>
     </section>
- 
+
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
     <script>
