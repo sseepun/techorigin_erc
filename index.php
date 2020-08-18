@@ -30,7 +30,7 @@
         </div>
     </section>
 
-    <section class="content-01"  data-aos="fade-up" data-aos-delay="0">
+    <section class="content-01" data-aos="fade-up" data-aos-delay="0">
         <div class="container">
             <div class="contents">
                 <?php for($i=0; $i<8; $i++){?>
@@ -531,91 +531,95 @@
                 <div class="ss">ข่</div><h1>าวสารกรมอนามัยและอื่นๆ</h1>
                 <p>รับทราบทุกสถาณการณ์ข่าวสารทั้งหน่วยงานภายในและส่วนภูมิภาค</p>
             </div>
-            <div class="tab-container">
-                <div class="tabs">
-                    <div class="tab active" data-tab="1">
-                        <div class="icon"><i class="far fa-building"></i></div>
-                        <div class="text-container">
-                            <div class="title">
-                                <span>01.</span> ข่าวจากหน่วยงานส่วนกลาง
+            <div class="grids">
+                <div class="grid sm-100">
+                    <div class="tab-container">
+                        <div class="tabs">
+                            <div class="tab active" data-tab="1">
+                                <div class="icon"><i class="far fa-building"></i></div>
+                                <div class="text-container">
+                                    <div class="title">
+                                        <span>01.</span> ข่าวจากหน่วยงานส่วนกลาง
+                                    </div>
+                                    <div class="desc">กรมอนามัย</div>
+                                </div>
                             </div>
-                            <div class="desc">กรมอนามัย</div>
-                        </div>
-                    </div>
-                    <div class="tab" data-tab="2">
-                        <div class="icon"><i class="far fa-building"></i></div>
-                        <div class="text-container">
-                            <div class="title">
-                                <span>02.</span> ข่าวจากหน่วยงานส่วนกลาง
+                            <div class="tab" data-tab="2">
+                                <div class="icon"><i class="far fa-building"></i></div>
+                                <div class="text-container">
+                                    <div class="title">
+                                        <span>02.</span> ข่าวจากหน่วยงานส่วนกลาง
+                                    </div>
+                                    <div class="desc">กรมอนามัย</div>
+                                </div>
                             </div>
-                            <div class="desc">กรมอนามัย</div>
-                        </div>
-                    </div>
-                    <div class="tab" data-tab="3">
-                        <div class="icon"><i class="far fa-building"></i></div>
-                        <div class="text-container">
-                            <div class="title">
-                                <span>03.</span> ข่าวจากหน่วยงานส่วนกลาง
+                            <div class="tab" data-tab="3">
+                                <div class="icon"><i class="far fa-building"></i></div>
+                                <div class="text-container">
+                                    <div class="title">
+                                        <span>03.</span> ข่าวจากหน่วยงานส่วนกลาง
+                                    </div>
+                                    <div class="desc">กรมอนามัย</div>
+                                </div>
                             </div>
-                            <div class="desc">กรมอนามัย</div>
                         </div>
-                    </div>
-                </div>
-                <div class="tab-contents">
-                    <?php for($i=1; $i<4; $i++){?>
-                        <div class="tab-content <?php if($i==1)echo 'active'; ?>" data-tab="<?php echo $i; ?>">
-                            <div class="grids">
-                                <?php for($j=0; $j<3; $j++){?>
-                                    <div class="grid sm-1-3">
-                                        <div class="ss-card">
-                                            <div class="block">
-                                                <div class="ss-img square">
-                                                    <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
-                                                    <div class="socials">
-                                                        <ul>
-                                                            <li><a class="social social-fw" href="#">
-                                                                <i class="fab fa-facebook-f"></i>
-                                                            </a></li>
-                                                            <li><a class="social social-tw" href="#">
-                                                                <i class="fab fa-twitter"></i>
-                                                            </a></li>
-                                                            <li><a class="social social-ig" href="#">
-                                                                <i class="fab fa-instagram"></i>
-                                                            </a></li>
-                                                        </ul>
+                        <div class="tab-contents">
+                            <?php for($i=1; $i<4; $i++){?>
+                                <div class="tab-content <?php if($i==1)echo 'active'; ?>" data-tab="<?php echo $i; ?>">
+                                    <div class="grids">
+                                        <?php for($j=0; $j<3; $j++){?>
+                                            <div class="grid sm-1-3">
+                                                <div class="ss-card">
+                                                    <div class="block">
+                                                        <div class="ss-img square">
+                                                            <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                                            <div class="socials">
+                                                                <ul>
+                                                                    <li><a class="social social-fw" href="#">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a></li>
+                                                                    <li><a class="social social-tw" href="#">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a></li>
+                                                                    <li><a class="social social-ig" href="#">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="block">
+                                                        <div class="ss-tags">
+                                                            <div class="ss-tag type-10"></div>
+                                                        </div>
+                                                        <div class="ss-date">02.04.2563</div>
+                                                        <a class="ss-h5" href="#">
+                                                            กรมอนามัย แนะ 10 วิธีกินแบบพอเพียงช่วงโควิด 19
+                                                            สร้างร่างกายแข็งแรง ไร้พุง
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="block">
-                                                <div class="ss-tags">
-                                                    <div class="ss-tag type-10"></div>
-                                                </div>
-                                                <div class="ss-date">02.04.2563</div>
-                                                <a class="ss-h5" href="#">
-                                                    กรมอนามัย แนะ 10 วิธีกินแบบพอเพียงช่วงโควิด 19
-                                                    สร้างร่างกายแข็งแรง ไร้พุง
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <?php }?>
                                     </div>
-                                <?php }?>
+                                </div>
+                            <?php }?>
+                            <div class="pagination no-margin">
+                                <div class="wrapper">
+                                    <a href="#" class="page-btn page-first disabled"></a>
+                                    <a href="#" class="page-btn page-prev disabled"></a>
+                                    <a href="#" class="page-btn active">01</a>
+                                    <a href="#" class="page-btn">02</a>
+                                    <a href="#" class="page-btn">03</a>
+                                    <a href="#" class="page-btn">04</a>
+                                    <a href="#" class="page-btn">05</a>
+                                    <a href="#" class="page-btn page-next"></a>
+                                    <a href="#" class="page-btn page-last"></a>
+                                    <a class="btn btn-action btn-sm btn-primary next-icon" href="#">
+                                        หน้าข่าวทั้งหมด
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    <?php }?>
-                    <div class="pagination no-margin">
-                        <div class="wrapper">
-                            <a href="#" class="page-btn page-first disabled"></a>
-                            <a href="#" class="page-btn page-prev disabled"></a>
-                            <a href="#" class="page-btn active">01</a>
-                            <a href="#" class="page-btn">02</a>
-                            <a href="#" class="page-btn">03</a>
-                            <a href="#" class="page-btn">04</a>
-                            <a href="#" class="page-btn">05</a>
-                            <a href="#" class="page-btn page-next"></a>
-                            <a href="#" class="page-btn page-last"></a>
-                            <a class="btn btn-action btn-sm btn-primary next-icon" href="#">
-                                หน้าข่าวทั้งหมด
-                            </a>
                         </div>
                     </div>
                 </div>

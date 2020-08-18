@@ -68,8 +68,9 @@ img{display:block; border:0;}
 .field > .control.checkbox-control, .field > .control.radio-control{display:flex;}
 .field > .control.checkbox-control > input[type=checkbox],
 .field > .control.radio-control > input[type=radio]{position:absolute; opacity:0;}
-.field > .control.checkbox-control > label,
-.field > .control.radio-control > label{padding:0 0 0 1.625rem; cursor:pointer;}
+.field > .control.checkbox-control > label, .field > .control.radio-control > label{
+    width:100%; padding:0 0 0 1.625rem; cursor:pointer;
+}
 .field > .control.checkbox-control > label::before, .field > .control.checkbox-control > label::after,
 .field > .control.radio-control > label::before, .field > .control.radio-control > label::after{
     content:''; display:block; position:absolute; border-radius:50%;
