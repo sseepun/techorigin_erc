@@ -6,7 +6,7 @@
     <style>
         .main-vdo-inside {padding:2.5rem 0;}
         .main-vdo-inside .video-container {display:flex; justify-content:center; align-items:center; height:50vh; background-image:url('./assets/img/banner/01.jpg'); background-position:center; background-size:cover; border-radius: .625rem;}
-        .main-vdo-inside .video-container video{ width: calc(30vh * 16 / 9); height:30vh; border-radius: .625rem; border: .125rem solid #fff;}
+        .main-vdo-inside .video-container video{ width: calc(40vh * 16 / 9); height:40vh; border-radius: .625rem; border: .125rem solid #fff;}
         /* content-04 */
         .content-04 {padding-top:2rem;}
         .content-04 .text-container {display:flex; flex-wrap:wrap;}
