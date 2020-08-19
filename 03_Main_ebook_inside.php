@@ -23,7 +23,7 @@
         .content-04 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
         .content-04 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
          /* Table */
-         .content-04 .table-wrapper .table.file-table::before { content:''; position:absolute; top:0.4375rem; left:0; background:var(--color5); width:100%; height:.0625rem;}
+        .content-04 .table-wrapper .table.file-table::before { content:''; position:absolute; top:0.4375rem; left:0; background:var(--color5); width:100%; height:.0625rem;}
         .content-04 .table-wrapper .table.file-table td {position:relative; border:none;}
         .content-04 .table-wrapper .table.file-table tr {transform:scale(1);} /* position:relative does not work with tr */
         .content-04 .table-wrapper .table.file-table tr::after { content:''; position:absolute; bottom:0; left:0; background:var(--color5); width:100%; height:.0625rem;}
