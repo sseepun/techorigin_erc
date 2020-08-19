@@ -84,6 +84,7 @@
             </div>
             <div class="grids">
                 <div class="grid lg-75 md-100 sm-100">
+                    <?php include_once('component/list-header.php'); ?>
                     <!-- Banner-05 -->
                     <div class="banner-05">
                         <div class="slide-container">
