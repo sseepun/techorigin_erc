@@ -52,8 +52,8 @@
         <div class="container">
             <!-- Special Header -->
             <div class="ss-header">
-                <div class="ss">ว</div><h1><span class="color2">ารสารออนไลน์สุขภาพ</span> <span class="fw-300">| 04. แม่และเด็ก</span></h1>
-                <p><strong>กรมอนามัย</strong> ส่งมอบความรู้ที่ถูกต้อง เหมาะสมในวิถีชีวิตสู่การสุขภาพดี</p>
+                <div class="ss">วิ</div><h1><span class="color2">ดีโอคลิป</span></h1>
+                <p><strong>กรมอนามัย</strong> อัพเดท รวบรวมสื่อมัลติมีเดียเพื่อประชาชน</p>
             </div>
             <div class="grids">
                 <div class="grid lg-75 md-100 sm-100">
@@ -198,7 +198,6 @@
                 });
             });
         }
-        
     </script>
 </body>
 </html>

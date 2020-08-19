@@ -39,6 +39,10 @@
         .content-04 .table-wrapper .table.file-table .img-icon {height:2.5rem;}
         .content-04 .table-wrapper .table.file-table a.download-btn { font-size:70%; text-decoration:none;  padding:.25rem; color:#fff; border-radius: .3125rem;}
         .content-04 .table-wrapper .table.file-table a.download-btn i {font-size:70%; background-color:#fff; padding:.25rem; border-radius:.25rem;}
+        @media screen and (max-width: 576px){
+            .content-04 .table-wrapper .table.file-table a.download-btn {display:flex; background: #fff !important; border-radius:0; border-bottom: .125rem solid var(--color4);}
+            .content-04 .table-wrapper .table.file-table a.download-btn > span{font-size: 0;}
+        }
     </style>
 </head>
 <body>
@@ -105,7 +109,7 @@
                                         <td>อัลบั้มภาพ ชุดที่ 1.Zip <br> ขนาดไฟล์ 30.31 MB   จำนวนดาวน์โหลด 200 ครั้ง</td>
                                         <td>
                                             <a href="#" class="download-btn bg-color4">
-                                                <i class="fas fa-arrow-down color4"></i> คลิกเพื่อดาวน์โหลด
+                                                <i class="fas fa-arrow-down color4"></i> <span>คลิกเพื่อดาวน์โหลด</span>
                                             </a>
                                         </td>
                                     </tr>
@@ -114,7 +118,7 @@
                                         <td>อัลบั้มภาพ ชุดที่ 2.Zip <br> ขนาดไฟล์ 30.31 MB   จำนวนดาวน์โหลด 200 ครั้ง</td>
                                         <td>
                                             <a href="#" class="download-btn bg-color4">
-                                                <i class="fas fa-arrow-down color4"></i> คลิกเพื่อดาวน์โหลด
+                                                <i class="fas fa-arrow-down color4"></i> <span>คลิกเพื่อดาวน์โหลด</span>
                                             </a>
                                         </td>
                                     </tr>
