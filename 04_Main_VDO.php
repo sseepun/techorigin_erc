@@ -4,53 +4,25 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <style>
-        .main-ebook{padding:2.5rem 0;}
+        .main-vdo {padding:2.5rem 0;}
+        .main-vdo .video-container {display:flex; justify-content:center; align-items:center; height:50vh; background-image:url('./assets/img/banner/01.jpg'); background-position:center; background-size:cover; border-radius: .625rem;}
+        .main-vdo .video-container .ss-video{ padding:0; width: calc(40vh * 16 / 9);  height:40vh; border-radius: .625rem; border: .125rem solid #fff;}
         /* Banner 05 */
         .banner-05 {position:relative; width:100%; height:auto;}
         .banner-05 .slide-container, .banner-05 .slide-container .slides, .banner-05 .slide-container .slides .slick-list, .banner-05 .slide-container .slides .slick-list .slick-track, .banner-05 .slide-container .slides .slick-list .slick-track .slide{
             position:relative; 
         }
-        .banner-05 .slide-container .slides .slick-list .slick-track .slide {height:50vh;}
-        .main-ebook .dots {
+        .main-vdo .dots {
             position:relative; display:flex; justify-content:center; align-items:center; padding: 1.5rem 0; overflow:hidden;
         }
-        .main-ebook .dots > .slick-dots {
+        .main-vdo .dots > .slick-dots {
             display:flex; position:relative; margin:0; padding:0; list-style:none; align-items:center;
         }
-        .main-ebook .dots > .slick-dots button {display:none;}
-        .main-ebook .dots li {
+        .main-vdo .dots > .slick-dots button {display:none;}
+        .main-vdo .dots li {
             position:relative; display:block; width:.75rem; height:.75rem; background:var(--color5); margin: 0 .25rem; cursor:pointer; border-radius:.125rem;
         }
-        .main-ebook .dots li.slick-active {background:var(--color4)}
-        /* date display */
-        .date-display {transform: scale(0.8); transform-origin:bottom left;  position:absolute; bottom:2rem; width:40%; height: 15%; color:#fff; background: linear-gradient(to right, rgba(13, 147, 123, 1), rgba(255, 255, 255, 0)); 
-        }
-        /* Effect borders */
-        .date-display::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.125rem;}
-        .date-display::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(233, 248, 45, 1), rgba(9, 145, 123, 1),  rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.125rem;}
-        .date-display .wrapper::before {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; top:-0.0625rem;}
-        .date-display .wrapper::after {content: ''; position:absolute; border-top: 0.0625rem solid; border-image-source:linear-gradient(to right, rgba(9, 145, 123, 1), rgba(255, 255, 255, 0)); border-image-slice:1; width:100%; bottom:-0.0625rem;}
-        .date-display .wrapper {position:relative; width:100%; height:100%; display:flex; flex-wrap:wrap;}
-        .date-display .day-container{width: 20%; height: inherit;}
-        .date-display .day-container .day {font-size:400%; height:inherit; display:flex; align-items:center; justify-content:flex-end;}
-        .date-display .month-year-container {width:80%; position:relative; padding-left:0.5rem;}
-        .date-display .month-year-container .month { width:100%; font-size:150%; position:absolute; top:calc(50% - 1.4rem);}
-        .date-display .month-year-container .year { width:100%; font-size:150%; position:absolute; top: calc(50% - 0.3rem);}
-        /* date responsive */
-        @media screen and (max-width: 991.98px) and (min-width: 768px) {
-            .date-display .day-container .day {font-size:200%;}
-            .date-display .month-year-container .month, .date-display .month-year-container .year   {font-size:100%; }
-            .date-display .month-year-container .month  {top:calc(50% - 0.9rem);}
-        }
-        @media screen and (max-width: 767.98px){
-            .date-display .day-container .day {font-size:150%;}
-            .date-display .month-year-container .month, .date-display .month-year-container .year  {font-size:80%;}
-            .date-display .month-year-container .month {top: calc(50% - 0.8rem);}
-            .date-display .month-year-container .year {top: calc(50% - 0.2rem);}
-        }
-        @media screen and (max-width: 576px) {
-            .date-display {width:25%;}
-        }
+        .main-vdo .dots li.slick-active {background:var(--color4)}
 
         /* Content 02 */
         .content-02 {overflow:hidden;}
@@ -76,7 +48,7 @@
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?> 
-    <section class="main-ebook">
+    <section class="main-vdo">
         <div class="container">
             <!-- Special Header -->
             <div class="ss-header">
@@ -91,43 +63,40 @@
                         <div class="slide-container">
                             <div class="slides">
                                 <?php for($i = 1; $i < 5; $i++){?>
-                                    <div class="slide" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg'); background-size:cover; background-position:center;">
-                                        <div class="date-display">
-                                            <div class="wrapper">
-                                                <div class="day-container">
-                                                    <div class="day">28</div>
-                                                </div>
-                                                <div class="month-year-container">
-                                                    <div class="month">กรกฎาคม</div>
-                                                    <div class="year">2563</div>
+                                    <div class="slide">
+                                        <div class="video-container">
+                                            <div class="ss-video bradius-0">
+                                                <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                                <div class="play-container">
+                                                    <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
+                                                        <i class="fas fa-play"></i>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
+                                        <a href="#" class="ss-h2">ข้อปฎิบัติช่วงวันหยุดยาว เที่ยวอย่างไรให้ปลอดโรค</a>
+                                        <p>
+                                            สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
+                                            นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
+                                        </p>
                                     </div>
                                 <?php }?> 
                             </div>
                             <div class="dots"></div>
                         </div>
                     </div>
+                    
                     <!-- Content 02 -->
                     <div class="content-02">
                         <div class="grids">
                             <?php for($i=0; $i<12; $i++){?>
                                 <div class="grid md-25 ss-card-2">
-                                    <div class="ss-img square">
+                                    <div class="ss-video square">
                                         <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
-                                        <div class="socials">
-                                            <ul>
-                                                <li><a class="social social-fw" href="#">
-                                                    <i class="fab fa-facebook-f"></i>
-                                                </a></li>
-                                                <li><a class="social social-tw" href="#">
-                                                    <i class="fab fa-twitter"></i>
-                                                </a></li>
-                                                <li><a class="social social-ig" href="#">
-                                                    <i class="fab fa-instagram"></i>
-                                                </a></li>
-                                            </ul>
+                                        <div class="play-container">
+                                            <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
+                                                <i class="fas fa-play"></i>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="ss-tags">
@@ -144,7 +113,7 @@
                                         </a>
                                     </div>
                                 </div>
-                            <?php }?>
+                            <?php }?> 
                         </div>
                     </div>
 

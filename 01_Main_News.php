@@ -11,10 +11,11 @@
         .main-news-01 {padding: 2.5rem 0;}
         .main-news-01 .container .right-banner {min-height:100vh;}
         /* Banner 05 */
-        .banner-05 {position:relative; width:100%; height:50vh;}
+        .banner-05 {position:relative; width:100%; height:auto;}
         .banner-05 .slide-container, .banner-05 .slide-container .slides, .banner-05 .slide-container .slides .slick-list, .banner-05 .slide-container .slides .slick-list .slick-track, .banner-05 .slide-container .slides .slick-list .slick-track .slide{
-            position:relative; width:inherit; height:inherit;
+            position:relative; 
         }
+        .banner-05 .slide-container .slides .slick-list .slick-track .slide .img-bg {height:50vh; position:relative;}
         .main-news-01 .dots {
             position:relative; display:flex; justify-content:center; align-items:center; padding: 1.5rem 0; overflow:hidden;
         }
@@ -92,66 +93,73 @@
                         <div class="slide-container">
                             <div class="slides">
                                 <?php for($i = 1; $i < 5; $i++){?>
-                                    <div class="slide" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg'); background-size:cover; background-position:center;">
-                                        <div class="date-display">
-                                            <div class="wrapper">
-                                                <div class="day-container">
-                                                    <div class="day">28</div>
-                                                </div>
-                                                <div class="month-year-container">
-                                                    <div class="month">กรกฎาคม</div>
-                                                    <div class="year">2563</div>
+                                    <div class="slide">
+                                        <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg'); background-size:cover; background-position:center;">
+                                            <div class="date-display">
+                                                <div class="wrapper">
+                                                    <div class="day-container">
+                                                        <div class="day">28</div>
+                                                    </div>
+                                                    <div class="month-year-container">
+                                                        <div class="month">กรกฎาคม</div>
+                                                        <div class="year">2563</div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            
                                         </div>
+                                        <a href="#" class="ss-h2">การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</a>
+                                        <p>
+                                            สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
+                                            นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
+                                        </p>
                                     </div>
                                 <?php }?> 
                             </div>
+                            <div class="dots"></div>
                         </div>
                     </div>
                     <div class="ss-tags">
                         <div class="ss-tag type-4"></div>
                     </div>
-                    <a href="#" class="ss-h2">การจัดการด้านอาหารและโภชนาการช่วง 14 วันที่ต้องอยู่บ้าน</a>
-                    <p>
-                        สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ
-                        นอกจากจะไม่ใช้ของส่วนตัวร่วมกับผู้อื่นแล้ว ต้องเลือกปรุงและกินอาหารให้เหมาะสม ถูกหลักโภชนาการ โดยกินอาหารที่มีประโยชน์หลากหลาย
-                    </p>
-                    <div class="dots"></div>
                     <!-- Content 02 -->
                     <div class="content-02">
                         <div class="grids">
-                            <?php for($i = 1; $i<13;$i++){?>
-                                <div class="grid md-25 card">
-                                    <div class="wrapper">
-                                        <div class="img-container">
-                                            <div class="img-bg" style="background-image:url('./assets/img/default/blog-01.jpg');"></div>
-                                            <div class="socials">
-                                                <a href="#">
+                            <?php for($i=0; $i<12; $i++){?>
+                                <div class="grid md-25 ss-card-2">
+                                    <div class="ss-img square">
+                                        <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                        <div class="socials">
+                                            <ul>
+                                                <li><a class="social social-fw" href="#">
                                                     <i class="fab fa-facebook-f"></i>
-                                                </a>
-                                                <a href="#">
+                                                </a></li>
+                                                <li><a class="social social-tw" href="#">
                                                     <i class="fab fa-twitter"></i>
-                                                </a>
-                                                <a href="#">
+                                                </a></li>
+                                                <li><a class="social social-ig" href="#">
                                                     <i class="fab fa-instagram"></i>
-                                                </a>
-                                            </div>
+                                                </a></li>
+                                            </ul>
                                         </div>
-                                        <div class="ss-tags">
-                                            <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
-                                        </div>
-                                        <div class="ss-date">02.04.2563</div>
-                                        <a href="#" class="ss-h5">
-                                            กรมอนามัย แนะ สปาสัตว์ สถานรับฝากเลี้ยง ปฏิบัติตามข้อแนะนำ ป้องกันโควิด-19
+                                    </div>
+                                    <div class="ss-tags">
+                                        <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
+                                    </div>
+                                    <div class="ss-date">02.04.2563</div>
+                                    <a class="ss-h5" href="#">
+                                        กรมอนามัย แนะ 10 วิธีกินแบบพอเพียงช่วงโควิด 19
+                                        สร้างร่างกายแข็งแรง ไร้พุง
+                                    </a>
+                                    <div class="btns">
+                                        <a class="btn btn-action btn-sm btn-primary next-icon" href="#">
+                                            อ่านรายละเอียด
                                         </a>
                                     </div>
                                 </div>
-                            <?php }?> 
+                            <?php }?>
                         </div>
                     </div>
-
-
                     <!-- Pagination -->
                     <div class="pagination border-top border-bottom">
                         <div class="wrapper">
@@ -229,7 +237,7 @@
             $('.banner-05 > .slide-container').each(function(){
                 var self = $(this);
                 self.find('> .slides').slick({
-                    slidesToShow: 1, slidesToScroll: 1, dots: true, draggable: false, appendDots: $('.dots'), arrows:false
+                    slidesToShow: 1, slidesToScroll: 1, dots: true, draggable: false, appendDots: self.find('.dots'), arrows:false
                 });
             });
         }
