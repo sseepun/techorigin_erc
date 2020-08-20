@@ -10,7 +10,7 @@
     .column-01 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
     .column-01 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
     .column-01 .wrapper { position:relative; display:flex; flex-wrap:wrap; padding: 1rem 0 0 3.5rem;}
-    .column-01 .map-contents {position:relative;}
+    .column-01 .map-contents {position:relative; width:100%;}
     .column-01 .wrapper .map-contents .dot { position:absolute; width:.375rem; height:.375rem; top:0; left:-1.375rem; background:black; }
     .column-01 .wrapper .map-contents .v-line {position:absolute; width:.0625rem; height:100%; background:#777; top:0; left: -1rem;}
     .column-01 .map-contents.half {width:50%;}
