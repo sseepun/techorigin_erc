@@ -131,6 +131,19 @@ $(function(){ 'use strict';
         });
     }
 
+
+    // Special Carousel
+    if($('.ss-carousel').length){
+        $('.ss-carousel').each(function(){
+            var self = $(this);
+            self.find('> .slides').slick({
+                slidesToShow: 1, slidesToScroll: 1, 
+                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                dots: true, appendDots: self.find('> .dots'), arrows:false
+            });
+        });
+    }
+
     
     // AOS Animation
     AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });

@@ -362,6 +362,17 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     p, .ss-p{font-size:1.1875rem;}
 }
 
+/* Special List */
+.ss-list{padding:0; margin:.5rem 0; width:100%; list-style:none; font-size:1.25rem;}
+.ss-list > li{position:relative; padding:.3125rem 0 .3125rem 2rem; margin:0;}
+.ss-list > li:before{
+    content:''; position:absolute; top:.75rem; left:.8125rem; width:.4375rem; height:.4375rem;
+}
+@media screen and (max-width:767.98px){
+    .ss-list{font-size:1.1875rem;}
+}
+
+
 /* Special Banner */
 .ss-banner{position:relative; padding:.75rem 3rem .75rem 1rem;}
 .ss-banner.to-left{padding:.75rem 1rem .75rem 3rem; text-align:right;}
@@ -534,6 +545,23 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .ss-side-menu .menu:nth-child(1){margin:0;}
     .ss-side-menu .menu:nth-child(2){margin:.1875rem 0 0 0;}
 }
+
+
+/* Special Carousel */
+.ss-carousel{position:relative; width:100%; height:auto;}
+.ss-carousel > .dots{
+    position:relative; display:flex; justify-content:center; align-items:center; 
+    padding:1.5rem 0; overflow:hidden;
+}
+.ss-carousel > .dots > .slick-dots{
+    display:flex; position:relative; margin:0; padding:0; list-style:none; align-items:center;
+}
+.ss-carousel > .dots > .slick-dots button{display:none;}
+.ss-carousel > .dots li{
+    position:relative; display:block; width:.75rem; height:.75rem; margin:0 .25rem; cursor:pointer;
+    border:1px solid transparent; border-radius:.125rem; transition:background .3s;
+}
+
 
 /* Special Tags */
 .ss-tags{width:100%; margin:.5rem 0;}

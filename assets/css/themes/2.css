@@ -161,6 +161,10 @@ table.table.about-table td:nth-child(3){border-color:#ffff00;}
 h1, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h4, .ss-h5{color:#ffff00;}
 h6, .ss-h6, p, .ss-p{color:#ffff00;}
 
+/* Special List */
+.ss-list{color:#ffff00;}
+.ss-list > li:before{background:#ffff00;}
+
 /* Special Banner */
 .ss-banner{background-image:linear-gradient(to right, #000, rgba(255,255,255,0));}
 .ss-banner.to-left{background-image:linear-gradient(to left, #000, rgba(255,255,255,0));}
@@ -204,6 +208,12 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .ss-side-menu .menu .text-container > *{color:#000;}
 .ss-side-menu .menu .text-container.color-white > *{color:#ffff00;}
 .ss-side-menu .menu .text-container.color-black > *{color:#000;}
+
+
+/* Special Carousel */
+.ss-carousel > .dots li{background:transparent; border-color:#ffff00;}
+.ss-carousel > .dots li.slick-active{background:#ffff00;}
+
 
 /* Special Tags */
 .ss-tags > .ss-tag{color:#000; background:#ffff00;}
