@@ -3,9 +3,25 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
+    <style>
+        /* Bullte */
+        .bullet{position:relative; padding:1rem 0 1rem 1rem; border-bottom:1px solid #ccc;}
+        .bullet::before{
+            content:''; position:absolute; top:1rem; left:0; width:1rem; height:1rem;
+            background:red;
+        }
+    </style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
+    <?php
+        $breadcrumb = [
+            [ 'name' => 'หน้าแรก', 'url' => './' ],
+            [ 'name' => 'RSS Feed', 'url' => '#' ]
+        ];
+        include_once('component/breadcrumb.php');
+    ?>
+
     <section class="section-padding">
         <div class="container">
             <!-- Special Header -->
@@ -16,19 +32,21 @@
             <div class="grids">
                 <div class="grid sm-100 lg-70 xl-75" data-aos="fade-up" data-aos-delay="300">
                     <?php for($i=0; $i<7; $i++){?>
-                        <a class="ss-h4" href="#">
-                            <strong>ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
-                            ด้วยวิธีอิเล็กทรอนิกส์</strong>
-                        </a>
-                        <div class="ss-date color2">02.04.2563</div>
-                        <p>
-                            คอนโด หม่านโถว ไอติมชิฟฟอนอาข่าแตงกวาเซอร์ ม็อบซิ่งกรีนวีเจ 
-                            เนิร์สเซอรี่เท็กซ์ไพลินไกด์ซะ อึ๋ม เพนกวินเช็งเม้งฟลุต บัตเตอร์ฮาโลวีนมายองเนสสปอร์ต 
-                            เครปโดมิโนฟยอร์ดวิลล์ ชาร์ตเดอะสไตล์ ตาปรือกระดี๊กระด๊าอีสต์ เชฟซะมาเฟียโมจิ โฟม 
-                            แชมพูแจ็กเก็ตรีเสิร์ชโบว์ลิ่ง...
-                        </p>
-                        <div class="pagination border-top"></div>
+                        <div class="bullet">
+                            <a class="ss-h4" href="#">
+                                <strong>ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                ด้วยวิธีอิเล็กทรอนิกส์</strong>
+                            </a>
+                            <div class="ss-date color2">02.04.2563</div>
+                            <p>
+                                คอนโด หม่านโถว ไอติมชิฟฟอนอาข่าแตงกวาเซอร์ ม็อบซิ่งกรีนวีเจ 
+                                เนิร์สเซอรี่เท็กซ์ไพลินไกด์ซะ อึ๋ม เพนกวินเช็งเม้งฟลุต บัตเตอร์ฮาโลวีนมายองเนสสปอร์ต 
+                                เครปโดมิโนฟยอร์ดวิลล์ ชาร์ตเดอะสไตล์ ตาปรือกระดี๊กระด๊าอีสต์ เชฟซะมาเฟียโมจิ โฟม 
+                                แชมพูแจ็กเก็ตรีเสิร์ชโบว์ลิ่ง...
+                            </p>
+                        </div>
                     <?php }?>
+
                     <div class="pagination no-margin">
                         <div class="wrapper">
                             <a href="#" class="page-btn page-first disabled"></a>
