@@ -4,7 +4,8 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
 <style>
-    .main-sitemap {padding: 2.5rem 0;}
+    .main-sitemap {padding: 0 0 2.5rem 0;}
+    .banner-06 {padding: 2rem 0; background: linear-gradient(to right, rgba(152,146,52,1) 0%, rgba(33,77,54,1) 35%, rgba(33,78,84,1) 100%);}
     .column-01 .text-container {display:flex; flex-wrap:wrap;}
     .column-01 .text-container .icon {width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; font-size:1.5rem; padding: .5rem; color:#fff; border-radius: .3125rem;}
     .column-01 .text-container .title{font-size: 2.25rem; padding-left: 1rem;}
@@ -21,16 +22,27 @@
     .column-01 .map-content:nth-child(3)::before {display:none;}
     .column-01 .map-content::before {content: ''; position:absolute; top:0; width:100%; height:.0625rem; background: #777; opacity:.2;}
     .column-01 .map-content a { text-decoration: none; color:#777; font-size:110%;}
+    @media screen and (max-width: 991.98px) {
+        .column-01 .map-contents.half {width:100%;}
+        .column-01 .map-contents.half:first-child .map-content {width:100%;}
+    }
 </style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?> 
     <section class="main-sitemap">
         <div class="banner-06">
+            <div class="container">
+                 <!-- Special Header -->
+                 <div class="ss-header color-white">
+                    <div class="ss">แ</div><h1>ผนผังเว็บไซต์</h1>
+                    <p><strong>กรมอนามัย</strong> เพิ่มความสะดวกการจัดหมวดหมู่รายการ</p>
+                </div>
+            </div>   
         </div>
         <div class="container">
             <div class="grids">
-                <div class="grid  lg-20 md-50 sm-100 md-50 sm-100">
+                <div class="grid  lg-20 md-50 sm-100">
                     <div class="column-01">
                         <div class="text-container">
                             <div class="icon bg-color5"><i class="far fa-file-alt"></i></div>
@@ -68,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid lg-60 md-50">
+                <div class="grid lg-60 md-50 sm-100">
                     <div class="column-01">
                         <div class="text-container">
                             <div class="icon bg-color4"><i class="far fa-file-alt"></i></div>
