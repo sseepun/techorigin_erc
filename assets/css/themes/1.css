@@ -113,8 +113,15 @@ nav.footer .content .socials a{border-color:#fff;}
 nav.footer .content .socials a:hover{background:#fff; color:#000;}
 nav.footer p, nav.footer h1{color:#fff;}
 
+
 /* Back to Top */
 .back-to-top{color:#fff; background:rgba(0,0,0,.5); border-color:#fff;}
+
+/* Global Search */
+.global-search-container{background:rgba(0,0,0,.92);}
+.global-search-container .hamburger > *{background:#fff;}
+.global-search-container input[type=text]{color:#fff; border-color:#fff; background:#000;}
+.global-search-container button{color:#fff;}
 
 
 /* Calendar */

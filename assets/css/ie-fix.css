@@ -18,3 +18,9 @@
     .back-to-top{display:none;}
     .back-to-top.active{display:block;}
 }
+
+/* Global Search */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    .global-search-container{display:none;}
+    .global-search-container.active{display:block;}
+}

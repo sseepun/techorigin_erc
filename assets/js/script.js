@@ -73,6 +73,16 @@ $(function(){ 'use strict';
         }
     }
 
+    // Global Search
+    var globalSearchContainer = $('.global-search-container');
+    $('.global-search-toggle').click(function(e){
+        e.preventDefault();
+        globalSearchContainer.toggleClass('active');
+        if(globalSearchContainer.hasClass('active')){
+            globalSearchContainer.find('input[type=text]').focus();
+        }
+    });
+
 
     // Font Sizes
     var bodySize = 16;
