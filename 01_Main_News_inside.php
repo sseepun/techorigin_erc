@@ -22,8 +22,16 @@
             </div>
             <div class="grids">
                 <div class="grid lg-75 md-100 sm-100">
-
+                    <?php
+                        $contentStat = [
+                            'date' => '27.03.2563', 'view_count' => '202'
+                        ];
+                    ?>
                     <div data-aos="fade-up" data-aos-delay="300">
+                        <?php include_once('component/content-stat.php'); ?>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="600">
                         <a class="ss-img" href="#">
                             <div class="img-bg" style="background-image:url('./assets/img/banner/01.jpg');"></div>
                             <div class="tag">
@@ -127,10 +135,10 @@
                     
                 </div>
                 
-                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
+                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="900">
                     <div class="slots bg-color4">
                         <div class="slot">
-                            
+
                             <h2 class="header-text quote-text">
                                 <span class="fw-400">กรรมอนามัย</span> <br>
                                 เรามีสาระสุขภาพดีๆ <br>

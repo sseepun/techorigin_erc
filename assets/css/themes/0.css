@@ -131,6 +131,9 @@ nav.footer .content .socials a{border-color:#fff;}
 nav.footer .content .socials a:hover{background:#fff; color:#284e51; color:var(--color3);}
 nav.footer p, nav.footer h1{color:#fff;}
 
+/* Back to Top */
+.back-to-top{color:#666; background:rgba(255,255,255,.5); border-color:#666;}
+
 
 /* Calendar */
 .calendar-container{background:#fff; border-color:#cecece!important;}
@@ -293,6 +296,12 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 .list-footer > .block{color:#494949;}
 .list-footer select{background:#eaeaea; color:#494949;}
 .list-footer select:focus{border-color:#0d838d; border-color:var(--color4);}
+
+/* Content Stat */
+.content-stat{border-color:#d8d8d8;}
+.content-stat > .block{color:#494949;}
+.content-stat .icon{color:#fff; background:#47484d; background:var(--color0);}
+.content-stat .icon.icon-share:hover{background:#c0ca67; background:var(--color1);}
 
 
 /* Banner 01 */

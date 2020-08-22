@@ -113,6 +113,9 @@ nav.footer .content .socials a{border-color:#fff;}
 nav.footer .content .socials a:hover{background:#fff; color:#000;}
 nav.footer p, nav.footer h1{color:#fff;}
 
+/* Back to Top */
+.back-to-top{color:#fff; background:rgba(0,0,0,.5); border-color:#fff;}
+
 
 /* Calendar */
 .calendar-container{background:#000; border-color:#fff!important;}
@@ -243,6 +246,12 @@ h6, .ss-h6, p, .ss-p{color:#fff;}
 .list-footer{border-color:#fff;}
 .list-footer > .block{color:#fff;}
 .list-footer select{background:#fff; color:#000;}
+
+/* Content Stat */
+.content-stat{border-color:#fff;}
+.content-stat > .block{color:#fff;}
+.content-stat .icon{color:#000; background:#fff;}
+.content-stat .icon.icon-share:hover{background:#c0ca67; background:var(--color1);}
 
 
 /* Banner 01 */
