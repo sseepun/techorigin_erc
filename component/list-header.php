@@ -16,8 +16,6 @@
                 <option value="newest">ที่มาใหม่</option>
             </select>
         </div>
-    </div>
-    <div class="block">
         <div class="text-wrapper">
             <div class="options">
                 <a href="#" class="btn grid-view" data-grid-view="1">

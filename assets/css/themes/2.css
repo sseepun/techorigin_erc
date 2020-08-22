@@ -11,6 +11,9 @@ html, body{background:#000; color:#ffff00;}
 .btn.btn-success{color:#000; background:#ffff00;}
 .btn.btn-success.prev-icon::before, .btn.btn-success.next-icon::after{color:#000;}
 
+.btn.btn-icon-alert{color:#ffff00;}
+.btn.btn-icon-alert::before{background:#ce0400; color:#ffff00;}
+
 
 /* Fields & Inputs */
 .field label{color:#ffff00;}
@@ -127,7 +130,7 @@ nav.footer p, nav.footer h1{color:#ffff00;}
 
 
 /* Table */
-table.table td{color:#ffff00; border-color:#ffff00;}
+table.table td{color:#ffff00; border-color:#ffff00!important;}
 table.table .icon.icon-download, table.table .icon.icon-dot{color:#000; background:#ffff00;}
 table.table.about-table td:nth-child(3){border-color:#ffff00;}
 
@@ -154,6 +157,11 @@ table.table.about-table td:nth-child(3){border-color:#ffff00;}
 .pagination .page-btn.page-first, .pagination .page-btn.page-prev, .pagination .page-btn.page-next,
 .pagination .page-btn.page-last{color:#ffff00; border-color:#ffff00;}
 .pagination .page-btn:hover::before, .pagination .page-btn:hover::after{color:#000;}
+
+
+/* Slots */
+.slots .header-text{color:#ffff00;}
+.slots .header-text.quote-text::before, .slots .header-text.quote-text::after{color:#ffff00;}
 
 
 /* Special & Typography */
@@ -187,6 +195,7 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
     }
 }
 
+
 /* Special Header */
 .ss-header, .ss-header > h1{color:#ffff00;}
 .ss-header > .ss{color:#ffff00!important;}
@@ -194,6 +203,10 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .ss-header.color-white > p{color:#ffff00;}
 .ss-header.color-white-info, .ss-header.color-white-info > h1,
 .ss-header.color-white-info > p{color:#ffff00;}
+
+/* Special Icon Text */
+.ss-icon-title .icon{color:#000; background:#ffff00;}
+
 
 /* Special Image & Video */
 .ss-img .tag, .ss-video .tag{
