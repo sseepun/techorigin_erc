@@ -15,6 +15,10 @@ html, body{background:transparent; color:#000;}
 .btn.btn-icon-alert{color:#000;}
 .btn.btn-icon-alert::before{background:#ce0400; color:#fff;}
 
+.btn.btn-back{color:#393939;}
+.btn.btn-back::before{color:#3a3a3a; border-color:#a9a9a9;}
+.btn.btn-back:hover::before{color:#fff; background:#a9a9a9;}
+
 
 /* Fields & Inputs */
 .field label{color:#000;}

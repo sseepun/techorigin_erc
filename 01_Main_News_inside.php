@@ -22,13 +22,13 @@
             </div>
             <div class="grids">
                 <div class="grid lg-75 md-100 sm-100">
-                    <?php
-                        $contentStat = [
-                            'date' => '27.03.2563', 'view_count' => '202'
-                        ];
-                    ?>
                     <div data-aos="fade-up" data-aos-delay="300">
-                        <?php include_once('component/content-stat.php'); ?>
+                        <?php
+                            $contentStat = [
+                                'date' => '27.03.2563', 'view_count' => '202'
+                            ];
+                            include_once('component/content-stat.php');
+                        ?>
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="600">
@@ -42,6 +42,11 @@
                                 </div>
                             </div>
                         </a>
+                        <div class="btns text-right">
+                            <a class="btn btn-back" href="#">
+                                ย้อนกลับ
+                            </a>
+                        </div>
                         <div class="ss-tags">
                             <div class="ss-tag type-1"></div>
                         </div>

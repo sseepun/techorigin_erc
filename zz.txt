@@ -3,7 +3,7 @@ COMPLETE:
 
 00_Index
 01_Main_News
-01_Main_News_Inside
+NEED WORK - 01_Main_News_Inside
 02_Main_Photo
 05_Board_Of_Director
 
