@@ -6,6 +6,13 @@
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
+    <?php
+        $breadcrumb = [
+            [ 'name' => 'หน้าแรก', 'url' => './' ],
+            [ 'name' => 'วารสารออนไลน์สุขภาพ', 'url' => '#' ]
+        ];
+        include_once('component/breadcrumb.php');
+    ?>
 
     <section class="section-padding">
         <div class="container">

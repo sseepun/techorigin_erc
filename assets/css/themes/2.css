@@ -236,7 +236,7 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .ss-img .tag::before, .ss-img .tag::after, .ss-video .tag::before, .ss-video .tag::after{
     background:linear-gradient(to right, #000, #000, rgba(255,255,255,0));
 }
-.ss-video .play-icon{border-color:#ffff00; color:#ffff00;}
+.ss-video .play-icon{border-color:#ffff00; color:#ffff00; background:rgba(0,0,0,.6);}
 
 /* Special Side Menu */
 .ss-side-menu .menu .text-container > *{color:#000;}

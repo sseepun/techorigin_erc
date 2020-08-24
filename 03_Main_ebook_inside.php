@@ -9,7 +9,7 @@
     <?php
         $breadcrumb = [
             [ 'name' => 'หน้าแรก', 'url' => './' ],
-            [ 'name' => 'คลังภาพ', 'url' => '#' ]
+            [ 'name' => 'วารสารออนไลน์สุขภาพ', 'url' => '#' ]
         ];
         include_once('component/breadcrumb.php');
     ?>

@@ -587,6 +587,14 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-video .play-icon:hover{transform:scale(1.1);}
 .ss-video .play-icon > i{transform:translateX(.125rem);}
 
+.ss-video .play-container > .wrapper{
+    position:relative; width:72%; height:80%; box-shadow:rgba(58,45,45,.6) 0px 12px 24px;
+    border-radius:.625rem;
+}
+.ss-video .play-container iframe{
+    border:0; box-shadow:none; display:block; width:100%; height:100%; border-radius:.625rem;
+}
+
 @media screen and (max-width:991.98px){
     .ss-img .tag .date, .ss-video .tag .date{font-size:3.5rem; margin:0 .5625rem 0 0;}
     .ss-img .tag .month, .ss-img .tag .year, .ss-video .tag .month, .ss-video .tag .year{
