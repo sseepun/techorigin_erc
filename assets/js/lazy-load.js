@@ -12,18 +12,13 @@ $(function(){ 'use strict';
             var scrollTop = window.pageYOffset;
 
             lazyloadImgs.forEach(function(img){
-                if(img.offsetTop < (window.innerHeight + scrollTop)){
-                    console.log(
-                        img.offsetTop,
-                        img.dataset.src,
-                        window.innerHeight + scrollTop
-                    )
+                if($(img).offset().top < (window.innerHeight + scrollTop)){
                     img.src = img.dataset.src;
                     img.classList.remove('lazy-img');
                 }
             });
             lazyloadBgs.forEach(function(bg){
-                if(bg.offsetTop < (window.innerHeight + scrollTop)){
+                if($(bg).offset().top < (window.innerHeight + scrollTop)){
                     bg.style.backgroundImage = "url('" + bg.dataset.src + "')";
                     bg.classList.remove('lazy-bg');
                 }
