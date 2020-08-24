@@ -352,3 +352,8 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
     background:#ffff00;
 }
 .column-01 .map a{color:#ffff00;}
+
+
+/* Contact 01 */
+.contact-01 .contact-box{background:#000; border:1px solid #ffff00;}
+.contact-01 .contact-tabs, .contact-01 .contact-tab{border-color:#ffff00;}

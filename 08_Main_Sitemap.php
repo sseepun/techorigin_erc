@@ -14,9 +14,9 @@
         include_once('component/breadcrumb.php');
     ?>
 
-    <div class="section-padding" style="background-image:linear-gradient(to right, rgba(152,146,52,1) 0%, rgba(33,77,54,1) 35%, rgba(33,78,84,1) 100%);">
+    <div class="section-padding bg-gradient-01">
         <div class="container">
-                <div class="ss-header color-white">
+            <div class="ss-header color-white">
                 <div class="ss">แ</div><h1>ผนผังเว็บไซต์</h1>
                 <p><strong class="ml-1">กรมอนามัย</strong> เพิ่มความสะดวกการจัดหมวดหมู่รายการ</p>
             </div>
