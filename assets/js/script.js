@@ -157,16 +157,13 @@ $(function(){ 'use strict';
         $('.banner-02 > .slide-container').each(function(){
             var self = $(this);
             self.find('> .slides-nav .slides').slick({
-                draggable: false, slidesToShow: 3, centerMode: true, focusOnSelect: true,
+                draggable: false, slidesToShow: 5, centerMode: true, focusOnSelect: true,
                 asNavFor: self.find('> .preview-container .slides'), 
                 dots: false, arrows: false,
                 responsive: [
-                    {
-                        breakpoint: 767.98,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    }
+                    { breakpoint: 1199.98, settings: { slidesToShow: 4 } },
+                    { breakpoint: 767.98, settings: { slidesToShow: 3 } },
+                    { breakpoint: 575.98, settings: { slidesToShow: 2 } }
                 ]
             });
             self.find('> .preview-container .slides').slick({
@@ -174,6 +171,16 @@ $(function(){ 'use strict';
                 asNavFor: self.find('> .slides-nav .slides'), 
                 prevArrow: self.find('> .preview-container .arrows .prev'), 
                 nextArrow: self.find('> .preview-container .arrows .next')
+            });
+        });
+    }
+    // Banner 03
+    if($('.banner-03').length){
+        $('.banner-03 > .slide-container').each(function(){
+            var self = $(this);
+            self.find('> .slides').slick({
+                slidesToShow: 1, slidesToScroll: 1, draggable: false, 
+                arrows: false, dots: true, appendDots: self.find('.dots')
             });
         });
     }

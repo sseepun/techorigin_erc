@@ -6,6 +6,8 @@ COMPLETE:
 01_Main_News_Inside
 02_Main_Photo
 02_Main_Photo_Inside
+02_Main_Photo_2list_view
+03_Main_ebook
 05_Board_Of_Director
 
 

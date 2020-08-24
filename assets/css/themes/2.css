@@ -128,6 +128,10 @@ nav.footer p, nav.footer h1{color:#ffff00;}
 .global-search-container button{color:#ffff00;}
 
 
+/* Border */
+.border-top, .border-bottom{border-color:#ffff00;}
+
+
 /* Calendar */
 .calendar-container{background:#000; border-color:#ffff00!important;}
 .calendar-container .calendar header .month{color:#ffff00;}
@@ -278,7 +282,6 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .banner-01 h1, .banner-01 h2, .banner-01 h3{color:#ffff00;}
 .banner-01 .line{background:#ffff00;}
 
-
 /* Banner 02 */
 .banner-02 .preview-container .arrows > .prev, .banner-02 .preview-container .arrows > .next{
     color:#000; background:#ffff00;
@@ -286,6 +289,10 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .banner-02 .slides-nav .slide.slick-current::after{
     background:rgba(255,255,0,.3); border-color:#ffff00;
 }
+
+/* Banner 03 */
+.banner-03 .dots li{background:#fff;}
+.banner-03 .dots li.slick-active{background:#ffff00;}
 
 
 /* Content 01 */
@@ -304,7 +311,6 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
     .content-01 .content .order{color:#fff!important;}
     .content-01 .content h6, .content-01 .content:hover p{color:#fff;}
 }
-
 
 /* Content 02 */
 .content-02{border-bottom:1px solid #ffff00;}
@@ -328,7 +334,6 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .call-01{background:none!important; border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;}
 .call-01 p{color:#ffff00;}
 .call-01 h3{color:#ffff00;}
-
 
 /* Call to Action 02 */
 .call-02{border-top:1px solid #ffff00; border-bottom:1px solid #ffff00;}

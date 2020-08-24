@@ -149,6 +149,10 @@ nav.footer p, nav.footer h1{color:#fff;}
 .global-search-container button:hover{color:#c0ca67; color:var(--color1);}
 
 
+/* Border */
+.border-top, .border-bottom{border-color:#d8d8d8;}
+
+
 /* Calendar */
 .calendar-container{background:#fff; border-color:#cecece!important;}
 .calendar-container .calendar header .month{color:#000;}
@@ -330,7 +334,6 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 .banner-01 h1, .banner-01 h2, .banner-01 h3{color:#fff;}
 .banner-01 .line{background:#fff;}
 
-
 /* Banner 02 */
 .banner-02 .preview-container .arrows > .prev, .banner-02 .preview-container .arrows > .next{
     color:#fff; background:#0d838d; background:var(--color4);
@@ -338,6 +341,10 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 .banner-02 .slides-nav .slide.slick-current::after{
     background:rgba(13,131,141,.3); border-color:#0d838d; border-color:var(--color4);
 }
+
+/* Banner 03 */
+.banner-03 .dots li{opacity:1; background:#d7d8d0; background:var(--color5);}
+.banner-03 .dots li.slick-active{background:#0d838d; background:var(--color4);}
 
 
 /* Content 01 */
@@ -359,7 +366,6 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
     .content-01 .content h6{color:#fff;}
     .content-01 .content:hover p{color:#000;}
 }
-
 
 /* Content 02 */
 .content-02{
@@ -386,7 +392,6 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 /* Call to Action 01 */
 .call-01 p{color:#fff;}
 .call-01 h3{color:#0d838d; color:var(--color4);}
-
 
 /* Call to Action 02 */
 .call-02{background:#272e36;}

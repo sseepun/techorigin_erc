@@ -37,9 +37,9 @@
                         <div class="slide-container">
                             <div class="preview-container">
                                 <div class="slides">
-                                    <?php for($i = 1; $i<5; $i++){?>
+                                    <?php for($i=1; $i<7; $i++){?>
                                         <div class="slide">
-                                            <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
+                                            <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg');"></div>
                                         </div>
                                     <?php }?>
                                 </div>
@@ -50,9 +50,9 @@
                             </div>
                             <div class="slides-nav">
                                 <div class="slides">
-                                    <?php for($i = 1; $i<5; $i++){?>
+                                    <?php for($i=1; $i<7; $i++){?>
                                         <div class="slide">
-                                            <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
+                                            <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg');"></div>
                                         </div>
                                     <?php }?>
                                 </div>
