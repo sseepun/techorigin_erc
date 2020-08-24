@@ -7,8 +7,17 @@
         /* Bullte */
         .bullet{position:relative; padding:1rem 0 1rem 1rem; border-bottom:1px solid #ccc;}
         .bullet::before{
-            content:''; position:absolute; top:1rem; left:0; width:1rem; height:1rem;
-            background:red;
+            content:''; position:absolute;margin-top:2rem; top:0.1875rem; left:0; width:.4375rem; height:.4375rem;
+            background:#c0ca67;
+        }
+        .slottab{
+            color:white;display:flex;padding:.5rem .625rem .5rem .5rem;border-bottom:1px solid;
+        }
+        .slottab .icon{
+            background-color: #1d684a;width: 2.625rem;height: 2.625rem;border-radius: .25rem;text-align: center;line-height: 2.625rem;
+        }
+        .slottab .title{
+            margin: 0 0 0 .5rem;
         }
     </style>
 </head>
@@ -69,12 +78,12 @@
                         <img src="./assets/img/default/banner-01.jpg">
                         <?php for($i=1; $i<=4; $i++){?>
                         <a href="#" style="text-decoration: none">
-                            <div style="color:white;display:flex;padding:.5rem .625rem .5rem .5rem;">
-                                <div class="icon" style="background-color: #1d684a;width: 2.625rem;height: 2.625rem;border-radius: .25rem;text-align: center;line-height: 2.625rem;"><i class="far fa-building"></i></div>
-                                <div style="margin: 0 0 0 .5rem;">
-                                    <div class="title">
-                                        0<?php echo "$i"; ?>.<br>ข่าวจากหน่วยงานส่วนกลาง
-                                    </div>
+                            <div class="slottab">
+                                <div class="icon">
+                                    <i class="far fa-building"></i>
+                                </div>
+                                <div class="title">
+                                    0<?php echo "$i"; ?>.<br>ข่าวจากหน่วยงานส่วนกลาง
                                 </div>
                             </div>
                         </a>
@@ -86,18 +95,6 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-    
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>

@@ -9,6 +9,7 @@ html, body{background:transparent; color:#000;}
 .btn.btn-primary.prev-icon::before, .btn.btn-primary.next-icon::after{color:#6bc6bf;}
 .btn.btn-secondary{color:#fff; background:#0d838d; background:var(--color4);}
 .btn.btn-secondary.prev-icon::before, .btn.btn-secondary.next-icon::after{color:#6bc6bf;}
+.btn.btn-secondary.next-icon.color-white::after{color:#fff;}
 .btn.btn-success{color:#fff; background:#1d684a; background:var(--color2);}
 .btn.btn-success.prev-icon::before, .btn.btn-secondary.next-icon::after{color:#6bc6bf;}
 
