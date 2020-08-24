@@ -9,6 +9,8 @@ COMPLETE:
 02_Main_Photo_2list_view
 03_Main_ebook
 03_Main_ebook_inside
+04_Main_VDO
+04_Main_VDO_inside
 05_Board_Of_Director
 
 

@@ -344,3 +344,10 @@ h6, .ss-h6, p, .ss-p{color:#fff;}
 /* Client 01 */
 .client-01{border-top:1px solid #fff; border-bottom:1px solid #fff;}
 .client-01 .client{color:#fff;}
+
+
+/* Column 01 */
+.column-01 .dot, .column-01 .line, .column-01 .map::before, .column-01 .map li::before{
+    background:#fff;
+}
+.column-01 .map a{color:#fff;}
