@@ -1,3 +1,8 @@
+<!-- Back to Top -->
+<a class="back-to-top" href="#">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
 <!-- Footer -->
 <nav class="footer">
     <div class="top-footer">

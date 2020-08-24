@@ -5,6 +5,7 @@ $(function(){ 'use strict';
         sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container'),
         sidenavBtns = $('nav.topnav .sidenav-btn, nav.sidenav .sidenav-btn');
+    var backToTop = $('.back-to-top');
     if(topnav.length){
 
         // On Scroll
@@ -56,11 +57,31 @@ $(function(){ 'use strict';
             self.prev().slideToggle();
         });
 
+        // Back to Top
+        backToTop.click(function(e){
+            e.preventDefault();
+            $('html, body').stop().animate({ scrollTop: 0 }, 800 );
+        });
     }
     function checkOnScroll(st){
-        if(st > 400) topnav.addClass('sticky');
-        else topnav.removeClass('sticky');
+        if(st > 400){
+            topnav.addClass('sticky');
+            backToTop.addClass('active');
+        }else{
+            topnav.removeClass('sticky');
+            backToTop.removeClass('active');
+        }
     }
+
+    // Global Search
+    var globalSearchContainer = $('.global-search-container');
+    $('.global-search-toggle').click(function(e){
+        e.preventDefault();
+        globalSearchContainer.toggleClass('active');
+        if(globalSearchContainer.hasClass('active')){
+            globalSearchContainer.find('input[type=text]').focus();
+        }
+    });
 
 
     // Font Sizes
@@ -69,7 +90,8 @@ $(function(){ 'use strict';
         e.preventDefault();
         var s = Number($(this).data('size'));
         if(s==0) bodySize = 16;
-        else bodySize += s;
+        else if(s==1 || s==-1) bodySize += s;
+        else bodySize = s;
         $('html, body').css('font-size', bodySize+'px');
     });
 

@@ -264,7 +264,7 @@
                     </div>
 
                     <div class="menu icon-menu <?php if(!empty($topnavActive) && $topnavActive=='Search')echo 'active'; ?>">
-                        <a href="#">
+                        <a class="global-search-toggle" href="#">
                             <div><i class="fas fa-search"></i></div>
                         </a>
                     </div>
@@ -299,3 +299,20 @@
     </div>
 </nav>
 <div class="sidenav-filter"></div>
+
+<!-- Search Container -->
+<div class="global-search-container">
+    <div class="wrapper">
+        <div class="hamburger active global-search-toggle">
+            <div></div><div></div><div></div>
+        </div>
+        <div class="container">
+            <form action="./" method="GET">
+                <input type="text" name="keywords" placeholder="ค้นหา" required>
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
