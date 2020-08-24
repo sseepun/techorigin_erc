@@ -47,7 +47,7 @@
                     </a>
                 </div>
 
-                <div class="bottom-menu">
+                <div class="bottom-menu" id="topnav-menu-container">
 
                     <div class="menu icon-menu <?php if(!empty($topnavActive) && $topnavActive=='Home')echo 'active'; ?>">
                         <a href="./">
@@ -60,12 +60,12 @@
                         <div class="submenu-container expand-adaptive">
                             <div class="wrapper">
                                 <div class="hero">
-                                    <div class="wrapper" style="background-image:url('./assets/img/hero/bg-01.jpg');">
+                                    <div class="wrapper lazy-bg" data-src="./assets/img/hero/bg-01.jpg">
                                         <h2>รู้จักกรมอนามัย</h2>
                                         <p>
                                             ส่งเสริมสุขภาพและระบบอนามัย <br>สิ่งแวดล้อมเพื่อประชาชน
                                         </p>
-                                        <img src="./assets/img/hero/01.png" alt="Hero 01" />
+                                        <img class="lazy-img" data-src="./assets/img/hero/01.png" alt="Hero 01" />
                                     </div>
                                 </div>
                                 <div class="submenus">
@@ -178,12 +178,12 @@
                         <div class="submenu-container expand-left">
                             <div class="wrapper">
                                 <div class="hero">
-                                    <div class="wrapper" style="background-image:url('./assets/img/hero/bg-02.jpg');">
-                                        <h2 style="color:#000;">ข่าวสารกรมอนามัย</h2>
-                                        <p style="color:#000;">
+                                    <div class="wrapper lazy-bg" data-src="./assets/img/hero/bg-02.jpg">
+                                        <h2 class="color-black">ข่าวสารกรมอนามัย</h2>
+                                        <p class="color-black">
                                             ส่งเสริมสุขภาพและระบบอนามัย <br>สิ่งแวดล้อมเพื่อประชาชน
                                         </p>
-                                        <img src="./assets/img/hero/02.png" alt="Hero 02" />
+                                        <img class="lazy-img" data-src="./assets/img/hero/02.png" alt="Hero 02" />
                                     </div>
                                 </div>
                                 <div class="submenus">
@@ -239,12 +239,12 @@
                         <div class="submenu-container">
                             <div class="wrapper">
                                 <div class="hero">
-                                    <div class="wrapper" style="background-image:url('./assets/img/hero/bg-03.jpg');">
+                                    <div class="wrapper lazy-bg" data-src="./assets/img/hero/bg-03.jpg">
                                         <h2>บริการประชาชน</h2>
                                         <p>
                                             ส่งเสริมสุขภาพและระบบอนามัย <br>สิ่งแวดล้อมเพื่อประชาชน
                                         </p>
-                                        <img src="./assets/img/hero/03.png" alt="Hero 03" />
+                                        <img class="lazy-img" data-src="./assets/img/hero/03.png" alt="Hero 03" />
                                     </div>
                                 </div>
                                 <div class="submenus">

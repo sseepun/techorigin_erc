@@ -7,4 +7,6 @@
 <script src="./assets/lib/aos-2.3.1/aos.min.js"></script>
 <script src="./assets/js/script.js"></script>
 
+<script src="./assets/js/lazy-load.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>

@@ -65,7 +65,7 @@
                         <div class="icon bg-color3"><i class="far fa-file-alt"></i></div>
                         <h2>ไฟล์ที่เกี่ยวข้อง</h2>
                     </div>
-                    <div class="table-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="table-wrapper" data-simplebar data-aos="fade-up" data-aos-delay="300">
                         <table class="table download-table">
                             <tbody>
                                 <?php foreach(['doc', 'docx', 'pdf', 'ppt', 'pptx'] as $f){?>

@@ -183,6 +183,9 @@ table.table.about-table td:nth-child(3){border-color:#ffff00;}
 h1, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h4, .ss-h5{color:#ffff00;}
 h6, .ss-h6, p, .ss-p{color:#ffff00;}
 
+/* Special Quote */
+.ss-quote{color:#ffff00;}
+
 /* Special List */
 .ss-list{color:#ffff00;}
 .ss-list > li:before{background:#ffff00;}

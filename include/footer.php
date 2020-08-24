@@ -124,8 +124,8 @@
                 <div class="content">
                     Copyright 2020 Department of Health : Ministry of Public Health
                     <div class="imgs">
-                        <img src="./assets/img/icon/ipv6.png" alt="Footer Icon 1" />
-                        <img src="./assets/img/icon/w3c.png" alt="Footer Icon 2" />
+                        <img class="lazy-img" data-src="./assets/img/icon/ipv6.png" alt="Footer Icon 1" />
+                        <img class="lazy-img" data-src="./assets/img/icon/w3c.png" alt="Footer Icon 2" />
                     </div>
                 </div>
                 <div class="content">

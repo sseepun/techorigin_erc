@@ -205,6 +205,7 @@ nav.sidenav .menu > a{
     padding:1rem 2rem 1rem 1rem; margin:0; font-size:1.25rem; font-weight:400;
     border-bottom:1px solid transparent; min-height:3.3125rem; transition:color .3s, background .3s;
 }
+nav.sidenav .menu > a i{display:inline-block; font-size:.875rem; width:2rem;}
 
 nav.sidenav .submenu-container{display:none;}
 nav.sidenav .submenu-container .hero{display:none;}
@@ -257,6 +258,7 @@ nav.footer .content h1{
 }
 nav.footer .content .links, nav.footer .content .socials{margin:0; padding:0; list-style:none;}
 nav.footer .content .links > li{margin:.375rem 0 0 0; padding:0;}
+nav.footer .content .links i{display:inline-block; font-size:.75rem; width:1.25rem;}
 nav.footer .content .socials{display:flex; align-items:center; flex-wrap:wrap; margin:1.75rem 0 0 0;}
 nav.footer .content .socials a{
     display:flex; justify-content:center; align-items:center; width:2.3125rem; height:2.3125rem;

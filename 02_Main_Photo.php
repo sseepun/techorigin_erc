@@ -77,18 +77,14 @@
 
                 <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
                     <div class="slots bg-color4">
-                        <div class="slot bg-color4">
-                            <div class="ss-header color-white">
-                                <div class="ss">อั</div><h1 class="fw-300">ลบั้มภาพ</h1>
-                                <p>พร้อมอัพเดท</p>
-                            </div>
-                            <p class="color-white no-margin">สาระสุขภาพทันสมัยให้คุณเข้าใจง่าย</p>
-                            <h2 class="color1 no-margin">ไม่ตกเทรนด์!</h2>
-                            <div class="btns">
-                                <a class="btn btn-action btn-primary next-icon" href="#">
-                                    อัลบั้มภาพทั้งหมด
-                                </a>
-                            </div>
+                        <div class="slot">
+                        
+                            <h2 class="header-text quote-text quote-inline">
+                                คนไทย <br>
+                                <span class="text-xl fw-400 color1">ร่วมใจสู้ภัย</span> <br>
+                                <span class="text-xl">โควิด-19</span>
+                            </h2>
+
                         </div>
                     </div>
                 </div>

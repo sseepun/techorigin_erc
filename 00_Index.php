@@ -11,7 +11,7 @@
         <div class="slide-container">
             <div class="slides">
                 <?php for($i=0; $i<8; $i++){?>
-                    <div class="slide" style="background-image:url('./assets/img/banner/01.jpg');">
+                    <div class="slide lazy-bg" data-src="./assets/img/banner/01.jpg">
                         <div class="container">
                             <h2 class="animate" style="--delay:.6s;">
                                 new gen
@@ -98,7 +98,7 @@
                             <div class="tab-content active" data-tab="1">
                                 <div class="card card-lg">
                                     <a class="ss-img" href="#">
-                                        <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                        <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
                                         <div class="tag">
                                             <div class="date">28</div>
                                             <div class="text-container">
@@ -133,7 +133,7 @@
                             <div class="tab-content" data-tab="2">
                                 <div class="card card-lg">
                                     <a class="ss-img" href="#">
-                                        <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                        <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                                         <div class="tag">
                                             <div class="date">29</div>
                                             <div class="text-container">
@@ -169,7 +169,7 @@
                             <div class="tab-content" data-tab="3">
                                 <div class="card card-lg">
                                     <a class="ss-img" href="#">
-                                        <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                        <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                                         <div class="tag">
                                             <div class="date">30</div>
                                             <div class="text-container">
@@ -216,7 +216,7 @@
                         <?php for($i=0; $i<4; $i++){?>
                             <div class="grid md-25 ss-card-2">
                                 <div class="ss-img square">
-                                    <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                    <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
                                     <div class="socials">
                                         <ul>
                                             <li><a class="social social-fw" href="#">
@@ -277,7 +277,7 @@
                                 <p>& สื่อมัลติมีเดีย</p>
                             </div>
                             <div class="ss-video bradius-0">
-                                <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                                 <div class="play-container">
                                     <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
                                         <i class="fas fa-play"></i>
@@ -327,7 +327,7 @@
 
                 <div class="content" data-aos="fade-up" data-aos-delay="0">
                     <div class="ss-img square bradius-0">
-                        <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                        <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                     </div>
 
                     <!-- Calendar -->
@@ -388,7 +388,7 @@
 
                 <div class="content" data-aos="fade-up" data-aos-delay="300">
                     <div class="ss-img vertical bradius-0">
-                        <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                        <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                     </div>
                     <div class="info-card">
                         <div class="ss-tags">
@@ -415,7 +415,7 @@
                                         <td>15 MB</td>
                                         <td>
                                             <a href="#">
-                                                <img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" />
+                                                <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
                                             </a>
                                         </td>
                                     </tr>
@@ -435,28 +435,28 @@
 
                     <div class="ss-side-menu">
                         <a class="menu" href="#">
-                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                            <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                             <div class="text-container">
                                 <h3>ข่าวสาร</h3>
                                 <p>การจัดซื้อจัดจ้าง</p>
                             </div>
                         </a>
                         <a class="menu" href="#">
-                            <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                            <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
                             <div class="text-container text-right">
                                 <p>การเปิดเผย</p>
                                 <h3>ราคากลาง</h3>
                             </div>
                         </a>
                         <a class="menu" href="#">
-                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                            <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                             <div class="text-container">
                                 <h3>แผน-ผล</h3>
                                 <p>การจัดซื้อจัดจ้าง</p>
                             </div>
                         </a>
                         <a class="menu menu-lg" href="#">
-                            <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                            <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                             <div class="text-container text-right color-white">
                                 <h3>ผลสรุป</h3>
                                 <p>การดำเนินงานจัดซื้อจัดจ้าง</p>
@@ -480,7 +480,7 @@
                                             <td>15 MB</td>
                                             <td>
                                                 <a href="#">
-                                                    <img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" />
+                                                    <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
                                                 </a>
                                             </td>
                                         </tr>
@@ -505,7 +505,7 @@
                                             <td>15 MB</td>
                                             <td>
                                                 <a href="#">
-                                                    <img class="img-icon" src="./assets/img/default/pdf.png" alt="PDF" />
+                                                    <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
                                                 </a>
                                             </td>
                                         </tr>
@@ -574,7 +574,7 @@
                                                 <div class="ss-card">
                                                     <div class="block">
                                                         <div class="ss-img square">
-                                                            <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                                            <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
                                                             <div class="socials">
                                                                 <ul>
                                                                     <li><a class="social social-fw" href="#">
@@ -630,7 +630,7 @@
         </div>
     </section>
     
-    <section class="call-01" style="background-image:url('./assets/img/default/banner-01.jpg');">
+    <section class="call-01 lazy-bg" data-src="./assets/img/default/banner-01.jpg">
         <div class="container">
             <div class="contents" data-aos="fade-up" data-aos-delay="0">
                 <div class="text-container">
@@ -650,7 +650,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="hero" src="./assets/img/hero/04.png" alt="Call 01 Hero" />
+                <img class="hero lazy-img" data-src="./assets/img/hero/04.png" alt="Call 01 Hero" />
             </div>
         </div>
     </section>
@@ -682,7 +682,7 @@
             <div class="clients" data-aos="fade-up" data-aos-delay="0">
                 <?php for($i=0; $i<6; $i++){?>
                     <a class="client" href="#">
-                        <img src="./assets/img/default/client-01.jpg" alt="Client 01 <?php echo $i; ?>" />
+                        <img class="lazy-img" data-src="./assets/img/default/client-01.jpg" alt="Client 01 <?php echo $i; ?>" />
                         <h6 class="name">
                             ศาลปกครอง <br>
                             สาระดีดีจากศาลปกครอง
