@@ -31,7 +31,7 @@
                                 <div class="slide">
                                     <div class="wrapper">
                                         <a class="ss-img" href="#">
-                                            <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
+                                            <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo $i; ?>.jpg"></div>
                                             <div class="tag">
                                                 <div class="date">28</div>
                                                 <div class="text-container">
@@ -63,7 +63,7 @@
                         <?php for($i=0; $i<12; $i++){?>
                             <div class="grid md-25 ss-card-2">
                                 <div class="ss-img square">
-                                    <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                    <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                                     <div class="socials">
                                         <ul>
                                             <li><a class="social social-fw" href="#">
@@ -98,7 +98,7 @@
                     <?php include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
+                <div class="grid lg-25 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
                     <div class="slots bg-color4">
                         <div class="slot bg-color0">
                             <div class="ss-header color-white-info">
@@ -106,7 +106,7 @@
                                 <p>& สื่อมัลติมีเดีย</p>
                             </div>
                             <div class="ss-video bradius-0">
-                                <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                                 <div class="play-container">
                                     <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
                                         <i class="fas fa-play"></i>

@@ -71,6 +71,53 @@
 .loading .banner-01 .slide .animate{opacity:0!important; transform:translateY(4rem)!important;}
 
 
+/* Banner 02 */
+.banner-02{position:relative; width:100%;}
+.banner-02 .slide-container{position:relative; width:100%;}
+.banner-02 .preview-container{
+    display:block; position:relative; width:100%; overflow:hidden; border-radius:.625rem;
+}
+.banner-02 .preview-container .slide{position:relative; width:100%; padding:0; margin:0;}
+.banner-02 .preview-container .slide > .img-bg{
+    width:100%; padding:57% 0 0 0; background-position:center; background-size:cover;
+    background-repeat:no-repeat;
+}
+.banner-02 .preview-container .arrows{
+    position:absolute; display:flex; justify-content:space-between; align-items:center;
+    top:0; bottom:0; left:0; right:0; padding:0 .5rem; pointer-events:none;
+}
+.banner-02 .preview-container .arrows > .prev, .banner-02 .preview-container .arrows > .next{
+    display:block; width:2.5rem; height:2.5rem; pointer-events:auto; cursor:pointer; opacity:0;
+    text-align:center; line-height:2.75rem; font-size:1.125rem;
+    transition:opacity .3s, transform .3s; 
+}
+.banner-02 .preview-container .arrows > .prev{transform:translateX(-.625rem);}
+.banner-02 .preview-container .arrows > .next{transform:translateX(.625rem);}
+.banner-02 .preview-container:hover .arrows > .prev, .banner-02 .preview-container:hover .arrows > .next{
+    opacity:.8; transform:translateX(0);
+}
+.banner-02 .preview-container .arrows > .prev:hover, .banner-02 .preview-container .arrows > .next:hover{
+    opacity:1;
+}
+.banner-02 .slides-nav{
+    margin:1rem 0 0 0; display:block; position:relative; width:100%; overflow:hidden; 
+    -webkit-mask-image:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), 
+        rgba(0,0,0,1), rgba(0,0,0,0));
+}  
+.banner-02 .slides-nav .slide{position:relative; width:100%; padding:0; margin:0; cursor:pointer;}
+.banner-02 .slides-nav .slide > .img-bg{
+    width:calc(100% - .625rem); padding:50% 0 0 0; background-position:center; background-size:cover;
+    background-repeat:no-repeat; margin:0 .3125rem; border-radius:.625rem;
+}
+.banner-02 .slides-nav .slide::after{
+    content:''; position:absolute; top:0; bottom:0; left:.25rem; right:.25rem; cursor:pointer;
+    border-radius:.625rem; border:2px solid transparent; z-index:1; opacity:0;
+    transition:opacity .3s;
+}
+.banner-02 .slides-nav .slide.slick-current::after{opacity:1;}
+.banner-02 .slides-nav .slide:last-child{display:none;}
+
+
 /* Content 01 */
 .content-01{
     position:relative; width:100%; box-shadow:rgba(58,45,45,.25) 0px 8px 16px;

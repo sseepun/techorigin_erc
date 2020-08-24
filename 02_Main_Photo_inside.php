@@ -3,26 +3,6 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <style>
-        /* Banner 03 */
-        .banner-03 {position:relative; width:100%;}
-        .banner-03 > .slide-container {position:relative; width:100%;}
-        .banner-03 .slide-container .preview-container {display:block; position:relative; width:100%; overflow:hidden; height:40vh;}
-        .banner-03 .slide-container .preview-container .slide {height:40vh;}
-        .banner-03 .slide-container .preview-container .slick-list {width:100%; height:100%;}
-        .banner-03 .slide-container .slides-nav {padding-top: 1rem; display:block; position:relative; width:100%; overflow:hidden; height:20vh;-webkit-mask-image:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));}  
-        .banner-03 .slide {border-radius:1rem; background-size:cover; background-position:center; background-repeat:no-repeat; padding: 0 0 15vh 0;display:flex; align-items:center; overflow:hidden;}
-        .banner-03 .slide-container .slides-nav .slide {cursor:pointer; margin: 0 .25rem; position:relative; transition: border .4s;}
-        .banner-03 .slide-container > .arrows {display:flex; justify-content: space-between; width:100%; font-size:125%; cursor:pointer;}
-        .banner-03 .slide-container .slides-nav .slide::before {content:''; opacity:0; transition: opacity .4s; position:absolute; top:0; left:0; right:0; bottom:0;background:rgba(13, 131, 141, .5);}
-        .banner-03 .slide-container .slides-nav .slide.slick-current::before {opacity: 1;}
-        .banner-03 .slide-container .slides-nav .slide.slick-current { border: .125rem solid var(--color4); }
-        .banner-03 .slide-container .slides-nav .slide:last-child{display:none;}
-        .banner-03 .slide-container .preview-container .arrows {position:absolute; padding:0 .5rem; display:flex; width:100%; justify-content: space-between; color:#fff; top:calc(50% - 1.25rem); font-size:125%; }
-        .banner-03 .slide-container .preview-container .arrows .prev, .banner-03 .slide-container .preview-container .arrows .next {transition: all .4s; opacity:0; transform: translateY(.625rem); width:2.5rem; height:2.5rem; display:flex; justify-content: center; align-items:center; cursor:pointer; background: var(--color4); padding:.5rem;}
-        .banner-03 .slide-container .preview-container:hover .arrows .prev, .banner-03 .slide-container .preview-container:hover .arrows .next {opacity: .8; transform: translateY(0);}
-        .banner-03 .slide-container .preview-container .arrows .prev:hover, .banner-03 .slide-container .preview-container .arrows .next:hover {opacity:1;}
-    </style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
@@ -36,12 +16,10 @@
 
     <section class="section-padding">
         <div class="container">
-            
             <div class="ss-header">
                 <div class="ss">ค</div><h1 class="color2">ลังภาพ</h1>
                 <p><strong>กรมอนามัย</strong> อัพเดท รวบรวม ภาพกิจกรรมหรือข้อมูลเพื่อประชาชน</p>
             </div>
-
             <div class="grids">
 
                 <div class="grid lg-75 md-100 sm-100">
@@ -55,12 +33,14 @@
                     </div>
 
                     <!-- Banner 03 -->
-                    <div class="banner-03">
+                    <div class="banner-02">
                         <div class="slide-container">
                             <div class="preview-container">
                                 <div class="slides">
                                     <?php for($i = 1; $i<5; $i++){?>
-                                        <div class="slide" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
+                                        <div class="slide">
+                                            <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
+                                        </div>
                                     <?php }?>
                                 </div>
                                 <div class="arrows">
@@ -71,13 +51,11 @@
                             <div class="slides-nav">
                                 <div class="slides">
                                     <?php for($i = 1; $i<5; $i++){?>
-                                        <div class="slide" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
+                                        <div class="slide">
+                                            <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg');"></div>
+                                        </div>
                                     <?php }?>
                                 </div>
-                            </div>      
-                            <div class="arrows">
-                                <div class="prev"><i class="fas fa-angle-left"></i></div>
-                                <div class="next"><i class="fas fa-angle-right"></i></div>
                             </div>
                         </div>
                     </div>
@@ -159,7 +137,7 @@
                         <?php for($i=0; $i<4; $i++){?>
                             <div class="grid md-25 card">
                                 <div class="ss-img square">
-                                    <div class="img-bg" style="background-image:url('./assets/img/content/01.jpg');"></div>
+                                    <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
                                     <div class="socials">
                                         <ul>
                                             <li><a href="#" class="social social-fw">
@@ -207,21 +185,5 @@
 
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
-    <script>
-        $(function(){ 'use strict';
-            // Banner 03
-            if($('.banner-03').length){
-                $('.banner-03 > .slide-container').each(function(){
-                    var self = $(this);
-                    self.find('> .slides-nav .slides').slick({
-                        draggable: false, slidesToShow: 3, centerMode:true, asNavFor: '.preview-container .slides', focusOnSelect:true, arrows:true,  dots:false, prevArrow: self.find('> .arrows .prev'), nextArrow: self.find('> .arrows .next')
-                    });
-                    self.find('> .preview-container .slides').slick({
-                        slidesToShow: 1, slidesToScroll: 1, arrows: true, asNavFor: '.slides-nav .slides', prevArrow: self.find('> .preview-container .arrows .prev'), nextArrow: self.find('> .preview-container .arrows .next')
-                    });
-                });
-            }
-        });
-    </script>
 </body>
 </html>

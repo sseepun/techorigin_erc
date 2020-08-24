@@ -20,14 +20,13 @@
                 <div class="ss">ค</div><h1 class="color2">ลังภาพ</h1>
                 <p><span class="fw-400">กรมอนามัย</span> อัพเดท รวบรวม ภาพกิจกรรมหรือข้อมูลเพื่อประชาชน</p>
             </div>
-
             <div class="grids">
 
-                <div class="grid sm-100 lg-70 xl-75" data-aos="fade-up" data-aos-delay="300">
+                <div class="grid lg-75 sm-100 md-100" data-aos="fade-up" data-aos-delay="300">
                     <?php include_once('component/list-header.php'); ?>
 
                     <a class="ss-img" href="#">
-                        <div class="img-bg" style="background-image:url('./assets/img/banner/01.jpg');"></div>
+                        <div class="img-bg lazy-bg" data-src="./assets/img/banner/01.jpg"></div>
                         <div class="tag">
                             <div class="date">28</div>
                             <div class="text-container">
@@ -40,7 +39,7 @@
                         <?php for($i=0; $i<12; $i++){?>
                             <div class="grid md-25 ss-card-2">
                                 <div class="ss-img square">
-                                    <div class="img-bg" style="background-image:url('./assets/img/default/banner-01.jpg');"></div>
+                                    <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
                                     <div class="socials">
                                         <ul>
                                             <li><a class="social social-fw" href="#">
@@ -75,7 +74,7 @@
                     <?php include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
+                <div class="grid lg-25 sm-100 md-100" data-aos="fade-up" data-aos-delay="600">
                     <div class="slots bg-color4">
                         <div class="slot">
                         

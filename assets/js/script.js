@@ -152,6 +152,31 @@ $(function(){ 'use strict';
             });
         });
     }
+    // Banner 02
+    if($('.banner-02').length){
+        $('.banner-02 > .slide-container').each(function(){
+            var self = $(this);
+            self.find('> .slides-nav .slides').slick({
+                draggable: false, slidesToShow: 3, centerMode: true, focusOnSelect: true,
+                asNavFor: self.find('> .preview-container .slides'), 
+                dots: false, arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 767.98,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+            self.find('> .preview-container .slides').slick({
+                slidesToShow: 1, slidesToScroll: 1, dots: false, arrows: true, 
+                asNavFor: self.find('> .slides-nav .slides'), 
+                prevArrow: self.find('> .preview-container .arrows .prev'), 
+                nextArrow: self.find('> .preview-container .arrows .next')
+            });
+        });
+    }
 
 
     // Special Carousel
@@ -168,6 +193,6 @@ $(function(){ 'use strict';
 
     
     // AOS Animation
-    AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
+    // AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
 
 });

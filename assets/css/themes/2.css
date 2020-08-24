@@ -279,6 +279,15 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .banner-01 .line{background:#ffff00;}
 
 
+/* Banner 02 */
+.banner-02 .preview-container .arrows > .prev, .banner-02 .preview-container .arrows > .next{
+    color:#000; background:#ffff00;
+}
+.banner-02 .slides-nav .slide.slick-current::after{
+    background:rgba(255,255,0,.3); border-color:#ffff00;
+}
+
+
 /* Content 01 */
 .content-01 .content .text-container::after{background:#ffff00;}
 .content-01 .content .order, .content-01 .content:hover .order, .content-01 .content h6,

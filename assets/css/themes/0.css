@@ -331,6 +331,15 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 .banner-01 .line{background:#fff;}
 
 
+/* Banner 02 */
+.banner-02 .preview-container .arrows > .prev, .banner-02 .preview-container .arrows > .next{
+    color:#fff; background:#0d838d; background:var(--color4);
+}
+.banner-02 .slides-nav .slide.slick-current::after{
+    background:rgba(13,131,141,.3); border-color:#0d838d; border-color:var(--color4);
+}
+
+
 /* Content 01 */
 .content-01 .content .text-container::after{background:#e1e2e3;}
 .content-01 .content .order{color:#808080;}
