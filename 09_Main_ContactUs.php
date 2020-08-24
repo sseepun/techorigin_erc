@@ -5,6 +5,7 @@
     <?php include_once('include/style.php'); ?>
     <style>
         .banner-06 {padding: 2rem 0; background: linear-gradient(to right, rgba(152,146,52,1) 0%, rgba(33,77,54,1) 35%, rgba(33,78,84,1) 100%);}
+        .main-contact h2{margin:0;}
         .main-contact .separator {width:100%; height:.0625rem; background:#e7e7e7; margin:.75rem 0;}
         /* Table */
         .main-contact table{font-size:120%;}
