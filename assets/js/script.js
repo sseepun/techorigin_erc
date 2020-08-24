@@ -156,22 +156,30 @@ $(function(){ 'use strict';
     if($('.banner-02').length){
         $('.banner-02 > .slide-container').each(function(){
             var self = $(this);
-            self.find('> .slides-nav .slides').slick({
-                draggable: false, slidesToShow: 5, centerMode: true, focusOnSelect: true,
-                asNavFor: self.find('> .preview-container .slides'), 
-                dots: false, arrows: false,
-                responsive: [
-                    { breakpoint: 1199.98, settings: { slidesToShow: 4 } },
-                    { breakpoint: 767.98, settings: { slidesToShow: 3 } },
-                    { breakpoint: 575.98, settings: { slidesToShow: 2 } }
-                ]
-            });
-            self.find('> .preview-container .slides').slick({
-                slidesToShow: 1, slidesToScroll: 1, dots: false, arrows: true, 
-                asNavFor: self.find('> .slides-nav .slides'), 
-                prevArrow: self.find('> .preview-container .arrows .prev'), 
-                nextArrow: self.find('> .preview-container .arrows .next')
-            });
+            if(self.find('> .slides-nav .slides').length){
+                self.find('> .slides-nav .slides').slick({
+                    draggable: false, slidesToShow: 5, centerMode: true, focusOnSelect: true,
+                    asNavFor: self.find('> .preview-container .slides'), 
+                    dots: false, arrows: false,
+                    responsive: [
+                        { breakpoint: 1199.98, settings: { slidesToShow: 4 } },
+                        { breakpoint: 767.98, settings: { slidesToShow: 3 } },
+                        { breakpoint: 575.98, settings: { slidesToShow: 2 } }
+                    ]
+                });
+                self.find('> .preview-container .slides').slick({
+                    slidesToShow: 1, slidesToScroll: 1, dots: false, arrows: true, 
+                    asNavFor: self.find('> .slides-nav .slides'), 
+                    prevArrow: self.find('> .preview-container .arrows .prev'), 
+                    nextArrow: self.find('> .preview-container .arrows .next')
+                });
+            }else{
+                self.find('> .preview-container .slides').slick({
+                    slidesToShow: 1, slidesToScroll: 1, dots: false, arrows: true, 
+                    prevArrow: self.find('> .preview-container .arrows .prev'), 
+                    nextArrow: self.find('> .preview-container .arrows .next')
+                });
+            }
         });
     }
     // Banner 03

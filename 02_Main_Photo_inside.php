@@ -32,14 +32,18 @@
                         ?>
                     </div>
 
-                    <!-- Banner 03 -->
+                    <!-- Banner 02 -->
                     <div class="banner-02">
                         <div class="slide-container">
                             <div class="preview-container">
                                 <div class="slides">
                                     <?php for($i=1; $i<7; $i++){?>
                                         <div class="slide">
-                                            <div class="img-bg" style="background-image:url('./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg');"></div>
+                                            <div class="wrapper">
+                                                <div class="ss-img no-hover">
+                                                    <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     <?php }?>
                                 </div>

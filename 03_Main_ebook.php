@@ -17,6 +17,7 @@
                 <div class="grid lg-75 md-100 sm-100">
                     <?php include_once('component/list-header.php'); ?>
 
+                    <!-- Banner 03 -->
                     <div class="banner-03">
                         <div class="slide-container">
                             <div class="slides">

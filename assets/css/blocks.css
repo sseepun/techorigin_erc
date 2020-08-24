@@ -77,10 +77,6 @@
     display:block; position:relative; width:100%; overflow:hidden; border-radius:.625rem;
 }
 .banner-02 .preview-container .slide{position:relative; width:100%; padding:0; margin:0;}
-.banner-02 .preview-container .slide > .img-bg{
-    width:100%; padding:55% 0 0 0; background-position:center; background-size:cover;
-    background-repeat:no-repeat;
-}
 .banner-02 .preview-container .arrows{
     position:absolute; display:flex; justify-content:space-between; align-items:center;
     top:0; bottom:0; left:0; right:0; padding:0 .5rem; pointer-events:none;
@@ -121,7 +117,7 @@
 .banner-03 .slide-container, .banner-03 .slides{position:relative; }
 .banner-03 .dots{
     position:relative; display:flex; justify-content:center; align-items:center; 
-    padding:1.5rem 0; overflow:hidden;
+    padding:1.25rem 0; overflow:hidden;
 }
 .banner-03 .dots > .slick-dots{
     display:flex; position:relative; margin:0; padding:0; list-style:none; align-items:center;
@@ -132,9 +128,6 @@
     border-radius:.125rem; opacity:.4; transition:background .3s, opacity .3s;
 }
 .banner-03 .dots li.slick-active{opacity:1;}
-@media screen and (max-width:991.98px){
-    .banner-03 .dots{padding:1.25rem 0;}
-}
 @media screen and (max-width:767.98px){
     .banner-03 .dots{padding:1rem 0;}
 }
