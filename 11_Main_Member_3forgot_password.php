@@ -13,6 +13,7 @@
         ];
         include_once('component/breadcrumb.php');
     ?>
+
     <section class="section-padding">
         <div class="container">
             <div class="ss-header">
@@ -20,7 +21,8 @@
                 <p><strong>กรมอนามัย</strong> สมัครเพื่อรับข้อมูลที่มีประโยชน์ก่อนใคร</p>
             </div>
             <div class="grids">
-                <div class="grid xl-75 lg-75 sm-100">
+
+                <div class="grid xl-70 lg-70 sm-100">
                     <div class="contact-box">
                         <form action="./" method="POST">
                             <div class="ss-icon-title mt-0 mb-1">
@@ -32,14 +34,14 @@
                                     <div class="field">
                                         <label for="email">กรุณากรอกอีเมล์ที่ท่านใช้สมัครสมาชิกเพื่อรีเซ็ตรหัสผ่าน</label>
                                         <div class="control">
-                                            <input type="email" name="email">
+                                            <input type="email" name="email" required>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="btns mt-2">
                                 <button type="submit" class="btn btn-action btn-secondary next-icon">
-                                    ส่องข้อความ
+                                    ส่งข้อความ
                                 </button>
                                 <a class="btn btn-action btn-primary" href="#">
                                     ล้างข้อมูล
@@ -52,6 +54,7 @@
                     </h2>
                     <p>ผู้สมัครสมาชิกตกลงยินยอมผูกพันตามข้อกำหนดและเงื่อนไขการใช้ของสำนักงานกรมอนามัย</p>
                 </div>
+
                 <div class="grid sm-100 lg-25" data-aos="fade-up" data-aos-delay="600">
                     <div class="slots bg-color4">
                         <div class="slot">
@@ -65,9 +68,11 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
