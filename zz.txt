@@ -1,17 +1,25 @@
-
 COMPLETE:
 
 00_Index
-01_Main_News
 01_Main_News_Inside
-02_Main_Photo
-02_Main_Photo_Inside
+01_Main_News
+01_Main_Rss
 02_Main_Photo_2list_view
-03_Main_ebook
+02_Main_Photo_Inside
+02_Main_Photo
 03_Main_ebook_inside
-04_Main_VDO
+03_Main_ebook
 04_Main_VDO_inside
+04_Main_VDO
 05_Board_Of_Director
+05_Main_Download
+08_Main_Sitemap
+09_Main_ContactUs
+11_Main_Member_2register
+11_Main_Member_8edit_profile
+17_Main_FAQ
 
 
-NEED CHECK:
+NEED TO DO:
+
+17_Main_Questionnaire

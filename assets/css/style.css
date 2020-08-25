@@ -4,6 +4,7 @@ html, body{
     font-size:16px; font-weight:300; line-height:1.1;
 }
 *{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; outline:none;}
+a{text-decoration:none;}
 img{display:block; border:0;}
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=phone], input[type=submit], select, textarea, button{font-family:'DB Ozone X';}
@@ -85,8 +86,10 @@ button.btn{border:0;}
 .field{margin:.75rem 0 0 0; width:100%;}
 .field label{font-size:1.3125rem; font-weight:300; margin:0;}
 
-.field > .control{position:relative; width:100%; margin:.25rem 0 0 0;}
+.field > .control, .field > .control-flex{position:relative; width:100%; margin:.25rem 0 0 0;}
 .field > .control:first-child{margin:0;}
+.field > .control-flex{display:flex; align-items:center; height:2.5rem;}
+.field > .control-flex > *{margin-right:1.75rem;}
 
 .field input[type=text], .field input[type=email], .field input[type=password], 
 .field input[type=date], .field input[type=tel], .field input[type=phone], 
@@ -102,22 +105,24 @@ button.btn{border:0;}
 .field input[type=date]:focus, .field input[type=tel]:focus, .field input[type=phone]:focus, 
 .field select:focus, .field textarea:focus{border-color:#0d838d; border-color:var(--color4);}
 
-.field > .control.checkbox-control, .field > .control.radio-control{display:flex;}
-.field > .control.checkbox-control > input[type=checkbox],
-.field > .control.radio-control > input[type=radio]{position:absolute; opacity:0;}
-.field > .control.checkbox-control > label, .field > .control.radio-control > label{
-    width:100%; padding:0 0 0 1.625rem; cursor:pointer;
+.field .control.checkbox-control, .field .control.radio-control{display:flex; position:relative;}
+.field .control.radio-control > input[type=radio]{position:absolute; opacity:0;}
+.field .control.checkbox-control > input[type=checkbox]{
+    position:absolute; margin:0; font-size:.875rem; width:.875rem; height:.875rem;
+    cursor:pointer; top:.25rem;
 }
-.field > .control.checkbox-control > label::before, .field > .control.checkbox-control > label::after,
-.field > .control.radio-control > label::before, .field > .control.radio-control > label::after{
-    content:''; display:block; position:absolute; border-radius:50%;
+.field .control.checkbox-control > label, .field .control.radio-control > label{
+    width:100%; padding:0 0 0 1.5rem; cursor:pointer;
 }
-.field > .control.checkbox-control > label::before, .field > .control.radio-control > label::before{
-    top:.1875rem; left:0; width:.75rem; height:.75rem; border:1px solid transparent;
-    transition:border-color .3s;
+.field .control.radio-control > label::before, .field .control.radio-control > label::after{
+    content:''; display:block; position:absolute; border-radius:50%; cursor:pointer;
 }
-.field > .control.checkbox-control > label::after, .field > .control.radio-control > label::after{
-    top:.375rem; left:.1875rem; width:.5rem; height:.5rem; transition:background .3s;
+.field .control.radio-control > label::before{
+    top:.25rem; left:0; width:.75rem; height:.75rem; border:1px solid transparent;
+    transition:border-color .3s; cursor:pointer;
+}
+.field .control.radio-control > label::after{
+    top:.4375rem; left:.1875rem; width:.5rem; height:.5rem; transition:background .3s; cursor:pointer;
 }
 
 
@@ -179,6 +184,13 @@ button.btn{border:0;}
 }
 @media screen and (max-width:575.98px){
     .section-padding{padding:2.5rem 0;}
+}
+
+
+/* Bullte */
+.bullet{position:relative; padding:1.5rem 0 1.5rem 1.5rem;}
+.bullet::before{
+    content:''; position:absolute; top:2.0625rem; left:.25rem; width:.4375rem; height:.4375rem;
 }
 
 
@@ -373,6 +385,32 @@ table.table.download-table td:nth-child(4){min-width:6rem;}
 .slots .header-text.quote-text.quote-inline::before{transform:translate(-.25rem, -.75rem);}
 .slots .header-text.quote-text.quote-inline::after{transform:translate(.25rem, -.75rem);}
 
+.slots .slot-tabs{width:100%;}
+.slots .slot-tabs .title{padding:.5rem .625rem; margin:0;}
+.slots .slot-tab{
+    display:flex; align-items:center; width:100%; text-decoration:none; padding:.5rem .625rem;
+    border-top:1px solid; transition:background .3s;
+}
+.slots .slot-tab:last-child{border-bottom:1px solid;}
+.slots .slot-tab .icon{
+    display:inline-block; width:2.5rem; height:2.5rem; border-radius:.25rem; text-align:center;
+    line-height:2.75rem; margin:0 .625rem 0 0;
+}
+.slots .slot-tab h5{width:calc(100% - 3.125rem); font-size:1.25rem;}
+
+.slots .profile-tab{
+    width:100%; padding:1rem .5rem 1.5rem .5rem; overflow:hidden; display:flex; align-items:center;
+}
+.slots .profile-tab *{margin:0; line-height:1;}
+.slots .profile-tab .icon{
+    display:block; width:3.75rem; height:3.75rem; border-radius:50%; background-size:cover;
+    background-position:center; background-repeat:no-repeat; border:.125rem solid #fff;
+    -webkit-box-shadow:0px 5px 10px 0px rgba(0,0,0,.2);
+    -moz-box-shadow:0px 5px 10px 0px rgba(0,0,0,.2);
+    box-shadow:0px 5px 10px 0px rgba(0,0,0,.2); margin:0 .625rem 0 0;
+}
+.slots .profile-tab .text-container{width:calc(100% - 4.375rem);}
+
 @media screen and (max-width:1199.98px){
     .slots .header-text{font-size:2rem;}
 }
@@ -489,12 +527,13 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 }
 
 /* Special Icon Text */
-.ss-icon-title{width:100%; display:flex; align-items:center; margin:3rem 0 0 0;}
+.ss-icon-title{width:100%; display:flex; align-items:center; flex-wrap:wrap; margin:3rem 0 0 0;}
 .ss-icon-title > .icon{
     display:block; width:2.5rem; height:2.5rem; line-height:3rem; text-align:center; 
     font-size:1.375rem; border-radius:.3125rem; margin:0 .6875rem 0 0;
 }
 .ss-icon-title > h2{margin:0;}
+.ss-icon-title p{margin:0 0 0 auto;}
 @media screen and (max-width:991.98px){
     .ss-icon-title{margin:2.75rem 0 0 0;}
     .ss-icon-title > .icon{width:2.25rem; height:2.25rem; line-height:2.75rem; font-size:1.25rem;}
@@ -502,6 +541,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 @media screen and (max-width:767.98px){
     .ss-icon-title{margin:2.5rem 0 0 0;}
     .ss-icon-title > .icon{width:2rem; height:2rem; line-height:2.25rem; font-size:1rem;}
+    .ss-icon-title p{width:100%; margin:1rem 0 0 0;}
 }
 
 

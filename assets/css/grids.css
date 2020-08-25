@@ -6,6 +6,8 @@
 .gallery-grids{width:100%; display:flex; justify-content:space-between; flex-wrap:wrap; margin:1rem 0 0 0;}
 .gallery-grids > .grid{width:calc(50% - .25rem); margin:.5rem 0 0 0;}
 
+.grids > .sep, .gallery-grids > .sep{width:100%;} 
+
 /* All */
 .grids > .grid.all-10{width:calc(10% - .75rem);}
 .grids > .grid.all-20{width:calc(20% - .75rem);}

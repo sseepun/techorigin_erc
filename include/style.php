@@ -19,6 +19,9 @@
 <link rel="stylesheet" type="text/css" href="./assets/lib/fancybox-3.5.7/dist/jquery.fancybox.min.css" media="screen" />
 <!-- <link rel="stylesheet" type="text/css" href="./assets/lib/aos-2.3.1/aos.min.css" media="screen" /> -->
 
+<link rel="stylesheet" type="text/css" href="./assets/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="./assets/lib/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+
 <link rel="stylesheet" type="text/css" href="./assets/css/style.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="./assets/css/grids.css" media="screen" />
 

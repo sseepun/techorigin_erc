@@ -101,6 +101,9 @@ $(function(){ 'use strict';
         $('#css-theme').attr('href', './assets/css/themes/'+$(this).data('theme')+'.css'); 
     });
 
+
+    // Date Picker
+    $('input.date-picker').datepicker();
     
     // Calendar
     if($('.calendar-container > .calendar-wrapper').length){
@@ -124,7 +127,6 @@ $(function(){ 'use strict';
             ]
         });
     }
-
 
     // Tab
     $('.tab-container').each(function(){
@@ -189,6 +191,19 @@ $(function(){ 'use strict';
             self.find('> .slides').slick({
                 slidesToShow: 1, slidesToScroll: 1, draggable: false, 
                 arrows: false, dots: true, appendDots: self.find('.dots')
+            });
+        });
+    }
+
+    
+    // FAQ 01
+    if($('.faq-01').length){
+        $('.faq-01').each(function(){
+            $(this).find('.question').click(function(e){
+                e.preventDefault();
+                var self = $(this);
+                self.toggleClass('active');
+                self.next().slideToggle();
             });
         });
     }

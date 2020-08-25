@@ -339,7 +339,7 @@
 .contact-01 .contact-tab:first-child{padding-left:0;}
 .contact-01 .contact-tab:last-child{border-right:0; padding-right:0;}
 .contact-01 .contact-tab .icon{
-    display:block; width:2.5rem; height:2.5rem; line-height:2.5rem; border-radius:50%;
+    display:inline-block; width:2.5rem; height:2.5rem; line-height:2.6875rem; border-radius:50%;
     text-align:center; margin:0 .5rem 0 0;
 }
 .contact-tabs .text-container{width:calc(100% - 3rem);}
@@ -354,4 +354,31 @@
     .contact-01 .contact-box{padding:1.5rem 1rem;}
     .contact-01 .contact-tabs{flex-wrap:wrap; padding:.5rem 0;}
     .contact-01 .contact-tab{width:100%; padding:.5rem 0!important; border:0!important;}
+}
+
+
+/* FAQ 01 */
+.faq-01{width:100%;}
+.faq-01 .faq{width:100%; padding:0; border-bottom:1px solid transparent;}
+.faq-01 .faq:last-child{border-bottom:0;}
+.faq-01 .question{
+    width:100%; position:relative; display:flex; padding:1.25rem 1.75rem 1.25rem 0;
+    cursor:pointer;
+}
+.faq-01 .question *{margin:0;}
+.faq-01 .question::after{
+    content:'\f078'; font-family:'Font Awesome 5 Free'; font-weight:900;
+    position:absolute; top:2.125rem; right:0; font-size:.8125rem; transition:transform .3s;
+}
+.faq-01 .question.active::after{transform:rotate(180deg);}
+.faq-01 .icon{
+    display:inline-block; width:2.5rem; height:2.5rem; border-radius:.25rem; text-align:center;
+    line-height:2.75rem; font-size:1.75rem; font-weight:400; margin:0 .75rem 0 0;
+}
+.faq-01 .question h4{padding:.5rem 0 0 0; width:calc(100% - 3.25rem); transition:color .3s;}
+.faq-01 .answer{width:100%; position:relative; display:flex; padding:0 0 1.25rem 3.25rem;}
+.faq-01 .answer p{margin:0; width:calc(100% - 3.25rem);}
+.faq-01 .wrapper{display:none;}
+@media screen and (max-width:575.98px){
+    .faq-01 .answer{padding:0 0 1.25rem 1.25rem;}
 }

@@ -23,14 +23,16 @@ html, body{background:transparent; color:#000;}
 
 /* Fields & Inputs */
 .field label{color:#000;}
-.field > .control.checkbox-control > label::before,
-.field > .control.radio-control > label::before{border-color:#000;}
-.field > .control.checkbox-control > input[type=checkbox]:checked + label::before,
-.field > .control.radio-control > input[type=radio]:checked + label::before{border-color:#000;}
-.field > .control.checkbox-control > label::after,
-.field > .control.radio-control > label::after{background:transparent;}
-.field > .control.checkbox-control > input[type=checkbox]:checked + label::after,
-.field > .control.radio-control > input[type=radio]:checked + label::after{background:#000;}
+.field .control.checkbox-control > label::before,
+.field .control.radio-control > label::before{border-color:#000;}
+.field .control.checkbox-control > input[type=checkbox]:checked + label::before,
+.field .control.radio-control > input[type=radio]:checked + label::before{border-color:#000;}
+.field .control.checkbox-control > label::after,
+.field .control.radio-control > label::after{background:transparent;}
+.field .control.checkbox-control > input[type=checkbox]:checked + label::after,
+.field .control.radio-control > input[type=radio]:checked + label::after{
+    background:#0d838d; background:var(--color4);
+}
 
 
 /* Hamburger */
@@ -153,6 +155,10 @@ nav.footer p, nav.footer h1{color:#fff;}
 .border-top, .border-bottom{border-color:#d8d8d8;}
 
 
+/* Bullet */
+.bullet::before{background:#c0ca67; background:var(--color1);}
+
+
 /* Calendar */
 .calendar-container{background:#fff; border-color:#cecece!important;}
 .calendar-container .calendar header .month{color:#000;}
@@ -214,6 +220,9 @@ table.table.about-table td:nth-child(3){border-color:#c8c8c8;}
 .slots .header-text.quote-text::before, .slots .header-text.quote-text::after{
     color:#c0ca67; color:var(--color1);
 }
+.slots .slot-tab{border-color:rgba(255,255,255,.4)!important;}
+.slots .slot-tab:hover, .slots .slot-tab.active{background:#c0ca67; background:var(--color1);}
+.slots .slot-tab .icon{background:#1d684a; background:var(--color2);}
 
 
 /* Special Banner */
@@ -378,12 +387,12 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 .content-02 .question-container .ss-header{border-color:rgba(255,255,255,.4);}
 .content-02 .question-body{color:#fff;}
 .content-02 .question-body .field label{color:#fff;}
-.content-02 .question-body .field > .control.radio-control > label::before{border-color:#fff;}
-.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::before{
+.content-02 .question-body .field .control.radio-control > label::before{border-color:#fff;}
+.content-02 .question-body .field .control.radio-control > input[type=radio]:checked + label::before{
     border-color:#c0ca67; border-color:var(--color1);
 }
-.content-02 .question-body .field > .control.radio-control > label::after{background:#fff;}
-.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::after{
+.content-02 .question-body .field .control.radio-control > label::after{background:#fff;}
+.content-02 .question-body .field .control.radio-control > input[type=radio]:checked + label::after{
     background:#c0ca67; background:var(--color1);
 }
 .content-02 .info-card, .content-02 .info-card + .btns{border-color:#cecece;}
@@ -415,3 +424,10 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 /* Contact 01 */
 .contact-01 .contact-box{background:#fff;}
 .contact-01 .contact-tabs, .contact-01 .contact-tab{border-color:#d8d8d8;}
+
+
+/* FAQ 01 */
+.faq-01 .faq{border-color:#d8d8d8;}
+.faq-01 .icon{color:#fff; background:#0d838d; background:var(--color4);}
+.faq-01 .answer .icon{background:#c0ca67; background:var(--color1);}
+.faq-01 .question:hover h4, .faq-01 .question.active h4{color:#0d838d; color:var(--color4);}

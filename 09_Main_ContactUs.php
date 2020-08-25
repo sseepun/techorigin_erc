@@ -28,7 +28,7 @@
             <div class="grids">
 
                 <div class="grid xl-50 lg-60 sm-100">
-                    <h2 class="color4 fw-400">
+                    <h2 class="color4 fw-400 mt-2">
                         กรมอนามัย กระทรวงสาธารณสุข
                     </h2>
                     <table>

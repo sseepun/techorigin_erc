@@ -21,14 +21,14 @@ html, body{background:#000; color:#fff;}
 
 /* Fields & Inputs */
 .field label{color:#fff;}
-.field > .control.checkbox-control > label::before,
-.field > .control.radio-control > label::before{border-color:#fff;}
-.field > .control.checkbox-control > input[type=checkbox]:checked + label::before,
-.field > .control.radio-control > input[type=radio]:checked + label::before{border-color:#fff;}
-.field > .control.checkbox-control > label::after,
-.field > .control.radio-control > label::after{background:transparent;}
-.field > .control.checkbox-control > input[type=checkbox]:checked + label::after,
-.field > .control.radio-control > input[type=radio]:checked + label::after{background:#fff;}
+.field .control.checkbox-control > label::before,
+.field .control.radio-control > label::before{border-color:#fff;}
+.field .control.checkbox-control > input[type=checkbox]:checked + label::before,
+.field .control.radio-control > input[type=radio]:checked + label::before{border-color:#fff;}
+.field .control.checkbox-control > label::after,
+.field .control.radio-control > label::after{background:transparent;}
+.field .control.checkbox-control > input[type=checkbox]:checked + label::after,
+.field .control.radio-control > input[type=radio]:checked + label::after{background:#fff;}
 
 
 /* Hamburger */
@@ -132,6 +132,10 @@ nav.footer p, nav.footer h1{color:#fff;}
 .border-top, .border-bottom{border-color:#fff;}
 
 
+/* Bullet */
+.bullet::before{background:#fff;}
+
+
 /* Calendar */
 .calendar-container{background:#000; border-color:#fff!important;}
 .calendar-container .calendar header .month{color:#fff;}
@@ -180,6 +184,8 @@ table.table.about-table td:nth-child(3){border-color:#fff;}
 /* Slots */
 .slots .header-text{color:#fff;}
 .slots .header-text.quote-text::before, .slots .header-text.quote-text::after{color:#fff;}
+.slots .slot-tab{border-color:rgba(255,255,255,.4)!important;}
+.slots .slot-tab:hover, .slots .slot-tab.active{background:#c0ca67; background:var(--color1);}
 
 
 /* Special & Typography */
@@ -318,12 +324,12 @@ h6, .ss-h6, p, .ss-p{color:#fff;}
 .content-02 .question-container .ss-header{border-color:#fff;}
 .content-02 .question-body{color:#fff;}
 .content-02 .question-body .field label{color:#fff;}
-.content-02 .question-body .field > .control.radio-control > label::before{border-color:#fff;}
-.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::before{
+.content-02 .question-body .field .control.radio-control > label::before{border-color:#fff;}
+.content-02 .question-body .field .control.radio-control > input[type=radio]:checked + label::before{
     border-color:#fff;
 }
-.content-02 .question-body .field > .control.radio-control > label::after{background:transparent;}
-.content-02 .question-body .field > .control.radio-control > input[type=radio]:checked + label::after{
+.content-02 .question-body .field .control.radio-control > label::after{background:transparent;}
+.content-02 .question-body .field .control.radio-control > input[type=radio]:checked + label::after{
     background:#fff;
 }
 .content-02 .info-card, .content-02 .info-card + .btns{border-color:#fff;}
@@ -356,3 +362,8 @@ h6, .ss-h6, p, .ss-p{color:#fff;}
 /* Contact 01 */
 .contact-01 .contact-box{background:#000; border:1px solid #fff;}
 .contact-01 .contact-tabs, .contact-01 .contact-tab{border-color:#fff;}
+
+
+/* FAQ 01 */
+.faq-01 .faq{border-color:#fff;}
+.faq-01 .icon{color:#000; background:#fff;}
