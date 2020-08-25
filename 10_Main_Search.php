@@ -5,8 +5,8 @@
     <?php include_once('include/style.php'); ?>
     <style>
         .info-block .view {margin:.625rem 0 0 0;}
-        .info-block .ss-date, .info-block .view {display:flex;}
-        .info-block .icon {margin-right:.625rem;}
+        .info-block .ss-date, .info-block .view {display:inline-block; width:100%;}
+        .info-block .icon {margin-right:.625rem; display:inline-block;}
         .info-block .icon i{ width:1.25rem; height:1.25rem; display:flex; justify-content:center; align-items:center; color:#e2e2e2; background: #47484d; font-size:.75rem; padding:.25rem; border-radius: 50%; }
     </style>
 </head>
