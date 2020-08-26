@@ -11,21 +11,21 @@
     <div class="block">
         <div class="stat">
             <?php echo $contentStat['date']; ?>
-            <div class="icon"><i class="fas fa-clock"></i></div>
+            <div class="icon"><i class="fas fa-clock color1"></i></div>
         </div>
         <div class="stat">
             <?php echo $contentStat['view_count']; ?>
-            <div class="icon"><i class="fas fa-eye"></i></div>
+            <div class="icon"><i class="fas fa-eye color1"></i></div>
         </div>
     </div>
     <div class="block">
         <div class="stat">
             Share 
             <a class="icon icon-share" href="#">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f color4"></i>
             </a>
             <a class="icon icon-share" href="#">
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter color4"></i>
             </a>
         </div>
     </div>

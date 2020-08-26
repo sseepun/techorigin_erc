@@ -13,7 +13,6 @@
         .header-container .text-container {padding: .75rem 0 .75rem 3.1875rem; font-size:200%;}
         .header-container .title-container .btn.btn-back::before {background-color:#fff; border:none;}
         .header-container .stat-container .content-stat .stat{color:#fff;}
-        .header-container .stat-container .content-stat .stat .icon {color:var(--color1);}
         .chat-container {
             -webkit-box-shadow:0px 5px 20px 0px rgba(0,0,0,.2);
             -moz-box-shadow:0px 5px 20px 0px rgba(0,0,0,.2);
