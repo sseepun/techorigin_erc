@@ -26,7 +26,7 @@
         .chat-container .chat-content-area .chat-other .profile .profile-img {position:absolute; width:2.5rem; height:2.5rem; top: calc(50% - 1.25rem); left: calc(50% - 1.25rem); background-position:center; background-size:cover; border-radius:50%;}
         .chat-container .chat-content-area .chat-other .text {border: .0625rem solid #e7e7e7; max-width:80%; position:relative; border-radius:.25rem; background:#f3f5f4; min-height:10%; padding:.75rem 1rem; }
         .chat-container .chat-content-area .chat-other .text::before {content:''; width:1rem; height:1rem; background:#f3f5f4; transform: rotate(45deg); position:absolute; top: calc(50% - .5rem); left: -.5rem;}
-        .chat-container .chat-content-area .chat-other .info {padding-left: calc(10% + .75rem); width:100%; padding-top: .25rem; display:flex; align-items:center;}
+        .chat-container .chat-content-area .chat-other .info {padding-left: 10%; width:100%; padding-top: .25rem; display:flex; align-items:center;}
         .chat-container .chat-content-area .chat-other .info .time {padding-left:1.5rem;}
         .chat-container .chat-content-area .chat-other .info .icon {margin-left:.5rem;}
         .chat-container .chat-content-area .chat-other .info .icon i{ width:1.25rem; height:1.25rem; display:flex; justify-content:center; align-items:center; color:#e2e2e2; font-size:.75rem; padding:.25rem; border-radius: 50%; }
@@ -35,8 +35,8 @@
         .chat-container .chat-content-area .chat-me .profile .profile-img {position:absolute;  width:2.5rem; height:2.5rem; top: calc(50% - 1.25rem); left: calc(50% - 1.25rem); background-position:center; background-size:cover; border-radius:50%;}
         .chat-container .chat-content-area .chat-me .text {border: .0625rem solid #e7e7e7; max-width:80%;position:relative; border-radius:.25rem; background:#f3f5f4; min-height:10%; padding:.75rem 1rem; }
         .chat-container .chat-content-area .chat-me .text::before {content:''; width:1rem; height:1rem; background:#f3f5f4; transform: rotate(45deg); position:absolute; top: calc(50% - .5rem); right: -.5rem;}
-        .chat-container .chat-content-area .chat-me .info {padding-right: calc(10% + .75rem);justify-content:flex-end; width:100%; padding-top: .25rem; display:flex; align-items:center;}
-        .chat-container .chat-content-area .chat-me .info .time {padding-left:1.5rem;}
+        .chat-container .chat-content-area .chat-me .info {padding-right: 10%;justify-content:flex-end; width:100%; padding-top: .25rem; display:flex; align-items:center;}
+        .chat-container .chat-content-area .chat-me .info .time {padding-left:1.5rem; display:flex;}
         .chat-container .chat-content-area .chat-me .info .icon {margin-left:.5rem;}
         .chat-container .chat-content-area .chat-me .info .icon i{ width:1.25rem; height:1.25rem; display:flex; justify-content:center; align-items:center; color:#e2e2e2; font-size:.75rem; padding:.25rem; border-radius: 50%; }
         .chat-container .chat-type-area {padding:2rem 0;}
@@ -130,8 +130,8 @@
                                     <div class="text">ขออนุญาติทราบถามเรื่องสมุดบันทึกสุขภาพผู้สูงอายุค่ะ อยากได้บ้างต้องทำไงคะ รบกวนติดต่อกลับด้วยนะคะ 087-2204450</div>
                                     <div class="info">
                                         <div class="person"><strong>ตอบโดย : ประกายกัญญา</strong> พนักงาน</div>
-                                        <div class="time">26.03.2563 (16:45)</div>
                                         <div class="icon"><i class="fas fa-clock bg-color0"></i></div>
+                                        <div class="time">26.03.2563 (16:45) </div>
                                     </div>
                                 </div>
                                 <div class="chat-me">
@@ -140,8 +140,9 @@
                                     </div>
                                     <div class="text">ด้วยทาง รพ.สต. บ้านนาแล จัดทำโครงการคัดกรองสุขภาพผู้สูงอายุ จึงมีความประสงต์ต้องการ ขอสนับสนุนสมุดบันทึกสุขภาพผู้สูงอายุ เล่มสีฟ้า</div>
                                     <div class="info">
-                                        <div class="time">26.03.2563 (16:45)</div>
-                                        <div class="icon"><i class="fas fa-clock bg-color0"></i></div>
+                                        <div class="time">26.03.2563 (16:45) 
+                                            <div class="icon"><i class="fas fa-clock bg-color0"></i></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
