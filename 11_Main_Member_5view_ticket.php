@@ -46,9 +46,9 @@
         @media screen and (max-width:576px) {
             .header-container .text-container {padding: .75rem 0 0 0;}
             .chat-container .chat-content-area .chat-other .info{padding-left:0;}
-            .chat-container .chat-content-area .chat-other .info .person {max-width:5rem;}
-            .chat-container .chat-content-area .chat-other .info .time {padding-left:.5rem;}
+            .chat-container .chat-content-area .chat-other .info .time {text-align:right;}
             .chat-container .chat-content-area .chat-me .info {padding-right:0;}
+            .chat-container .chat-content-area .chat-other .text, .chat-container .chat-content-area .chat-me .text{max-width:100%;}
             .chat-container .chat-content-area .chat-other .profile,.chat-container .chat-content-area .chat-me .profile{width:100%;}
             .chat-container .chat-content-area .chat-other .profile .profile-img {top: -1rem; left:0; }
             .chat-container .chat-content-area .chat-me .profile .profile-img {top:-1rem;left:auto;  right:0;}
@@ -130,8 +130,8 @@
                                     <div class="text">ขออนุญาติทราบถามเรื่องสมุดบันทึกสุขภาพผู้สูงอายุค่ะ อยากได้บ้างต้องทำไงคะ รบกวนติดต่อกลับด้วยนะคะ 087-2204450</div>
                                     <div class="info">
                                         <div class="person"><strong>ตอบโดย : ประกายกัญญา</strong> พนักงาน</div>
+                                        <div class="time">26.03.2563 (16:45)</div>
                                         <div class="icon"><i class="fas fa-clock bg-color0"></i></div>
-                                        <div class="time">26.03.2563 (16:45) </div>
                                     </div>
                                 </div>
                                 <div class="chat-me">
@@ -140,9 +140,8 @@
                                     </div>
                                     <div class="text">ด้วยทาง รพ.สต. บ้านนาแล จัดทำโครงการคัดกรองสุขภาพผู้สูงอายุ จึงมีความประสงต์ต้องการ ขอสนับสนุนสมุดบันทึกสุขภาพผู้สูงอายุ เล่มสีฟ้า</div>
                                     <div class="info">
-                                        <div class="time">26.03.2563 (16:45) 
-                                            <div class="icon"><i class="fas fa-clock bg-color0"></i></div>
-                                        </div>
+                                        <div class="time">26.03.2563 (16:45)</div>
+                                        <div class="icon"><i class="fas fa-clock bg-color0"></i></div>
                                     </div>
                                 </div>
                             </div>
