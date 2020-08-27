@@ -15,6 +15,7 @@ html, body{background:transparent; color:#000;}
 
 .btn.btn-icon-alert{color:#000;}
 .btn.btn-icon-alert::before{background:#ce0400; color:#fff;}
+.btn.btn-icon-download::before{background:#284e51; background:var(--color3); color:#fff;}
 
 .btn.btn-back{color:#393939;}
 .btn.btn-back::before{color:#3a3a3a; border-color:#a9a9a9;}
@@ -98,7 +99,7 @@ nav.topnav .submenu.has-children > a::before{color:#fff;}
 nav.topnav .submenu .child > a{color:#fff;}
 nav.topnav .submenu .child > a::after{background:#fff;}
 
-nav.topnav .menu .submenus{background:#1d684a; background:var(--color2);}
+nav.topnav .menu .submenus{background:rgba(29,104,74,.95);}
 nav.topnav .menu .submenu:hover > a{background:#0d838d; background:var(--color4);}
 nav.topnav .menu .submenu .childs{background:#0d838d; background:var(--color4);}
 nav.topnav .menu .child:hover > a{background:#c0ca67; background:var(--color1);}
@@ -191,6 +192,7 @@ table.table.info-table tbody td:nth-child(1){color:#383838; background:#f5f3f4;}
 table.table.info-table tbody td:nth-child(2)::before{background:#c0ca67; background:var(--color1);}
 table.table.info-table tbody td:nth-child(3){background:#f5f3f4;}
 table.table.info-table tbody td:nth-child(4){color:#fff; background:#959595;}
+table.table.download-table tr.selected td{background:#ebebeb;}
 
 
 /* Tab */

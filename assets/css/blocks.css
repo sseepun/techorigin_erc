@@ -221,6 +221,20 @@
     .content-02 .content:nth-child(2){border-left:0;}
 }
 
+/* Content 03 */
+.content-03{background-size:cover; background-position:center; background-repeat:no-repeat;}
+.content-03 .grids{position:relative;}
+@media screen and (min-width:992px){
+    .content-03 .grids{justify-content:space-evenly;}
+}
+@media screen and (min-width:768px){
+    .content-03 .grids::after{
+        content:''; position:absolute; top:0; bottom:0; left:calc(50% - .5px); width:1px;
+        background:rgba(255,255,255,.5);
+    }
+    .content-03 .grid{margin:0;}
+}
+
 
 /* Call to Action 01 */
 .call-01 .contents{width:100%; display:flex; justify-content:center; align-items:center;}

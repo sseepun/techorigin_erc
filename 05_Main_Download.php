@@ -22,15 +22,22 @@
             </div>
             <div class="grids">
 
-                <div class="grid sm-100 md-100 lg-75">
+                <div class="grid xl-75 lg-70 sm-100 md-100">
                     
                     <div class="table-wrapper" data-simplebar>
                         <table class="table download-table">
                             <tbody>
-                                <?php for($i=0; $i<3; $i++){?>
+                                <?php for($i=0; $i<2; $i++){?>
+                                    <tr class="topic <?php if($i%2==0)echo 'selected'; ?>">
+                                        <td colspan="4" class="text-left pl-1">
+                                            <h3 class="no-margin fw-400">
+                                                นโยบายการจัดการและบริหารสิ่งแวดล้อม ประจำปี 2563
+                                            </h3>
+                                        </td>
+                                    </tr>
                                     <?php foreach(['doc', 'docx', 'pdf', 'ppt', 'pptx'] as $f){?>
-                                        <tr>
-                                            <td class="pl-0">
+                                        <tr class="<?php if($i%2==0)echo 'selected'; ?>">
+                                            <td class="pl-1-5">
                                                 <div class="file-icon <?php echo $f; ?>"></div>
                                             </td>
                                             <td>
@@ -40,8 +47,12 @@
                                                 <div class="text-xs">ขนาดไปล์ <strong>1.3</strong> MB</div>
                                                 <div class="text-xs">ดาวน์โหลด <strong>23</strong> ครั้ง</div>
                                             </td>
-                                            <td>
-                                                <a class="btn btn-action btn-primary btn-sm" href="#">
+                                            <td class="text-left">
+                                                <a class="btn btn-action btn-sm btn-icon-download" href="#">
+                                                    ดาวน์โหลด
+                                                </a>
+                                                <br>
+                                                <a class="btn btn-action btn-sm btn-icon-alert" href="#">
                                                     แจ้งไฟล์เสีย
                                                 </a>
                                             </td>
@@ -52,19 +63,22 @@
                         </table>
                     </div>
 
-                    <?php include_once('component/list-footer.php'); ?>
+                    <?php $listFooterNoBorder = true; include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
-                        <div class="slot">
-
-                            <h2 class="header-text quote-text">
-                                คนไทย <br>
-                                <span class="text-xl fw-400 color1">ร่วมใจสู้ภัย</span> <br>
-                                <span class="text-xl">โควิด-19</span>
-                            </h2>
-
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/06.jpg">
+                        <img class="float-img type-5" src="./assets/img/hero/12.png" alt="Slot Float Image 01" />
+                        <div class="slot-tabs mt-0">
+                            <h4 class="title color-white">หมวดหมู่</h4>
+                            <?php for($i=0; $i<10; $i++){?>
+                                <a class="slot-tab" href="#">
+                                    <h5 class="mt-0 color-white">
+                                        0<?php echo "$i"; ?>. <br>
+                                        ข่าวจากหนังสือพิมพ์
+                                    </h5>
+                                </a>
+                            <?php }?> 
                         </div>
                     </div>
                 </div>

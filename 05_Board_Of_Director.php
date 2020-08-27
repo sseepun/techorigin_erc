@@ -15,7 +15,7 @@
         include_once('component/breadcrumb.php');
     ?>
 
-    <section class="about-01" style="background-image:url('./assets/img/default/banner-01.jpg');">
+    <section class="about-01 lazy-bg" data-src="./assets/img/bg/07.jpg">
         <div class="container">
             <div class="ss-header" data-aos="fade-up" data-aos-delay="0">
                 <div class="ss">ผู้</div><h1>บริหารกรมอนามัย</h1>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="content" data-aos="fade-up" data-aos-delay="600">
-                    <img class="hero" src="./assets/img/hero/06.png" alt="About 01 Hero" />
+                    <img class="hero lazy-img" data-src="./assets/img/hero/06.png" alt="About 01 Hero" />
                 </div>
             </div>
         </div>

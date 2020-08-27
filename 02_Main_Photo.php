@@ -22,19 +22,31 @@
             </div>
             <div class="grids">
 
-                <div class="grid lg-75 sm-100 md-100" data-aos="fade-up" data-aos-delay="300">
+                <div class="grid xl-75 lg-70 sm-100 md-100" data-aos="fade-up" data-aos-delay="300">
                     <?php include_once('component/list-header.php'); ?>
 
-                    <a class="ss-img" href="#">
-                        <div class="img-bg lazy-bg" data-src="./assets/img/banner/01.jpg"></div>
-                        <div class="tag">
-                            <div class="date">28</div>
-                            <div class="text-container">
-                                <div class="month">กรกฎาคม</div>
-                                <div class="year">2563</div>
-                            </div>
+                    <div class="ss-carousel">
+                        <div class="slides">
+                            <?php for($i=1; $i<5; $i++){?>
+                                <div class="slide">
+                                    <div class="wrapper">
+                                        <a class="ss-img" href="#">
+                                            <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo $i; ?>.jpg"></div>
+                                            <div class="tag">
+                                                <div class="date">28</div>
+                                                <div class="text-container">
+                                                    <div class="month">กรกฎาคม</div>
+                                                    <div class="year">2563</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            <?php }?> 
                         </div>
-                    </a>
+                        <div class="dots"></div>
+                    </div>
+
                     <div class="grids">
                         <?php for($i=0; $i<12; $i++){?>
                             <div class="grid md-25 ss-card-2">
@@ -74,17 +86,17 @@
                     <?php include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid lg-25 sm-100 md-100" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/03.jpg">
+                        <img class="float-img type-2" src="./assets/img/hero/08.png" alt="Slot Float Image 01" />
                         <div class="slot">
-                        
                             <h2 class="header-text quote-text quote-inline">
-                                คนไทย <br>
+                                <span>คนไทย</span> <br>
                                 <span class="text-xl fw-400 color1">ร่วมใจสู้ภัย</span> <br>
                                 <span class="text-xl">โควิด-19</span>
                             </h2>
-
                         </div>
+                        <img class="float-img type-3 lazy-img" data-src="./assets/img/hero/09.png" alt="Slot Float Image 02" />
                     </div>
                 </div>
 

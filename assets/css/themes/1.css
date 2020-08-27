@@ -13,6 +13,7 @@ html, body{background:#000; color:#fff;}
 
 .btn.btn-icon-alert{color:#fff;}
 .btn.btn-icon-alert::before{background:#ce0400; color:#fff;}
+.btn.btn-icon-download::before{background:#284e51; background:var(--color3); color:#fff;}
 
 .btn.btn-back{color:#fff;}
 .btn.btn-back::before{color:#fff; border-color:#fff;}

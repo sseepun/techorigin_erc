@@ -22,13 +22,13 @@
             </div>
             <div class="grids">
 
-                <div class="grid lg-75 md-100 sm-100">
-                    <div class="ss-video no-hover">
-                        <div class="img-bg lazy-bg" data-src="./assets/img/banner/04.jpg"></div>
-                        <div class="play-container">
-                            <div class="wrapper">
-                                <iframe src="https://www.youtube.com/embed/BiVTSRSweEY"></iframe>
-                            </div>
+                <div class="grid xl-75 lg-70 md-100 sm-100">
+                    <div class="ss-mp4">
+                        <div class="wrapper">
+                            <video controls>
+                                <source src="./assets/video/01.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     
@@ -61,6 +61,25 @@
                         แฮนด์เรซิ่นโครนาสเตเดียมเบญจมบพิตร สารขัณฑ์เคส ดยุค ซังเตรีพอร์ทแซลมอนวันเวย์แอโรบิค 
                         ฮ่องเต้อึมครึมดาวน์เวิร์ลด์สมิติเวช ออดิทอเรียมช็อคอัลตรา ติวเวิร์กสึนามิสแตนเลส
                     </p>
+
+                    <div class="btns d-flex jc-space-between ai-center mt-1-5">
+                        <a class="btn btn-action btn-secondary" href="#">
+                            ดาวน์โหลดไฟล์วิดีโอ
+                        </a>
+                        <a class="btn btn-action btn-primary" href="#">
+                            Embed &lt;/&gt;
+                        </a>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <textarea name="message" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="btns mt-0">
+                        <a class="btn btn-action btn-primary mt-0 full-width" href="#">
+                            คัดลอกโค้ด
+                        </a>
+                    </div>
                     
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
                         <div class="icon bg-color5"><i class="far fa-book"></i></div>
@@ -90,17 +109,18 @@
 
                 </div>
 
-                <div class="grid lg-25 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/05.jpg">
+                        <img class="float-img type-4" src="./assets/img/hero/10.png" alt="Slot Float Image 01" />
                         <div class="slot">
-                            
-                            <h2 class="header-text quote-text quote-inline">
-                                คนไทย <br>
-                                <span class="text-xl fw-400 color1">ร่วมใจสู้ภัย</span> <br>
-                                <span class="text-xl">โควิด-19</span>
+                            <h2 class="header-text quote-text mt-0">
+                                <span>กรมอนามัย</span> <br>
+                                <span class="text-xl fw-400 color1">ห่วงใยสุขภาพ</span> <br>
+                                ทุกคนเพื่อ <br>
+                                คุณภาพชีวิตที่ดี
                             </h2>
-
                         </div>
+                        <img class="float-img type-3 lazy-img" data-src="./assets/img/hero/11.png" alt="Slot Float Image 02" />
                     </div>
                 </div>
 

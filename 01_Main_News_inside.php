@@ -22,7 +22,7 @@
             </div>
             <div class="grids">
 
-                <div class="grid lg-75 md-100 sm-100">
+                <div class="grid xl-75 lg-70 md-100 sm-100">
                     <div data-aos="fade-up" data-aos-delay="300">
                         <?php
                             $contentStat = [
@@ -91,6 +91,19 @@
                     </div>
 
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
+                        <div class="icon bg-color3"><i class="far fa-file-alt"></i></div>
+                        <h2>Embed</h2>
+                    </div>
+                    <div class="ss-mp4 mt-1">
+                        <div class="wrapper">
+                            <video controls>
+                                <source src="./assets/video/01.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
                         <div class="icon bg-color4"><i class="far fa-images"></i></div>
                         <h2>รูปภาพที่เกี่ยวข้อง</h2>
                     </div>
@@ -103,6 +116,45 @@
                             </div>
                         <?php }?>
                         <div class="grid md-50 mt-0"></div>
+                    </div>
+                    
+                    <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
+                        <div class="icon bg-color1"><i class="far fa-images"></i></div>
+                        <h2>วิดีโอดาวน์โหลด</h2>
+                    </div>
+                    <div class="grids ai-center">
+                        <div class="grid xl-60 lg-50 xs-100">
+                            <div class="ss-mp4 mt-1">
+                                <div class="wrapper">
+                                    <video controls>
+                                        <source src="./assets/video/01.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid xl-40 lg-50 xs-100 xs-mt-0">
+                            <h3 class="color4">
+                                กรมอนามัย <br> 
+                                นำทีมลงห้าง-ศูนย์การค้า <br> 
+                                ย้ำศูนย์บริการมือถือเข้มมาตรการ <br>
+                                เว้นระยะ Social Distancing
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="grids" data-aos="fade-up" data-aos-delay="300">
+                        <?php for($i=0; $i<4; $i++){?>
+                            <div class="grid md-25 card">
+                                <div class="ss-video square">
+                                    <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
+                                    <div class="play-container">
+                                        <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php }?>
                     </div>
                     
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
@@ -129,7 +181,7 @@
                                     </div>
                                 </div>
                                 <div class="ss-tags">
-                                    <div class="ss-tag type-6"></div>
+                                    <div class="ss-tag type-<?php echo $i+1; ?>"></div>
                                 </div>
                                 <div class="ss-date">02.04.2564</div>
                                 <a href="#" class="ss-h5">
@@ -140,18 +192,29 @@
                     </div>
                     
                 </div>
-                
-                <div class="grid lg-25 sm-100 md-100" data-aos="fade-up" data-aos-delay="900">
-                    <div class="slots bg-color4">
-                        <div class="slot">
 
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/04.jpg">
+                        <img class="float-img" src="./assets/img/hero/07.png" alt="Slot Float Image" />
+                        <div class="slot-tabs">
+                            <h4 class="title color-white">หมวดหมู่</h4>
+                            <?php for($i=0; $i<4; $i++){?>
+                                <a class="slot-tab" href="#">
+                                    <h5 class="mt-0 color-white">
+                                        0<?php echo "$i"; ?>. <br>
+                                        ข่าวจากหนังสือพิมพ์ <br>
+                                        <span class="text-xs">กรมอนามัย</span>
+                                    </h5>
+                                </a>
+                            <?php }?> 
+                        </div>
+                        <div class="slot mt-2">
                             <h2 class="header-text quote-text">
                                 <span class="fw-400">กรรมอนามัย</span> <br>
                                 เรามีสาระสุขภาพดีๆ <br>
                                 <span class="text-xl fw-400 color1">ส่งตรงถึงคุณ</span> <br>
                                 <span class="text-xl">ทุกวัน</span>
                             </h2>
-
                         </div>
                     </div>
                 </div>
