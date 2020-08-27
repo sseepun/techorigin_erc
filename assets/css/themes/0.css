@@ -182,6 +182,15 @@ table.table .icon.icon-download, table.table .icon.icon-dot{
     color:#fff; background:#0d838d; background:var(--color4);
 }
 table.table.about-table td:nth-child(3){border-color:#c8c8c8;}
+table.table.info-table thead th{color:#fff; background:#6d9e5c;}
+table.table.info-table thead th:nth-child(4n+2){background:#28502b;}
+table.table.info-table thead th:nth-child(4n+3){background:#385f26;}
+table.table.info-table thead th:nth-child(4n){background:#6d9e5c;}
+table.table.info-table tbody td{border-color:#d8d8d8; color:#000;}
+table.table.info-table tbody td:nth-child(1){color:#383838; background:#f5f3f4;}
+table.table.info-table tbody td:nth-child(2)::before{background:#c0ca67; background:var(--color1);}
+table.table.info-table tbody td:nth-child(3){background:#f5f3f4;}
+table.table.info-table tbody td:nth-child(4){color:#fff; background:#959595;}
 
 
 /* Tab */

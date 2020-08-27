@@ -155,6 +155,8 @@ nav.footer p, nav.footer h1{color:#fff;}
 table.table td{color:#fff; border-color:#fff!important;}
 table.table .icon.icon-download, table.table .icon.icon-dot{color:#000; background:#fff;}
 table.table.about-table td:nth-child(3){border-color:#fff;}
+table.table.info-table thead th{color:#000; background:#fff;}
+table.table.info-table tbody td{border-color:#fff; color:#fff;}
 
 
 /* Tab */

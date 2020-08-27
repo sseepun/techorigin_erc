@@ -148,7 +148,7 @@
 }
 .content-01 .content:hover .order{top:.25rem; left:.625rem; font-size:2.375rem;}
 
-.content-01 .content .text-container{position:relative; padding:1.0625rem .75rem; text-align:center;}
+.content-01 .content .text-container{position:relative; padding:1.0625rem .25rem; text-align:center;}
 .content-01 .content .text-container::after{
     content:''; position:absolute; top:.625rem; bottom:.625rem; right:-.5px; width:1px;
     transition:background .3s;
