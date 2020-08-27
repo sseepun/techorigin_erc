@@ -1,4 +1,4 @@
-<div class="list-footer">
+<div class="list-footer <?php if(!empty($listFooterNoBorder))echo 'no-border'; ?>">
     <div class="block">
         <div class="text-wrapper">
             จำนวนทั้งหมด <span class="fw-600 color4">400</span> รายการ
