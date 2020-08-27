@@ -300,6 +300,23 @@
     .about-01 .content .hero{height:24rem; margin:0 auto;}
 }
 
+/* About 02 */
+.about-02{clear:both; width:100%; position:relative; background:#fff;}
+.about-02 .ss-header{position:absolute; top:2rem; width:100%;}
+.about-02 .banner-top, .about-02 .banner-bottom{display:block; width:100%; height:auto;}
+.about-02 .icon, .about-02 .border{display:block; width:100%; height:auto; margin:0 auto;}
+.about-02 .icon{position:relative; max-width:12rem; margin-top:-6rem;}
+.about-02 .border{max-width:20rem; margin-top:1rem;}
+.about-02 h2{color:#c49742;}
+.about-02 p.desc{width:100%; max-width:32rem; margin:1rem auto 1.25rem auto;}
+@media screen and (max-width:991.98px){
+    .about-02 .banner-top, .about-02 .banner-bottom{
+        width:calc(100% + 40rem); transform:translateX(-20rem);
+    }
+    .about-02 .ss-header{display:none;}
+    .about-02 .icon{max-width:11rem; margin-top:-5rem;}
+}
+
 
 /* Column 01 */
 .column-01{position:relative; padding:1rem 0 0 3.5rem;}
