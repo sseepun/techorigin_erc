@@ -142,6 +142,23 @@ $(function(){ 'use strict';
         });
     });
 
+    // Special Tag Closable
+    $('.ss-tags > .ss-tag.closable').click(function(e){
+        e.preventDefault();
+        $(this).remove();
+    });
+
+    // Toggle Box
+    if($('.toggle-box').length){
+        $('.toggle-box').each(function(){
+            $(this).find('> .toggle-title').click(function(e){
+                e.preventDefault();
+                $(this).toggleClass('active');
+                $(this).next().slideToggle();
+            });
+        });
+    }
+
 
     // Banner 01
     if($('section.banner-01').length){

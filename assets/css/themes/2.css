@@ -191,6 +191,12 @@ table.table.info-table tbody td{border-color:#ffff00; color:#ffff00;}
 .slots .slot-tab:hover, .slots .slot-tab.active{background:#c0ca67; background:var(--color1);}
 
 
+/* Toggle Box */
+.toggle-box > .toggle-title::after{
+    color:#ffff00; background:rgba(0,0,0,.5); border-color:#ffff00;
+}
+
+
 /* Special & Typography */
 .ss-date{color:#ffff00;}
 h1, .ss-h1, h2, .ss-h2, h3, .ss-h3, h4, .ss-h4, h4, .ss-h5{color:#ffff00;}

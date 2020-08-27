@@ -99,8 +99,10 @@ button.btn{border:0!important;}
 
 .field > .control, .field > .control-flex{position:relative; width:100%; margin:.25rem 0 0 0;}
 .field > .control:first-child{margin:0;}
-.field > .control-flex{display:flex; align-items:center; height:2.5rem;}
-.field > .control-flex > *{margin-right:1.75rem;}
+.field > .control-flex{display:flex; align-items:center; flex-wrap:wrap; margin:.5rem 0 0 0;}
+.field > .control-flex > *{
+    margin-right:.75rem; margin-top:.25rem; margin-bottom:.25rem; width:11rem;
+}
 
 .field input[type=text], .field input[type=email], .field input[type=password], 
 .field input[type=date], .field input[type=tel], .field input[type=phone], 
@@ -406,7 +408,7 @@ table.table.info-table tbody td:nth-child(4){text-align:left; min-width:5.5rem;}
 .slots .float-img.type-2{width:calc(100% + 1.625rem); transform:translate(-1.625rem, -5rem);}
 .slots .float-img.type-3{width:calc(100% - 2rem); transform:none; margin:0 0 0 auto;}
 .slots .float-img.type-4{width:calc(100% + .75rem); transform:translate(-.75rem, -3.75rem);}
-.slots .float-img.type-5{width:100%; transform:translate(0, -1.5rem);}
+.slots .float-img.type-5{width:100%; transform:translate(0, -1.625rem);}
 
 .slots .header-text{
     position:relative; text-decoration:none; font-size:2.5rem; text-align:center; line-height:1;
@@ -475,6 +477,24 @@ table.table.info-table tbody td:nth-child(4){text-align:left; min-width:5.5rem;}
     .slots > .slot{padding:1rem 1rem 3rem 1rem;}
     .slots .header-text{font-size:3rem;}
 }
+
+
+/* Toggle Box */
+.toggle-box{width:100%;}
+.toggle-box > .toggle-title{
+    position:relative; display:flex; align-items:center; cursor:pointer;
+    transition:opacity .3s;
+}
+.toggle-box > .toggle-title:hover{opacity:.75;}
+.toggle-box > .toggle-title > *{margin:0;}
+.toggle-box > .toggle-title::after{
+    content:'\f078'; font-family:'Font Awesome 5 Free'; font-weight:900; font-size:.875rem;
+    display:block; width:1.625rem; height:1.625rem; border-radius:.3125rem; text-align:center;
+    line-height:1.875rem; border:1px solid transparent; margin:0 0 0 .75rem;
+    transition:transform .3s;
+}
+.toggle-box > .toggle-title.active::after{transform:rotate(180deg);}
+.toggle-box > .toggle-content{display:none; width:100%; padding:.5rem 0;}
 
 
 /* Special & Typography */
@@ -770,6 +790,14 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-tags > .ss-tag.type-10::before{content:'ทันตสาธารณะสุข';}
 .ss-tags > .ss-tag.type-11::before{content:'อนามัยสิ่งแวดล้อม';}
 
+.ss-tags > .ss-tag.closable{position:relative; padding:.1875rem 2rem .1875rem 1rem; cursor:pointer;}
+.ss-tags > .ss-tag.closable::after{
+    content:'\f00d'; font-family:'Font Awesome 5 Free'; font-weight:900; font-size:65%;
+    color:#fff; position:absolute; top:.3125rem; right:.5625rem; opacity:.65;
+    transition:opacity .3s;
+}
+.ss-tags > .ss-tag.closable:hover::after{opacity:1;}
+
 .ss-status{
     display:inline-block; padding:.125rem .25rem; min-width:6rem; text-align:center;
     border-radius:.25rem; font-size:1.125rem; font-weight:300; white-space:nowrap; color:#fff;
@@ -846,6 +874,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     padding:.25rem 0; margin:0 0 1.25rem 0; border-top:1px solid transparent;
     border-bottom:1px solid transparent;
 }
+.content-stat.content-stat-side{border:0;}
 .content-stat > .block, .content-stat .stat{display:flex; align-items:center;}
 .content-stat .stat{
     padding:.25rem 0; margin:0 0 0 2.5rem; font-size:1.1875rem; font-weight:300;
@@ -861,6 +890,10 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .content-stat .stat{margin:0 0 0 1.5rem; font-size:1.125rem;}
     .content-stat .stat:first-child{margin:0;}
     .content-stat .icon{margin:0 .5rem 0 0;}
+}
+@media screen and (min-width:768px){
+    .content-stat.content-stat-side > .block{display:block; width:100%;}
+    .content-stat .stat{margin:0!important;}
 }
 
 

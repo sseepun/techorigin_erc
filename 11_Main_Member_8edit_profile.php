@@ -101,11 +101,11 @@
                                 <div class="field">
                                     <label for="sex">ระบุเพศ</label>
                                     <div class="control-flex">
-                                        <div class="control radio-control">
+                                        <div class="control radio-control mr-3" style="width:auto;">
                                             <input type="radio" name="sex" id="sex_1" value="1">
                                             <label for="sex_1">ชาย</label>
                                         </div>
-                                        <div class="control radio-control">
+                                        <div class="control radio-control" style="width:auto;">
                                             <input type="radio" name="sex" id="sex_0" value="0">
                                             <label for="sex_0">หญิง</label>
                                         </div>
