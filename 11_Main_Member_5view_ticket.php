@@ -26,7 +26,7 @@
         .chat-container .chat-content-area .chat-other .profile .profile-img {position:absolute; width:2.5rem; height:2.5rem; top: calc(50% - 1.25rem); left: calc(50% - 1.25rem); background-position:center; background-size:cover; border-radius:50%;}
         .chat-container .chat-content-area .chat-other .text {border: .0625rem solid #e7e7e7; max-width:80%; position:relative; border-radius:.25rem; background:#f3f5f4; min-height:10%; padding:.75rem 1rem; }
         .chat-container .chat-content-area .chat-other .text::before {content:''; width:1rem; height:1rem; background:#f3f5f4; transform: rotate(45deg); position:absolute; top: calc(50% - .5rem); left: -.5rem;}
-        .chat-container .chat-content-area .chat-other .info {padding-left: 10%; width:100%; padding-top: .25rem; display:flex; align-items:center;}
+        .chat-container .chat-content-area .chat-other .info {padding-left: 10%; width:100%; padding-top: .25rem; display:flex;flex-wrap:wrap; align-items:center;}
         .chat-container .chat-content-area .chat-other .info .time {padding-left:1.5rem;}
         .chat-container .chat-content-area .chat-other .info .icon {margin-left:.5rem;}
         .chat-container .chat-content-area .chat-other .info .icon i{ width:1.25rem; height:1.25rem; display:flex; justify-content:center; align-items:center; color:#e2e2e2; font-size:.75rem; padding:.25rem; border-radius: 50%; }
@@ -46,12 +46,13 @@
         @media screen and (max-width:576px) {
             .header-container .text-container {padding: .75rem 0 0 0;}
             .chat-container .chat-content-area .chat-other .info{padding-left:0;}
-            .chat-container .chat-content-area .chat-other .info .time {text-align:right;}
+            .chat-container .chat-content-area .chat-other .info .time {padding:0;}
             .chat-container .chat-content-area .chat-me .info {padding-right:0;}
             .chat-container .chat-content-area .chat-other .text, .chat-container .chat-content-area .chat-me .text{max-width:100%;}
             .chat-container .chat-content-area .chat-other .profile,.chat-container .chat-content-area .chat-me .profile{width:100%;}
             .chat-container .chat-content-area .chat-other .profile .profile-img {top: -1rem; left:0; }
             .chat-container .chat-content-area .chat-me .profile .profile-img {top:-1rem;left:auto;  right:0;}
+            .chat-container .chat-content-area .chat-other .info .icon, .chat-container .chat-content-area .chat-me .info .icon {display:none;}
 
         }
     </style>
