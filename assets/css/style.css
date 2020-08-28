@@ -95,6 +95,27 @@ button.btn{border:0!important;}
     transition:background .3s, color .3s;
 }
 
+.social-btns{width:100%; display:flex; justify-content:space-between; flex-wrap:wrap;}
+.social-btns > .btn.social-btn{
+    display:block; width:calc(50% - .375rem); margin:.375rem 0; padding:0; font-size:1.25rem;
+    line-height:2.25rem; text-align:left; color:#fff; white-space:nowrap;
+}
+.social-btns > .btn.social-btn > i{
+    display:inline-block; width:2.4375rem; height:100%; line-height:2.5rem;
+    text-align:center; margin:0 .375rem 0 0;
+}
+.social-btns > .btn.social-btn.fb{background:#4668b7;}
+.social-btns > .btn.social-btn.fb > i{background:#3157b0;}
+.social-btns > .btn.social-btn.gg{background:#eb4033;}
+.social-btns > .btn.social-btn.gg > i{background:#b62c22;}
+.social-btns > .btn.social-btn.ln{background:#3ace01;}
+.social-btns > .btn.social-btn.ln > i{background:#419d1e;}
+.social-btns > .btn.social-btn.tw{background:#2cafe9;}
+.social-btns > .btn.social-btn.tw > i{background:#1796ce;}
+@media screen and (max-width:575.98px){
+    .social-btns > .btn.social-btn{width:100%;}
+}
+
 
 /* Fields & Inputs */
 .field{margin:.75rem 0 0 0; width:100%;}
@@ -264,6 +285,39 @@ button.btn{border:0!important;}
 }
 
 
+/* Password Indicator */
+.password-indicator{width:100%;}
+.password-indicator > .levels{
+    width:100%; margin:.375rem 0; display:flex; align-items:center; justify-content:space-between;
+}
+.password-indicator .level{
+    width:calc(25% - .25rem); height:.3125rem; border-radius:.1875rem; background:#ebebeb;
+    transition:background .3s;
+}
+.password-indicator .level-text::before{
+    content:'Level 0'; font-weight:600; transition:color .3s;
+}
+.password-indicator.level-1 .level-text::before{content:'Level 1';}
+.password-indicator.level-2 .level-text::before{content:'Level 2';}
+.password-indicator.level-3 .level-text::before{content:'Level 3';}
+.password-indicator.level-4 .level-text::before{content:'Level 4';}
+
+.password-indicator.level-1 .level-text::before{color:#ff0000;}
+.password-indicator.level-1 .level:nth-child(1){background:#ff0000;}
+
+.password-indicator.level-2 .level-text::before{color:#284e51; color:var(--color3);}
+.password-indicator.level-2 .level:nth-child(1),
+.password-indicator.level-2 .level:nth-child(2){background:#284e51; background:var(--color3);}
+
+.password-indicator.level-3 .level-text::before{color:#c0ca67; color:var(--color1);}
+.password-indicator.level-3 .level:nth-child(1),
+.password-indicator.level-3 .level:nth-child(2),
+.password-indicator.level-3 .level:nth-child(3){background:#c0ca67; background:var(--color1);}
+
+.password-indicator.level-4 .level-text::before{color:#0d838d; color:var(--color4);}
+.password-indicator.level-4 .level{background:#0d838d; background:var(--color4);}
+
+
 /* Table */
 .table-wrapper{width:100%; overflow-x:auto; overflow-y:hidden; padding:.875rem 0;}
 table.table{width:100%; border-spacing:0;}
@@ -427,6 +481,7 @@ table.table.info-table tbody td:nth-child(4){text-align:left; min-width:5.5rem;}
 .slots .float-img.type-4{width:calc(100% + .75rem); transform:translate(-.75rem, -3.75rem);}
 .slots .float-img.type-5{width:100%; transform:translate(0, -1.625rem);}
 .slots .float-img.type-6{width:100%; transform:translate(0, -1rem);}
+.slots .float-img.type-7{width:100%; transform:translate(0, -2.75rem);}
 
 .slots .header-text{
     position:relative; text-decoration:none; font-size:2.5rem; text-align:center; line-height:1;
@@ -915,10 +970,6 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 }
 
 
-/* Fixes */
-.simplebar-content{padding-top:0!important;}
-
-
 /* General */
 .text-center{text-align:center!important;}
 .text-left{text-align:left!important;}
@@ -1003,3 +1054,10 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .pr-2{padding-right:2rem!important;} .pr-2-5{padding-right:2.5rem!important;}
 .pr-3{padding-right:3rem!important;} .pr-3-5{padding-right:3.5rem!important;}
 .pr-4{padding-right:4rem!important;} .pr-4-5{padding-right:4.5rem!important;}
+
+
+/* Fixes */
+.simplebar-content{padding-top:0!important;}
+@media screen and (max-width:767.98px){
+    .ss-header p > *{margin:0!important;}
+}

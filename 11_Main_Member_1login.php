@@ -14,16 +14,17 @@
         include_once('component/breadcrumb.php');
     ?>
     
-    <div class="section-padding bg-gradient-01">
+    <div class="intro-01 lazy-bg" data-src="./assets/img/bg/16.jpg">
         <div class="container">
             <div class="ss-header color-white">
                 <div class="ss">เ</div><h1>ข้าสู่ระบบ</h1>
-                <p><strong class="ml-1">กรมอนามัย</strong> ยินดีพร้อมให้บริการประชาชนเพื่อสุขภาพที่ดี</p>
+                <p><strong class="ml-0-5">กรมอนามัย</strong> ยินดีพร้อมให้บริการประชาชนเพื่อสุขภาพที่ดี</p>
             </div>
+            <img class="float-img type-2" src="./assets/img/hero/17.png" alt="Hero Float" />
         </div>   
     </div>
 
-    <section class="section-padding contact-01">
+    <section class="section-padding contact-01 lazy-bg" data-src="./assets/img/bg/15.jpg">
         <div class="container">
             <div class="grids">
 
@@ -31,8 +32,8 @@
                     <div class="contact-box">
                         <form action="./" method="POST">
                             <div class="ss-icon-title mt-0 mb-1">
-                                <div class="icon bg-color1"><i class="fas fa-mail-bulk"></i></div>
-                                <h2>แบบฟอร์มติดต่อ</h2>
+                                <div class="icon bg-color4"><i class="fas fa-mail-bulk"></i></div>
+                                <h2>เข้าสู่ระบบ</h2>
                                 <p>
                                     <a class="color-black" href="#">ลืมรหัสผ่าน</a> |
                                     <a class="fw-400 color4" href="#"><u>สมัครสมาชิก</u></a>
@@ -41,65 +42,50 @@
                             <div class="grids">
                                 <div class="grid sm-100 mt-0">
                                     <div class="field">
-                                        <label for="firstname">ชื่อ *</label>
-                                        <div class="control">
-                                            <input type="text" name="firstname" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid sm-100 mt-0">
-                                    <div class="field">
-                                        <label for="lastname">นามสกุล</label>
-                                        <div class="control">
-                                            <input type="text" name="lastname">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid sm-100 mt-0">
-                                    <div class="field">
-                                        <label for="phone">หมายเลขโทรศัพท์ *</label>
-                                        <div class="control">
-                                            <input type="text" name="phone" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid sm-100 mt-0">
-                                    <div class="field">
                                         <label for="email">อีเมล</label>
                                         <div class="control">
-                                            <input type="email" name="email">
+                                            <input type="email" name="email" required />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid sm-100 mt-0">
                                     <div class="field">
-                                        <label for="message">ข้อความ *</label>
+                                        <label for="password">รหัสผ่าน</label>
                                         <div class="control">
-                                            <textarea name="message" rows="4" required></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid sm-100 mt-0">
-                                    <div class="field">
-                                        <div class="control checkbox-control">
-                                            <input type="checkbox" name="agree" id="agree" value="1">
-                                            <label for="agree">
-                                                คอนโด หม่านโถว ไอติมชิฟฟอนอาข่าแตงกวาเซอร์ 
-                                                ม็อบซิ่งกรีนวีเจ เนิร์สเซอรี่เท็กซ์ไพลินไกด์ซะ
-                                            </label>
+                                            <input type="password" name="password" required />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="btns mt-2">
+                            <div class="btns mt-1">
                                 <button type="submit" class="btn btn-action btn-secondary next-icon">
-                                    ส่องข้อความ
+                                    เข้าสู่ระบบ
                                 </button>
-                                <a class="btn btn-action btn-primary" href="#">
-                                    ล้างข้อมูล
-                                </a>
                             </div>
                         </form>
+                        <div class="sep">
+                            <h4 class="text-center fw-400 no-margin">
+                                หรือ
+                            </h4>
+                        </div>
+                        <div class="social-btns">
+                            <a class="btn social-btn fb" href="#">
+                                <i class="fab fa-facebook-f"></i> 
+                                เข้าสู่ระบบด้วย Facebook
+                            </a>
+                            <a class="btn social-btn gg" href="#">
+                                <i class="fab fa-google"></i> 
+                                เข้าสู่ระบบด้วย Google
+                            </a>
+                            <a class="btn social-btn ln" href="#">
+                                <i class="fab fa-line"></i> 
+                                เข้าสู่ระบบด้วย Line
+                            </a>
+                            <a class="btn social-btn tw" href="#">
+                                <i class="fab fa-twitter"></i> 
+                                เข้าสู่ระบบด้วย Twitter
+                            </a>
+                        </div>
                     </div>
                 </div>
 

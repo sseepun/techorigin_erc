@@ -23,25 +23,38 @@
                 <p><strong>กรมอนามัย</strong> ส่งมอบความรู้ที่ถูกต้อง เหมาะสมในวิถีชีวิตสู่การสุขภาพดี</p>
             </div>
             <div class="grids">
-                <div class="grid lg-75 md-100 sm-100">
-                    <?php include_once('component/list-header.php'); ?>
+                
+                <div class="grid xl-75 lg-70 md-100 sm-100">
+                    <div class="list-header">
+                        <div class="block">
+                            <div class="text-wrapper">
+                                <form action="search-result.php" method="GET">
+                                    <input type="text" name="search" placeholder="ค้นหา" required>
+                                    <button type="submit" class="btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="text-wrapper">
+                                เรียงลำดับข้อมูล 
+                                <select class="order mr-0">
+                                    <option value="newest">ที่มาใหม่</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Banner 03 -->
                     <div class="banner-03">
                         <div class="slide-container">
                             <div class="slides">
-                                <?php for($i=1; $i < 5; $i++){?>
+                                <?php for($i=1; $i<5; $i++){?>
                                     <div class="slide">
                                         <div class="wrapper">
                                             <a class="ss-img" href="#">
                                                 <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo $i; ?>.jpg"></div>
-                                                <div class="tag">
-                                                    <div class="date">28</div>
-                                                    <div class="text-container">
-                                                        <div class="month">กรกฎาคม</div>
-                                                        <div class="year">2563</div>
-                                                    </div>
-                                                </div>
                                             </a>
                                         </div>
                                     </div>
@@ -90,17 +103,19 @@
                     <?php include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
-                        <div class="slot">
-
-                            <div class="ss-header color-white">
-                                <div class="ss">อั</div><h1 class="fw-300">ลบั้มภาพ</h1>
-                                <p>พร้อมอัพเดท</p>
-                            </div>
-                            <p class="color-white no-margin">สาระสุขภาพทันสมัยให้คุณเข้าใจง่าย</p>
-                            <h2 class="color1 no-margin">ไม่ตกเทรนด์!</h2>
-
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/14.jpg">
+                        <img class="float-img type-7" src="./assets/img/hero/16.png" alt="Slot Float Image 01" />
+                        <div class="slot-tabs mt-0">
+                            <h4 class="title color-white">หมวดหมู่</h4>
+                            <?php for($i=0; $i<10; $i++){?>
+                                <a class="slot-tab" href="#">
+                                    <h5 class="mt-0 color-white">
+                                        0<?php echo $i; ?>. <br>
+                                        ข่าวจากหนังสือพิมพ์
+                                    </h5>
+                                </a>
+                            <?php }?> 
                         </div>
                     </div>
                 </div>

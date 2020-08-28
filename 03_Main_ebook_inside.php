@@ -22,7 +22,7 @@
             </div>
             <div class="grids">
 
-                <div class="grid lg-75 md-100 sm-100">
+                <div class="grid xl-75 lg-70 md-100 sm-100">
                     <div data-aos="fade-up" data-aos-delay="300">
                         <?php
                             $contentStat = [
@@ -40,13 +40,8 @@
                                     <?php for($i=1; $i<7; $i++){?>
                                         <div class="slide">
                                             <div class="wrapper">
-                                                <div class="ss-video">
+                                                <div class="ss-img no-hover">
                                                     <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg"></div>
-                                                    <div class="play-container">
-                                                        <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox="">
-                                                            <i class="fas fa-play"></i>
-                                                        </a>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,18 +103,23 @@
                         <div class="icon bg-color3"><i class="far fa-file-alt"></i></div>
                         <h2>อัลบั้มรูปภาพ</h2>
                     </div>
-                    <div class="table-wrapper" data-simplebar>
+                    <div class="table-wrapper mt-1" data-simplebar>
                         <table class="table download-table">
                             <tbody>
                                 <?php foreach(['doc', 'docx', 'pdf', 'ppt', 'pptx'] as $f){?>
                                     <tr>
-                                        <td><div class="file-icon <?php echo $f; ?>"></div></td>
                                         <td>
-                                            <h3 class="no-margin">อัลบั้มภาพ ชุดที่ 1.Zip</h3> 
-                                            ขนาดไฟล์ 30.31 MB จำนวนดาวน์โหลด 200 ครั้ง
+                                            <div class="file-icon <?php echo $f; ?>"></div>
                                         </td>
                                         <td>
-                                            <a href="#" class="btn btn-action btn-primary">
+                                            การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
+                                        </td>
+                                        <td>
+                                            <div class="text-xs">ขนาดไปล์ <strong>1.3</strong> MB</div>
+                                            <div class="text-xs">ดาวน์โหลด <strong>23</strong> ครั้ง</div>
+                                        </td>
+                                        <td class="text-left">
+                                            <a class="btn btn-action btn-sm btn-icon-alert" href="#">
                                                 แจ้งไฟล์เสีย
                                             </a>
                                         </td>
@@ -165,16 +165,19 @@
 
                 </div>
 
-                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
-                        <div class="slot">
-                            
-                            <h2 class="header-text quote-text quote-inline">
-                                คนไทย <br>
-                                <span class="text-xl fw-400 color1">ร่วมใจสู้ภัย</span> <br>
-                                <span class="text-xl">โควิด-19</span>
-                            </h2>
-
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/14.jpg">
+                        <img class="float-img type-7" src="./assets/img/hero/16.png" alt="Slot Float Image 01" />
+                        <div class="slot-tabs mt-0">
+                            <h4 class="title color-white">หมวดหมู่</h4>
+                            <?php for($i=0; $i<10; $i++){?>
+                                <a class="slot-tab" href="#">
+                                    <h5 class="mt-0 color-white">
+                                        0<?php echo $i; ?>. <br>
+                                        ข่าวจากหนังสือพิมพ์
+                                    </h5>
+                                </a>
+                            <?php }?> 
                         </div>
                     </div>
                 </div>

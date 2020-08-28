@@ -14,16 +14,17 @@
         include_once('component/breadcrumb.php');
     ?>
     
-    <div class="section-padding bg-gradient-01">
+    <div class="intro-01 lazy-bg" data-src="./assets/img/bg/17.jpg">
         <div class="container">
             <div class="ss-header color-white">
                 <div class="ss">ล</div><h1>งทะเบียนสมัครสมาชิก</h1>
                 <p><strong>กรมอนามัย</strong> ยินดีพร้อมให้บริการประชาชนเพื่อสุขภาพที่ดี</p>
             </div>
+            <img class="float-img type-2" src="./assets/img/hero/18.png" alt="Hero Float" />
         </div>   
     </div>
 
-    <section class="section-padding contact-01">
+    <section class="section-padding contact-01 lazy-bg" data-src="./assets/img/bg/15.jpg">
         <div class="container">
             <div class="grids">
 
@@ -32,7 +33,7 @@
                         <form action="./" method="POST">
                             <div class="ss-icon-title mt-0 mb-1">
                                 <div class="icon bg-color1"><i class="fas fa-mail-bulk"></i></div>
-                                <h2>แบบฟอร์มติดต่อ</h2>
+                                <h2>สมัครสมาชิก</h2>
                                 <p>
                                     เป็นสมาชิกแล้ว? 
                                     <a href="#" class="fw-400 color4"><u>เข้าสู่ระบบ</u></a>
@@ -43,7 +44,7 @@
                                     <div class="field">
                                         <label for="firstname">ชื่อ *</label>
                                         <div class="control">
-                                            <input type="text" name="firstname" required>
+                                            <input type="text" name="firstname" required />
                                         </div>
                                     </div>
                                 </div>
@@ -51,31 +52,43 @@
                                     <div class="field">
                                         <label for="lastname">นามสกุล</label>
                                         <div class="control">
-                                            <input type="text" name="lastname">
+                                            <input type="text" name="lastname" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid sm-100 mt-0">
                                     <div class="field">
-                                        <label for="phone">หมายเลขโทรศัพท์ *</label>
+                                        <label for="email">อีเมล *</label>
                                         <div class="control">
-                                            <input type="text" name="phone" required>
+                                            <input type="email" name="email" required />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid sm-100 mt-0">
                                     <div class="field">
-                                        <label for="email">อีเมล</label>
+                                        <label for="email">รหัสผ่าน *</label>
                                         <div class="control">
-                                            <input type="email" name="email">
+                                            <input type="password" name="password" required />
+                                        </div>
+                                        <div class="password-indicator level-3">
+                                            <div class="levels">
+                                                <div class="level"></div>
+                                                <div class="level"></div>
+                                                <div class="level"></div>
+                                                <div class="level"></div>
+                                            </div>
+                                            <h5 class="mt-0">
+                                                ระดับความยากของรหัสผ่าน : 
+                                                <span class="level-text"></span>
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid sm-100 mt-0">
                                     <div class="field">
-                                        <label for="message">ข้อความ *</label>
+                                        <label for="email">ยืนยันรหัสผ่าน *</label>
                                         <div class="control">
-                                            <textarea name="message" rows="4" required></textarea>
+                                            <input type="password" name="conf_password" required />
                                         </div>
                                     </div>
                                 </div>
@@ -84,14 +97,14 @@
                                         <div class="control checkbox-control">
                                             <input type="checkbox" name="agree" id="agree" value="1">
                                             <label for="agree">
-                                                คอนโด หม่านโถว ไอติมชิฟฟอนอาข่าแตงกวาเซอร์ 
-                                                ม็อบซิ่งกรีนวีเจ เนิร์สเซอรี่เท็กซ์ไพลินไกด์ซะ
+                                                ข้าพเจ้ายอมรับ และได้อ่านข้อความในข้อตกลงและเงื่อนไขนี้
+                                                เข้าใจโดยละเอียดแล้ว
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="btns mt-2">
+                            <div class="btns mt-1-5">
                                 <button type="submit" class="btn btn-action btn-secondary next-icon">
                                     ส่องข้อความ
                                 </button>

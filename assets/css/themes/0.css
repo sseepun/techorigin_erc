@@ -444,6 +444,7 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 /* Contact 01 */
 .contact-01 .contact-box{background:#fff;}
 .contact-01 .contact-tabs, .contact-01 .contact-tab{border-color:#d8d8d8;}
+.contact-01 .contact-box .sep::before, .contact-01 .contact-box .sep::after{background:#d8d8d8;}
 
 
 /* FAQ 01 */
