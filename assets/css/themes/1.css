@@ -48,6 +48,8 @@ html, body{background:#000; color:#fff;}
 .bg-white{background:#fff!important;}
 .bg-black{background:#fff!important;}
 
+.bg-gradient-04{background:transparent; border-top:1px solid #fff;}
+
 
 /* Topnav */
 nav.topnav{background:#000; border-color:#fff;}
@@ -362,10 +364,13 @@ h6, .ss-h6, p, .ss-p{color:#fff;}
 
 
 /* Column 01 */
-.column-01 .dot, .column-01 .line, .column-01 .map::before, .column-01 .map li::before{
-    background:#fff;
+.column-01 .dot, .column-01 .line, .column-01 .map li::before{
+    background:#0d838d; background:var(--color4);
 }
-.column-01 .map a{color:#fff;}
+.column-01 .map::before{background:#e7e7e7;}
+.column-01 .map a{color:#000;}
+.column-01 .map > a:hover{color:#fff; background:#0d838d; background:var(--color4);}
+.column-01 li:hover > a{color:#0d838d; color:var(--color4);}
 
 
 /* Contact 01 */

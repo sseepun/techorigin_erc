@@ -14,7 +14,7 @@
         include_once('component/breadcrumb.php');
     ?>
 
-    <div class="section-padding bg-gradient-01">
+    <div class="section-padding section-bg lazy-bg" data-src="./assets/img/bg/11.jpg">
         <div class="container">
             <div class="ss-header color-white">
                 <div class="ss">แ</div><h1>ผนผังเว็บไซต์</h1>
@@ -22,19 +22,17 @@
             </div>
         </div>   
     </div>
-    <section class="mt-0" style="padding-bottom:20rem;">
+
+    <section class="pt-1 section-bg lazy-bg" data-src="./assets/img/bg/12.jpg" style="padding-bottom:28rem;">
         <div class="container">
             <div class="grids">
 
-                <div class="grid lg-25 md-1-3 sm-100 mt-0">
-                    <div class="ss-icon-title">
-                        <div class="icon color-white bg-color5"><i class="far fa-file-alt"></i></div>
-                        <h2>หน้าแรก</h2>
-                    </div>
+                <div class="grid md-1-3 sm-100">
+                    <h2 class="color4 fw-400">หน้าแรก</h2>
                     <div class="column-01">
                         <div class="maps">
-                            <div class="dot bg-color5"></div>
-                            <div class="line bg-color5"></div>
+                            <div class="dot bg-color4"></div>
+                            <div class="line bg-color4"></div>
                             <div class="map">
                                 <a href="#">ระเบียงคุณธรรม</a>
                             </div>
@@ -63,11 +61,8 @@
                     </div>
                 </div>
 
-                <div class="grid lg-25 md-1-3 sm-100 mt-0">
-                    <div class="ss-icon-title">
-                        <div class="icon color-white bg-color4"><i class="far fa-file-alt"></i></div>
-                        <h2>รู้จักกรม</h2>
-                    </div>
+                <div class="grid md-1-3 sm-100">
+                    <h2 class="color4 fw-400">รู้จักกรม</h2>
                     <div class="column-01">
                         <div class="maps">
                             <div class="dot bg-color4"></div>
@@ -105,18 +100,6 @@
                                     <li><a href="#">แผนปฏิบัติราชการประจำปี</a></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid lg-25 md-1-3 sm-100 mt-0">
-                    <div class="ss-icon-title op-0">
-                        <div class="icon color-white bg-color4"><i class="far fa-file-alt"></i></div>
-                        <h2>รู้จักกรม</h2>
-                    </div>
-                    <div class="column-01">
-                        <div class="maps">
-                            <div class="dot bg-color4"></div>
-                            <div class="line bg-color4"></div>
                             <div class="map">
                                 <a href="#">แผนยุทธศาสตร์</a>
                             </div>
@@ -151,15 +134,12 @@
                     </div>
                 </div>
 
-                <div class="grid lg-25 md-1-3 sm-100 mt-0">
-                    <div class="ss-icon-title">
-                        <div class="icon color-white bg-color3"><i class="far fa-file-alt"></i></div>
-                        <h2>ข่าวสาร</h2>
-                    </div>
+                <div class="grid md-1-3 sm-100">
+                    <h2 class="color4 fw-400">ข่าวสาร</h2>
                     <div class="column-01">
                         <div class="maps">
-                            <div class="dot bg-color3"></div>
-                            <div class="line bg-color3"></div>
+                            <div class="dot bg-color4"></div>
+                            <div class="line bg-color4"></div>
                             <div class="map">
                                 <a href="#">ข่าวจากส่วนกลาง</a>
                             </div>
@@ -194,17 +174,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="grid lg-25 md-1-3 sm-100 mt-0">
-                    <div class="ss-icon-title">
-                        <div class="icon color-white bg-color1"><i class="far fa-file-alt"></i></div>
-                        <h2>บริการประชาชน</h2>
-                    </div>
+                    <h2 class="color4 fw-400 mt-2">บริการประชาชน</h2>
                     <div class="column-01">
                         <div class="maps">
-                            <div class="dot bg-color1"></div>
-                            <div class="line bg-color1"></div>
+                            <div class="dot bg-color4"></div>
+                            <div class="line bg-color4"></div>
                             <div class="map">
                                 <a href="#">แจ้งเรื่องร้องเรียน</a>
                             </div>
@@ -213,41 +188,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="grid lg-25 md-1-3 sm-100 mt-0">
-                    <div class="ss-icon-title">
-                        <div class="icon color-white bg-color2"><i class="far fa-file-alt"></i></div>
-                        <h2>ติดต่อกรม</h2>
-                    </div>
-                    <div class="column-01">
-                        <div class="maps">
-                            <div class="dot bg-color2"></div>
-                            <div class="line bg-color2"></div>
-                            <div class="map">
-                                <a href="#">ติดต่อกรม</a>
-                            </div>
-                        </div>
-                    </div>
+                    <a class="ss-h2 color4 fw-400 mt-3" href="#">ติดต่อกรม</a>
+                    <a class="ss-h2 color4 fw-400 mt-1" href="#">แผนผังเว็บไซต์</a>
                 </div>
-
-                <div class="grid lg-25 md-1-3 sm-100 mt-0">
-                    <div class="ss-icon-title">
-                        <div class="icon color-white bg-color5"><i class="far fa-file-alt"></i></div>
-                        <h2>แผนผังเว็บไซต์</h2>
-                    </div>
-                    <div class="column-01">
-                        <div class="maps">
-                            <div class="dot bg-color5"></div>
-                            <div class="line bg-color5"></div>
-                            <div class="map">
-                                <a href="#">แผนผังเว็บไซต์</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="grid lg-25 md-1-3 sm-100 mt-0"></div>
 
             </div>
         </div>

@@ -14,21 +14,22 @@
         include_once('component/breadcrumb.php');
     ?>
     
-    <div class="section-padding bg-gradient-01">
+    <div class="intro-01 lazy-bg" data-src="./assets/img/bg/11.jpg">
         <div class="container">
             <div class="ss-header color-white">
                 <div class="ss">ติ</div><h1>ดต่อกรม</h1>
                 <p><strong>กรมอนามัย</strong> ยินดีพร้อมให้บริการประชาชนเพื่อสุขภาพที่ดี</p>
             </div>
+            <img class="float-img" src="./assets/img/hero/14.png" alt="Hero Float" />
         </div>   
     </div>
 
-    <section class="section-padding contact-01">
+    <section class="section-padding contact-01 lazy-bg" data-src="./assets/img/bg/10.jpg">
         <div class="container">
             <div class="grids">
 
                 <div class="grid xl-50 lg-60 sm-100">
-                    <h2 class="color4 fw-400 mt-2">
+                    <h2 class="color4 fw-400 mt-0">
                         กรมอนามัย กระทรวงสาธารณสุข
                     </h2>
                     <table>
@@ -59,13 +60,12 @@
                                 <h5 class="color4 fw-600 no-margin">0-2590-4094</h5>
                             </div>
                         </div>
-                        <div class="contact-tab">
+                        <div class="contact-tab full-width">
                             <div class="icon bg-color0"><i class="far fa-envelope color1"></i></div>
                             <div class="text-container">
                                 <h5 class="no-margin">อีเมล์</h5>
                                 <h5 class="color4 fw-600 no-margin">
-                                    mailmaster@ <br>
-                                    anamai.mail.go.th
+                                    mailmaster@anamai.mail.go.th
                                 </h5>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                             </div>
                             <div class="btns">
                                 <button type="submit" class="btn btn-action btn-secondary next-icon">
-                                    ส่องข้อความ
+                                    ส่งข้อความ
                                 </button>
                                 <a class="btn btn-action btn-primary" href="#">
                                     ล้างข้อมูล

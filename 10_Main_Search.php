@@ -34,8 +34,14 @@
 
                     <form action="./" method="GET">
                         <div class="field">
-                            <div class="control">
+                            <div class="control search-control">
                                 <input type="text" required />
+                                <div class="btns">
+                                    <div class="btn-clear">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                    <input type="submit" class="btn btn-action btn-secondary" value="ค้นหา" />
+                                </div>
                             </div>
                             <div class="ss-tags">
                                 <div class="ss-tag type-1 closable"></div>

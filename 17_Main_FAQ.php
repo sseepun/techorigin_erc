@@ -27,7 +27,7 @@
             </div>
             <div class="grids">
 
-                <div class="grid lg-75 sm-100">
+                <div class="grid xl-75 lg-70 sm-100">
                     <div class="list-header">
                         <div class="block">
                             <div class="text-wrapper">
@@ -73,31 +73,19 @@
                     <?php include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid lg-25 sm-100">
-                    <div class="slots bg-color4">
-                        
-                        <div class="slot-tabs">
-                            <h4 class="title color-white">เลือกประเภท</h4>
-                            <?php for($i=1; $i<=4; $i++){?>
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/09.jpg">
+                        <img class="float-img type-6" src="./assets/img/hero/15.png" alt="Slot Float Image 01" />
+                        <div class="slot-tabs mt-0">
+                            <h4 class="title color-white">หมวดหมู่</h4>
+                            <?php for($i=0; $i<2; $i++){?>
                                 <a class="slot-tab" href="#">
-                                    <div class="icon bg-color3 color-white">
-                                        <i class="far fa-building"></i>
-                                    </div>
                                     <h5 class="mt-0 color-white">
                                         0<?php echo "$i"; ?>. <br>
-                                        ข่าวจากหน่วยงานส่วนกลาง
+                                        ข่าวจากหนังสือพิมพ์
                                     </h5>
                                 </a>
                             <?php }?> 
-                        </div>
-                        <div class="slot">
-                            
-                            <h2 class="header-text quote-text">
-                                คนไทย <br>
-                                <span class="text-xl fw-400 color1">ร่วมใจสู้ภัย</span> <br>
-                                <span class="text-xl">โควิด-19</span>
-                            </h2>
-
                         </div>
                     </div>
                 </div>
@@ -106,6 +94,70 @@
         </div>
     </section>
 
+    <section class="section-padding bg-gradient-04">
+        <div class="container">
+            <div class="ss-icon-title jc-center mt-0" data-aos="fade-up" data-aos-delay="0">
+                <div class="icon bg-color4"><i class="far fa-file-alt"></i></div>
+                <h2>แบบฟอร์มติดต่อ</h2>
+            </div>
+            <form action="./" method="POST" class="mt-1">
+                <div class="grids jc-center">
+                    <div class="grid sm-100 md-80 lg-2-3 mt-0">
+                        <div class="grids">
+                            <div class="grid md-50 mt-0">
+                                <div class="field">
+                                    <label for="firstname">ชื่อ *</label>
+                                    <div class="control">
+                                        <input type="text" name="firstname" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid md-50 mt-0">
+                                <div class="field">
+                                    <label for="lastname">นามสกุล</label>
+                                    <div class="control">
+                                        <input type="text" name="lastname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid md-50 mt-0">
+                                <div class="field">
+                                    <label for="phone">หมายเลขโทรศัพท์ *</label>
+                                    <div class="control">
+                                        <input type="text" name="phone" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid md-50 mt-0">
+                                <div class="field">
+                                    <label for="email">อีเมล</label>
+                                    <div class="control">
+                                        <input type="email" name="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid sm-100 mt-0">
+                                <div class="field">
+                                    <label for="message">ข้อความ *</label>
+                                    <div class="control">
+                                        <textarea name="message" rows="4" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btns text-right mt-1-5">
+                            <button type="submit" class="btn btn-action btn-secondary next-icon">
+                                ส่งข้อความ
+                            </button>
+                            <a class="btn btn-action btn-primary" href="#">
+                                ล้างข้อมูล
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
     
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>

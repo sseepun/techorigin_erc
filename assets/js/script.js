@@ -159,6 +159,13 @@ $(function(){ 'use strict';
         });
     }
 
+    // Button Clear
+    $('.btn-clear').click(function(e){
+        e.preventDefault();
+        var target = $(this).closest('.control').find('> input');
+        if(target.length) target.val('');
+    });
+
 
     // Banner 01
     if($('section.banner-01').length){

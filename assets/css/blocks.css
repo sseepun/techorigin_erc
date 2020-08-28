@@ -333,23 +333,32 @@
 
 
 /* Column 01 */
-.column-01{position:relative; padding:1rem 0 0 3.5rem;}
-.column-01 .dot{position:absolute; width:.375rem; height:.375rem; top:0; left:-1.375rem;}
-.column-01 .line{position:absolute; width:.0625rem; height:100%; top:0; left:-1rem;}
+.column-01{position:relative; padding:1rem 0 0 .625rem;}
+.column-01 .dot{position:absolute; width:.375rem; height:.375rem; top:0; left:-.375rem;}
+.column-01 .line{position:absolute; width:.0625rem; height:100%; top:0; left:0;}
 .column-01 .maps{position:relative; width:100%;}
-.column-01 .map{position:relative; padding:.5rem 0; font-size:1.25rem; font-weight:300;}
-.column-01 .map ul{list-style:none;}
-.column-01 .map li{position:relative;}
-.column-01 .map li::before{
-    content: ''; position:absolute; width:.3125rem; height:.3125rem; top:.46875rem; left:-1rem;
+.column-01 .map{position:relative; font-size:1.25rem; font-weight:300;}
+.column-01 .map > a{
+    display:block; padding:.5rem 1rem; transition:color .3s, background .3s;
 }
-.column-01 .map::before{content:''; position:absolute; top:0; width:100%; height:.0625rem;}
+.column-01 .map ul{list-style:none; padding:0 0 0 1.75rem; margin:.25rem 1rem 1rem 1rem;}
+.column-01 .map li{position:relative; padding:.25rem 0;}
+.column-01 .map li::before{
+    content: ''; position:absolute; width:.3125rem; height:.3125rem; top:.75rem; left:-1rem;
+    transition:color .3s;
+}
+.column-01 .map::before{
+    content:''; position:absolute; top:0; left:1rem; right:1rem; height:.0625rem;
+}
 .column-01 .map:nth-child(3)::before{display:none;}
 .column-01 .map a{text-decoration:none;}
 
 
 /* Contact 01 */
-.contact-01{background-position:center; background-size:cover; background-repeat:no-repeat;}
+.contact-01{
+    background-position:center; background-size:cover; background-repeat:no-repeat;
+    padding-bottom:22rem;
+}
 .contact-01 .contact-box{
     padding:2rem; border-radius:.3125rem;
     -webkit-box-shadow:0px 5px 20px 0px rgba(0,0,0,.2);
@@ -360,15 +369,13 @@
 .contact-01 table td{font-size:1.3125rem; font-weight:300; padding:.1875rem 0;} 
 .contact-01 table td:first-child{vertical-align:top; font-weight:400; padding-right:1.5rem;}
 .contact-01 .contact-tabs{
-    width:100%; display:flex; margin:1rem 0 0 0;
-    border-top:1px solid transparent; border-bottom:1px solid transparent;
+    width:100%; display:flex; flex-wrap:wrap; margin:1rem 0 0 0; padding:.5rem 0 0 0;
+    border-top:1px solid transparent;
 }
 .contact-01 .contact-tab{
-    width:calc(100% / 3); padding:.625rem .5rem; border-right:1px solid transparent;
-    display:flex; align-items:center;
+    width:50%; padding:.625rem 0; display:flex; align-items:center;
 }
-.contact-01 .contact-tab:first-child{padding-left:0;}
-.contact-01 .contact-tab:last-child{border-right:0; padding-right:0;}
+.contact-01 .contact-tab.full-width{width:100%;}
 .contact-01 .contact-tab .icon{
     display:inline-block; width:2.5rem; height:2.5rem; line-height:2.6875rem; border-radius:50%;
     text-align:center; margin:0 .5rem 0 0;
@@ -376,8 +383,8 @@
 .contact-tabs .text-container{width:calc(100% - 3rem);}
 .contact-tabs h5{line-height:1;}
 .contact-01 .map-container{
-    position:relative; width:100%; margin:1.5rem 0 0 0; border-radius:.625rem; overflow:hidden;
-    padding:60% 0 0 0;
+    position:relative; width:100%; margin:1rem 0 0 0; border-radius:.625rem;
+    overflow:hidden; padding:60% 0 0 0;
 }
 .contact-01 .map-container > .map-wrapper{position:absolute; top:0; bottom:0; left:0; right:0;}
 .contact-01 .map-wrapper > *{display:block; width:100%; height:100%;}
@@ -412,4 +419,27 @@
 .faq-01 .wrapper{display:none;}
 @media screen and (max-width:575.98px){
     .faq-01 .answer{padding:0 0 1.25rem 1.25rem;}
+}
+
+
+/* Intro 01 */
+.intro-01{background-position:center; background-size:cover; background-repeat:no-repeat;}
+.intro-01 > .container{position:relative; padding-top:4rem; padding-bottom:4rem;}
+.intro-01 .float-img{
+    display:block; width:auto; height:calc(100% - .5rem);
+    position:absolute; bottom:0; right:0;
+}
+@media screen and (max-width:991.98px){
+    .intro-01 > .container{padding-top:3rem; padding-bottom:3rem;}
+    .intro-01 .float-img{height:calc(100% - 1.5rem);}
+}
+@media screen and (max-width:767.98px){
+    .intro-01 > .container{padding-bottom:0;}
+    .intro-01 .float-img{
+        position:relative; margin:1.5rem auto 0 auto; width:100%; max-width:360px; height:auto;
+    }
+}
+@media screen and (max-width:575.98px){
+    .intro-01 > .container{padding-top:2.5rem;}
+    .intro-01 .float-img{max-width:300px;}
 }
