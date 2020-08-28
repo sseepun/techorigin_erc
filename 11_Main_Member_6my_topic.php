@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="slot-tabs">
-                            <?php for($i=0; $i<4; $i++){?>
+                            <?php for($i=0; $i<5; $i++){?>
                                 <a class="slot-tab <?php if($i==0)echo 'active'; ?>" href="#">
                                     <div class="icon bg-color3 color-white">
                                         <i class="far fa-building"></i>
@@ -74,7 +74,7 @@
                                 <tr>
                                     <th>หมายเลข</th>
                                     <th>หัวข้อเรื่องร้องเรียน</th>
-                                    <th>จำนวนตอบ</th>
+                                    <th style="min-width:6rem;">จำนวนตอบ</th>
                                     <th>ผู้ตอบล่าสุด</th>
                                 </tr>
                             </thead>
@@ -87,7 +87,19 @@
                                             ของเทศบาลเมืองไร่ขิง
                                         </td>
                                         <td>10</td>
-                                        <td>17/06/2020 <br> (16:45)</td>
+                                        <td>
+                                            <div class="profile-tab sm">
+                                                <div class="icon lazy-bg" data-src="./assets/img/banner/01.jpg"></div>
+                                                <div class="text-container">
+                                                    <h5 class="color-white">อุรัสยา เสปอร์บันด์</h5>
+                                                    <h5 class="color-white op-7">
+                                                        <span class="text-xs">
+                                                            [11/06/2560 06:49:42]
+                                                        </span>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 <?php }?>
                             </tbody>
