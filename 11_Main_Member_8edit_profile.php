@@ -24,7 +24,6 @@
 
                 <div class="grid xl-25 lg-30 sm-100">
                     <div class="slots bg-color5">
-
                         <div class="profile-tab">
                             <div class="icon lazy-bg" data-src="./assets/img/banner/01.jpg"></div>
                             <div class="text-container">
@@ -32,9 +31,8 @@
                                 <h5>urrasaya.sp@gmail.com</h5>
                             </div>
                         </div>
-                        
                         <div class="slot-tabs">
-                            <?php for($i=0; $i<4; $i++){?>
+                            <?php for($i=0; $i<5; $i++){?>
                                 <a class="slot-tab <?php if($i==0)echo 'active'; ?>" href="#">
                                     <div class="icon bg-color3 color-white">
                                         <i class="far fa-building"></i>
@@ -46,7 +44,6 @@
                                 </a>
                             <?php }?> 
                         </div>
-                        
                     </div>
                 </div>
                 
@@ -117,6 +114,18 @@
                                     <label for="password">รหัสผ่าน *</label>
                                     <div class="control">
                                         <input type="password" name="password" required>
+                                    </div>
+                                    <div class="password-indicator level-3">
+                                        <div class="levels">
+                                            <div class="level"></div>
+                                            <div class="level"></div>
+                                            <div class="level"></div>
+                                            <div class="level"></div>
+                                        </div>
+                                        <h5 class="mt-0">
+                                            ระดับความยากของรหัสผ่าน : 
+                                            <span class="level-text"></span>
+                                        </h5>
                                     </div>
                                 </div>
                             </div>

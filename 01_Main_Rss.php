@@ -22,13 +22,16 @@
             </div>
             <div class="grids">
 
-                <div class="grid sm-100 lg-70 xl-75" data-aos="fade-up" data-aos-delay="300">
+                <div class="grid xl-75 lg-70 md-100 sm-100" data-aos="fade-up" data-aos-delay="300">
                     <?php for($i=0; $i<7; $i++){?>
                         <div class="bullet border-bottom">
                             <a class="ss-h4 fw-500 no-margin" href="#">
                                 ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
                                 ด้วยวิธีอิเล็กทรอนิกส์
                             </a>
+                            <div class="ss-tags">
+                                <div class="ss-tag type-<?php echo $i+1; ?>"></div>
+                            </div>
                             <div class="ss-date color2">
                                 02.04.2563
                             </div>
@@ -41,25 +44,32 @@
                         </div>
                     <?php }?>
 
-                    <?php include_once('component/list-footer.php'); ?>
+                    <?php $listFooterNoBorder = true; include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid sm-100 lg-30 xl-25" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
-                        <img class="lazy-img" data-src="./assets/img/default/banner-01.jpg" alt="Slot Image" />
-                        <div class="slot-tabs">
-                            <h4 class="title color-white">เลือกประเภท</h4>
-                            <?php for($i=1; $i<=4; $i++){?>
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/18.jpg">
+                        <img class="float-img type-9" src="./assets/img/hero/20.png" alt="Slot Float Image 01" />
+                        <div class="slot-tabs mt-0">
+                            <?php for($i=0; $i<5; $i++){?>
                                 <a class="slot-tab" href="#">
                                     <div class="icon bg-color3 color-white">
                                         <i class="far fa-building"></i>
                                     </div>
                                     <h5 class="mt-0 color-white">
-                                        0<?php echo "$i"; ?>. <br>
-                                        ข่าวจากหน่วยงานส่วนกลาง
+                                        0<?php echo $i; ?>. <br>
+                                        ข่าวจากหนังสือพิมพ์
                                     </h5>
                                 </a>
                             <?php }?> 
+                        </div>
+                        <div class="slot mt-2">
+                            <h2 class="header-text quote-text quote-inline">
+                                <span class="fw-400">กรรมอนามัย</span> <br>
+                                เรามีสาระสุขภาพดีๆ <br>
+                                <span class="text-xl fw-400 color1">ส่งตรงถึงคุณ</span> <br>
+                                <span class="text-xl">ทุกวัน</span>
+                            </h2>
                         </div>
                     </div>
                 </div>

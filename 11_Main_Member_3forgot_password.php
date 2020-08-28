@@ -14,7 +14,7 @@
         include_once('component/breadcrumb.php');
     ?>
 
-    <section class="section-padding">
+    <section class="section-padding pb-0">
         <div class="container">
             <div class="ss-header">
                 <div class="ss">ลื</div><h1 class="color2">มรหัสผ่าน</h1>
@@ -22,7 +22,7 @@
             </div>
             <div class="grids">
 
-                <div class="grid xl-70 lg-70 sm-100">
+                <div class="grid xl-70 lg-70 md-100 sm-100">
                     <div class="contact-box">
                         <form action="./" method="POST">
                             <div class="ss-icon-title mt-0 mb-1">
@@ -39,9 +39,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="btns mt-2">
+                            <div class="btns mt-1">
                                 <button type="submit" class="btn btn-action btn-secondary next-icon">
-                                    ส่งข้อความ
+                                    ยืนยันข้อมูล
                                 </button>
                                 <a class="btn btn-action btn-primary" href="#">
                                     ล้างข้อมูล
@@ -49,23 +49,15 @@
                             </div>
                         </form>
                     </div>
-                    <h2 class="color4 fw-400 mt-2">
+                    <h2 class="color4 fw-400 mt-2-5">
                         เงื่อนไขการสมัครสมาชิก
                     </h2>
                     <p>ผู้สมัครสมาชิกตกลงยินยอมผูกพันตามข้อกำหนดและเงื่อนไขการใช้ของสำนักงานกรมอนามัย</p>
                 </div>
 
-                <div class="grid sm-100 lg-25" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
-                        <div class="slot">
-                            
-                            <h2 class="header-text quote-text quote-inline">
-                                คนไทย <br>
-                                <span class="text-xl fw-400 color1">ร่วมใจสู้ภัย</span> <br>
-                                <span class="text-xl">โควิด-19</span>
-                            </h2>
-
-                        </div>
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask pb-0">
+                        <img class="float-img type-8" src="./assets/img/hero/19.png" alt="Slot Float Image 01" />
                     </div>
                 </div>
 
