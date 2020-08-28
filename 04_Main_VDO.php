@@ -22,7 +22,7 @@
             </div>
             <div class="grids">
 
-                <div class="grid lg-75 md-100 sm-100">
+                <div class="grid xl-75 lg-70 md-100 sm-100">
                     <?php include_once('component/list-header.php'); ?>
                     
                     <!-- Banner 03 -->
@@ -40,19 +40,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ss-tags">
-                                                <div class="ss-tag type-<?php echo $i % 11 + 1; ?>"></div>
-                                            </div>
-                                            <a class="ss-h2 no-margin" href="#">
-                                                กรมอนามัย แนะ <span class="color1">10 วิธีกินแบบพอเพียงช่วงโควิด 19</span>
-                                                สร้างร่างกายแข็งแรง ไร้พุง
-                                            </a>
-                                            <p>
-                                                คอนโด หม่านโถว ไอติมชิฟฟอนอาข่าแตงกวาเซอร์ ม็อบซิ่งกรีนวีเจ 
-                                                เนิร์สเซอรี่เท็กซ์ไพลินไกด์ซะ อึ๋ม เพนกวินเช็งเม้งฟลุต บัตเตอร์ฮาโลวีนมายองเนสสปอร์ต 
-                                                เครปโดมิโนฟยอร์ดวิลล์ ชาร์ตเดอะสไตล์ ตาปรือกระดี๊กระด๊าอีสต์ เชฟซะมาเฟียโมจิ โฟม 
-                                                แชมพูแจ็กเก็ตรีเสิร์ชโบว์ลิ่ง...
-                                            </p>
                                         </div>
                                     </div>
                                 <?php }?> 
@@ -92,20 +79,21 @@
                     <?php include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid lg-25 sm-100 md-100" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
-                        <div class="slot bg-color4">
-
-                            <div class="ss-header color-white">
-                                <div class="ss">อั</div><h1 class="fw-300">ลบั้มภาพ</h1>
-                                <p>พร้อมอัพเดท</p>
-                            </div>
-                            <p class="color-white no-margin">สาระสุขภาพทันสมัยให้คุณเข้าใจง่าย</p>
-                            <h2 class="color1 no-margin">ไม่ตกเทรนด์!</h2>
-
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/05.jpg">
+                        <img class="float-img type-4" src="./assets/img/hero/10.png" alt="Slot Float Image 01" />
+                        <div class="slot">
+                            <h2 class="header-text quote-text mt-0">
+                                <span>กรมอนามัย</span> <br>
+                                <span class="text-xl fw-400 color1">ห่วงใยสุขภาพ</span> <br>
+                                ทุกคนเพื่อ <br>
+                                คุณภาพชีวิตที่ดี
+                            </h2>
                         </div>
+                        <img class="float-img type-3 lazy-img" data-src="./assets/img/hero/11.png" alt="Slot Float Image 02" />
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

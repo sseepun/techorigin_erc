@@ -22,7 +22,7 @@
             </div>
             <div class="grids">
 
-                <div class="grid lg-75 md-100 sm-100" data-aos="fade-up" data-aos-delay="300">
+                <div class="grid xl-75 lg-70 md-100 sm-100" data-aos="fade-up" data-aos-delay="300">
                     <?php include_once('component/list-header.php'); ?>
                     
                     <div class="ss-carousel">
@@ -98,50 +98,28 @@
                     <?php include_once('component/list-footer.php'); ?>
                 </div>
 
-                <div class="grid lg-25 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
-                        <div class="slot bg-color0">
-                            <div class="ss-header color-white-info">
-                                <div class="ss">วี</div><h1 class="fw-300">ดิโอ</h1>
-                                <p>& สื่อมัลติมีเดีย</p>
-                            </div>
-                            <div class="ss-video bradius-0">
-                                <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
-                                <div class="play-container">
-                                    <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
-                                        <i class="fas fa-play"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="ss-tags">
-                                <div class="ss-tag type-3"></div>
-                                <div class="ss-tag type-4"></div>
-                            </div>
-                            <div class="ss-date color-white">02.04.2563</div>
-                            <a class="ss-h3 color-white" href="#">
-                                การปฏิบัติด้านสุขอนามัยในห้างสรรพสินค้าและศูนย์การค้า
-                            </a>
-                            <p class="color-white">
-                                ห้างสรรพสินค้าและศูนย์การค้าเป็นแหล่งนัดพบที่มีคนมาใช้บริการมากมาย...
-                            </p>
-                            <div class="btns">
-                                <a class="btn btn-action btn-secondary next-icon" href="#">
-                                    ดูวิดีโอทั้งหมด
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/04.jpg">
+                        <img class="float-img" src="./assets/img/hero/07.png" alt="Slot Float Image" />
+                        <div class="slot-tabs">
+                            <h4 class="title color-white">หมวดหมู่</h4>
+                            <?php for($i=0; $i<4; $i++){?>
+                                <a class="slot-tab" href="#">
+                                    <h5 class="mt-0 color-white">
+                                        0<?php echo "$i"; ?>. <br>
+                                        ข่าวจากหนังสือพิมพ์ <br>
+                                        <span class="text-xs">กรมอนามัย</span>
+                                    </h5>
                                 </a>
-                            </div>
+                            <?php }?> 
                         </div>
-                        <div class="slot bg-color4">
-                            <div class="ss-header color-white">
-                                <div class="ss">อั</div><h1 class="fw-300">ลบั้มภาพ</h1>
-                                <p>พร้อมอัพเดท</p>
-                            </div>
-                            <p class="color-white no-margin">สาระสุขภาพทันสมัยให้คุณเข้าใจง่าย</p>
-                            <h2 class="color1 no-margin">ไม่ตกเทรนด์!</h2>
-                            <div class="btns">
-                                <a class="btn btn-action btn-primary next-icon" href="#">
-                                    อัลบั้มภาพทั้งหมด
-                                </a>
-                            </div>
+                        <div class="slot mt-2">
+                            <h2 class="header-text quote-text">
+                                <span class="fw-400">กรรมอนามัย</span> <br>
+                                เรามีสาระสุขภาพดีๆ <br>
+                                <span class="text-xl fw-400 color1">ส่งตรงถึงคุณ</span> <br>
+                                <span class="text-xl">ทุกวัน</span>
+                            </h2>
                         </div>
                     </div>
                 </div>

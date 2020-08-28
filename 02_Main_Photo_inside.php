@@ -22,7 +22,7 @@
             </div>
             <div class="grids">
 
-                <div class="grid lg-75 md-100 sm-100">
+                <div class="grid xl-75 lg-70 md-100 sm-100">
                     <div data-aos="fade-up" data-aos-delay="300">
                         <?php
                             $contentStat = [
@@ -169,17 +169,17 @@
 
                 </div>
 
-                <div class="grid sm-100 md-100 lg-25" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots bg-color4">
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/03.jpg">
+                        <img class="float-img type-2" src="./assets/img/hero/08.png" alt="Slot Float Image 01" />
                         <div class="slot">
-                            
                             <h2 class="header-text quote-text quote-inline">
-                                คนไทย <br>
+                                <span>คนไทย</span> <br>
                                 <span class="text-xl fw-400 color1">ร่วมใจสู้ภัย</span> <br>
                                 <span class="text-xl">โควิด-19</span>
                             </h2>
-
                         </div>
+                        <img class="float-img type-3" src="./assets/img/hero/09.png" alt="Slot Float Image 02" />
                     </div>
                 </div>
 
