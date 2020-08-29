@@ -494,16 +494,25 @@ table.table.info-table tbody td:nth-child(4){text-align:left; min-width:5.5rem;}
 
 .slots .float-img{
     display:block; width:calc(100% + 1.18755rem); height:auto;
-    transform:translate(-1.1875rem, -1.125rem);
+    transform:translate(-1.1875rem, -1.125rem); margin-bottom:-1.125rem;
 }
-.slots .float-img.type-2{width:calc(100% + 1.625rem); transform:translate(-1.625rem, -5rem);}
+.slots .float-img.type-2{
+    width:calc(100% + 1.625rem); transform:translate(-1.625rem, -5rem); margin-bottom:-5rem;
+}
 .slots .float-img.type-3{width:calc(100% - 2rem); transform:none; margin:0 0 0 auto;}
-.slots .float-img.type-4{width:calc(100% + .75rem); transform:translate(-.75rem, -3.75rem);}
-.slots .float-img.type-5{width:100%; transform:translate(0, -1.625rem);}
-.slots .float-img.type-6{width:100%; transform:translate(0, -1rem);}
-.slots .float-img.type-7{width:100%; transform:translate(0, -2.75rem);}
-.slots .float-img.type-8{width:100%; transform:translate(0, -5rem);}
-.slots .float-img.type-9{width:calc(100% + .5625rem); transform:translate(-.5625rem, 0);}
+.slots .float-img.type-4{
+    width:calc(100% + .75rem); transform:translate(-.75rem, -3.75rem); margin-bottom:-3.75rem;
+}
+.slots .float-img.type-5{
+    width:100%; transform:translate(0, -1.625rem); margin-bottom:-1.625rem;
+}
+.slots .float-img.type-6{width:100%; transform:translate(0, -1rem); margin-bottom:-1rem;}
+.slots .float-img.type-7{width:100%; transform:translate(0, -2.75rem); margin-bottom:-2.75rem;}
+.slots .float-img.type-8{width:100%; transform:translate(0, -5rem); margin-bottom:-5rem;}
+.slots .float-img.type-9{
+    width:calc(100% + .5625rem); transform:translate(-.5625rem, 0); margin-bottom:0;
+}
+.slots .float-img.type-10{width:100%; transform:translate(0, -1.25rem); margin-bottom:-1.25rem;}
 
 .slots .header-text{
     position:relative; text-decoration:none; font-size:2.5rem; text-align:center; line-height:1;
