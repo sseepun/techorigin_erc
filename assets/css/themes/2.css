@@ -383,3 +383,11 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 /* FAQ 01 */
 .faq-01 .faq{border-color:#ffff00;}
 .faq-01 .icon{color:#000; background:#ffff00;}
+
+
+/* Chat Container */
+.chat-container > .chat-body{border:1px solid #ffff00;}
+.chat-container .chat .text{border-color:#ffff00; color:#ffff00; background:#000;}
+.chat-container .chat .text::before{background:#000; border-color:#ffff00!important;}
+.chat-container .chat .info{color:#ffff00;}
+.chat-container .chat .info > .icon{color:#ffff00;}

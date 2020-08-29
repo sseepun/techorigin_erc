@@ -1,7 +1,4 @@
-<style>
-
-</style>
-<div class="content-stat">
+<div class="content-stat <?php if(!empty($contentStatColorWhite))echo 'color-white'; ?>">
     <div class="block">
         <div class="stat">
             <div class="icon"><i class="fas fa-clock"></i></div>
