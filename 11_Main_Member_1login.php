@@ -57,6 +57,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="captcha-container">
+                                <img class="lazy-img" data-src="./assets/img/default/captcha.png" alt="CAPTCHA" />
+                            </div>
                             <div class="btns mt-1">
                                 <button type="submit" class="btn btn-action btn-secondary next-icon">
                                     เข้าสู่ระบบ

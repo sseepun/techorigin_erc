@@ -126,6 +126,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="captcha-container">
+                                <img class="lazy-img" data-src="./assets/img/default/captcha.png" alt="CAPTCHA" />
+                            </div>
                             <div class="btns">
                                 <button type="submit" class="btn btn-action btn-secondary next-icon">
                                     ส่งข้อความ

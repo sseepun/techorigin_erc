@@ -145,13 +145,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btns text-right mt-1-5">
-                            <button type="submit" class="btn btn-action btn-secondary next-icon">
-                                ส่งข้อความ
-                            </button>
-                            <a class="btn btn-action btn-primary" href="#">
-                                ล้างข้อมูล
-                            </a>
+                        <div class="d-flex ai-center jc-space-between fw-wrap mb-1">
+                            <div class="captcha-container">
+                                <img class="lazy-img" data-src="./assets/img/default/captcha.png" alt="CAPTCHA" />
+                            </div>
+                            <div class="btns width-auto">
+                                <button type="submit" class="btn btn-action btn-secondary next-icon">
+                                    ส่งข้อความ
+                                </button>
+                                <a class="btn btn-action btn-primary" href="#">
+                                    ล้างข้อมูล
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

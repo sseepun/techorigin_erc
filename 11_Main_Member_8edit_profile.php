@@ -138,14 +138,17 @@
                                 </div>
                             </div>
                             <div class="grid sm-100">
-                                <h4 class="fw-500">หมายเหตุ</h4>
+                                <h4 class="fw-500 mt-0">หมายเหตุ</h4>
                                 <p class="no-margin">
                                     ข้อสำคัญ: ชื่อที่ลิงค์กับอีเมลของคุณจะไม่ใช่ชื่อผู้ใช้ 
                                     โดยคุณจะเปลี่ยนชื่อที่ใช้หรืออีเมลไม่ได้
                                 </p>
                             </div>
                         </div>
-                        <div class="btns mt-2">
+                        <div class="captcha-container mt-2-5">
+                            <img class="lazy-img" data-src="./assets/img/default/captcha.png" alt="CAPTCHA" />
+                        </div>
+                        <div class="btns mt-1">
                             <button type="submit" class="btn btn-action btn-secondary next-icon">
                                 อัพเดทข้อมูล
                             </button>

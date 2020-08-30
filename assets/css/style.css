@@ -291,6 +291,11 @@ button.btn{border:0!important;}
 }
 
 
+/* Captcha Container */
+.captcha-container{width:100%; max-width:280px; margin:1rem 1.5rem 0 0;}
+.captcha-container img{display:block; width:100%; height:auto;}
+
+
 /* Password Indicator */
 .password-indicator{width:100%;}
 .password-indicator > .levels{
@@ -1049,9 +1054,9 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ai-center{align-items:center!important;}
 .ai-start{align-items:flex-start!important;}
 .ai-end{align-items:flex-end!important;}
-
 .fw-wrap{flex-wrap:wrap!important;}
 
+.width-auto{width:auto!important;}
 .no-br > *{display:none;}
 
 @media screen and (min-width:1200px){
