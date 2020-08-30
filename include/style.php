@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="./assets/lib/slick-1.8.1/slick/slick.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="./assets/lib/simple-calendar/simple-calendar.min.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="./assets/lib/fancybox-3.5.7/dist/jquery.fancybox.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./assets/lib/dropzone-5.7.0/dist/min/dropzone.min.css" media="screen" />
 <!-- <link rel="stylesheet" type="text/css" href="./assets/lib/aos-2.3.1/aos.min.css" media="screen" /> -->
 
 <link rel="stylesheet" type="text/css" href="./assets/lib/jquery-ui-1.12.1/jquery-ui.min.css" />

@@ -4,8 +4,9 @@
 <script src="./assets/lib/slick-1.8.1/slick/slick.min.js"></script>
 <script src="./assets/lib/simple-calendar/simple-calendar.min.js"></script>
 <script src="./assets/lib/fancybox-3.5.7/dist/jquery.fancybox.min.js"></script>
-<!-- <script src="./assets/lib/aos-2.3.1/aos.min.js"></script> -->
+<script src="./assets/lib/dropzone-5.7.0/dist/min/dropzone.min.js"></script>
 <script src="./assets/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<!-- <script src="./assets/lib/aos-2.3.1/aos.min.js"></script> -->
 
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/lazy-load.js"></script>

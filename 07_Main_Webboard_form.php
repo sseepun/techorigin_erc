@@ -18,12 +18,66 @@
     <div class="section-padding">
         <div class="container">
             <div class="ss-header" data-aos="fade-up" data-aos-delay="0">
-                <div class="ss">ส</div><h1 class="color2">มัครรับข่าวสาร</h1>
-                <p><strong>สาระดีๆ</strong> ส่งตรงความรู้สุขภาพเพื่อประชาชน</p>
-            </div> 
+                <div class="ss">แ</div><h1 class="color2">บบฟอร์มการตั้งกระทู้</h1>
+                <p><strong class="ml-0-5">กรมอนามัย</strong> พร้อมพูดคุยและแลกเปลี่ยนความรู้ข่าวสารที่เป็นประโยชน์สำหรับคุณ</p>
+            </div>
             <div class="grids">
 
                 <div class="grid xl-75 lg-70 sm-100">
+                    <div class="btns">
+                        <a class="btn btn-icon" href="#">
+                            <i class="fas fa-plus-circle"></i> ตั้งกระทู้
+                        </a>
+                        <a class="btn btn-icon" href="#">
+                            <i class="fas fa-lock"></i> เข้าสู่ระบบ
+                        </a>
+                        <a class="btn btn-icon" href="#">
+                            <i class="far fa-user"></i> สมัครสมาชิก
+                        </a>
+                    </div>
+
+                    <div class="ss-box">
+                        <div class="header bg-color3 color-white">
+                            <div class="icon"><i class="fas fa-book"></i></div>
+                            <h2 class="color-white">หัวข้อกระทู้</h2>
+                        </div>
+                        <div class="content">
+                            <div class="field mt-0">
+                                <div class="control">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ss-box">
+                        <div class="header bg-color1 color-white">
+                            <div class="icon"><i class="fas fa-book"></i></div>
+                            <h2 class="color-white">รายละเอียด</h2>
+                        </div>
+                        <div class="content">
+                            <div class="field mt-0">
+                                <div class="control">
+                                    <textarea rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ss-box">
+                        <div class="header bg-color0 color-white">
+                            <div class="icon"><i class="fas fa-book"></i></div>
+                            <h2 class="color-white">แนบไฟล๋</h2>
+                        </div>
+                        <div class="content">
+                            <div class="field mt-0">
+                                <div class="control">
+                                    <form action="/upload" class="dropzone" method="POST" enctype="multipart/form-data"></form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <form action="./" method="POST">
                         <div class="ss-icon-title mt-0 mb-2">
                             <div class="icon bg-color3"><i class="fas fa-mobile-alt"></i></div>
