@@ -13,6 +13,11 @@ html, body{background:transparent; color:#000;}
 .btn.btn-success{color:#fff; background:#1d684a; background:var(--color2);}
 .btn.btn-success.prev-icon::before, .btn.btn-secondary.next-icon::after{color:#6bc6bf;}
 
+.btn.btn-icon{color:#000;}
+.btn.btn-icon > i{
+    background:#47484d; background:var(--color0); color:#c0ca67; color:var(--color1);
+}
+
 .btn.btn-icon-alert{color:#000;}
 .btn.btn-icon-alert::before{background:#ce0400; color:#fff;}
 .btn.btn-icon-download::before{background:#284e51; background:var(--color3); color:#fff;}
@@ -308,6 +313,14 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 /* Special Carousel */
 .ss-carousel > .dots li{background:#d7d8d0; background:var(--color5);}
 .ss-carousel > .dots li.slick-active{background:#0d838d; background:var(--color4);}
+
+
+/* Special Box */
+.ss-box > .content{background:#e5e5e5;}
+.ss-box > .content input, .ss-box > .content select, .ss-box > .content textarea, 
+.ss-box > .content .control.radio-control > label::before{
+    background:#fff!important;
+}
 
 
 /* Special Tags */

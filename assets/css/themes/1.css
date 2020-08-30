@@ -11,6 +11,9 @@ html, body{background:#000; color:#fff;}
 .btn.btn-success{color:#000; background:#fff;}
 .btn.btn-success.prev-icon::before, .btn.btn-success.next-icon::after{color:#000;}
 
+.btn.btn-icon{color:#fff;}
+.btn.btn-icon > i{background:#fff; color:#000;}
+
 .btn.btn-icon-alert{color:#fff;}
 .btn.btn-icon-alert::before{background:#ce0400; color:#fff;}
 .btn.btn-icon-download::before{background:#284e51; background:var(--color3); color:#fff;}
@@ -264,6 +267,10 @@ h6, .ss-h6, p, .ss-p{color:#fff;}
 /* Special Carousel */
 .ss-carousel > .dots li{background:transparent; border-color:#fff;}
 .ss-carousel > .dots li.slick-active{background:#fff;}
+
+
+/* Special Box */
+.ss-box{border:1px solid #fff;}
 
 
 /* Special Tags */

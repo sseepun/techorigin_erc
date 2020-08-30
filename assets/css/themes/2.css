@@ -11,6 +11,9 @@ html, body{background:#000; color:#ffff00;}
 .btn.btn-success{color:#000; background:#ffff00;}
 .btn.btn-success.prev-icon::before, .btn.btn-success.next-icon::after{color:#000;}
 
+.btn.btn-icon{color:#ffff00;}
+.btn.btn-icon > i{background:#ffff00; color:#000;}
+
 .btn.btn-icon-alert{color:#ffff00;}
 .btn.btn-icon-alert::before{background:#ce0400; color:#ffff00;}
 .btn.btn-icon-download::before{background:#284e51; background:var(--color3); color:#fff;}
@@ -264,6 +267,10 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 /* Special Carousel */
 .ss-carousel > .dots li{background:transparent; border-color:#ffff00;}
 .ss-carousel > .dots li.slick-active{background:#ffff00;}
+
+
+/* Special Box */
+.ss-box{border:1px solid #ffff00;}
 
 
 /* Special Tags */
