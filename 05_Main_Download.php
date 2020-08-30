@@ -28,6 +28,48 @@
                         <table class="table download-table">
                             <tbody>
                                 <?php for($i=0; $i<2; $i++){?>
+                                    <tr>
+                                        <td class="pl-1-5">
+                                            <div class="file-icon pdf"></div>
+                                        </td>
+                                        <td>
+                                            การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
+                                        </td>
+                                        <td>
+                                            <div class="text-xs">ขนาดไปล์ <strong>1.3</strong> MB</div>
+                                            <div class="text-xs">ดาวน์โหลด <strong>23</strong> ครั้ง</div>
+                                        </td>
+                                        <td class="text-left">
+                                            <a class="btn btn-action btn-sm btn-icon-download" href="#">
+                                                ดาวน์โหลด
+                                            </a>
+                                            <br>
+                                            <a class="btn btn-action btn-sm btn-icon-alert" href="#">
+                                                แจ้งไฟล์เสีย
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-1-5">
+                                            <div class="file-icon docx"></div>
+                                        </td>
+                                        <td>
+                                            การขับเคลื่อนชุมชนเข้มแข็งในการจัดการอนามัยสิ่งแวดล้อมชุมชน
+                                        </td>
+                                        <td>
+                                            <div class="text-xs">ขนาดไปล์ <strong>1.3</strong> MB</div>
+                                            <div class="text-xs">ดาวน์โหลด <strong>23</strong> ครั้ง</div>
+                                        </td>
+                                        <td class="text-left">
+                                            <a class="btn btn-action btn-sm btn-icon-download" href="#">
+                                                ดาวน์โหลด
+                                            </a>
+                                            <br>
+                                            <a class="btn btn-action btn-sm btn-icon-alert" href="#">
+                                                แจ้งไฟล์เสีย
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr class="topic <?php if($i%2==0)echo 'selected'; ?>">
                                         <td colspan="4" class="text-left pl-1">
                                             <h3 class="no-margin fw-400">

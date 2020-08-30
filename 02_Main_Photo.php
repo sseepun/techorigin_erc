@@ -30,19 +30,40 @@
                             <?php for($i=1; $i<5; $i++){?>
                                 <div class="slide">
                                     <div class="wrapper">
-                                        <a class="ss-img" href="#">
-                                            <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo $i; ?>.jpg"></div>
-                                            <div class="tag">
-                                                <div class="date">28</div>
-                                                <div class="text-container">
-                                                    <div class="month">กรกฎาคม</div>
-                                                    <div class="year">2563</div>
+                                        <div class="ss-img no-hover ss-img-content" href="#">
+                                            <div class="img-bg lazy-bg" data-src="./assets/img/bg/23.jpg"></div>
+                                            <div class="contents">
+                                                <div class="content content-img">
+                                                    <img class="lazy-img" data-src="./assets/img/hero/24.png" alt="Hero Banner <?php echo $i; ?>" />
+                                                </div>
+                                                <div class="content content-text">
+                                                    <div class="ss-icon-title no-margin">
+                                                        <div class="icon bg-color4"><i class="fas fa-mail-bulk"></i></div>
+                                                        <div class="text-wrapper">
+                                                            <div class="ss-tags no-margin">
+                                                                <div class="ss-tag type-5"></div>
+                                                            </div>
+                                                            <div class="ss-date no-margin">02.04.2563</div>
+                                                        </div>
+                                                    </div>
+                                                    <h2 class="mt-0-5">
+                                                        พักนัดทำฟัน ถ้าไม่ฉุกเฉิน! เพื่อความปลอดภัยจาก ‘COVID-19’
+                                                    </h2>
+                                                    <p class="mt-0-5">
+                                                        ช่วงนี้ถ้าคุณลุงคุณป้าคุณตาคุณยาย มีนัดทำฟัน กับคุณหมอ หรืออยากไปทำฟัน 
+                                                        แต่ไม่ใช่กรณีฉุกเฉิน ควรงดเว้นเอาไว้ก่อน เพราะการทำฟันนั้น
+                                                    </p>
+                                                    <div class="btns">
+                                                        <a class="btn btn-action btn-primary next-icon" href="#">
+                                                            รายละเอียด
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
                                 </div>
-                            <?php }?> 
+                            <?php }?>
                         </div>
                         <div class="dots"></div>
                     </div>

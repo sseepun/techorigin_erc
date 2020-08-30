@@ -70,15 +70,17 @@
                             Embed &lt;/&gt;
                         </a>
                     </div>
-                    <div class="field">
-                        <div class="control">
-                            <textarea name="message" rows="3"></textarea>
+                    <div class="toggle-target" data-toggle="embed">
+                        <div class="field">
+                            <div class="control">
+                                <textarea name="message" rows="3"></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="btns mt-0">
-                        <a class="btn btn-action btn-primary mt-0 full-width" href="#">
-                            คัดลอกโค้ด
-                        </a>
+                        <div class="btns mt-0">
+                            <a class="btn btn-action btn-primary mt-0 full-width" href="#">
+                                คัดลอกโค้ด
+                            </a>
+                        </div>
                     </div>
                     
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
