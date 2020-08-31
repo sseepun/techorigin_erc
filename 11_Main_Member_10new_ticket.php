@@ -34,7 +34,7 @@
         .file-upload .file-info { display:flex;align-items:center; justify-content: space-between;}
         .file-upload .file-info .text {padding-left: .5rem;}
         .file-upload .file-info .text p {margin:0; font-size: 80%;}
-        .file-upload .file-icon {position:relative; display:block; width:1.6rem; height:1.6rem;}
+        .file-upload .file-icon {position:relative; display:block; width:2rem; height:2rem;}
         .file-upload .file-icon::before {content: '';position:absolute; top:0;left:0; right:0; bottom:0; background-size:auto 100%; background-repeat: no-repeat; background-position:center; background-image:url('./assets/img/file/doc.png')}
         .file-upload .btns {margin:0; text-align:right;}
         .file-upload .btns .btn.add-file {display:inline-block; padding:.25rem 2rem; }
@@ -45,6 +45,10 @@
         .file-uploaded .file-icon {position:relative; display:block; width:2.75rem; height:2.75rem;}
         .file-uploaded .file-icon::before {content: '';position:absolute; top:0;left:0; right:0; bottom:0; background-size:auto 100%; background-repeat: no-repeat; background-position:center; background-image:url('./assets/img/file/doc.png')}
         .file-uploaded tr td:first-child {width:3rem;}
+
+        @media screen and (max-width: 576px) {
+            .file-upload {padding:.75rem 1.5rem;}
+        }
     </style>
 </head>
 <body>
