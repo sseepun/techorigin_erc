@@ -166,6 +166,12 @@ $(function(){ 'use strict';
         if(target.length) target.val('');
     });
 
+    // Button Toggle
+    $('.btn-toggle').click(function(e){
+        e.preventDefault();
+        $('.toggle-target[data-toggle="'+$(this).data('toggle')+'"]').slideToggle();
+    });
+
 
     // Banner 01
     if($('section.banner-01').length){

@@ -26,7 +26,7 @@
                     <?php include_once('component/list-header.php'); ?>
                     
                     <!-- Banner 03 -->
-                    <div class="banner-03">
+                    <!-- <div class="banner-03">
                         <div class="slide-container">
                             <div class="slides">
                                 <?php for($i=1; $i < 5; $i++){?>
@@ -46,6 +46,57 @@
                             </div>
                             <div class="dots"></div>
                         </div>
+                    </div> -->
+                    
+                    <div class="ss-carousel">
+                        <div class="slides">
+                            <?php for($i=1; $i<5; $i++){?>
+                                <div class="slide">
+                                    <div class="wrapper">
+                                        <div class="ss-img no-hover ss-img-content" href="#">
+                                            <div class="img-bg lazy-bg" data-src="./assets/img/bg/24.jpg"></div>
+                                            <div class="contents">
+                                                <div class="content content-img">
+                                                    <div class="video-wrapper">
+                                                        <img class="lazy-img" data-src="./assets/img/hero/25.png" alt="Hero Banner <?php echo $i; ?>" />
+                                                        <div class="play-container">
+                                                            <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
+                                                                <i class="fas fa-play"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content content-text">
+                                                    <div class="ss-icon-title no-margin">
+                                                        <div class="icon bg-color4"><i class="fas fa-video"></i></div>
+                                                        <div class="text-wrapper">
+                                                            <div class="ss-tags no-margin">
+                                                                <div class="ss-tag type-8"></div>
+                                                            </div>
+                                                            <div class="ss-date no-margin">02.04.2563</div>
+                                                        </div>
+                                                    </div>
+                                                    <h2 class="mt-0-5">
+                                                        ข้อปฏิบัติช่วงวันหยุดยาว เที่ยวอย่างไรให้ปลอดโรค
+                                                    </h2>
+                                                    <p class="mt-0-5">
+                                                        สถานการณ์โรคติดเชื้อไวรัสโคโรนา 2019 หรือ COVID-19 ระบาด 
+                                                        ประชาชนควรอยู่ที่บ้าน 14 วัน เพื่อเฝ้าระวังอาการ 
+                                                        นอกจากจะไม่ใช้ของส่วนตัวร่วม ประโยชน์ให้หลากหลาย
+                                                    </p>
+                                                    <div class="btns">
+                                                        <a class="btn btn-action btn-primary next-icon" href="#">
+                                                            รายละเอียด
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php }?>
+                        </div>
+                        <div class="dots"></div>
                     </div>
                     
                     <div class="grids">

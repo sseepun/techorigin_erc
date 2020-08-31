@@ -302,7 +302,9 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 .ss-img .tag::before, .ss-img .tag::after, .ss-video .tag::before, .ss-video .tag::after{
     background-image:linear-gradient(to right, #0d838d, #c0ca67, rgba(255,255,255,0));
 }
-.ss-video .play-icon{border-color:#4d4e52; color:#4d4e52; background:rgba(255,255,255,.6);}
+.ss-video .play-icon, .ss-img .content .play-icon{
+    border-color:#4d4e52; color:#4d4e52; background:rgba(255,255,255,.6);
+}
 
 /* Special Side Menu */
 .ss-side-menu .menu .text-container > *{color:#000;}

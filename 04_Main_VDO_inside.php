@@ -66,7 +66,7 @@
                         <a class="btn btn-action btn-secondary" href="#">
                             ดาวน์โหลดไฟล์วิดีโอ
                         </a>
-                        <a class="btn btn-action btn-primary" href="#">
+                        <a class="btn btn-action btn-primary btn-toggle" data-toggle="embed" href="#">
                             Embed &lt;/&gt;
                         </a>
                     </div>
