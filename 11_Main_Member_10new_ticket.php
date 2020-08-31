@@ -4,8 +4,6 @@
     <?php include_once('include/header.php'); ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" />
     <?php include_once('include/style.php'); ?>
-<style>
-</style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
