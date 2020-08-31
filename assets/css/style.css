@@ -140,7 +140,7 @@ button.btn{border:0!important;}
 
 .field input[type=text], .field input[type=email], .field input[type=password], 
 .field input[type=date], .field input[type=tel], .field input[type=phone], 
-.field select, .field textarea{
+.field select, .field textarea, .field > .control.file-control > .file-upload{
     width:100%; border:1px solid transparent; padding:.4375rem 1rem; margin:0; background:#e7e7e7;
     font-size:1.25rem; color:#000; font-weight:300; border-radius:.1875rem;
     -webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,.05);
@@ -184,6 +184,19 @@ button.btn{border:0!important;}
     font-size:1.3125rem; margin:.25rem 0 0 0; cursor:pointer; opacity:.3; transition:opacity .3s;
 }
 .field .search-control .btn-clear:hover{opacity:.8;}
+
+.field > .control.file-control > .file-upload{padding:.875rem 1rem 1.875rem 1rem;}
+.field > .control.file-control > .file-upload > *{margin:1rem 0 0 0!important;}
+.field > .control.file-control > input[type=file]{
+    position:absolute; top:0; bottom:0; left:0; right:0; opacity:0; width:100%; height:100%;
+}
+.field > .control.file-control .upload-info{
+    display:block; position:relative; padding:0 0 0 3rem; width:20rem;
+}
+.field > .control.file-control .upload-info::before{
+    content:''; position:absolute; top:0; bottom:0; left:0; width:3rem;
+    background:url('../img/icon/upload.png') left center/2rem auto no-repeat;
+}
 
 
 /* Hamburger */
@@ -530,6 +543,9 @@ table.table.info-table tbody td:nth-child(4){text-align:left; min-width:5.5rem;}
 .slots .float-img.type-10{width:100%; transform:translate(0, -1.25rem); margin-bottom:-1.25rem;}
 .slots .float-img.type-11{
     width:calc(100% + 10.5rem); transform:translate(-4.75rem, -5.5rem); margin-bottom:-5.5rem;
+}
+.slots .float-img.type-12{
+    width:calc(100% - 4rem); transform:translate(0, -2rem); margin:0 auto -2rem auto;
 }
 
 .slots .header-text{
@@ -1108,30 +1124,35 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .xl-text-center{text-align:center!important;}
     .xl-text-left{text-align:left!important;}
     .xl-text-right{text-align:right!important;}
+    .xl-fw-wrap-r{flex-wrap:wrap-reverse!important;}
 }
 @media screen and (min-width:992px) and (max-width: 1199.98px){
     .lg-no-br > *{display:none;}
     .lg-text-center{text-align:center!important;}
     .lg-text-left{text-align:left!important;}
     .lg-text-right{text-align:right!important;}
+    .lg-fw-wrap-r{flex-wrap:wrap-reverse!important;}
 }
 @media screen and (min-width:768px) and (max-width: 991.98px){
     .md-no-br > *{display:none;}
     .md-text-center{text-align:center!important;}
     .md-text-left{text-align:left!important;}
     .md-text-right{text-align:right!important;}
+    .md-fw-wrap-r{flex-wrap:wrap-reverse!important;}
 }
 @media screen and (min-width:576px) and (max-width:767.98px){
     .sm-no-br > *{display:none;}
     .sm-text-center{text-align:center!important;}
     .sm-text-left{text-align:left!important;}
     .sm-text-right{text-align:right!important;}
+    .sm-fw-wrap-r{flex-wrap:wrap-reverse!important;}
 }
 @media screen and (max-width:575.98px){
     .xs-no-br > *{display:none;}
     .xs-text-center{text-align:center!important;}
     .xs-text-left{text-align:left!important;}
     .xs-text-right{text-align:right!important;}
+    .xs-fw-wrap-r{flex-wrap:wrap-reverse!important;}
 }
 
 /* Border */
@@ -1183,7 +1204,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .pr-4{padding-right:4rem!important;} .pr-4-5{padding-right:4.5rem!important;}
 
 
-/* Fixes */
+/* Fix */
 .simplebar-content{padding-top:0!important;}
 .dropzone{position:relative; width:100%; background:#e5e5e5; border:0; padding:1rem; min-height:0;}
 .dropzone > .dz-default.dz-message{position:relative; margin:1rem 0;}
@@ -1192,6 +1213,13 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     background:url('../img/icon/cloud.png') center/auto 100% no-repeat;
 }
 .dropzone .dz-message .dz-button{margin:.25rem 0 0 0; font-size:1.3125rem;}
+.sun-editor{width:100%!important;}
+.sun-editor .se-toolbar{background:#c4c4c4;}
+.sun-editor .se-wrapper .se-wrapper-wysiwyg{background:#e7e7e7;}
+.sun-editor .se-resizing-bar{background:#ddd;}
+.sun-editor .se-btn-list:disabled, .sun-editor .se-btn:disabled, .sun-editor button:disabled{
+    color:#777;
+}
 @media screen and (max-width:767.98px){
     .ss-header p > *{margin:0!important;}
 }

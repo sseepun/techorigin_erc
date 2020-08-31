@@ -2,54 +2,10 @@
 <html lang="th">
 <head>
     <?php include_once('include/header.php'); ?>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" />
     <?php include_once('include/style.php'); ?>
-    <style>
-        .text-options {position:relative; display:flex;   width:100%; background: #c1c1c1; padding:.4375rem 1rem; 
-            -webkit-box-shadow:inset 0px 1px 3px 1px rgba(0,0,0,.05);
-            -moz-box-shadow:inset 0px 1px 3px 1px rgba(0,0,0,.05);
-            box-shadow:inset 0px 1px 3px 1px rgba(0,0,0,.05);
-            border-radius: .1875rem .1875rem 0 0;
-        }
-        .text-options ~ textarea {border-radius: 0 0 .1875rem .1875rem;
-                                -webkit-box-shadow:inset 0px -1px 3px 1px rgba(0,0,0,.05);
-                                -moz-box-shadow:inset 0px -1px 3px 1px rgba(0,0,0,.05);
-                                box-shadow:inset 0px -1px 3px 1px rgba(0,0,0,.05);
-        }
-        .text-options .group {display:inline-block; padding-right: 1rem;}
-        .text-options .option {cursor:pointer; font-weight: 600; display:table-cell; padding:.25rem .5rem; border: .0625rem solid #fff; border-right-color:transparent;}
-        .text-options .group .option:last-child {border-right-color: #fff;}
-        .file-upload {
-            display:flex; 
-            justify-content: space-between;
-            align-items:center;
-            width: 100%; 
-            height:4rem; 
-            -webkit-box-shadow:inset 0px 0px 10px 1px rgba(0,0,0,.2);
-            -moz-box-shadow:inset 0px 0px 10px 1px rgba(0,0,0,.2);
-            box-shadow:inset 0px 0px 10px 1px rgba(0,0,0,.2);
-            border-radius: .1875rem;
-            background:#e7e7e7;
-            padding: .75rem 2.5rem;
-        }
-        .file-upload .file-info { display:flex;align-items:center; justify-content: space-between;}
-        .file-upload .file-info .text {padding-left: .5rem;}
-        .file-upload .file-info .text p {margin:0; font-size: 80%;}
-        .file-upload .file-icon {position:relative; display:block; width:2rem; height:2rem;}
-        .file-upload .file-icon::before {content: '';position:absolute; top:0;left:0; right:0; bottom:0; background-size:auto 100%; background-repeat: no-repeat; background-position:center; background-image:url('./assets/img/file/doc.png')}
-        .file-upload .btns {margin:0; text-align:right;}
-        .file-upload .btns .btn.add-file {display:inline-block; padding:.25rem 2rem; }
-        
-        /* file uploaded table */
-        .file-uploaded {padding-top:1.5rem; width:100%; position:relative;}
-        .file-uploaded tbody, .file-uploaded tr {width:100%; position:relative;} 
-        .file-uploaded .file-icon {position:relative; display:block; width:2.75rem; height:2.75rem;}
-        .file-uploaded .file-icon::before {content: '';position:absolute; top:0;left:0; right:0; bottom:0; background-size:auto 100%; background-repeat: no-repeat; background-position:center; background-image:url('./assets/img/file/doc.png')}
-        .file-uploaded tr td:first-child {width:3rem;}
-
-        @media screen and (max-width: 576px) {
-            .file-upload {padding:.75rem 1.5rem;}
-        }
-    </style>
+<style>
+</style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
@@ -66,34 +22,30 @@
                 <div class="ss">ข้</div><h1 class="color2">อมูลของฉัน</h1>
                 <p><strong>ระบบจัดการ</strong> เกี่ยวกับการใช้งาน จัดการเนื้อหา และข้อมูล</p>
             </div>
-            <div class="grids">
-                <div class="grid xl-25 lg-30 sm-100">
-                    <div class="slots bg-color5">
+            <div class="grids md-fw-wrap-r sm-fw-wrap-r xs-fw-wrap-r">
 
-                        <div class="profile-tab">
-                            <div class="icon lazy-bg" data-src="./assets/img/banner/01.jpg"></div>
-                            <div class="text-container">
-                                <h3 class="fw-400">อนุสรา เสปอร์บันด์</h3>
-                                <h5>urrasaya.sp@gmail.com</h5>
-                            </div>
-                        </div>
-                        
+                <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/25.jpg">
+                        <img class="float-img type-12" src="./assets/img/hero/26.png" alt="Slot Float Image 01" />
                         <div class="slot-tabs">
-                            <?php for($i=0; $i<4; $i++){?>
-                                <a class="slot-tab <?php if($i==0)echo 'active'; ?>" href="#">
-                                    <div class="icon bg-color3 color-white">
-                                        <i class="far fa-building"></i>
-                                    </div>
-                                    <h5 class="mt-0 color-black">
+                            <?php for($i=0; $i<2; $i++){?>
+                                <a class="slot-tab" href="#">
+                                    <h5 class="mt-0 color-white">
                                         0<?php echo "$i"; ?>. <br>
                                         ข่าวจากหน่วยงานส่วนกลาง
                                     </h5>
                                 </a>
-                            <?php }?> 
+                            <?php }?>
                         </div>
-                        
+                        <div class="slot">
+                            <h2 class="header-text quote-text">
+                                <span class="text-sm">สายด่วนกรมอนามัย</span> <br>
+                                <span class="text-xl fw-400 color1">0-2590-4000</span>
+                            </h2>
+                        </div>
                     </div>
                 </div>
+
                 <div class="grid xl-75 lg-70 sm-100">
                     <div class="contact-box">
                         <form action="./" method="POST">
@@ -146,76 +98,88 @@
                                     <div class="field">
                                         <label for="message">ข้อความ</label>
                                         <div class="control">
-                                            <div class="text-options">
-                                                <div class="group">
-                                                    <div class="option">1</div>
-                                                    <div class="option">2</div>
-                                                    <div class="option">3</div>
-                                                </div>
-                                                <div class="group">
-                                                    <div class="option">1</div>
-                                                </div>
-                                                <div class="group">
-                                                    <div class="option">1</div>
-                                                    <div class="option">2</div>
-                                                    <div class="option">3</div>
-                                                    <div class="option">4</div>
-                                                </div>
-                                                <div class="group">
-                                                    <div class="option">1</div>
-                                                </div>
-                                            </div>
-                                            <textarea name="message" rows="10" required></textarea>
+                                            <textarea name="content" id="content" rows="10"></textarea>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="grid sm-100 mt-0">
                                     <div class="field">
-                                        <div class="control">
-                                            <div class="file-upload">
-                                                <div class="file-info">
-                                                    <div class="file-icon"></div>
-                                                    <div class="text">
-                                                        <p class="fw-600">ลากหรือวางไฟล์ไว้ที่นี่</p>
-                                                        <p>ชนิดไฟล์ที่อนุญาติ .jpg .jpeg .png .zip .rar ไฟล์ทั้งหมดรวมกันไม่เกิน 5 MB</p>
+                                        <div class="control file-control">
+                                            <div class="file-upload d-flex ai-center jc-space-evenly fw-wrap">
+                                                <div class="upload-info">
+                                                    <h4 class="no-margin">ลากหรือวางไฟล์ไว้ที่นี่</h4>
+                                                    <p class="no-margin">
+                                                        ชนิดไฟล์ที่อนุญาติ .jpg .jpeg .png .zip .rar 
+                                                        ไฟล์ทั้งหมดรวมกันไม่เกิน 5 MB
+                                                    </p>
+                                                </div>
+                                                <div class="btns width-auto">
+                                                    <div class="btn btn-action btn-success">
+                                                        เพิ่มไฟล์
                                                     </div>
                                                 </div>
-                                                <div class="btns">
-                                                    <div class="btn add-file bg-color2 color-white">เพิ่มไฟล์</div>
-                                                </div>
                                             </div>
+                                            <input type="file" name="file" />
                                         </div>
                                     </div>
-                                    <table class="file-uploaded">
+                                </div>
+                                
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table download-table">
                                         <tbody>
                                             <tr>
-                                                <td>
-                                                    <div class="file-icon"></div>
+                                                <td class="no-margin pl-0" style="width:4rem;">
+                                                    <div class="file-icon pdf"></div>
                                                 </td>
-                                                <td><h4 class="no-margin">ไฟล์ภาพเอกสาร.png</h4>ขนาดไฟล์ 0.5 KB</td>
+                                                <td class="text-left">
+                                                    <h4 class="no-margin">ไฟล์ภาพเอกสาร.png</h4>
+                                                    <span class="text-sm">ขนาดไฟล์ 0.5 KB</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="no-margin pl-0" style="width:4rem;">
+                                                    <div class="file-icon docx"></div>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h4 class="no-margin">ไฟล์ภาพเอกสาร.png</h4>
+                                                    <span class="text-sm">ขนาดไฟล์ 0.5 KB</span>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+
                             </div>
-                            <div class="btns mt-2 text-right">
-                                <button type="submit" class="btn btn-action btn-secondary next-icon">
-                                    ส่งเรื่องร้องเรียน
-                                </button>
-                                <a class="btn btn-action btn-primary" href="#">
-                                    ล้างข้อมูล
-                                </a>
+
+                            <div class="d-flex ai-center jc-space-between fw-wrap mb-1">
+                                <div class="captcha-container">
+                                    <img class="lazy-img" data-src="./assets/img/default/captcha.png" alt="CAPTCHA" />
+                                </div>
+                                <div class="btns width-auto">
+                                    <button type="submit" class="btn btn-action btn-secondary next-icon">
+                                        ส่งเรื่องร้องเรียน
+                                    </button>
+                                    <a class="btn btn-action btn-primary" href="#">
+                                        ล้างข้อมูล
+                                    </a>
+                                </div>
                             </div>
+
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
-    
-    
     </section>
        
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/ko.js"></script>
+    <script>
+        var editor = SUNEDITOR.create(document.getElementById('content'), {});
+    </script>
 </body>
 </html>
