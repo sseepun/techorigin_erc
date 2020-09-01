@@ -46,22 +46,47 @@
                         </div>
                     </div>
 
-                    <!-- Banner 03 -->
-                    <div class="banner-03">
-                        <div class="slide-container">
-                            <div class="slides">
-                                <?php for($i=1; $i<5; $i++){?>
-                                    <div class="slide">
-                                        <div class="wrapper">
-                                            <a class="ss-img" href="#">
-                                                <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo $i; ?>.jpg"></div>
-                                            </a>
+                    <div class="ss-carousel">
+                        <div class="slides">
+                            <?php for($i=1; $i<5; $i++){?>
+                                <div class="slide">
+                                    <div class="wrapper">
+                                        <div class="ss-img no-hover ss-img-content" href="#">
+                                            <div class="img-bg lazy-bg" data-src="./assets/img/bg/27.jpg"></div>
+                                            <div class="contents">
+                                                <div class="content content-img">
+                                                    <img class="lazy-img" data-src="./assets/img/hero/29.png" alt="Hero Banner <?php echo $i; ?>" />
+                                                </div>
+                                                <div class="content content-text">
+                                                    <div class="ss-icon-title no-margin">
+                                                        <div class="icon bg-color1"><i class="fas fa-book"></i></div>
+                                                        <div class="text-wrapper">
+                                                            <div class="ss-tags no-margin">
+                                                                <div class="ss-tag type-9"></div>
+                                                            </div>
+                                                            <div class="ss-date no-margin">02.04.2563</div>
+                                                        </div>
+                                                    </div>
+                                                    <h2 class="mt-0-5">
+                                                        7 สัปดาห์ รอบรู้สู่สุขภาพดี Moving forward to fitness
+                                                    </h2>
+                                                    <p class="mt-0-5">
+                                                        “7 สัปดาห์รอบรู้สู่สุขภาพดี” เป็นคู่มือแนวทางการดูแลสุขภาพ ที่ให้ความรู้ที่ถูกต้อง 
+                                                        เหมาะสมในวิถีชีวิตสู่การสุขภาพดี ประกอบด้วย การประเมินควา…
+                                                    </p>
+                                                    <div class="btns">
+                                                        <a class="btn btn-action btn-primary next-icon" href="#">
+                                                            รายละเอียด
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                <?php }?> 
-                            </div>
-                            <div class="dots"></div>
+                                </div>
+                            <?php }?>
                         </div>
+                        <div class="dots"></div>
                     </div>
 
                     <div class="grids">
@@ -108,10 +133,10 @@
                         <img class="float-img type-7" src="./assets/img/hero/16.png" alt="Slot Float Image 01" />
                         <div class="slot-tabs mt-0">
                             <h4 class="title color-white">หมวดหมู่</h4>
-                            <?php for($i=0; $i<10; $i++){?>
+                            <?php for($i=0; $i<12; $i++){?>
                                 <a class="slot-tab" href="#">
                                     <h5 class="mt-0 color-white">
-                                        0<?php echo $i; ?>. <br>
+                                        <?php echo sprintf('%02d', $i+1); ?>. <br>
                                         ข่าวจากหนังสือพิมพ์
                                     </h5>
                                 </a>

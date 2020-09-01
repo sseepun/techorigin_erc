@@ -114,6 +114,35 @@
                         <div class="question-container">
                             <div class="num">3</div>
                             <div class="question">
+                                ปัจจุบันท่านการได้ยินหรือไม่
+                            </div>
+                            <div class="answers">
+                                <div class="d-flex ai-center jc-space-between fw-wrap">
+                                    <div class="field ss-h5 mt-0-5 width-auto">
+                                        ช่วงเวลา
+                                        <input type="text" name="start_date" class="date-picker" 
+                                        autocomplete="off" style="width:6rem;" /> 
+                                        - 
+                                        <input type="text" name="end_date" class="date-picker" 
+                                        autocomplete="off" style="width:6rem;" />
+                                    </div>
+                                    <div class="field ss-h5 mt-0-5 width-auto">
+                                        ระบุเวลา 
+                                        <input type="text" name="้hours" placeholder="ชม." style="width:4rem;" /> 
+                                        : 
+                                        <input type="text" name="minutes" placeholder="นาที" style="width:4rem;" /> 
+                                        <select name="period" style="width:5rem;">
+                                            <option value="AM">AM</option>
+                                            <option value="PM">PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-container">
+                            <div class="num">4</div>
+                            <div class="question">
                                 กรุณาระบุหรือบอกปัญหาเกี่ยวกับอาการมองเห็น
                             </div>
                             <div class="answers">
@@ -146,7 +175,7 @@
                         </div>
 
                         <div class="question-container">
-                            <div class="num">4</div>
+                            <div class="num">5</div>
                             <div class="question">
                                 โรคเรื้อรัง ท่านเคยได้รับการบอกกล่าว (วินิจฉัย) 
                                 จากแพทย์ว่าเป็นโรคเหล่านี้หรือไม่

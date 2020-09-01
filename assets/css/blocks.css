@@ -452,6 +452,28 @@
     .intro-01 .float-img{max-width:280px;}
 }
 
+/* Intro 02 */
+.intro-02{
+    position:relative; display:flex; width:100%; height:100vh; align-items:center;
+    overflow:hidden;
+}
+.intro-02 > .hero{display:block; position:absolute; left:0; bottom:0; height:100vh; width:auto;}
+.intro-02 .text-container{position:relative; width:100%; max-width:560px; margin:0 0 0 auto;}
+.intro-02 .hero-icon{display:block; width:100px; height:auto; margin:0 auto;}
+.intro-02 .hero-border{display:block; width:280px; height:auto; margin:.75rem auto 1.5rem auto;}
+@media screen and (max-width:1299.98px){
+    .intro-02 .text-container{max-width:450px;}
+}
+@media screen and (max-width:1199.98px){
+    .intro-02 > .hero{transform:translateX(-160px);}
+}
+@media screen and (max-width:991.98px){
+    .intro-02{display:block; height:auto;}
+    .intro-02 > .hero{position:relative; width:155%; height:auto; transform:none;}
+    .intro-02 .text-container{max-width:100%; padding:2.5rem 0 3rem 0;}
+    .intro-02 .hero-icon{width:80px;}
+}
+
 
 /* Chat Container */
 .chat-container{

@@ -7,7 +7,9 @@ html, body{
 a{text-decoration:none;}
 img{display:block; border:0;}
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
-input[type=phone], input[type=submit], select, textarea, button{font-family:'DB Ozone X';}
+input[type=number], input[type=phone], input[type=submit], select, textarea, button{
+    font-family:'DB Ozone X';
+}
 @media screen and (max-width:1199.98px){
     html.sidenav-opened, body.sidenav-opened{overflow-y:hidden!important;}
 }
@@ -134,6 +136,9 @@ button.btn{border:0!important;}
     .social-btns > .btn.social-btn{width:100%;}
 }
 
+.btn.btn-pink{color:#fff; background:#d24488;}
+.btn.btn-pink-2{color:#fff; background:#d16eb8;}
+
 
 /* Toggle Target */
 .toggle-target{display:none; width:100%;}
@@ -152,7 +157,8 @@ button.btn{border:0!important;}
 
 .field input[type=text], .field input[type=email], .field input[type=password], 
 .field input[type=date], .field input[type=tel], .field input[type=phone], 
-.field select, .field textarea, .field > .control.file-control > .file-upload{
+.field input[type=number], .field select, .field textarea, 
+.field > .control.file-control > .file-upload{
     width:100%; border:1px solid transparent; padding:.4375rem 1rem; margin:0; background:#e7e7e7;
     font-size:1.25rem; color:#000; font-weight:300; border-radius:.1875rem;
     -webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,.05);
@@ -162,7 +168,9 @@ button.btn{border:0!important;}
 }
 .field input[type=text]:focus, .field input[type=email]:focus, .field input[type=password]:focus, 
 .field input[type=date]:focus, .field input[type=tel]:focus, .field input[type=phone]:focus, 
-.field select:focus, .field textarea:focus{border-color:#0d838d; border-color:var(--color4);}
+.field input[type=number]:focus, .field select:focus, .field textarea:focus{
+    border-color:#0d838d; border-color:var(--color4);
+}
 
 .field .control.checkbox-control, .field .control.radio-control{display:flex; position:relative;}
 .field .control.radio-control > input[type=radio]{position:absolute; opacity:0;}
