@@ -18,8 +18,8 @@
         .post-container .comment-area .ss-icon-title h2 > span{font-size: 1rem; display:block;} 
         .post-container .comment-area .ss-icon-title h2 span > i{width:1rem; height:1rem; border-radius: 50%; padding: .0625rem; font-size:50%;text-align:center; line-height: .85rem; vertical-align:middle;}
         /* Other comments */
-        .post-container .other-comments {padding:1.5rem 1.25rem;}
-        .post-container .other-comments .content{ padding: 1rem 0 0 3.1875rem;}
+        .post-container .other-comments {padding:0 1.25rem 1rem 1.25rem;}
+        .post-container .other-comments .content{ padding: 0 0 0 3.1875rem;}
         .post-container .other-comments .content > h2 {margin:0; font-size:2rem;}
         .post-container .other-comments .content .info, .post-container .other-comments .content .info .blocks{display:flex; align-items:center; justify-content:space-between;}
         .post-container .other-comments .content .info .blocks .block, .post-container .other-comments .content .info .blocks .block > * {display:inline-block;}
@@ -30,7 +30,7 @@
             width:1rem; height:1rem; line-height:1.1875rem; font-size:.5625rem;
             border-radius:50%; text-align:center; transform:translateY(-.125rem); 
         }
-        .post-container .other-comments .content .info .block a {margin-right:.5rem; text-decoration:none; font-size:1.125rem; color:#000; padding:0 .75rem;border: 1px solid transparent; border-right-color:#000; border-left-color:#000;}
+        .post-container .other-comments .content .info .block a { text-decoration:none; font-size:1.125rem; color:#000; padding:0 .5rem;border: 1px solid transparent; border-right-color:#000; border-left-color:#000;}
         @media screen and (max-width: 767.98px) {
             .post-container .other-comments .content {padding-left: 2.6875rem;}
         }
