@@ -183,6 +183,10 @@ nav.footer p, nav.footer h1{color:#fff;}
 }
 
 
+/* Popup Container */
+.popup-container .popup-box{background:#fff;}
+
+
 /* Question */
 .question-container > .num{color:#fff; background:#47484d; background:var(--color0);}
 .question-container > .answers{border-color:#ddd;}

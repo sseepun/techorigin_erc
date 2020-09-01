@@ -157,6 +157,10 @@ nav.footer p, nav.footer h1{color:#fff;}
 .calendar-container .calendar .event-container .event{color:#000; background:#fff;}
 
 
+/* Popup Container */
+.popup-container .popup-box{background:#000; border:1px solid #fff;}
+
+
 /* Question */
 .question-container > .num{color:#000; background:#fff;}
 .question-container > .answers{border-color:#fff;}

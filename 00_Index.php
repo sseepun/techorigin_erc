@@ -644,7 +644,7 @@
                         <div class="ss"><i>3</i></div> 
                         <h1 class="fw-300">ขั้นตอน</h1>
                         <div class="btns">
-                            <a class="btn btn-action btn-sm btn-secondary" href="#">
+                            <a class="btn btn-action btn-sm btn-secondary btn-popup-toggle" href="#" data-popup="subscribe">
                                 ลงทะเบียน
                             </a>
                         </div>
@@ -654,6 +654,29 @@
             </div>
         </div>
     </section>
+    <div class="popup-container" data-popup="subscribe">
+        <div class="wrapper">
+            <div class="popup-box">
+                <form action="./" method="POST">
+                    <div class="ss-icon-title mt-0" data-aos="fade-up" data-aos-delay="0">
+                        <div class="icon bg-color4"><i class="far fa-images"></i></div>
+                        <h2>ลงทะเบียนรับข้อมูลเพื่อสุขภาพ</h2>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input type="email" name="email" />
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <input type="submit" class="btn btn-action btn-secondary" value="ลงทะเบียน" />
+                        <a class="btn btn-action btn-primary btn-popup-toggle" href="#" data-popup="subscribe">
+                            ยกเลิก
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <section class="call-02">
         <div class="container">

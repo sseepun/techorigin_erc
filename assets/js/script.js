@@ -172,6 +172,12 @@ $(function(){ 'use strict';
         $('.toggle-target[data-toggle="'+$(this).data('toggle')+'"]').slideToggle();
     });
 
+    // Button Popup
+    $('.btn-popup-toggle').click(function(e){
+        e.preventDefault();
+        $('.popup-container[data-popup="'+$(this).data('popup')+'"]').toggleClass('active');
+    });
+
 
     // Banner 01
     if($('section.banner-01').length){

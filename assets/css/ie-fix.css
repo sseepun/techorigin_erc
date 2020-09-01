@@ -24,3 +24,9 @@
     .global-search-container{display:none;}
     .global-search-container.active{display:block;}
 }
+
+/* Popup Container */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+    .popup-container{display:none!important;}
+    .popup-container.active{display:block!important;}
+}
