@@ -1,3 +1,8 @@
+<?php 
+    $steps = 3;
+
+?>
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
