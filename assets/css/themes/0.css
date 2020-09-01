@@ -183,6 +183,11 @@ nav.footer p, nav.footer h1{color:#fff;}
 }
 
 
+/* Question */
+.question-container > .num{color:#fff; background:#47484d; background:var(--color0);}
+.question-container > .answers{border-color:#ddd;}
+
+
 /* Table */
 table.table td{color:#000; border-color:#dddddd!important;}
 table.table .icon.icon-download, table.table .icon.icon-dot{
