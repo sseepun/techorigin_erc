@@ -1,9 +1,17 @@
+<?php 
+    $steps = 3;
+
+?>
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
     <style>
+        .survey-container form {display:none;}
+        .survey-container form a.btn.btn-action.go-back {}
+        .survey-container form.active {display:block;}
         .survey-container .question-body .question-num {vertical-align:top; display:inline-block; color:#fff; width:1.875rem; height:1.875rem; line-height:1.875rem; text-align:center; border-radius:.375rem; font-weight:400;}
         .survey-container .question-body .question {width: calc(100% - 3.875rem); margin-left: 1rem; display:inline-block; font-size: 1.125rem; font-weight:300;}
         .survey-container .question-body .answers {margin: 0 0 0 2.875rem;}
@@ -71,7 +79,8 @@
                         <h2>แบบสำรวจความรอบรู้ด้านสุขภาพของประชาชนไทยอายุ 15 ปีขึ้นไป</h2>
                     </div>
                     <div class="survey-container">
-                        <form action="" id="form_step1" data-step="1" method="POST">
+                        <!-- Form step 1 -->
+                        <form action="" id="form_step1" data-step="1" method="POST" class="active">
                             <p class="fw-600">ส่วนที่ 1 - ข้อมูลสุขภาพ</p>
                             <p class="fw-600">คำอธิบาย</p>
                             <p class="mt-0 fw-500">แบบสอบถามต่อไปนี้เกี่ยวข้องกับความรอบรู้ด้านสุขภาพ ประกอบด้วย การเข้าถึงข้อมูล ความเข้าใจ การทบทวนซักถาม การตัดสินใจ และการเปลี่ยนพฤติกรรมที่เกี่ยวข้องกับสุขภาพ ให้เลือกคำตอบที่ตรงกับท่านมากที่สุด</p>
@@ -198,11 +207,284 @@
                                     </div>
                                 </div>
                                 <div class="btns mt-1 text-center">
-                                    <a class="btn btn-action btn-primary" href="#">
+                                    <button type="submit" class="btn btn-action btn-secondary next-icon">
+                                        ตอบคำถามต่อไป
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Form step 2 -->
+                        <form action="" id="form_step2" data-step="2" method="POST">
+                            <p class="fw-600">ส่วนที่ 2 - ข้อมูลสุขภาพ</p>
+                            <p class="fw-600">คำอธิบาย</p>
+                            <p class="mt-0 fw-500">แบบสอบถามต่อไปนี้เกี่ยวข้องกับความรอบรู้ด้านสุขภาพ ประกอบด้วย การเข้าถึงข้อมูล ความเข้าใจ การทบทวนซักถาม การตัดสินใจ และการเปลี่ยนพฤติกรรมที่เกี่ยวข้องกับสุขภาพ ให้เลือกคำตอบที่ตรงกับท่านมากที่สุด</p>
+                            <div class="grids">
+                                <div class="grid sm-100 mt-0">
+                                    <div class="question-body pt-1 pb-1 border-bottom">
+                                        <div class="question-num bg-color0">1</div>
+                                        <div class="question">
+                                            ปัจจุบันท่านใช้แว่นตาหรือคอนแทคเลนส์ในการมองเห็นหรือไม่
+                                        </div>
+                                        <div class="answers">
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_1" id="q_1_1">
+                                                    <label for="q_1_1">ไม่ใช้</label>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_1" id="q_1_2">
+                                                    <label for="q_1_2">ใช้</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100 mt-0">
+                                    <div class="question-body pt-1 pb-1 border-bottom">
+                                        <div class="question-num bg-color0">2</div>
+                                        <div class="question">
+                                            ปัจจุบันท่านการได้ยินหรือไม่
+                                        </div>
+                                        <div class="answers">
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_2" id="q_2_1">
+                                                    <label for="q_2_1">ไม่มี</label>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_2" id="q_2_2">
+                                                    <label for="q_2_2">มี</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100 mt-0">
+                                    <div class="question-body pt-1 pb-1 border-bottom">
+                                        <div class="question-num bg-color0">3</div>
+                                        <div class="question">
+                                            กรุณาระบุหรือบอกปัญหาเกี่ยวกับอาการมองเห็น
+                                        </div>
+                                        <div class="answers">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <textarea name="message" rows="4" required></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="alternative">อัพโหลดไฟล์เอกสารประกอบ</div>
+                                        <div class="file-upload">
+                                            <div class="file-info">
+                                                <div class="file-icon"></div>
+                                                <div class="text">
+                                                    <p class="fw-600">ลากหรือวางไฟล์ไว้ที่นี่</p>
+                                                    <p>ชนิดไฟล์ที่อนุญาติ .jpg .jpeg .png .zip .rar ไฟล์ทั้งหมดรวมกันไม่เกิน 5 MB</p>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="btn add-file bg-color2 color-white">เพิ่มไฟล์</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100 mt-0">
+                                    <div class="question-body pt-1 pb-1">
+                                        <div class="question-num bg-color0">5</div>
+                                        <div class="question">
+                                            โรคเรื้อรัง ท่านเคยได้รับการบอกกล่าว (วินิจฉัย) จากแพทย์ว่าเป็นโรคเหล่านี้หรือไม่
+                                        </div>
+                                        <div class="answers">
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_5" id="q_5_1">
+                                                    <label for="q_5_1">เคยตรวจ</label>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_5" id="q_5_2">
+                                                    <label for="q_5_2">เคยตรวจในรอบ 1 ปีที่ผ่านมา แต่ไม่พบโรค</label>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_5" id="q_5_3">
+                                                    <label for="q_5_3">เคยตรวจและแพทย์วินิจฉัยว่าเป็นระบุ <span class="under">(ตอบได้มากกว่า 1 ข้อ)</span></label>
+                                                </div>
+                                                <div class="checkbox-wrapper">
+                                                    <?php for($i=0; $i<4; $i++){?>
+                                                        <div class="field mt-0-5">
+                                                            <div class="control checkbox-control">
+                                                                <input type="checkbox" name="types[]" id="type_1_<?php echo $i; ?>" value="<?php echo $i; ?>">
+                                                                <label for="type_1_<?php echo $i; ?>">
+                                                                    ข่าวจากหน่วยงานส่วนกลาง
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    <?php }?>
+                                                    <div class="field mt-0-5">
+                                                        <div class="control checkbox-control">
+                                                            <input type="checkbox" name="types[]" id="type_1_<?php echo $i; ?>" value="<?php echo $i; ?>">
+                                                            <label for="type_1_<?php echo $i; ?>">
+                                                                อื่นๆ ระบุ
+                                                            </label>
+                                                        </div>
+                                                        <input type="text" name="other">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btns mt-1 text-center">
+                                    <a class="btn btn-action btn-primary go-back" href="#" data-step="2">
                                         ย้อนกลับ
                                     </a>
                                     <button type="submit" class="btn btn-action btn-secondary next-icon">
                                         ตอบคำถามต่อไป
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Form step 3 -->
+                        <form action="" id="form_step3" data-step="3" method="POST">
+                            <p class="fw-600">ส่วนที่ 3 - ข้อมูลสุขภาพ</p>
+                            <p class="fw-600">คำอธิบาย</p>
+                            <p class="mt-0 fw-500">แบบสอบถามต่อไปนี้เกี่ยวข้องกับความรอบรู้ด้านสุขภาพ ประกอบด้วย การเข้าถึงข้อมูล ความเข้าใจ การทบทวนซักถาม การตัดสินใจ และการเปลี่ยนพฤติกรรมที่เกี่ยวข้องกับสุขภาพ ให้เลือกคำตอบที่ตรงกับท่านมากที่สุด</p>
+                            <div class="grids">
+                                <div class="grid sm-100 mt-0">
+                                    <div class="question-body pt-1 pb-1 border-bottom">
+                                        <div class="question-num bg-color0">1</div>
+                                        <div class="question">
+                                            ปัจจุบันท่านใช้แว่นตาหรือคอนแทคเลนส์ในการมองเห็นหรือไม่
+                                        </div>
+                                        <div class="answers">
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_1" id="q_1_1">
+                                                    <label for="q_1_1">ไม่ใช้</label>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_1" id="q_1_2">
+                                                    <label for="q_1_2">ใช้</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100 mt-0">
+                                    <div class="question-body pt-1 pb-1 border-bottom">
+                                        <div class="question-num bg-color0">2</div>
+                                        <div class="question">
+                                            ปัจจุบันท่านการได้ยินหรือไม่
+                                        </div>
+                                        <div class="answers">
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_2" id="q_2_1">
+                                                    <label for="q_2_1">ไม่มี</label>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_2" id="q_2_2">
+                                                    <label for="q_2_2">มี</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100 mt-0">
+                                    <div class="question-body pt-1 pb-1 border-bottom">
+                                        <div class="question-num bg-color0">3</div>
+                                        <div class="question">
+                                            กรุณาระบุหรือบอกปัญหาเกี่ยวกับอาการมองเห็น
+                                        </div>
+                                        <div class="answers">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <textarea name="message" rows="4" required></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="alternative">อัพโหลดไฟล์เอกสารประกอบ</div>
+                                        <div class="file-upload">
+                                            <div class="file-info">
+                                                <div class="file-icon"></div>
+                                                <div class="text">
+                                                    <p class="fw-600">ลากหรือวางไฟล์ไว้ที่นี่</p>
+                                                    <p>ชนิดไฟล์ที่อนุญาติ .jpg .jpeg .png .zip .rar ไฟล์ทั้งหมดรวมกันไม่เกิน 5 MB</p>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="btn add-file bg-color2 color-white">เพิ่มไฟล์</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100 mt-0">
+                                    <div class="question-body pt-1 pb-1">
+                                        <div class="question-num bg-color0">5</div>
+                                        <div class="question">
+                                            โรคเรื้อรัง ท่านเคยได้รับการบอกกล่าว (วินิจฉัย) จากแพทย์ว่าเป็นโรคเหล่านี้หรือไม่
+                                        </div>
+                                        <div class="answers">
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_5" id="q_5_1">
+                                                    <label for="q_5_1">เคยตรวจ</label>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_5" id="q_5_2">
+                                                    <label for="q_5_2">เคยตรวจในรอบ 1 ปีที่ผ่านมา แต่ไม่พบโรค</label>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="control radio-control">
+                                                    <input type="radio" name="q_5" id="q_5_3">
+                                                    <label for="q_5_3">เคยตรวจและแพทย์วินิจฉัยว่าเป็นระบุ <span class="under">(ตอบได้มากกว่า 1 ข้อ)</span></label>
+                                                </div>
+                                                <div class="checkbox-wrapper">
+                                                    <?php for($i=0; $i<4; $i++){?>
+                                                        <div class="field mt-0-5">
+                                                            <div class="control checkbox-control">
+                                                                <input type="checkbox" name="types[]" id="type_1_<?php echo $i; ?>" value="<?php echo $i; ?>">
+                                                                <label for="type_1_<?php echo $i; ?>">
+                                                                    ข่าวจากหน่วยงานส่วนกลาง
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    <?php }?>
+                                                    <div class="field mt-0-5">
+                                                        <div class="control checkbox-control">
+                                                            <input type="checkbox" name="types[]" id="type_1_<?php echo $i; ?>" value="<?php echo $i; ?>">
+                                                            <label for="type_1_<?php echo $i; ?>">
+                                                                อื่นๆ ระบุ
+                                                            </label>
+                                                        </div>
+                                                        <input type="text" name="other">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btns mt-1 text-center">
+                                    <a class="btn btn-action btn-primary go-back" href="#" data-step="3">
+                                        ย้อนกลับ
+                                    </a>
+                                    <button type="submit" class="btn btn-action btn-secondary next-icon">
+                                        ส่งแบบสำรวจ
                                     </button>
                                 </div>
                             </div>
@@ -225,5 +507,30 @@
     
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
+    <script>
+        $(function(){ 'use strict';
+            var forms = $('form');
+            $('form').on('submit', function(e){
+                e.preventDefault();
+                let thisForm = $(this),
+                    thisStep = Number($(this).data('step'));
+                if(thisStep < Number('<?php echo $steps; ?>')){
+                    updateFormStep(thisStep + 1);
+                }
+            });
+            // Back btn
+            $('.btn.btn-action.go-back').click(function(e){
+                e.preventDefault();
+                updateFormStep(Number($(this).data('step')) - 1);
+            });
+            // Update form step
+            function updateFormStep(step) {
+                forms.removeClass('active');
+                forms.filter(`[data-step=${step}]`).addClass('active');
+                $(window).scrollTop(0);
+            }
+        });
+
+    </script>
 </body>
 </html>
