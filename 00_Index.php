@@ -662,12 +662,12 @@
                         <div class="icon bg-color4"><i class="far fa-images"></i></div>
                         <h2>ลงทะเบียนรับข้อมูลเพื่อสุขภาพ</h2>
                     </div>
-                    <div class="field">
+                    <div class="field mt-1-5">
                         <div class="control">
                             <input type="email" name="email" />
                         </div>
                     </div>
-                    <div class="btns">
+                    <div class="btns mt-0-5">
                         <input type="submit" class="btn btn-action btn-secondary" value="ลงทะเบียน" />
                         <a class="btn btn-action btn-primary btn-popup-toggle" href="#" data-popup="subscribe">
                             ยกเลิก

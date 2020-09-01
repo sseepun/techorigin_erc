@@ -23,7 +23,7 @@
         </div>   
     </div>
 
-    <section class="sitemap-padding section-bg lazy-bg" data-src="./assets/img/bg/12.jpg">
+    <section class="section-sitemap section-bg lazy-bg" data-src="./assets/img/bg/12.jpg">
         <div class="container">
             <div class="grids">
 
