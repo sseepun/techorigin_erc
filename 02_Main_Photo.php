@@ -73,6 +73,7 @@
                             <div class="grid md-25 ss-card-2">
                                 <div class="ss-img square">
                                     <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
+                                    <div class="img-num">120</div>
                                     <div class="socials">
                                         <ul>
                                             <li><a class="social social-fw" href="#">

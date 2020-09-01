@@ -14,7 +14,7 @@ html, body{background:#000; color:#ffff00;}
 .btn.btn-icon{color:#ffff00;}
 .btn.btn-icon > i{background:#ffff00; color:#000;}
 
-.btn.btn-icon-alert{color:#ffff00;}
+.btn.btn-icon-alert, .btn.btn-icon-download{color:#ffff00;}
 .btn.btn-icon-alert::before{background:#ce0400; color:#ffff00;}
 .btn.btn-icon-download::before{background:#284e51; background:var(--color3); color:#fff;}
 
@@ -264,6 +264,9 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 .ss-video .play-icon, .ss-img .content .play-icon{
     border-color:#ffff00; color:#ffff00; background:rgba(0,0,0,.6);
 }
+
+/* Special iFrame */
+.ss-iframe{border-color:#ffff00;}
 
 /* Special Side Menu */
 .ss-side-menu .menu .text-container > *{color:#000;}

@@ -79,8 +79,12 @@
                                             <div class="text-xs">ขนาดไปล์ <strong>1.3</strong> MB</div>
                                             <div class="text-xs">ดาวน์โหลด <strong>23</strong> ครั้ง</div>
                                         </td>
-                                        <td>
-                                            <a class="btn btn-icon-alert" href="#">
+                                        <td class="text-left">
+                                            <a class="btn btn-action btn-sm btn-icon-download" href="#">
+                                                ดาวน์โหลด
+                                            </a>
+                                            <br>
+                                            <a class="btn btn-action btn-sm btn-icon-alert" href="#">
                                                 แจ้งไฟล์เสีย
                                             </a>
                                         </td>
@@ -102,6 +106,13 @@
                             </video>
                         </div>
                     </div>
+                    <div class="ss-iframe mt-1">
+                        <div class="wrapper">
+                            <div class="iframe-container">
+                                <iframe src="https://techorigin.co.th/" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
                         <div class="icon bg-color4"><i class="far fa-images"></i></div>
@@ -110,7 +121,7 @@
                     <div class="gallery-grids" data-aos="fade-up" data-aos-delay="300">
                         <?php for($i=0; $i<6; $i++){?>
                             <div class="grid md-25">
-                                <a class="ss-img bradius-0" href="#">
+                                <a class="ss-img bradius-0" href="./assets/img/banner/<?php echo sprintf('%02d', $i%4+1); ?>.jpg" data-fancybox="gallery">
                                     <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
                                 </a>
                             </div>
@@ -174,8 +185,11 @@
                                             <li><a href="#" class="social social-tw">
                                                 <i class="fab fa-twitter"></i>
                                             </a></li>
-                                            <li><a href="#" class="social social-ig">
+                                            <!-- <li><a href="#" class="social social-ig">
                                                 <i class="fab fa-instagram"></i>
+                                            </a></li> -->
+                                            <li><a href="#" class="social social-ln">
+                                                <i class="fab fa-line"></i>
                                             </a></li>
                                         </ul>
                                     </div>
