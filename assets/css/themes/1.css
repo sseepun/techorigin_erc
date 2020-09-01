@@ -157,6 +157,11 @@ nav.footer p, nav.footer h1{color:#fff;}
 .calendar-container .calendar .event-container .event{color:#000; background:#fff;}
 
 
+/* Question */
+.question-container > .num{color:#000; background:#fff;}
+.question-container > .answers{border-color:#fff;}
+
+
 /* Table */
 table.table td{color:#fff; border-color:#fff!important;}
 table.table .icon.icon-download, table.table .icon.icon-dot{color:#000; background:#fff;}
