@@ -18,7 +18,7 @@ html, body{background:transparent; color:#000;}
     background:#47484d; background:var(--color0); color:#c0ca67; color:var(--color1);
 }
 
-.btn.btn-icon-alert{color:#000;}
+.btn.btn-icon-alert, .btn.btn-icon-download{color:#000;}
 .btn.btn-icon-alert::before{background:#ce0400; color:#fff;}
 .btn.btn-icon-download::before{background:#284e51; background:var(--color3); color:#fff;}
 
@@ -310,6 +310,9 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 .ss-video .play-icon, .ss-img .content .play-icon{
     border-color:#4d4e52; color:#4d4e52; background:rgba(255,255,255,.6);
 }
+
+/* Special iFrame */
+.ss-iframe{border-color:#d8d8d8;}
 
 /* Special Side Menu */
 .ss-side-menu .menu .text-container > *{color:#000;}
