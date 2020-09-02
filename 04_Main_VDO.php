@@ -58,7 +58,8 @@
                                             <div class="contents">
                                                 <div class="content content-img">
                                                     <div class="video-wrapper">
-                                                        <img class="lazy-img" data-src="./assets/img/hero/25.png" alt="Hero Banner <?php echo $i; ?>" />
+                                                        <div class="img-bg lazy-bg" data-src="./assets/img/content/frame-ipad.jpg"></div>
+                                                        <img class="lazy-img" data-src="./assets/img/hero/frame-ipad<?php if($i%2==1)echo '-h'; ?>.png" alt="Video Frame <?php echo $i; ?>" />
                                                         <div class="play-container">
                                                             <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
                                                                 <i class="fas fa-play"></i>

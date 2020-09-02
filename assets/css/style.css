@@ -890,9 +890,20 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-img .content.content-text{width:45%;}
 .ss-img .content img{
     display:block; width:auto; max-width:100%; height:auto; max-height:100%; margin:0 auto;
+    position:relative;
+}
+.ss-img .content .frame{position:relative;}
+.ss-img .content .frame > .img-bg{
+    position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+    background-position:center; background-repeat:no-repeat; transform:scale(.88);
 }
 .ss-img .content h2{line-height:1;}
 .ss-img .content .video-wrapper{position:relative;}
+.ss-img .content .video-wrapper > .img-bg{
+    position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+    background-position:center; background-repeat:no-repeat;
+    border-radius:3%; transform:scale(.98);
+}
 .ss-img .content .video-wrapper > .play-container{
     position:absolute; top:0; bottom:0; left:0; right:0; display:flex; align-items:center;
     justify-content:center;

@@ -34,7 +34,10 @@
                                             <div class="img-bg lazy-bg" data-src="./assets/img/bg/23.jpg"></div>
                                             <div class="contents">
                                                 <div class="content content-img">
-                                                    <img class="lazy-img" data-src="./assets/img/hero/24.png" alt="Hero Banner <?php echo $i; ?>" />
+                                                    <div class="frame">
+                                                        <div class="img-bg lazy-bg" data-src="./assets/img/content/frame-photo.jpg"></div>
+                                                        <img class="lazy-img" data-src="./assets/img/hero/frame-photo<?php if($i%2==0)echo '-h'; ?>.png" alt="Photo Frame <?php echo $i; ?>" />
+                                                    </div>
                                                 </div>
                                                 <div class="content content-text">
                                                     <div class="ss-icon-title no-margin">
