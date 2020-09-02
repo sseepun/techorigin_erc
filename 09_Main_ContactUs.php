@@ -3,6 +3,7 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
+    <link rel="stylesheet" type="text/css" href="./assets/lib/toastr-2.1.4/build/toastr.min.css" />
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
@@ -147,5 +148,24 @@
 
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
+    <script src="./assets/lib/toastr-2.1.4/build/toastr.min.js"></script>
+    <script>
+        toastr.info(
+            "This record has been updated successfully.", "Information", 
+            {progressBar: true, showDuration: 300, hideDuration: 150, timeOut: 3000}
+        );
+        toastr.success(
+            "This record has been updated successfully.", "Success", 
+            {progressBar: true, showDuration: 300, hideDuration: 150, timeOut: 3000}
+        );
+        toastr.warning(
+            "This record has been updated successfully.", "Warning", 
+            {progressBar: true, showDuration: 300, hideDuration: 150, timeOut: 3000}
+        );
+        toastr.error(
+            "This record has been updated successfully.", "Error", 
+            {progressBar: true, showDuration: 300, hideDuration: 150, timeOut: 3000}
+        );
+    </script>
 </body>
 </html>

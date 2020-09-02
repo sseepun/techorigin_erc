@@ -1291,6 +1291,21 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .pr-4{padding-right:4rem!important;} .pr-4-5{padding-right:4.5rem!important;}
 
 
+
+/* Toast Notifications */
+.toast{box-shadow:none!important;}
+#toast-container > .toast-info, #toast-container > .toast-success, 
+#toast-container > .toast-warning, #toast-container > .toast-error{
+    background-repeat:no-repeat!important; background-position:12px center!important;
+    box-shadow:none!important; opacity:1!important; transition:all .3s;
+}
+#toast-container *{font-size:1.25rem!important;}
+#toast-container > .toast-info{background:#009efb;}
+#toast-container > .toast-success{background:#55ce63;}
+#toast-container > .toast-warning{background:#ffbc34;}
+#toast-container > .toast-error{background:#f62d51;}
+
+
 /* Fix */
 .simplebar-content{padding-top:0!important;}
 .dropzone{position:relative; width:100%; background:#e5e5e5; border:0; padding:1rem; min-height:0;}
