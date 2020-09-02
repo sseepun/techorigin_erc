@@ -22,10 +22,10 @@
             </div>
             <div class="grids">
             
-                <div class="grid xl-75 lg-70 nd-100 sm-100">
+                <div class="grid xl-75 lg-70 md-100 sm-100">
 
                     <form action="./" method="POST">
-                        <div class="pt-1-5 pb-1-5 border-bottom">
+                        <div class="pb-1-5 border-bottom">
                             <div class="ss-icon-title mt-0">
                                 <div class="icon bg-color4"><i class="fas fa-exclamation-triangle"></i></div>
                                 <h2>
@@ -129,7 +129,7 @@
                         </div> 
                     </form>
 
-                    <div class="pagination no-margin mt-2">
+                    <div class="pagination mt-2">
                         <div class="wrapper">
                             <a href="#" class="page-btn page-first disabled"></a>
                             <a href="#" class="page-btn page-prev disabled"></a>

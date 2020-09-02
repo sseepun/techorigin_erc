@@ -51,15 +51,16 @@
         ];
         include_once('component/breadcrumb.php');
     ?>
+
     <section class="section-padding">
         <div class="container">
             <div class="ss-header" data-aos="fade-up" data-aos-delay="0">
                 <div class="ss">ก</div><h1 class="color2">ระดานถาม - ตอบ<span class="fw-300 text-xs color-black"> | 01. ข่าวประชาสัมพันธ์</span></h1>
                 <p><strong>กรมอนามัย</strong> พร้อมพูดคุยและแลกเปลี่ยนความรู้ข่าวสารที่เป็นประโยชน์สำหรับคุณ</p>
             </div> 
-
             <div class="grids">
-                <div class="grid xl-70 lg-70 nd-100 sm-100">
+
+                <div class="grid xl-75 lg-70 md-100 sm-100">
                     <div class="post-container">
                         <div class="post-header bg-color0 color-white">
                             <div class="d-flex ai-center">
@@ -230,37 +231,34 @@
                 </div>
 
                 <div class="grid xl-25 lg-30 md-100 sm-100" data-aos="fade-up" data-aos-delay="600">
-                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/26.jpg">
-                        <img class="float-img type-13" src="./assets/img/hero/27.png" alt="Slot Float Image 01" />
-                        <div class="slot mt-2">
-                            <h2 class="header-text quote-text">
-                                <span class="text-xl fw-400">สุขภาพดี</span> <br>
-                                ส่งเสริม <br>
-                                <span class="text-lg fw-400 color1">สถาบันครอบครัว</span> <br>
-                                <span class="text-xl fw-400">แข็งแรง</span>
+                    <div class="slots no-mask lazy-bg" data-src="./assets/img/bg/35.jpg">
+                        <img class="float-img type-15" src="./assets/img/hero/32.png" alt="Slot Float Image 01" />
+                        <div class="slot-tabs mt-0">
+                            <?php for($i=0; $i<7; $i++){?>
+                                <a class="slot-tab" href="#">
+                                    <h5 class="mt-0 color-white">
+                                        <?php echo sprintf('%02d', $i+1); ?>. <br>
+                                        ข่าวจากหนังสือพิมพ์
+                                    </h5>
+                                </a>
+                            <?php }?> 
+                        </div>
+                        <div class="slot mt-1">
+                            <h2 class="header-text quote-text quote-inline">
+                                <span class="fw-400">กรรมอนามัย</span> <br>
+                                เรามีสาระสุขภาพดีๆ <br>
+                                <span class="text-xl fw-400 color1">ส่งตรงถึงคุณ</span> <br>
+                                <span class="text-xl">ทุกวัน</span>
                             </h2>
                         </div>
-                        <img class="float-img type-14 lazy-img" data-src="./assets/img/hero/28.png" alt="Slot Float Image 02" />
                     </div>
                 </div>
+
             </div>
-
-
-        
-        
-        
-        
         </div>
-    
-    
-    
     </section>
-    
-    
     
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
-    <script></script>
-    
 </body>
 </html>

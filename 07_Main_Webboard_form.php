@@ -35,7 +35,7 @@
             <div class="grids">
 
                 <div class="grid xl-75 lg-70 sm-100">
-                    <div class="btns text-right">
+                    <div class="btns text-right mt-0">
                         <a class="btn btn-icon mr-1" href="#">
                             <i class="fas fa-plus-circle"></i> ตั้งกระทู้
                         </a>
