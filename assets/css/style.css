@@ -333,6 +333,11 @@ button.btn, input[type=submit].btn{border:0!important;}
 .captcha-container img{display:block; width:100%; height:auto;}
 
 
+/* Chart */
+.chart-container{display:block; width:100%; max-width:340px;}
+.chart-container > img{display:block; width:100%; height:auto;}
+
+
 /* Password Indicator */
 .password-indicator{width:100%;}
 .password-indicator > .levels{
@@ -608,6 +613,9 @@ table.table td.bullet::before{
     width:calc(100% - 1rem); transform:translate(0, -2rem); margin:0 auto -2rem auto;
 }
 .slots .float-img.type-14{width:calc(100% - 2rem); transform:none; margin:0 auto;}
+.slots .float-img.type-15{
+    width:calc(100% + 3rem); transform:translate(0, -5rem); margin:0 0 -5rem 0;
+}
 
 .slots .header-text{
     position:relative; text-decoration:none; font-size:2.5rem; text-align:center; line-height:1;
