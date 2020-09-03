@@ -18,6 +18,9 @@
         .post-container .comment-area .ss-icon-title h2 > span{font-size: 1rem; display:block;} 
         .post-container .comment-area .ss-icon-title h2 span > i{width:1rem; height:1rem; border-radius: 50%; padding: .0625rem; font-size:50%;text-align:center; line-height: .85rem; vertical-align:middle;}
         /* Other comments */
+        .post-container .other-comments .ss-icon-title {position:relative;}
+        .post-container .other-comments .people {display:flex; align-items:center; height:100%; position:absolute; top:0; width:100%;}
+        .post-container .other-comments .people .person {position:absolute; top:0; width:2rem; height:2rem; border-radius:50%; }
         .post-container .other-comments {padding:0 1.25rem 1rem 1.25rem;}
         .post-container .other-comments .content{ padding: 0 0 0 3.1875rem;}
         .post-container .other-comments .content > h2 {margin:0; font-size:2rem;}
@@ -39,6 +42,12 @@
             .post-container .other-comments .content .info .person {margin:0;}
             .post-container .other-comments .content .info .block a {margin:0; padding: 0 .25rem;}
             .post-container .other-comments .content .info .profile {display:none;}
+        }
+
+        /* Special responsive condition maybe unneccessary */
+        @media screen and (max-width:350px) {
+            .post-container .other-comments .ss-icon-title {padding-bottom:2rem;}
+            .post-container .other-comments .people {top:2rem;}
         }
 
         /* info stat
@@ -210,6 +219,11 @@
                                     <div class="ss-icon-title no-margin">
                                         <div class="icon bg-color2"><i class="fas fa-exclamation-triangle"></i></div>
                                         <h2>32 ความเห็นอื่นๆ</h2>
+                                        <div class="people">
+                                            <?php for($i=1; $i < 5; $i++){?>
+                                            <div class="person person-<?php echo $i; ?>" style="background-image:url('./assets/img/banner/0<?php echo $i; ?>.jpg'); z-index: <?php echo (4-$i); ?>; right: <?php echo (4-$i)*1.375; ?>rem;"></div>
+                                            <?php }?>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content">
