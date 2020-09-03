@@ -157,6 +157,10 @@ nav.footer p, nav.footer h1{color:#ffff00;}
 .calendar-container .calendar .event-container .event{color:#000; background:#ffff00;}
 
 
+/* Info Stat */
+.info-stat, .info-stat > .block, .info-stat .inline-icon{border-color:#ffff00;}
+
+
 /* Popup Container */
 .popup-container .popup-box{background:#000; border:1px solid #ffff00;}
 
