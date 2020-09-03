@@ -3,6 +3,7 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
+    <link rel="stylesheet" type="text/css" href="./assets/lib/flipbook/flipbook.style.css" />
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
@@ -33,7 +34,7 @@
                     </div>
 
                     <!-- Banner 02 -->
-                    <div class="banner-02">
+                    <!-- <div class="banner-02">
                         <div class="slide-container">
                             <div class="preview-container">
                                 <div class="slides">
@@ -53,7 +54,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <div class="flip-book" id="flip-book"></div>
                     
                     <div data-aos="fade-up" data-aos-delay="0">
                         <div class="btns text-right">
@@ -188,5 +190,7 @@
 
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
+    <script src="./assets/lib/flipbook/flipbook.min.js"></script>
+    <script src="./assets/lib/flipbook/flipbook.webgl.min.js"></script>
 </body>
 </html>

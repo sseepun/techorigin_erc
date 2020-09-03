@@ -9,10 +9,13 @@
     <?php
         $breadcrumb = [
             [ 'name' => 'หน้าแรก', 'url' => './' ],
-            [ 'name' => 'ข่าวประชาสัมพันธ์', 'url' => '#' ]
+            [ 'name' => 'ข่าวสาร', 'url' => '#' ],
+            [ 'name' => 'ปฏิทินกิจกรรม', 'url' => '#' ]
         ];
         include_once('component/breadcrumb.php');
     ?>
+
+    <img class="img-simple" src="./assets/img/month/month_09.jpg" alt="Simple Image" />
     
     <section class="section-padding">
         <div class="container">
@@ -35,13 +38,6 @@
                     <div data-aos="fade-up" data-aos-delay="600">
                         <a class="ss-img no-hover" href="#">
                             <div class="img-bg lazy-bg" data-src="./assets/img/banner/01.jpg"></div>
-                            <div class="tag">
-                                <div class="date">28</div>
-                                <div class="text-container">
-                                    <div class="month">กรกฎาคม</div>
-                                    <div class="year">2563</div>
-                                </div>
-                            </div>
                         </a>
                         <div class="btns text-right">
                             <a class="btn btn-back" href="#">
@@ -69,7 +65,7 @@
                     <div class="table-wrapper mt-1" data-simplebar data-aos="fade-up" data-aos-delay="300">
                         <table class="table download-table">
                             <tbody>
-                                <?php foreach(['doc', 'docx', 'pdf', 'ppt', 'pptx'] as $f){?>
+                                <?php foreach(['doc', 'docx'] as $f){?>
                                     <tr>
                                         <td><div class="file-icon <?php echo $f; ?>"></div></td>
                                         <td>
@@ -92,117 +88,6 @@
                                 <?php }?>
                             </tbody>
                         </table>
-                    </div>
-
-                    <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
-                        <div class="icon bg-color3"><i class="far fa-file-alt"></i></div>
-                        <h2>Embed</h2>
-                    </div>
-                    <div class="ss-mp4 mt-1">
-                        <div class="wrapper">
-                            <video controls>
-                                <source src="./assets/video/01.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                    <div class="ss-iframe mt-1">
-                        <div class="wrapper">
-                            <div class="iframe-container">
-                                <iframe src="https://techorigin.co.th/" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
-                        <div class="icon bg-color4"><i class="far fa-images"></i></div>
-                        <h2>รูปภาพที่เกี่ยวข้อง</h2>
-                    </div>
-                    <div class="gallery-grids" data-aos="fade-up" data-aos-delay="300">
-                        <?php for($i=0; $i<6; $i++){?>
-                            <div class="grid md-25">
-                                <a class="ss-img bradius-0" href="./assets/img/banner/<?php echo sprintf('%02d', $i%4+1); ?>.jpg" data-fancybox="gallery">
-                                    <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
-                                </a>
-                            </div>
-                        <?php }?>
-                        <div class="grid md-50 mt-0"></div>
-                    </div>
-                    
-                    <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
-                        <div class="icon bg-color1"><i class="far fa-images"></i></div>
-                        <h2>วิดีโอดาวน์โหลด</h2>
-                    </div>
-                    <div class="grids ai-center">
-                        <div class="grid xl-60 lg-50 xs-100">
-                            <div class="ss-mp4 mt-1">
-                                <div class="wrapper">
-                                    <video controls>
-                                        <source src="./assets/video/01.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid xl-40 lg-50 xs-100 xs-mt-0">
-                            <h3 class="color4">
-                                กรมอนามัย <br> 
-                                นำทีมลงห้าง-ศูนย์การค้า <br> 
-                                ย้ำศูนย์บริการมือถือเข้มมาตรการ <br>
-                                เว้นระยะ Social Distancing
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="grids" data-aos="fade-up" data-aos-delay="300">
-                        <?php for($i=0; $i<4; $i++){?>
-                            <div class="grid md-25 card">
-                                <div class="ss-video square">
-                                    <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
-                                    <div class="play-container">
-                                        <a class="play-icon" href="https://www.youtube.com/watch?v=4NRXx6U8ABQ" data-fancybox>
-                                            <i class="fas fa-play"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php }?>
-                    </div>
-                    
-                    <div class="ss-icon-title" data-aos="fade-up" data-aos-delay="0">
-                        <div class="icon bg-color1"><i class="far fa-images"></i></div>
-                        <h2>ข่าวที่เกี่ยวข้อง</h2>
-                    </div>
-                    <div class="grids" data-aos="fade-up" data-aos-delay="300">
-                        <?php for($i=0; $i<4; $i++){?>
-                            <div class="grid md-25 card">
-                                <div class="ss-img square">
-                                    <div class="img-bg lazy-bg" data-src="./assets/img/content/01.jpg"></div>
-                                    <div class="socials">
-                                        <ul>
-                                            <li><a href="#" class="social social-fw">
-                                                <i class="fab fa-facebook f"></i>
-                                            </a></li>
-                                            <li><a href="#" class="social social-tw">
-                                                <i class="fab fa-twitter"></i>
-                                            </a></li>
-                                            <!-- <li><a href="#" class="social social-ig">
-                                                <i class="fab fa-instagram"></i>
-                                            </a></li> -->
-                                            <li><a href="#" class="social social-ln">
-                                                <i class="fab fa-line"></i>
-                                            </a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="ss-tags">
-                                    <div class="ss-tag type-<?php echo $i+1; ?>"></div>
-                                </div>
-                                <div class="ss-date">02.04.2564</div>
-                                <a href="#" class="ss-h5">
-                                    กรมอนามัย เตือน คนติดหวานแม้ดื่มสูตรน้ำตาล 0% เสี่ยงอ้วน
-                                </a>
-                            </div>
-                        <?php }?>
                     </div>
                     
                 </div>
@@ -237,7 +122,7 @@
         </div>
     
     </section>
-    
+
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>

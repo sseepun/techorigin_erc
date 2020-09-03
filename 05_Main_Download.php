@@ -40,11 +40,11 @@
                                             <div class="text-xs">ดาวน์โหลด <strong>23</strong> ครั้ง</div>
                                         </td>
                                         <td class="text-left">
-                                            <a class="btn btn-action btn-sm btn-icon-download" href="#">
+                                            <a class="btn btn-icon-download" href="#">
                                                 ดาวน์โหลด
                                             </a>
                                             <br>
-                                            <a class="btn btn-action btn-sm btn-icon-alert" href="#">
+                                            <a class="btn btn-icon-alert" href="#">
                                                 แจ้งไฟล์เสีย
                                             </a>
                                         </td>
@@ -61,11 +61,11 @@
                                             <div class="text-xs">ดาวน์โหลด <strong>23</strong> ครั้ง</div>
                                         </td>
                                         <td class="text-left">
-                                            <a class="btn btn-action btn-sm btn-icon-download" href="#">
+                                            <a class="btn btn-icon-download" href="#">
                                                 ดาวน์โหลด
                                             </a>
                                             <br>
-                                            <a class="btn btn-action btn-sm btn-icon-alert" href="#">
+                                            <a class="btn btn-icon-alert" href="#">
                                                 แจ้งไฟล์เสีย
                                             </a>
                                         </td>
@@ -90,11 +90,11 @@
                                                 <div class="text-xs">ดาวน์โหลด <strong>23</strong> ครั้ง</div>
                                             </td>
                                             <td class="text-left">
-                                                <a class="btn btn-action btn-sm btn-icon-download" href="#">
+                                                <a class="btn btn-icon-download" href="#">
                                                     ดาวน์โหลด
                                                 </a>
                                                 <br>
-                                                <a class="btn btn-action btn-sm btn-icon-alert" href="#">
+                                                <a class="btn btn-icon-alert" href="#">
                                                     แจ้งไฟล์เสีย
                                                 </a>
                                             </td>

@@ -106,25 +106,73 @@ $(function(){ 'use strict';
     $('input.date-picker').datepicker();
     
     // Calendar
+    var calendar;
     if($('.calendar-container > .calendar-wrapper').length){
-        $('.calendar-container > .calendar-wrapper').simpleCalendar({
-            months: [
-                'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 
-                'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
-            ],
-            days: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'],
-            displayYear: false,
-            fixedStartDay: 0,
-            displayEvent: true,
-            disableEventDetails: false,
-            disableEmptyDetails: true,
-            events: [
-                {
-                    startDate: new Date('08-18-2020'),
-                    endDate: new Date('08-18-2020'),
-                    summary: 'กิจกรรมที่ 1'
+        if(!$('.banner-event').length){
+            $('.calendar-container > .calendar-wrapper').simpleCalendar({
+                months: [
+                    'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 
+                    'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
+                ],
+                days: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'],
+                displayYear: false,
+                fixedStartDay: 0,
+                displayEvent: true,
+                disableEventDetails: false,
+                disableEmptyDetails: true,
+                events: [
+                    {
+                        startDate: new Date('08-18-2020'),
+                        endDate: new Date('08-18-2020'),
+                        summary: 'กิจกรรมที่ 1'
+                    }
+                ]
+            });
+        }else{
+            calendar = $('.calendar-container > .calendar-wrapper').simpleCalendar({
+                months: [
+                    'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 
+                    'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
+                ],
+                days: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'],
+                displayYear: false,
+                fixedStartDay: 0,
+                displayEvent: true,
+                disableEventDetails: false,
+                disableEmptyDetails: true,
+                events: [
+                    {
+                        startDate: new Date('08-18-2020'),
+                        endDate: new Date('08-18-2020'),
+                        summary: 'กิจกรรมที่ 1'
+                    }
+                ],
+                onMonthChange: function(month, year){
+                    $('.banner-event').find('.slides').css('--month', month);
+                    $('.banner-event').find('.slide').removeClass('active');
+                    $('.banner-event').find('.slide[data-month="'+month+'"]').addClass('active');
                 }
-            ]
+            });
+        }
+    }
+
+    // Banner Event
+    if($('.banner-event').length){
+        $('.banner-event').each(function(){
+            var bannerSlides = $(this).find('.slides'),
+                bannerEvents = bannerSlides.find('.slide');
+            bannerEvents.click(function(e){
+                e.preventDefault();
+                bannerSlides.css('--month', $(this).data('month'));
+                bannerEvents.removeClass('active');
+                $(this).addClass('active');
+                if(calendar!==undefined){
+                    var currentMonth = calendar.data('plugin_simpleCalendar').currentDate.getMonth();
+                    calendar.data('plugin_simpleCalendar').changeMonth(
+                        $(this).data('month') - currentMonth
+                    );
+                }
+            });
         });
     }
 
