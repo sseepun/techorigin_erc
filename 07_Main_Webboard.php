@@ -48,11 +48,13 @@
 
                     <!-- Info Table -->
                     <div class="table-wrapper mt-1" data-simplebar>
-                        <table class="table info-table">
+                        <table class="table info-table info-table-2">
                             <thead>
                                 <tr>
-                                    <th>หมายเลข</th>
-                                    <th>หัวข้อเรื่องร้องเรียน</th>
+                                    <th style="width:2rem;">No.</th>
+                                    <th>หัวข้อกระทู้</th>
+                                    <th>ผู้โพสกระทู้</th>
+                                    <th style="width:4.5rem;">จำนวนอ่าน</th>
                                     <th style="min-width:6rem;">จำนวนตอบ</th>
                                     <th>ผู้ตอบล่าสุด</th>
                                 </tr>
@@ -60,24 +62,47 @@
                             <tbody>
                                 <?php for($i=0; $i<18; $i++){?>
                                     <tr>
-                                        <td>#667642</td>
-                                        <td>
-                                            ประกาศรับสมัครบุคคลเพื่อสรรหาและเลือกสรรเป็นพนักงานจ้าง
-                                            ของเทศบาลเมืองไร่ขิง
+                                        <td style="width:2rem;">
+                                            <?php echo sprintf('%02d', $i+1); ?>
                                         </td>
-                                        <td>10</td>
+                                        <td class="no-bullet">
+                                            สอบถามตำแหน่งพนักงานราชการเจ้าพนักงานธุรการ 
+                                        </td>
                                         <td>
-                                            <div class="profile-tab sm">
+                                            <div class="profile-tab sm no-shadow">
                                                 <div class="icon lazy-bg" data-src="./assets/img/banner/01.jpg"></div>
                                                 <div class="text-container">
-                                                    <h5 class="color-white">อุรัสยา เสปอร์บันด์</h5>
-                                                    <h5 class="color-white op-7">
+                                                    <h5 class="text-left">อุรัสยา เสปอร์บันด์</h5>
+                                                    <h5 class="text-left op-7">
                                                         <span class="text-xs">
                                                             [11/06/2560 06:49:42]
                                                         </span>
                                                     </h5>
                                                 </div>
                                             </div>
+                                        </td>
+                                        <td class="text-center" style="width:4.5rem;">
+                                            1254
+                                        </td>
+                                        <td class="text-center" style="width:4.5rem;">
+                                            5
+                                        </td>
+                                        <td class="text-center">
+                                            <?php if($i%2==0){?>
+                                                -
+                                            <?php }else{?>
+                                                <div class="profile-tab sm no-shadow">
+                                                    <div class="icon lazy-bg" data-src="./assets/img/banner/01.jpg"></div>
+                                                    <div class="text-container">
+                                                        <h5 class="color-white text-left">อุรัสยา เสปอร์บันด์</h5>
+                                                        <h5 class="color-white text-left op-7">
+                                                            <span class="text-xs">
+                                                                [11/06/2560 06:49:42]
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            <?php }?>
                                         </td>
                                     </tr>
                                 <?php }?>

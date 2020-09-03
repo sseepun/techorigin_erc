@@ -475,9 +475,10 @@ table.table.info-table tbody td{
 table.table.info-table tbody tr:first-child td{border-top:1px solid transparent;}
 table.table.info-table tbody td:nth-child(1){text-align:center; width:5.5rem;}
 table.table.info-table tbody td:nth-child(2){
-    position:relative; min-width:20rem; padding-left:1.9375rem; font-size:1.25rem;
+    position:relative; min-width:20rem; font-size:1.25rem;
 }
-table.table.info-table tbody td:nth-child(2)::before{
+table.table.info-table tbody td:nth-child(2):not(.no-bullet){padding-left:1.9375rem;}
+table.table.info-table tbody td:nth-child(2):not(.no-bullet)::before{
     content:''; display:block; position:absolute; top:calc(50% - .1875rem); left:.8125rem;
     width:.375rem; height:.375rem
 }
@@ -586,7 +587,11 @@ table.table td.bullet::before{
 .profile-tab .text-container{width:calc(100% - 4.375rem);}
 
 .profile-tab.sm{padding:0; min-width:12rem;}
-.profile-tab.sm .icon{width:2.5rem; height:2.5rem; margin:0 .5rem 0 0; border-radius:50%;}
+.profile-tab.sm .icon{
+    width:2.5rem; height:2.5rem; margin:0 .5rem 0 0; border-radius:50%;
+    border:1px solid transparent;
+}
+.profile-tab.sm.no-shadow .icon{-webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;}
 .profile-tab.sm .text-container{width:calc(100% - 3rem);}
 
 .profile-tab.xs{padding:0; min-width:11rem;}
