@@ -40,6 +40,33 @@
             .post-container .other-comments .content .info .block a {margin:0; padding: 0 .25rem;}
             .post-container .other-comments .content .info .profile {display:none;}
         }
+
+        /* info stat */
+        .post-header .info-stat {margin-left:3.16875rem;}
+        .post-header .info-stat .wrapper {display:flex; justify-content:center; align-items:center;width:100%; height:100%; }
+        .post-header .info-stat .person-info > p {margin:0;}
+        .post-header .info-stat .icon.icon-share:first-child {margin: 0 .125rem 0 0.125rem;}
+        .post-header .info-stat .icon.icon-share {margin-right:.125rem;}
+        .post-header .info-stat .icon, .post-header .info-stat .icon.icon-share { display:inline-block; vertical-align:middle; width:1.25rem; height:1.25rem; border-radius: 50%; border:1px solid transparent; border-color:#e7e7e7; font-size:.75rem; text-align:center; line-height:1.375rem; }
+        .post-header .info-stat .stat, .post-header .info-stat .stat > * {display:inline-block; vertical-align:middle;}
+        .post-header .info-stat .profile {width:2rem; height:2rem; border-radius: 50%; vertical-align:middle; margin-right:.5rem;}
+        .post-header .info-stat .delete-btn {text-decoration:none;}
+
+        /* info content */
+        .info-content .wrapper {display:inline-block; }
+        .info-content .grid:first-child {text-align:left;}
+        .info-content .grid:last-child {text-align:right;}
+        .info-content .wrapper > *, .info-content .wrapper > * * {display:inline-block; vertical-align:middle;}
+        .info-content .person-info {display:inline;}
+        .info-content .person-info > p {margin:0;}
+        .info-content .profile {width:2rem; height:2rem; border-radius: 50%; vertical-align:middle; margin-right:.5rem;}
+        .info-content .icon {display:inline-block; width:1.125rem; height:1.125rem; border-radius: 50%; font-size:.75rem; text-align:center; line-height:1.125rem; }
+        .info-content .delete-btn a {text-decoration:none; font-size:1.25rem; color:#000; padding: 0 .5rem; border-left: .5px solid transparent; border-right: .5px solid transparent; border-color:#000; margin-right:.25rem;}
+        .info-content .stat {font-size:1.1875rem;}
+        @media screen and (max-width: 767.98px){
+            .info-content .grid:last-child {text-align:left;}
+        }
+
     </style>
 </head>
 <body>
@@ -80,13 +107,57 @@
                                     <div class="ss-tag bg-color2">#667643</div>
                                 </div>
                             </div>
-                            <?php
-                                $contentStatColorWhite = true;
-                                $contentStat = [
-                                    'date' => '27.03.2563', 'view_count' => '202'
-                                ];
-                                include_once('component/content-stat.php');
-                            ?>
+                            <div class="info-stat">
+                                <div class="grids">
+                                    <div class="grid md-40 sm-50 mt-0">
+                                        <div class="wrapper">
+                                            <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
+                                            <div class="person-info">
+                                                <p class="color-white fw-500">โพสต์โดย : anonymous</p>
+                                                <p class="color-white fw-500">IP Address : 180.183.126.169</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid md-10 sm-10 mt-0">
+                                        <div class="wrapper">
+                                            <div class="delete-btn">
+                                                <a class="color-white" href="#">แจ้งลบกระทู้</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid md-20 sm-10 mt-0">
+                                        <div class="wrapper">
+                                            <div class="stat">
+                                                <div class="icon bg-color0 color1"><i class="fas fa-clock"></i></div>
+                                                26.03.2563
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid md-10 sm-10 mt-0">
+                                        <div class="wrapper">
+                                            <div class="stat">
+                                                <div class="icon bg-color0 color1"><i class="fas fa-eye"></i></div>
+                                                202
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="grid md-20 sm-20 mt-0">
+                                        <div class="wrapper">
+                                            Share
+                                            <a class="icon icon-share color4" href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a class="icon icon-share color4" href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a class="icon icon-share color4" href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="comment-area">
@@ -128,52 +199,31 @@
                                 <div class="content">
                                     <h2>Megalobalstoc amemia เป็นกลุ่มโรคที่เกิดจากเซลล์ที่ทำหน้าที่สร้างเซลล์</h2>
                                     <p>ในไขกระดูกไม่สามารถสร้าง DNA ได้ตามปกติ แต่ยังคงสร้าง RNA และโปรตีนได้ทำให้เกิดความผิดปกติโดยเซลล์มีขนาดใหญ่ขึ้นและนิวเคลียสมีลักษณะอ่อนในขณะที่ไซโตพลาสซึมเจริญตามปกติ ทำให้เกิดปรากฏการณ์ที่เรียกว่า "nuclear-cytoplasmic asymchronism" นอกจากนี้เซลล์อื่นๆ ที่มีการแบ่งตัวเร็วจะเกิดความผิดปกติ</p>
-                                    <div class="info mt-1">
-                                        <div class="blocks">
-                                            <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
-                                            <div class="person">
-                                                <span class="fw-500">โพสต์โดย : anonymous</span>
-                                                <span class="fw-500">IP Address : 180.183.126.169</span>
+                                    <div class="info-content mt-1">
+                                        <div class="grids">
+                                            <div class="grid xl-60 lg-50 md-50 sm-100 mt-0">
+                                                <div class="wrapper">
+                                                    <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
+                                                    <div class="person-info">
+                                                        <p class="fw-500">โพสต์โดย : anonymous</p>
+                                                        <p class="fw-500">IP Address : 180.183.126.169</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        
-                                        <div class="blocks jc-start">
-                                            <div class="block">
-                                                <a href="#">ลบความเห็น</a>
-                                            </div>
-                                            <div class="block ml-0-5">
-                                                <div class="time">26.03.2563</div>
-                                                <div class="icon bg-color0 color-white"><i class="fas fa-clock"></i></div>
-                                                <div class="view">202</div>
-                                                <div class="icon bg-color0 color-white"><i class="fas fa-eye"></i></div>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>         
-                            </div>
-                            <div class="other-comment border-bottom pt-1 pb-1">
-                                <div class="content">
-                                    <h2>Megalobalstoc amemia เป็นกลุ่มโรคที่เกิดจากเซลล์ที่ทำหน้าที่สร้างเซลล์</h2>
-                                    <p>ในไขกระดูกไม่สามารถสร้าง DNA ได้ตามปกติ แต่ยังคงสร้าง RNA และโปรตีนได้ทำให้เกิดความผิดปกติโดยเซลล์มีขนาดใหญ่ขึ้นและนิวเคลียสมีลักษณะอ่อนในขณะที่ไซโตพลาสซึมเจริญตามปกติ ทำให้เกิดปรากฏการณ์ที่เรียกว่า "nuclear-cytoplasmic asymchronism" นอกจากนี้เซลล์อื่นๆ ที่มีการแบ่งตัวเร็วจะเกิดความผิดปกติ</p>
-                                    <div class="info mt-1">
-                                        <div class="blocks">
-                                            <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
-                                            <div class="person">
-                                                <span class="fw-500">โพสต์โดย : anonymous</span>
-                                                <span class="fw-500">IP Address : 180.183.126.169</span>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="blocks jc-start">
-                                            <div class="block">
-                                                <a href="#">ลบความเห็น</a>
-                                            </div>
-                                            <div class="block ml-0-5">
-                                                <div class="time">26.03.2563</div>
-                                                <div class="icon bg-color0 color-white"><i class="fas fa-clock"></i></div>
-                                                <div class="view">202</div>
-                                                <div class="icon bg-color0 color-white"><i class="fas fa-eye"></i></div>
+                                            <div class="grid xl-40 lg-50 md-50 sm-100 mt-0">
+                                                <div class="wrapper">
+                                                    <div class="delete-btn">
+                                                        <a href="#">ลบความคิดเห็น</a>
+                                                    </div>
+                                                    <div class="stat">
+                                                        <div class="icon bg-color0 color-white"><i class="fas fa-clock"></i></div>
+                                                        26.03.2563
+                                                    </div>
+                                                    <div class="stat">
+                                                        <div class="icon bg-color0 color-white"><i class="fas fa-eye"></i></div>
+                                                        202
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                        
@@ -184,24 +234,66 @@
                                 <div class="content">
                                     <h2>Megalobalstoc amemia เป็นกลุ่มโรคที่เกิดจากเซลล์ที่ทำหน้าที่สร้างเซลล์</h2>
                                     <p>ในไขกระดูกไม่สามารถสร้าง DNA ได้ตามปกติ แต่ยังคงสร้าง RNA และโปรตีนได้ทำให้เกิดความผิดปกติโดยเซลล์มีขนาดใหญ่ขึ้นและนิวเคลียสมีลักษณะอ่อนในขณะที่ไซโตพลาสซึมเจริญตามปกติ ทำให้เกิดปรากฏการณ์ที่เรียกว่า "nuclear-cytoplasmic asymchronism" นอกจากนี้เซลล์อื่นๆ ที่มีการแบ่งตัวเร็วจะเกิดความผิดปกติ</p>
-                                    <div class="info mt-1">
-                                        <div class="blocks">
-                                            <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
-                                            <div class="person">
-                                                <span class="fw-500">โพสต์โดย : anonymous</span>
-                                                <span class="fw-500">IP Address : 180.183.126.169</span>
+                                    <div class="info-content mt-1">
+                                        <div class="grids">
+                                            <div class="grid xl-60 lg-50 md-50 sm-100 mt-0">
+                                                <div class="wrapper">
+                                                    <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
+                                                    <div class="person-info">
+                                                        <p class="fw-500">โพสต์โดย : anonymous</p>
+                                                        <p class="fw-500">IP Address : 180.183.126.169</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid xl-40 lg-50 md-50 sm-100 mt-0">
+                                                <div class="wrapper">
+                                                    <div class="delete-btn">
+                                                        <a href="#">ลบความคิดเห็น</a>
+                                                    </div>
+                                                    <div class="stat">
+                                                        <div class="icon bg-color0 color-white"><i class="fas fa-clock"></i></div>
+                                                        26.03.2563
+                                                    </div>
+                                                    <div class="stat">
+                                                        <div class="icon bg-color0 color-white"><i class="fas fa-eye"></i></div>
+                                                        202
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        
-                                        <div class="blocks jc-start">
-                                            <div class="block">
-                                                <a href="#">ลบความเห็น</a>
+                                       
+                                    </div>
+                                </div>         
+                            </div>
+                            <div class="other-comment border-bottom pt-1 pb-1">
+                                <div class="content">
+                                    <h2>Megalobalstoc amemia เป็นกลุ่มโรคที่เกิดจากเซลล์ที่ทำหน้าที่สร้างเซลล์</h2>
+                                    <p>ในไขกระดูกไม่สามารถสร้าง DNA ได้ตามปกติ แต่ยังคงสร้าง RNA และโปรตีนได้ทำให้เกิดความผิดปกติโดยเซลล์มีขนาดใหญ่ขึ้นและนิวเคลียสมีลักษณะอ่อนในขณะที่ไซโตพลาสซึมเจริญตามปกติ ทำให้เกิดปรากฏการณ์ที่เรียกว่า "nuclear-cytoplasmic asymchronism" นอกจากนี้เซลล์อื่นๆ ที่มีการแบ่งตัวเร็วจะเกิดความผิดปกติ</p>
+                                    <div class="info-content mt-1">
+                                        <div class="grids">
+                                            <div class="grid xl-60 lg-50 md-50 sm-100 mt-0">
+                                                <div class="wrapper">
+                                                    <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
+                                                    <div class="person-info">
+                                                        <p class="fw-500">โพสต์โดย : anonymous</p>
+                                                        <p class="fw-500">IP Address : 180.183.126.169</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="block ml-0-5">
-                                                <div class="time">26.03.2563</div>
-                                                <div class="icon bg-color0 color-white"><i class="fas fa-clock"></i></div>
-                                                <div class="view">202</div>
-                                                <div class="icon bg-color0 color-white"><i class="fas fa-eye"></i></div>
+                                            <div class="grid xl-40 lg-50 md-50 sm-100 mt-0">
+                                                <div class="wrapper">
+                                                    <div class="delete-btn">
+                                                        <a href="#">ลบความคิดเห็น</a>
+                                                    </div>
+                                                    <div class="stat">
+                                                        <div class="icon bg-color0 color-white"><i class="fas fa-clock"></i></div>
+                                                        26.03.2563
+                                                    </div>
+                                                    <div class="stat">
+                                                        <div class="icon bg-color0 color-white"><i class="fas fa-eye"></i></div>
+                                                        202
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                        
