@@ -291,6 +291,10 @@ h6, .ss-h6, p, .ss-p{color:#fff;}
 .ss-tags > .ss-tag{color:#000; background:#fff;}
 
 
+/* General */
+.shadow-box{background:#000; border:1px solid #fff;}
+
+
 /* List Header */
 .list-header{border-color:#fff;}
 .list-header > .block{color:#fff;}
