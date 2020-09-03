@@ -41,16 +41,26 @@
             .post-container .other-comments .content .info .profile {display:none;}
         }
 
-        /* info stat */
-        .post-header .info-stat {margin-left:3.16875rem;}
-        .post-header .info-stat .wrapper {display:flex; justify-content:center; align-items:center;width:100%; height:100%; }
-        .post-header .info-stat .person-info > p {margin:0;}
-        .post-header .info-stat .icon.icon-share:first-child {margin: 0 .125rem 0 0.125rem;}
-        .post-header .info-stat .icon.icon-share {margin-right:.125rem;}
-        .post-header .info-stat .icon, .post-header .info-stat .icon.icon-share { display:inline-block; vertical-align:middle; width:1.25rem; height:1.25rem; border-radius: 50%; border:1px solid transparent; border-color:#e7e7e7; font-size:.75rem; text-align:center; line-height:1.375rem; }
-        .post-header .info-stat .stat, .post-header .info-stat .stat > * {display:inline-block; vertical-align:middle;}
-        .post-header .info-stat .profile {width:2rem; height:2rem; border-radius: 50%; vertical-align:middle; margin-right:.5rem;}
-        .post-header .info-stat .delete-btn {text-decoration:none;}
+        /* info stat
+        /* Almost identical to info content */
+        .info-stat {position:relative; margin: .625rem 0 1.25rem 3.1875rem; padding:.25rem 0;}
+        .info-stat::before, .info-stat::after {content:''; position:absolute; width:calc(100% + 6.1875rem); height:.03125rem; background:#e7e7e7;}
+        .info-stat::before {top:0; left:-4.6875rem;}
+        .info-stat::after {bottom:0; left:-4.6875rem;}
+        .info-stat .wrapper {display:inline-block; height:100%;}
+        .info-stat .wrapper > *, .info-stat .wrapper > * * {display:inline-block;vertical-align:middle; }
+        .info-stat .block {margin: .375rem 0 0 0; height:100%;padding-right:.5rem; position:relative; }
+        .info-stat .block::after {content: ''; position:absolute; right:0; top:-.575rem; width:.03125rem;  background:#e7e7e7;}
+        .info-stat .block:first-child::after {height:calc(100% + .875rem);}
+        .info-stat .block:not(:first-child)::after {top: -.9344rem; height:calc(100% + 1.4375rem);}
+        .info-stat .block:last-child::after{background:transparent;}
+        .info-stat .person-info {display:inline;}
+        .info-stat .person-info > p {margin:0;}
+        .info-stat .profile {width:2rem; height:2rem; border-radius: 50%; vertical-align:middle; margin-right:.5rem;}
+        .info-stat .icon {display:inline-block; width:1.4375rem; height:1.4375rem; border-radius: 50%; font-size:.75rem; text-align:center; line-height:1.375rem; border:.5px solid transparent; border-color:#e7e7e7; }
+        .info-stat .delete-btn a {text-decoration:none; font-size:1.1875rem; color:#000;}
+        .info-stat .stat {font-size:1.1875rem;}
+        .info-stat .socials {font-size:1.1875rem;}
 
         /* info content */
         .info-content .wrapper {display:inline-block; }
@@ -63,6 +73,9 @@
         .info-content .icon {display:inline-block; width:1.125rem; height:1.125rem; border-radius: 50%; font-size:.75rem; text-align:center; line-height:1.125rem; }
         .info-content .delete-btn a {text-decoration:none; font-size:1.25rem; color:#000; padding: 0 .5rem; border-left: .5px solid transparent; border-right: .5px solid transparent; border-color:#000; margin-right:.25rem;}
         .info-content .stat {font-size:1.1875rem;}
+        @media screen and (max-width:1199.98px){
+            .info-stat .block:not(:first-child)::after,.info-stat .block:first-child::after  {background:transparent; }
+        }
         @media screen and (max-width: 767.98px){
             .info-content .grid:last-child {text-align:left;}
         }
@@ -109,51 +122,54 @@
                             </div>
                             <div class="info-stat">
                                 <div class="grids">
-                                    <div class="grid md-40 sm-50 mt-0">
-                                        <div class="wrapper">
-                                            <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
-                                            <div class="person-info">
-                                                <p class="color-white fw-500">โพสต์โดย : anonymous</p>
-                                                <p class="color-white fw-500">IP Address : 180.183.126.169</p>
+                                    <div class="wrapper">
+                                        <div class="block">
+                                            <div class="wrapper">
+                                                <div class="profile" style="background-image:url('./assets/img/banner/01.jpg');"></div>
+                                                <div class="person-info">
+                                                    <p class="color-white fw-500">โพสต์โดย : anonymous</p>
+                                                    <p class="color-white fw-500">IP Address : 180.183.126.169</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="grid md-10 sm-10 mt-0">
-                                        <div class="wrapper">
-                                            <div class="delete-btn">
-                                                <a class="color-white" href="#">แจ้งลบกระทู้</a>
+                                        <div class="block">
+                                            <div class="wrapper">
+                                                <div class="delete-btn">
+                                                    <a class="color-white" href="#">แจ้งลบกระทู้</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="grid md-20 sm-10 mt-0">
-                                        <div class="wrapper">
-                                            <div class="stat">
-                                                <div class="icon bg-color0 color1"><i class="fas fa-clock"></i></div>
-                                                26.03.2563
+                                        <div class="block">
+                                            <div class="wrapper">
+                                                <div class="stat">
+                                                    <div class="icon bg-color0 color1"><i class="fas fa-clock"></i></div>
+                                                    26.03.2563
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="grid md-10 sm-10 mt-0">
-                                        <div class="wrapper">
-                                            <div class="stat">
-                                                <div class="icon bg-color0 color1"><i class="fas fa-eye"></i></div>
-                                                202
+                                        <div class="block">
+                                            <div class="wrapper">
+                                                <div class="stat">
+                                                    <div class="icon bg-color0 color1"><i class="fas fa-eye"></i></div>
+                                                    202
+                                                </div>
                                             </div>
                                         </div>
-                                        
-                                    </div>
-                                    <div class="grid md-20 sm-20 mt-0">
-                                        <div class="wrapper">
-                                            Share
-                                            <a class="icon icon-share color4" href="#">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            <a class="icon icon-share color4" href="#">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                            <a class="icon icon-share color4" href="#">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
+                                        <div class="block">
+                                            <div class="wrapper">
+                                                <div class="socials">
+                                                    Share
+                                                    <a class="icon icon-share color4" href="#">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                    <a class="icon icon-share color4" href="#">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                    <a class="icon icon-share color4" href="#">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
