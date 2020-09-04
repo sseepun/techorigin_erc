@@ -3,7 +3,7 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" type="text/css" href="./assets/lib/flipbook/flipbook.style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/lib/wow_book/wow_book/wow_book.css" />
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
@@ -57,7 +57,13 @@
                             </div>
                         </div>
                     <?php }?>
-                    <div class="flip-book" id="flip-book"></div>
+                    <div class="book-container">
+                        <div class="wow-book" id="wow-book">
+                            <?php for($i=1; $i<5; $i++){?>
+                                <div><img src="./assets/img/banner/0<?php echo $i; ?>.jpg" alt="Page <?php echo $i; ?>" /></div>
+                            <?php }?>
+                        </div>
+                    </div>
                     
                     <div data-aos="fade-up" data-aos-delay="0">
                         <div class="btns text-right">
@@ -192,10 +198,19 @@
 
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
-    <script src="./assets/lib/flipbook/flipbook.min.js"></script>
+    <script src="./assets/lib/wow_book/wow_book/wow_book.min.js"></script>
     <script>
-        $('#flip-book').flipBook({
-            pdfUrl: './assets/pdf/interior_design.pdf'
+        $('#wow-book').wowBook({
+            height: 500,
+            width: 800,
+            container: true,
+            containerBackground: '#777',
+            containerWidth: '100%',
+            containerHeight: '100%',
+            containerPadding: '20px',
+            toolbarPosition: 'bottom',
+            thumbnails: true,
+            toolbar: 'first, back, next, last, zoomin, zoomout, slideshow, flipsound, fullscreen',
         });
     </script>
 </body>
