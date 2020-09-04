@@ -34,27 +34,29 @@
                     </div>
 
                     <!-- Banner 02 -->
-                    <!-- <div class="banner-02">
-                        <div class="slide-container">
-                            <div class="preview-container">
-                                <div class="slides">
-                                    <?php for($i=1; $i<7; $i++){?>
-                                        <div class="slide">
-                                            <div class="wrapper">
-                                                <div class="ss-img no-hover">
-                                                    <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg"></div>
+                    <?php if(0){?>
+                        <div class="banner-02">
+                            <div class="slide-container">
+                                <div class="preview-container">
+                                    <div class="slides">
+                                        <?php for($i=1; $i<7; $i++){?>
+                                            <div class="slide">
+                                                <div class="wrapper">
+                                                    <div class="ss-img no-hover">
+                                                        <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg"></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <?php }?>
-                                </div>
-                                <div class="arrows">
-                                    <div class="prev"><i class="fas fa-angle-left"></i></div>
-                                    <div class="next"><i class="fas fa-angle-right"></i></div>
+                                        <?php }?>
+                                    </div>
+                                    <div class="arrows">
+                                        <div class="prev"><i class="fas fa-angle-left"></i></div>
+                                        <div class="next"><i class="fas fa-angle-right"></i></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    <?php }?>
                     <div class="flip-book" id="flip-book"></div>
                     
                     <div data-aos="fade-up" data-aos-delay="0">
@@ -191,6 +193,10 @@
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
     <script src="./assets/lib/flipbook/flipbook.min.js"></script>
-    <script src="./assets/lib/flipbook/flipbook.webgl.min.js"></script>
+    <script>
+        $('#flip-book').flipBook({
+            pdfUrl: './assets/pdf/interior_design.pdf'
+        });
+    </script>
 </body>
 </html>

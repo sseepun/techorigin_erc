@@ -25,6 +25,7 @@
                 <div class="grid xl-75 lg-70 md-100 sm-100">
 
                     <form action="./" method="POST">
+
                         <div class="pb-1-5 border-bottom">
                             <div class="ss-icon-title mt-0">
                                 <div class="icon bg-color4"><i class="fas fa-exclamation-triangle"></i></div>
@@ -34,7 +35,7 @@
                                 </h2>
                             </div>
                             <div class="d-flex jc-space-between fw-wrap pl-1-5">
-                                <div class="answers mt-1-5">
+                                <div class="answers mt-1-5 mb-1-5">
                                     <div class="field">
                                         <div class="control radio-control">
                                             <input type="radio" name="q_1" id="q_1_1">
@@ -71,11 +72,34 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="chart-container mt-1-5">
-                                    <img class="lazy-img" data-src="./assets/img/default/pie_chart.png" alt="Pie Chart 01" />
+                                <div class="chart-container">
+                                    <div class="chart" id="chart-1"></div>
+                                    <div class="labels">
+                                        <div class="label">
+                                            <div class="dot bg-color-12"></div>
+                                            <p>ขนาดเว็บไซต์ไม่พอดีกับหน้าจอ</p>
+                                        </div>
+                                        <div class="label">
+                                            <div class="dot bg-color-13"></div>
+                                            <p>เว็บไซต์ทำงานไม่สมบูรณ์</p>
+                                        </div>
+                                        <div class="label">
+                                            <div class="dot bg-color-14"></div>
+                                            <p>เว็บไซต์รกเกินไป</p>
+                                        </div>
+                                        <div class="label">
+                                            <div class="dot bg-color-15"></div>
+                                            <p>เว็บไซต์ทำงานช้า</p>
+                                        </div>
+                                        <div class="label">
+                                            <div class="dot bg-color-15"></div>
+                                            <p>หาข้อมูลไม่พบ หรือพบยาก</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div> 
+
                         <div class="pt-1-5 pb-1-5 border-bottom">
                             <div class="ss-icon-title mt-0">
                                 <div class="icon bg-color1"><i class="fas fa-exclamation-triangle"></i></div>
@@ -85,7 +109,7 @@
                                 </h2>
                             </div>
                             <div class="d-flex jc-space-between fw-wrap pl-1-5">
-                                <div class="answers mt-1-5">
+                                <div class="answers mt-1-5 mb-1-5">
                                     <div class="field">
                                         <div class="control radio-control">
                                             <input type="radio" name="q_2" id="q_2_1">
@@ -122,11 +146,34 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="chart-container mt-1-5">
-                                    <img class="lazy-img" data-src="./assets/img/default/pie_chart.png" alt="Pie Chart 02" />
+                                <div class="chart-container">
+                                    <div class="chart" id="chart-2"></div>
+                                    <div class="labels">
+                                        <div class="label">
+                                            <div class="dot bg-color-12"></div>
+                                            <p>ขนาดเว็บไซต์ไม่พอดีกับหน้าจอ</p>
+                                        </div>
+                                        <div class="label">
+                                            <div class="dot bg-color-13"></div>
+                                            <p>เว็บไซต์ทำงานไม่สมบูรณ์</p>
+                                        </div>
+                                        <div class="label">
+                                            <div class="dot bg-color-14"></div>
+                                            <p>เว็บไซต์รกเกินไป</p>
+                                        </div>
+                                        <div class="label">
+                                            <div class="dot bg-color-15"></div>
+                                            <p>เว็บไซต์ทำงานช้า</p>
+                                        </div>
+                                        <div class="label">
+                                            <div class="dot bg-color-15"></div>
+                                            <p>หาข้อมูลไม่พบ หรือพบยาก</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
+
                     </form>
 
                     <div class="pagination mt-2">
@@ -168,5 +215,59 @@
 
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        var options = {
+            chart: {
+                type: 'donut'
+            },
+            series: [23.1, 7.7, 30.8, 23.1, 15.4],
+            legend: {
+                show: false
+            },
+            colors: ['#a4c93f', '#444446', '#5abab6', '#176e75', '#c6c8ba'],
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '65%',
+                        background: '#ffffff',
+                        labels: {
+                            show: true,
+                            name: {
+                                show: true,
+                                offsetY: -5
+                            },
+                            value: {
+                                show: true,
+                                fontFamily: 'DB Ozone X',
+                                fontWeight: 400,
+                                fontSize: '26px',
+                                color: '#5a5a5c',
+                                offsetY: 5
+                            },
+                            total: {
+                                show: true,
+                                showAlways: true,
+                                label: 'จำนวยผู้โหวต',
+                                fontSize: '30px',
+                                fontWeight: 400,
+                                fontFamily: 'DB Ozone X',
+                                color: '#5a5a5c',
+                                formatter: function(w){
+                                    return '100 คน';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        var chart1 = new ApexCharts(document.querySelector('#chart-1'), options);
+        chart1.render();
+
+        var chart2 = new ApexCharts(document.querySelector('#chart-2'), options);
+        chart2.render();
+    </script>
 </body>
 </html>
