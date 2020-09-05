@@ -176,6 +176,21 @@ $(function(){ 'use strict';
         });
     }
 
+    // Menu Tab
+    if($('.menu-tab-container').length){
+        $('.menu-tab-container').each(function(){
+            var menus = $(this).find('.menu'),
+                menuContents = $(this).find('.menu-content');
+            menus.click(function(e){
+                e.preventDefault();
+                menus.removeClass('active');
+                $(this).addClass('active');
+                menuContents.removeClass('active');
+                menuContents.filter('[data-id="'+$(this).data('id')+'"]').addClass('active');
+            });
+        });
+    }
+
     // Tab
     $('.tab-container').each(function(){
         var self = $(this),
