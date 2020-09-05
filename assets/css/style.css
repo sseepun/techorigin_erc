@@ -1052,12 +1052,12 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-side-menu .menu{
     position:relative; display:block; text-decoration:none; padding:1.375rem 1.75rem; width:100%;
     margin:.25rem 0 0 0; overflow:hidden; border-radius:0 .5rem .5rem 0; overflow:hidden;
-    transition:width .3s;
+    transition:width .3s, padding .3s;
 }
 .ss-side-menu .menu:nth-child(1){margin:0;}
 .ss-side-menu .menu.menu-lg{padding:2rem 1.75rem;}
 .ss-side-menu .menu:hover{width:calc(100% + .5rem);}
-.ss-side-menu .menu.active{width:calc(100% + 1rem);}
+.ss-side-menu .menu.active{width:calc(100% + 1rem); padding:2rem 1.75rem;}
 .ss-side-menu .menu .img-bg{
     position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
     background-position:center; background-repeat:no-repeat; transition:transform .3s;
