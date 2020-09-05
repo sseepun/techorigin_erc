@@ -20,7 +20,9 @@
                                 NEW NORMAL
                             </h1>
                             <h3 class="animate" style="--delay:.9s;">
-                                ปลอดภัยห่างไกล <span class="line"></span> COVID-19
+                                ปลอดภัยห่างไกล 
+                                <span class="line" style="--delay:1.5s;"></span> 
+                                COVID-19
                             </h3>
                         </div>
                     </div>
