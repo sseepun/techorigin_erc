@@ -387,142 +387,344 @@
                 </div>
 
                 <div class="content" data-aos="fade-up" data-aos-delay="300">
-                    <div class="ss-img no-hover vertical bradius-0">
-                        <div class="img-bg lazy-bg" data-src="./assets/img/bg/43.jpg"></div>
-                    </div>
-                    <div class="info-card">
-                        <div class="ss-tags">
-                            <div class="ss-tag type-1"></div>
-                        </div>
-                        <div class="ss-date">02.04.2563</div>
-                        <a class="ss-h3" href="#">
-                            เปิดกระเป๋านักเรียนหนูๆ ควรมีอะไรบ้าง
-                        </a>
-                        <p>
-                            คอนโด หม่านโถว ไอติมชิฟฟอนอาข่าแตงกวาเซอร์ ม็อบซิ่งกรีนวีเจ 
-                            เนิร์สเซอรี่เท็กซ์ไพลินไกด์ซะ อึ๋ม เพนกวินเช็งเม้งฟลุต บัตเตอร์ฮาโลวีนมายองเนสสปอร์ต 
-                            เครปโดมิโนฟยอร์ดวิลล์ ชาร์ตเดอะสไตล์ ตาปรือกระดี๊กระด๊าอีสต์ เชฟซะมาเฟียโมจิ โฟม 
-                            แชมพูแจ็กเก็ตรีเสิร์ชโบว์ลิ่ง...
-                        </p>
 
-                        <!-- Asset Table -->
-                        <div class="table-wrapper" data-simplebar>
-                            <table class="table asset-table">
-                                <tbody>
-                                    <tr>
-                                        <td><div class="icon icon-download"></div></td>
-                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
-                                        <td>15 MB</td>
-                                        <td>
-                                            <a href="#">
-                                                <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <!-- Info Graphic -->
+                    <div class="info-graphic-container">
+                        <div class="info-graphic">
+                            <div class="wrapper">
+                                <div class="info-box">
+                                    <h2 class="text-center no-margin">
+                                        <span class="text-sm">อินโฟกราฟิค</span>
+                                    </h2>
+                                    <div class="pagination mt-0 mb-0-5">
+                                        <div class="wrapper">
+                                            <a href="#" class="page-btn page-prev"></a>
+                                            <a href="#" class="page-btn active" data-page="1">01</a>
+                                            <a href="#" class="page-btn" data-page="2">02</a>
+                                            <a href="#" class="page-btn" data-page="3">03</a>
+                                            <a href="#" class="page-btn" data-page="4">04</a>
+                                            <a href="#" class="page-btn" data-page="5">05</a>
+                                            <a href="#" class="page-btn page-next"></a>
+                                        </div>
+                                    </div>
+                                    <div class="img-contents">
+                                        <?php for($i=1; $i<6; $i++){?>
+                                            <div class="img-content <?php if($i==1)echo 'active'; ?>" data-page="<?php echo $i; ?>" 
+                                            style="background-image:url('./assets/img/banner/0<?php echo $i%4+1; ?>.jpg');"></div>
+                                        <?php }?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="info-contents">
+                            <?php for($i=1; $i<6; $i++){?>
+                                <div class="info-content <?php if($i==1)echo 'active'; ?>" data-page="<?php echo $i; ?>">
+                                    <div class="info-card">
+                                        <div class="ss-tags mt-0">
+                                            <div class="ss-tag type-<?php echo $i; ?>"></div>
+                                        </div>
+                                        <div class="ss-date">02.04.2563</div>
+                                        <a class="ss-h3" href="#">
+                                            เปิดกระเป๋านักเรียนหนูๆ ควรมีอะไรบ้าง
+                                        </a>
+                                        <p>
+                                            คอนโด หม่านโถว ไอติมชิฟฟอนอาข่าแตงกวาเซอร์ ม็อบซิ่งกรีนวีเจ 
+                                            เนิร์สเซอรี่เท็กซ์ไพลินไกด์ซะ อึ๋ม เพนกวินเช็งเม้งฟลุต บัตเตอร์ฮาโลวีนมายองเนสสปอร์ต 
+                                            เครปโดมิโนฟยอร์ดวิลล์ ชาร์ตเดอะสไตล์ ตาปรือกระดี๊กระด๊าอีสต์ เชฟซะมาเฟียโมจิ โฟม 
+                                            แชมพูแจ็กเก็ตรีเสิร์ชโบว์ลิ่ง...
+                                        </p>
+                                        <div class="table-wrapper mt-0-5" data-simplebar>
+                                            <table class="table asset-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><div class="icon icon-download"></div></td>
+                                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                        <td>15 MB</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="btns text-center">
+                                        <a class="btn btn-action btn-primary next-icon" href="#">
+                                            อ่านรายละเอียด
+                                        </a>
+                                    </div>
+                                </div>
+                            <?php }?>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="btns text-center">
-                        <a class="btn btn-action btn-primary next-icon" href="#">
-                            อ่านรายละเอียด
-                        </a>
-                    </div>
                 </div>
 
                 <div class="content" data-aos="fade-up" data-aos-delay="600">
-                    <div class="menu-tab-container">
-                        <div class="ss-side-menu">
-                            <a class="menu" href="#" data-id="0">
-                                <div class="img-bg lazy-bg" data-src="./assets/img/bg/39.jpg"></div>
-                                <div class="text-container">
-                                    <h3>ข่าวสาร</h3>
-                                    <p>การจัดซื้อจัดจ้าง</p>
-                                </div>
-                            </a>
-                            <a class="menu" href="#" data-id="1">
-                                <div class="img-bg lazy-bg" data-src="./assets/img/bg/40.jpg"></div>
-                                <div class="text-container text-right color-white">
-                                    <p>การเปิดเผย</p>
-                                    <h3>ราคากลาง</h3>
-                                </div>
-                            </a>
-                            <a class="menu" href="#" data-id="2">
-                                <div class="img-bg lazy-bg" data-src="./assets/img/bg/41.jpg"></div>
-                                <div class="text-container color-white">
-                                    <h3>แผน-ผล</h3>
-                                    <p>การจัดซื้อจัดจ้าง</p>
-                                </div>
-                            </a>
-                            <a class="menu active" href="#" data-id="3">
-                                <div class="img-bg lazy-bg" data-src="./assets/img/bg/42.jpg"></div>
-                                <div class="text-container text-right color-white">
-                                    <h3>ผลสรุป</h3>
-                                    <p>การดำเนินงานจัดซื้อจัดจ้าง</p>
-                                </div>
-                            </a>
-                        </div>
-                        <?php for($i=0; $i<4; $i++){?>
-                            <div class="menu-content <?php if($i==3)echo 'active'; ?>" data-id="<?php echo $i; ?>">
-                                <div class="info-card">
-                                    <div class="ss-date">02.04.2563</div>
-                                    <a class="ss-h4" href="#">
-                                        <?php echo $i+1; ?>. 
-                                        ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
-                                        ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
-                                    </a>
-                                    <div class="table-wrapper" data-simplebar>
-                                        <table class="table asset-table">
-                                            <tbody>
-                                                <?php for($j=0; $j<3; $j++){?>
-                                                    <tr>
-                                                        <td><div class="icon icon-dot"></div></td>
-                                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
-                                                        <td>15 MB</td>
-                                                        <td>
-                                                            <a href="#">
-                                                                <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                <?php }?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="info-card">
-                                    <div class="ss-date">02.04.2563</div>
-                                    <a class="ss-h4" href="#">
-                                        ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
-                                        ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
-                                    </a>
-                                    <div class="table-wrapper" data-simplebar>
-                                        <table class="table asset-table">
-                                            <tbody>
-                                                <?php for($j=0; $j<3; $j++){?>
-                                                    <tr>
-                                                        <td><div class="icon icon-dot"></div></td>
-                                                        <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
-                                                        <td>15 MB</td>
-                                                        <td>
-                                                            <a href="#">
-                                                                <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                <?php }?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="btns text-center">
-                                    <a class="btn btn-action btn-primary next-icon" href="#">
-                                        ผลสรุปการดำเนินการจัดซื้อจัดจ้างทั้งหมด
-                                    </a>
+                    <div class="ss-side-menu">
+
+                        <a class="menu" href="#">
+                            <div class="img-bg lazy-bg" data-src="./assets/img/bg/39.jpg"></div>
+                            <div class="text-container">
+                                <h3>ข่าวสาร</h3>
+                                <p>การจัดซื้อจัดจ้าง</p>
+                            </div>
+                        </a>
+                        <div class="menu-content">
+                            <div class="info-card">
+                                <div class="ss-date">02.04.2563</div>
+                                <a class="ss-h4" href="#">
+                                    ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                    ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
+                                </a>
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table asset-table">
+                                        <tbody>
+                                            <?php for($j=0; $j<3; $j++){?>
+                                                <tr>
+                                                    <td><div class="icon icon-dot"></div></td>
+                                                    <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                    <td>15 MB</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                        <?php }?>
+                            <div class="info-card">
+                                <div class="ss-date">02.04.2563</div>
+                                <a class="ss-h4" href="#">
+                                    ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                    ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
+                                </a>
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table asset-table">
+                                        <tbody>
+                                            <?php for($j=0; $j<3; $j++){?>
+                                                <tr>
+                                                    <td><div class="icon icon-dot"></div></td>
+                                                    <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                    <td>15 MB</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="btns text-center">
+                                <a class="btn btn-action btn-primary next-icon" href="#">
+                                    ผลสรุปการดำเนินการจัดซื้อจัดจ้างทั้งหมด
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="menu" href="#">
+                            <div class="img-bg lazy-bg" data-src="./assets/img/bg/40.jpg"></div>
+                            <div class="text-container text-right color-white">
+                                <p>การเปิดเผย</p>
+                                <h3>ราคากลาง</h3>
+                            </div>
+                        </a>
+                        <div class="menu-content">
+                            <div class="info-card">
+                                <div class="ss-date">02.04.2563</div>
+                                <a class="ss-h4" href="#">
+                                    ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                    ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
+                                </a>
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table asset-table">
+                                        <tbody>
+                                            <?php for($j=0; $j<3; $j++){?>
+                                                <tr>
+                                                    <td><div class="icon icon-dot"></div></td>
+                                                    <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                    <td>15 MB</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="ss-date">02.04.2563</div>
+                                <a class="ss-h4" href="#">
+                                    ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                    ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
+                                </a>
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table asset-table">
+                                        <tbody>
+                                            <?php for($j=0; $j<3; $j++){?>
+                                                <tr>
+                                                    <td><div class="icon icon-dot"></div></td>
+                                                    <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                    <td>15 MB</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="btns text-center">
+                                <a class="btn btn-action btn-primary next-icon" href="#">
+                                    ผลสรุปการดำเนินการจัดซื้อจัดจ้างทั้งหมด
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="menu" href="#">
+                            <div class="img-bg lazy-bg" data-src="./assets/img/bg/41.jpg"></div>
+                            <div class="text-container color-white">
+                                <h3>แผน-ผล</h3>
+                                <p>การจัดซื้อจัดจ้าง</p>
+                            </div>
+                        </a>
+                        <div class="menu-content">
+                            <div class="info-card">
+                                <div class="ss-date">02.04.2563</div>
+                                <a class="ss-h4" href="#">
+                                    ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                    ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
+                                </a>
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table asset-table">
+                                        <tbody>
+                                            <?php for($j=0; $j<3; $j++){?>
+                                                <tr>
+                                                    <td><div class="icon icon-dot"></div></td>
+                                                    <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                    <td>15 MB</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="ss-date">02.04.2563</div>
+                                <a class="ss-h4" href="#">
+                                    ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                    ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
+                                </a>
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table asset-table">
+                                        <tbody>
+                                            <?php for($j=0; $j<3; $j++){?>
+                                                <tr>
+                                                    <td><div class="icon icon-dot"></div></td>
+                                                    <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                    <td>15 MB</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="btns text-center">
+                                <a class="btn btn-action btn-primary next-icon" href="#">
+                                    ผลสรุปการดำเนินการจัดซื้อจัดจ้างทั้งหมด
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="menu active" href="#">
+                            <div class="img-bg lazy-bg" data-src="./assets/img/bg/42.jpg"></div>
+                            <div class="text-container text-right color-white">
+                                <h3>ผลสรุป</h3>
+                                <p>การดำเนินงานจัดซื้อจัดจ้าง</p>
+                            </div>
+                        </a>
+                        <div class="menu-content active">
+                            <div class="info-card">
+                                <div class="ss-date">02.04.2563</div>
+                                <a class="ss-h4" href="#">
+                                    ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                    ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
+                                </a>
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table asset-table">
+                                        <tbody>
+                                            <?php for($j=0; $j<3; $j++){?>
+                                                <tr>
+                                                    <td><div class="icon icon-dot"></div></td>
+                                                    <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                    <td>15 MB</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="ss-date">02.04.2563</div>
+                                <a class="ss-h4" href="#">
+                                    ประกาศประกวดราคาจ้างทำชุดของรางวัลก้าวท้าใจ ต้านภัย COVID-19 
+                                    ด้วยวิธีอิเล็กทรอนิกส์ <strong>(e-bidding)</strong>
+                                </a>
+                                <div class="table-wrapper" data-simplebar>
+                                    <table class="table asset-table">
+                                        <tbody>
+                                            <?php for($j=0; $j<3; $j++){?>
+                                                <tr>
+                                                    <td><div class="icon icon-dot"></div></td>
+                                                    <td>ดาวน์โหลดอินโฟกราฟฟิกนี้</td>
+                                                    <td>15 MB</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img class="img-icon lazy-img" data-src="./assets/img/default/pdf.png" alt="PDF" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php }?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="btns text-center">
+                                <a class="btn btn-action btn-primary next-icon" href="#">
+                                    ผลสรุปการดำเนินการจัดซื้อจัดจ้างทั้งหมด
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -635,7 +837,7 @@
         </div>
     </section>
     
-    <section class="call-01 lazy-bg" data-src="./assets/img/default/banner-01.jpg">
+    <section class="call-01 section-bg lazy-bg" data-src="./assets/img/bg/44.jpg">
         <div class="container">
             <div class="contents" data-aos="fade-up" data-aos-delay="0">
                 <div class="text-container">

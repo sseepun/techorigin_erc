@@ -243,9 +243,9 @@
 
                 <div class="grid sm-100 lg-30 xl-25" data-aos="fade-up" data-aos-delay="600">
                     <!-- Slots -->
-                    <div class="slots bg-white">
+                    <div class="slots">
 
-                        <div class="slot bg-color0">
+                        <div class="slot lazy-bg" data-src="./assets/img/bg/37.jpg">
                             <div class="ss-header color-white-info">
                                 <div class="ss">วี</div><h1 class="fw-300">ดิโอ</h1>
                                 <p>& สื่อมัลติมีเดีย</p>
@@ -276,9 +276,8 @@
                             </div>
                         </div>
                         
-                        <div class="ss-img square bradius-0">
-                            <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
-                        </div>
+                        <img class="img-simple lazy-img" data-src="./assets/img/bg/36.jpg" alt="Simple Image 01" />
+
                         <!-- Calendar -->
                         <div class="calendar-container border-bottom">
                             <div class="calendar-wrapper"></div>

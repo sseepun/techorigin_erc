@@ -208,6 +208,7 @@
 .content-02 .contents{width:100%; display:flex; flex-wrap:wrap;}
 .content-02 .content{width:calc(100% / 3); display:block; position:relative;}
 .content-02 .content:nth-child(2){border-left:1px solid transparent; border-right:1px solid transparent;}
+.content-02 .question-container{padding:0;}
 .content-02 .question-container .ss-header{
     padding:1rem 1.5rem 2rem 1.5rem; margin:.875rem 0 0 0; border-bottom:1px solid transparent;
 }
@@ -647,4 +648,41 @@
     .banner-event .slide, .banner-event .slide.active{width:100vw;}
     .banner-event .slide > .wrapper{height:30.5vw;}
     .banner-event .calendar-container{max-width:340px; margin-top:1rem; transform:none;}
+}
+
+
+/* Info Graphic */
+.info-graphic-container{width:100%; position:relative;}
+.info-graphic-container > .info-graphic{
+    position:relative; width:100%; padding:140% 0 0 0;
+    background-image:linear-gradient(to bottom, #e3e3e1, #f9f9f9, #fff);
+}
+.info-graphic-container > .info-graphic > .wrapper{
+    position:absolute; top:0; bottom:0; left:0; right:0; padding:3rem;
+}
+.info-graphic-container > .info-graphic .info-box{
+    position:relative; width:100%; height:100%; padding:1rem 0;
+    background:#fff; box-shadow:rgba(0,0,0,.2) 0px 10px 20px;
+}
+.info-graphic-container .img-contents{
+    width:calc(100% - 2.5rem); position:relative; height:calc(100% - 6.5rem); margin:0 auto;
+}
+.info-graphic-container .img-contents > .img-content{
+    position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover; opacity:0;
+    background-position:center; background-repeat:no-repeat; transition:opacity .3s;
+}
+.info-graphic-container .img-contents > .img-content.active{opacity:1;}
+.info-graphic-container > .info-contents{width:100%; position:relative;}
+.info-graphic-container .info-content{display:none; width:100%;}
+.info-graphic-container .info-content.active{display:block;}
+@media screen and (max-width:1199.98px){
+    .info-graphic-container > .info-graphic > .wrapper{padding:2rem;}
+}
+@media screen and (max-width:767.98px){
+    .info-graphic-container > .info-graphic{padding:155% 0 0 0;}
+    .info-graphic-container > .info-graphic > .wrapper{padding:2rem 1rem;}
+    .info-graphic-container .img-contents{height:calc(100% - 6rem);}
+}
+@media screen and (max-width:575.98px){
+    .info-graphic-container > .info-graphic{padding:140% 0 0 0;}
 }
