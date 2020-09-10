@@ -77,7 +77,7 @@
                                             </h3>
                                         </td>
                                     </tr>
-                                    <?php foreach(['doc', 'docx', 'pdf', 'ppt', 'pptx'] as $f){?>
+                                    <?php foreach(['doc', 'docx', 'jpg', 'pdf', 'png', 'ppt', 'pptx', 'rar', 'xls', 'xlsx', 'zip'] as $f){?>
                                         <tr class="<?php if($i%2==0)echo 'selected'; ?>">
                                             <td class="pl-1-5">
                                                 <div class="file-icon <?php echo $f; ?>"></div>

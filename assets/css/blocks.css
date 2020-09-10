@@ -441,10 +441,12 @@
     display:block; width:auto; height:calc(100% - .5rem); position:absolute; bottom:0; right:0;
 }
 .intro-01 .float-img.type-2{right:11rem;}
+.intro-01 .float-img.type-3{height:calc(100% + 5rem);}
 @media screen and (max-width:991.98px){
     .intro-01 > .container{padding-top:3rem; padding-bottom:3rem;}
     .intro-01 .float-img{height:calc(100% - 1.5rem);}
     .intro-01 .float-img.type-2{right:10rem;}
+    .intro-01 .float-img.type-3{height:calc(100% + 3rem);}
 }
 @media screen and (max-width:767.98px){
     .intro-01 > .container{padding-bottom:0;}

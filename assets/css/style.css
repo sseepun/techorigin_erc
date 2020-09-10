@@ -377,27 +377,29 @@ button.btn, input[type=submit].btn{border:0!important;}
     width:calc(25% - .25rem); height:.3125rem; border-radius:.1875rem; background:#ebebeb;
     transition:background .3s;
 }
+.password-indicator .level-text{font-weight:600; transition:color .3s;}
 .password-indicator .level-text::before{
-    content:'Level 0'; font-weight:600; transition:color .3s;
+    content:'Level 0'; font-weight:600; color:inherit; transition:color .3s;
 }
 .password-indicator.level-1 .level-text::before{content:'Level 1';}
 .password-indicator.level-2 .level-text::before{content:'Level 2';}
 .password-indicator.level-3 .level-text::before{content:'Level 3';}
 .password-indicator.level-4 .level-text::before{content:'Level 4';}
+.password-indicator .level-text.custom-text::before{display:none!important;}
 
-.password-indicator.level-1 .level-text::before{color:#ff0000;}
+.password-indicator.level-1 .level-text{color:#ff0000;}
 .password-indicator.level-1 .level:nth-child(1){background:#ff0000;}
 
-.password-indicator.level-2 .level-text::before{color:#284e51; color:var(--color3);}
+.password-indicator.level-2 .level-text{color:#284e51; color:var(--color3);}
 .password-indicator.level-2 .level:nth-child(1),
 .password-indicator.level-2 .level:nth-child(2){background:#284e51; background:var(--color3);}
 
-.password-indicator.level-3 .level-text::before{color:#c0ca67; color:var(--color1);}
+.password-indicator.level-3 .level-text{color:#c0ca67; color:var(--color1);}
 .password-indicator.level-3 .level:nth-child(1),
 .password-indicator.level-3 .level:nth-child(2),
 .password-indicator.level-3 .level:nth-child(3){background:#c0ca67; background:var(--color1);}
 
-.password-indicator.level-4 .level-text::before{color:#0d838d; color:var(--color4);}
+.password-indicator.level-4 .level-text{color:#0d838d; color:var(--color4);}
 .password-indicator.level-4 .level{background:#0d838d; background:var(--color4);}
 
 
@@ -458,9 +460,15 @@ table.table .file-icon::before{
 }
 table.table .file-icon.doc::before{background-image:url('../img/file/doc.png');}
 table.table .file-icon.docx::before{background-image:url('../img/file/docx.png');}
+table.table .file-icon.jpg::before{background-image:url('../img/file/jpg.png');}
 table.table .file-icon.pdf::before{background-image:url('../img/file/pdf.png');}
+table.table .file-icon.png::before{background-image:url('../img/file/png.png');}
 table.table .file-icon.ppt::before{background-image:url('../img/file/ppt.png');}
 table.table .file-icon.pptx::before{background-image:url('../img/file/pptx.png');}
+table.table .file-icon.rar::before{background-image:url('../img/file/rar.png');}
+table.table .file-icon.xls::before{background-image:url('../img/file/xls.png');}
+table.table .file-icon.xlsx::before{background-image:url('../img/file/xlsx.png');}
+table.table .file-icon.zip::before{background-image:url('../img/file/zip.png');}
 
 table.table.asset-table td:nth-child(2){min-width:8rem;}
 table.table.asset-table td:nth-child(3){min-width:3.5rem;}
@@ -902,7 +910,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-img > .socials .social.social-ln{background:#00B900;}
 
 .ss-img .tag, .ss-video .tag{
-    position:absolute; bottom:2rem; left:0; min-width:35%; padding:0 4rem 0 .75rem;
+    position:absolute; bottom:2rem; left:0; min-width:14rem; padding:0 4rem 0 .75rem;
     display:flex; align-items:center; font-weight:300; line-height:1;
 }
 .ss-img .tag::before, .ss-img .tag::after, .ss-video .tag::before, .ss-video .tag::after{
@@ -956,13 +964,13 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     display:block; width:auto; max-width:100%; height:auto; max-height:100%; margin:0 auto;
     position:relative;
 }
-.ss-img .content .frame{position:relative;}
+.ss-img .content .frame{position:relative; margin:0 auto;}
 .ss-img .content .frame > .img-bg{
     position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
     background-position:center; background-repeat:no-repeat; transform:scale(.88);
 }
 .ss-img .content h2{line-height:1;}
-.ss-img .content .video-wrapper{position:relative;}
+.ss-img .content .video-wrapper{position:relative; margin:0 auto;}
 .ss-img .content .video-wrapper > .img-bg{
     position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
     background-position:center; background-repeat:no-repeat;
@@ -1280,6 +1288,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .xl-text-left{text-align:left!important;}
     .xl-text-right{text-align:right!important;}
     .xl-fw-wrap-r{flex-wrap:wrap-reverse!important;}
+    .xl-hide{display:none!important;}
 }
 @media screen and (min-width:992px) and (max-width: 1199.98px){
     .lg-no-br > *{display:none;}
@@ -1287,6 +1296,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .lg-text-left{text-align:left!important;}
     .lg-text-right{text-align:right!important;}
     .lg-fw-wrap-r{flex-wrap:wrap-reverse!important;}
+    .lg-hide{display:none!important;}
 }
 @media screen and (min-width:768px) and (max-width: 991.98px){
     .md-no-br > *{display:none;}
@@ -1294,6 +1304,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .md-text-left{text-align:left!important;}
     .md-text-right{text-align:right!important;}
     .md-fw-wrap-r{flex-wrap:wrap-reverse!important;}
+    .md-hide{display:none!important;}
 }
 @media screen and (min-width:576px) and (max-width:767.98px){
     .sm-no-br > *{display:none;}
@@ -1301,6 +1312,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .sm-text-left{text-align:left!important;}
     .sm-text-right{text-align:right!important;}
     .sm-fw-wrap-r{flex-wrap:wrap-reverse!important;}
+    .sm-hide{display:none!important;}
 }
 @media screen and (max-width:575.98px){
     .xs-no-br > *{display:none;}
@@ -1308,6 +1320,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
     .xs-text-left{text-align:left!important;}
     .xs-text-right{text-align:right!important;}
     .xs-fw-wrap-r{flex-wrap:wrap-reverse!important;}
+    .xs-hide{display:none!important;}
 }
 
 /* Border */

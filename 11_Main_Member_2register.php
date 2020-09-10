@@ -70,7 +70,7 @@
                                         <div class="control">
                                             <input type="password" name="password" required />
                                         </div>
-                                        <div class="password-indicator level-3">
+                                        <div class="password-indicator level-1">
                                             <div class="levels">
                                                 <div class="level"></div>
                                                 <div class="level"></div>
@@ -79,7 +79,9 @@
                                             </div>
                                             <h5 class="mt-0">
                                                 ระดับความยากของรหัสผ่าน : 
-                                                <span class="level-text"></span>
+                                                <span class="level-text custom-text">
+                                                    Custom Text Here
+                                                </span>
                                             </h5>
                                         </div>
                                     </div>
