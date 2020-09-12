@@ -157,6 +157,10 @@ nav.footer p, nav.footer h1{color:#ffff00;}
 .calendar-container .calendar .event-container .event{color:#000; background:#ffff00;}
 
 
+/* Card Register */
+.card-register{border-color:#ffff00; background:transparent;}
+
+
 /* Info Stat */
 .info-stat, .info-stat > .block, .info-stat .inline-icon{border-color:#ffff00;}
 
@@ -289,6 +293,8 @@ h6, .ss-h6, p, .ss-p{color:#ffff00;}
 
 /* Special Box */
 .ss-box{border:1px solid #ffff00;}
+/* Special Box */
+.ss-box-2{border-color:#ffff00;}
 
 
 /* Special Tags */

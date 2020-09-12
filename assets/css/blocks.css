@@ -450,6 +450,7 @@
 }
 @media screen and (max-width:767.98px){
     .intro-01 > .container{padding-bottom:0;}
+    .intro-01.no-hero-img > .container{padding-bottom:3rem;}
     .intro-01 .float-img{
         position:relative; margin:1.5rem auto 0 auto; width:100%; max-width:350px; height:auto;
         right:auto!important;
@@ -457,6 +458,7 @@
 }
 @media screen and (max-width:575.98px){
     .intro-01 > .container{padding-top:2.5rem;}
+    .intro-01.no-hero-img > .container{padding-bottom:2.5rem;}
     .intro-01 .float-img{max-width:280px;}
 }
 

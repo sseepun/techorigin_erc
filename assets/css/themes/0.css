@@ -183,6 +183,15 @@ nav.footer p, nav.footer h1{color:#fff;}
 }
 
 
+/* Card Register */
+.card-register{border-color:#efefef; background:#fff;}
+.card-register.active{
+    background:#efefef; -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.12);
+    -moz-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.12);
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.12);
+}
+
+
 /* Info Stat */
 .info-stat, .info-stat > .block{border-color:rgba(255,255,255,.2);}
 .info-stat .inline-icon{border-color:rgba(255,255,255,.35);}
@@ -344,6 +353,12 @@ h6, .ss-h6, p, .ss-p{color:#3a3a3a;}
 .ss-box > .content input, .ss-box > .content select, .ss-box > .content textarea, 
 .ss-box > .content .control.radio-control > label::before{
     background:#fff!important;
+}
+/* Special Box 2 */
+.ss-box-2{border-color:#d7992a;}
+.ss-box-2.ss-box-shadow{
+    background:#fff; border-color:transparent; -webkit-box-shadow:0px 5px 20px 0px rgba(0,0,0,.12);
+    -moz-box-shadow:0px 5px 20px 0px rgba(0,0,0,.12); box-shadow:0px 5px 20px 0px rgba(0,0,0,.12);
 }
 
 

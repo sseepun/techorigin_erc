@@ -3,17 +3,6 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-<style>
-.field .icon-radio{
-    width:12.5rem; display:flex; align-items:flex-start; padding-right:1rem; margin:.375rem 0;
-}
-.field .icon-radio > .icon{
-    display:block; width:2rem; height:2rem; border-radius:.25rem; line-height:2.25rem;
-    font-size:1rem; color:#fff; text-align:center; margin:0 .5625rem 0 0;
-}
-.field .icon-radio > .icon + *{width:calc(100% - 2.5625rem); margin:.375rem 0 0 0;}
-
-</style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>

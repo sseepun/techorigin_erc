@@ -224,6 +224,15 @@ button.btn, input[type=submit].btn{border:0!important;}
     background:url('../img/icon/upload.png') left center/2rem auto no-repeat;
 }
 
+.field .icon-radio{
+    width:12.5rem; display:flex; align-items:flex-start; padding-right:1rem; margin:.375rem 0;
+}
+.field .icon-radio > .icon{
+    display:block; width:2rem; height:2rem; border-radius:.25rem; line-height:2.25rem;
+    font-size:1rem; color:#fff; text-align:center; margin:0 .5625rem 0 0;
+}
+.field .icon-radio > .icon + *{width:calc(100% - 2.5625rem); margin:.375rem 0 0 0;}
+
 
 /* Hamburger */
 .hamburger{cursor:pointer;}
@@ -353,6 +362,18 @@ button.btn, input[type=submit].btn{border:0!important;}
 .chart-container .label > .dot + *{margin:0; width:calc(100% - 1.375rem);}
 
 
+/* Card Register */
+.card-register{
+    display:block; border:1px solid transparent; border-radius:.625rem; text-align:center;
+    padding:1.5rem 1.75rem;
+}
+.card-register .icon{
+    display:block; margin:0 auto; line-height:3rem; width:2.5rem; height:2.5rem;
+    text-align:center; font-size:1.375rem; border-radius:.3125rem; color:#fff;
+}
+.card-register.active .btns > .btn{background:#878787; color:#fff;}
+
+
 /* Info Stat */
 .info-stat{
     display:flex; justify-content:center; flex-wrap:wrap; margin:1rem 0 0 0;
@@ -433,6 +454,11 @@ button.btn, input[type=submit].btn{border:0!important;}
 .question-container > .answers{
     width:100%; padding:0 0 1.375rem 0; border-bottom:1px solid transparent;
 }
+.question-container .answers .control.add-input{width:auto;}
+.question-container .answers .control.add-input input[type=text]{
+    margin:0 .5rem; width:2.5rem; padding:.0625rem .25rem; transform:translateY(-.1875rem);
+}
+.question-container .answers .control.add-input .unit{font-size:1.3125rem; font-weight:300;}
 
 
 /* Table */
@@ -622,6 +648,19 @@ table.table td.bullet::before{
     -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;
 }
 .profile-tab.xs .text-container{width:calc(100% - 3rem);}
+
+
+/* Progress */
+.progress{width:100%; display:flex; align-items:center; margin:.5rem 0 0 0;}
+.progress > .bar{
+    position:relative; width:calc(100% - 2.875rem); height:.375rem;
+    border-radius:.25rem; background:#ebebeb; overflow:hidden;
+}
+.progress > .bar::before{
+    content:''; position:absolute; top:0; bottom:0; width:var(--progress); border-radius:.25rem;
+    background-image:linear-gradient(to right, #1d684a, #0d838d, #c0ca67);
+}
+.progress > .percent{width:2.875rem; text-align:right; font-size:1.375rem; font-weight:400;}
 
 
 /* Slots */
@@ -1103,6 +1142,15 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-box > .header > .icon{width:2rem; font-size:1.125rem;}
 .ss-box > .header > .icon + *{width:calc(100% - 2rem); margin:0;}
 .ss-box > .content{width:100%; padding:1.25rem;}
+/* Special Box 2 */
+.ss-box-2{width:100%; padding:1.75rem 2rem; border:1px solid transparent; border-radius:.875rem;}
+.ss-box-2.ss-box-shadow{border-radius:0;}
+@media screen and (max-width:991.98px){
+    .ss-box-2{padding:1.5rem 1.75rem;}
+}
+@media screen and (max-width:575.98px){
+    .ss-box-2{padding:1rem 1.25rem;}
+}
 
 
 /* Special Tags & Status */
@@ -1279,7 +1327,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 
 .inline-icon{
     display:inline-block; width:1.25rem; height:1.25rem; border-radius:50%; text-align:center;
-    line-height:1.375rem; font-size:.6875rem; margin:0 .25rem;
+    line-height:1.4375rem; font-size:.6875rem; margin:0 .25rem;
 }
 
 @media screen and (min-width:1200px){

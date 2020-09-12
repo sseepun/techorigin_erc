@@ -1,29 +1,8 @@
-<?php 
-    $steps = 3;
-
-?>
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-<style>
-/* Progress */
-.progress{width:100%; display:flex; align-items:center; margin:.5rem 0 0 0;}
-.progress > .bar{
-    position:relative; width:calc(100% - 2.875rem); height:.375rem;
-    border-radius:.25rem; background:#ebebeb; overflow:hidden;
-}
-.progress > .bar::before{
-    content:''; position:absolute; top:0; bottom:0; width:var(--progress); border-radius:.25rem;
-    background-image:linear-gradient(to right, #1d684a, #0d838d, #c0ca67);
-}
-.progress > .percent{width:2.875rem; text-align:right; font-size:1.375rem; font-weight:400;}
-
-/* Progress */
-.progress > .bar{}
-</style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
