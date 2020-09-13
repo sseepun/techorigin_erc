@@ -35,13 +35,16 @@
                     <!-- Banner 02 -->
                     <div class="banner-02">
                         <div class="slide-container">
-                            <div class="preview-container">
+                            <div class="preview-container no-border-radius">
                                 <div class="slides">
                                     <?php for($i=1; $i<7; $i++){?>
                                         <div class="slide">
                                             <div class="wrapper">
-                                                <div class="ss-img no-hover">
-                                                    <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg"></div>
+                                                <div class="ss-img no-hover pure-img">
+                                                    <!-- <div class="img-bg lazy-bg" data-src="./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg"></div> -->
+                                                    <div class="pure-img-wrapper">
+                                                        <img class="lazy-img" data-src="./assets/img/banner/0<?php echo ($i%3)+1; ?>.jpg" alt="Slide <?php echo $i; ?>" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

@@ -1027,6 +1027,15 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .ss-img .content .play-icon:hover{transform:scale(1.1);}
 .ss-img .content .play-icon > i{transform:translateX(.125rem);}
 
+.ss-img.pure-img{border-radius:0; background:#a4a4a4;}
+.ss-img.pure-img > .pure-img-wrapper{
+    position:absolute; top:0; bottom:0; left:0; right:0;
+    display:flex; align-items:center; justify-content:center;
+}
+.ss-img.pure-img > .pure-img-wrapper > img{
+    display:block; width:auto; max-width:100%; height:auto; max-height:calc(100% - 1.5rem);
+}
+
 @media screen and (max-width:991.98px){
     .ss-img .tag .date, .ss-video .tag .date{font-size:3.5rem; margin:0 .5625rem 0 0;}
     .ss-img .tag .month, .ss-img .tag .year, .ss-video .tag .month, .ss-video .tag .year{
@@ -1375,6 +1384,7 @@ h6, .ss-h6, p, .ss-p{font-size:1.25rem; margin:.625rem 0 0 0;}
 .no-border{border:0!important;}
 .border-top{border-top:1px solid transparent;}
 .border-bottom{border-bottom:1px solid transparent;}
+.no-border-radius{border-radius:0!important;}
 
 /* Spacing */
 .no-margin{margin:0!important;}
