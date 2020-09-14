@@ -20,6 +20,20 @@ $(function(){ 'use strict';
             $(this).closest('.form-language')[0].submit();
         });
 
+        // Topnav Submenu Tab
+        topnav.find('.submenu-container .pagination').each(function(){
+            var topnavPagination = $(this);
+            topnavPagination.find('.page-btn').click(function(e){
+                e.preventDefault();
+                topnavPagination.find('.page-btn').removeClass('active');
+                $(this).addClass('active');
+                $(this).closest('.submenu-container').find('.submenu-tab').removeClass('active');
+                $(this).closest('.submenu-container')
+                    .find('.submenu-tab[data-submenu="'+$(this).data('submenu')+'"]')
+                        .addClass('active');
+            });
+        });
+
         // Sidenav buttons
         sidenavBtns.click(function(e){
             e.preventDefault();

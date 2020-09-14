@@ -78,7 +78,7 @@ nav.topnav .submenu-container{
     box-shadow:rgba(0,0,0,.9) 0px 15px 30px; transition:opacity .4s, top .4s;
 }
 nav.topnav .submenu-container.expand-left{left:auto; right:0;}
-nav.topnav .submenu-container.expand-adaptive{transform:translateX(-25.5rem);}
+nav.topnav .submenu-container.expand-adaptive{transform:translateX(-15rem);}
 nav.topnav .menu:hover > .submenu-container{opacity:1; top:100%; pointer-events:all;}
 nav.topnav .submenu-container > .wrapper{position:relative; display:flex;}
 
@@ -101,16 +101,19 @@ nav.topnav .submenu-container .hero p{
     margin:.125rem 0 0 0; text-align:center; font-size:1.3125rem; font-weight:200;
 }
 
-nav.topnav .submenus{position:relative; min-width:13.5rem; min-height:22rem; height:auto;}
+nav.topnav .submenu-tab{position:relative; display:none;}
+nav.topnav .submenu-tab.active{display:flex;}
+nav.topnav .submenus{position:relative; min-width:15rem; min-height:25rem; height:auto;}
 nav.topnav .submenus::after{
     content:''; position:absolute; top:0; bottom:0; left:0; width:.75px; opacity:.25;
 }
-nav.topnav .submenus:nth-child(2)::after{background:transparent;}
+nav.topnav .wrapper > .submenus:nth-child(2)::after,
+nav.topnav .submenu-tab > .submenus:nth-child(1)::after{background:transparent;}
 nav.topnav .submenu{position:relative;}
 nav.topnav .submenu.empty{pointer-events:none;}
 nav.topnav .submenu > a{
     position:relative; display:block; width:100%; text-decoration:none; padding:1rem 2rem 1rem 2rem;
-    margin:0; font-size:1.125rem; font-weight:300; white-space:nowrap; min-height:3.2rem;
+    margin:0; font-size:1.125rem; font-weight:300; min-height:3.2rem; white-space:pre-line;
     transition:background .3s, color .3s;
 }
 nav.topnav .submenu > a::after{
@@ -127,10 +130,10 @@ nav.topnav .submenu > .child-container{
     position:absolute; top:0; left:100%; opacity:0; pointer-events:none; transition:opacity .4s;
 }
 nav.topnav .submenu:hover > .child-container{opacity:1; pointer-events:auto;}
-nav.topnav .submenu .childs{position:relative; min-width:13.5rem;}
+nav.topnav .submenu .childs{position:relative; min-width:15rem;}
 nav.topnav .submenu .child > a{
     position:relative; display:block; width:100%; text-decoration:none; padding:1rem 2rem 1rem 2rem;
-    margin:0; font-size:1.125rem; font-weight:400; white-space:nowrap; min-height:3.2rem;
+    margin:0; font-size:1.125rem; font-weight:400; min-height:3.2rem; white-space:pre-line;
     transition:background .3s, color .3s;
 }
 nav.topnav .submenu .child > a::after{
@@ -147,9 +150,6 @@ nav.topnav .mobile-menu .sidenav-btn{
 nav.topnav ~ .topnav-spacer{display:block; width:100%; height:6.625rem;}
 
 @media screen and (max-width:1299.98px){
-    nav.topnav .submenu-container.expand-adaptive{transform:translateX(-20rem);}
-    nav.topnav .submenus.width-adaptive .submenu > a, 
-    nav.topnav .submenus.width-adaptive .submenu .child > a{white-space:inherit; width:18rem;}
     nav.topnav .submenu.empty{display:none;}
 }
 @media screen and (max-width:1199.98px){
