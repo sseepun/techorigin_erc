@@ -30,77 +30,42 @@
                 <?php }?>
             </div>
 
-            <div class="contents about-01-target active" data-team="1">
-                <div class="content" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-container text-right">
-                        <div class="ss-banner to-left d-inline-block">
-                            <h3>แพทย์หญิงพรรณพิมล วิปุลากร</h3>
-                            <p class="no-margin">อธิบดีกรมอนามัย</p>
-                        </div>
-                        <div class="ss-banner to-left">
-                            <ul>
-                                <li>
-                                    <div class="icon bg-color0 color-white">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <a href="#">
-                                        <span>email :</span> webmaster@anamai.go.th
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="icon bg-color0 color-white">
-                                        <i class="fas fa-phone-alt"></i>
-                                    </div>
-                                    <a href="#">
-                                        <span>เบอร์โทร :</span> 02-123 4567
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="content" data-aos="fade-up" data-aos-delay="600">
-                    <img class="box-img lazy-img" data-src="./assets/img/content/box-01.png" alt="Box Image 01" />
-                    <img class="hero lazy-img" data-src="./assets/img/hero/06.png" alt="About Hero 01" />
-                </div>
-            </div>
-            <div class="contents about-01-target" data-team="2"></div>
-            <div class="contents about-01-target" data-team="3"></div>
-            <div class="contents about-01-target" data-team="4"></div>
-            <div class="contents about-01-target" data-team="5">
-                <div class="content" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-container text-right">
-                        <div class="ss-banner to-left d-inline-block">
-                            <h3>แพทย์หญิงพรรณพิมล วิปุลากร</h3>
-                            <p class="no-margin">อธิบดีกรมอนามัย</p>
-                        </div>
-                        <div class="ss-banner to-left">
-                            <ul>
-                                <li>
-                                    <div class="icon bg-color0 color-white">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <a href="#">
-                                        <span>email :</span> webmaster@anamai.go.th
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="icon bg-color0 color-white">
-                                        <i class="fas fa-phone-alt"></i>
-                                    </div>
-                                    <a href="#">
-                                        <span>เบอร์โทร :</span> 02-123 4567
-                                    </a>
-                                </li>
-                            </ul>
+            <?php for($i=1; $i<6; $i++){?>
+                <div class="contents about-01-target <?php if($i==1)echo 'active'; ?>" data-team="<?php echo $i; ?>">
+                    <div class="content" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-container text-right">
+                            <div class="ss-banner to-left d-inline-block">
+                                <h3>แพทย์หญิงพรรณพิมล วิปุลากร</h3>
+                                <p class="no-margin">อธิบดีกรมอนามัย</p>
+                            </div>
+                            <div class="ss-banner to-left">
+                                <ul>
+                                    <li>
+                                        <div class="icon bg-color0 color-white">
+                                            <i class="far fa-envelope"></i>
+                                        </div>
+                                        <a href="#">
+                                            <span>email :</span> webmaster@anamai.go.th
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="icon bg-color0 color-white">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <a href="#">
+                                            <span>เบอร์โทร :</span> 02-123 4567
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <div class="content" data-aos="fade-up" data-aos-delay="600">
+                        <img class="box-img lazy-img" data-src="./assets/img/content/box-01.png" alt="Box Image <?php echo $i; ?>" />
+                        <img class="hero lazy-img" data-src="./assets/img/hero/team-0<?php echo $i; ?>.png" alt="About Hero <?php echo $i; ?>" />
+                    </div>
                 </div>
-                <div class="content" data-aos="fade-up" data-aos-delay="600">
-                    <img class="box-img lazy-img" data-src="./assets/img/content/box-01.png" alt="Box Image 01" />
-                    <img class="hero lazy-img" data-src="./assets/img/hero/33.png" alt="About Hero 01" />
-                </div>
-            </div>
+            <?php }?>
 
         </div>
     </section>
