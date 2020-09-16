@@ -333,6 +333,15 @@ $(function(){ 'use strict';
         });
     }
 
+    // About 01
+    if($('.about-01').length){
+        $('.about-01').find('.team-selector').click(function(e){
+            e.preventDefault();
+            $('.about-01-target').removeClass('active');
+            $('.about-01-target[data-team="'+$(this).data('team')+'"]').addClass('active');
+        });
+    }
+
     
     // FAQ 01
     if($('.faq-01').length){

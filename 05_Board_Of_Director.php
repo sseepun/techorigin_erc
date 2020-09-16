@@ -15,13 +15,22 @@
         include_once('component/breadcrumb.php');
     ?>
 
-    <section class="about-01 lazy-bg" data-src="./assets/img/bg/07.jpg">
+    <section class="about-01 lazy-bg" data-src="./assets/img/bg/48.jpg">
         <div class="container">
             <div class="ss-header" data-aos="fade-up" data-aos-delay="0">
                 <div class="ss">ผู้</div><h1>บริหารกรมอนามัย</h1>
                 <p>กรมอนามัย พร้อมให้ข้อมูลข่าวสารที่เป็นประโยชน์สำหรับทุกคน</p>
             </div>
-            <div class="contents">
+            <div class="team-selectors">
+                <?php for($i=1; $i<6; $i++){?>
+                    <div class="team-selector <?php if($i==1)echo 'root'; ?>" data-team="<?php echo $i; ?>">
+                        <img class="lazy-img" alt="Team Selector <?php echo $i; ?>" 
+                        data-src="./assets/img/icon/team-0<?php echo $i; ?>.png" />
+                    </div>
+                <?php }?>
+            </div>
+
+            <div class="contents about-01-target active" data-team="1">
                 <div class="content" data-aos="fade-up" data-aos-delay="300">
                     <div class="text-container text-right">
                         <div class="ss-banner to-left d-inline-block">
@@ -51,50 +60,93 @@
                     </div>
                 </div>
                 <div class="content" data-aos="fade-up" data-aos-delay="600">
-                    <img class="hero lazy-img" data-src="./assets/img/hero/06.png" alt="About 01 Hero" />
+                    <img class="box-img lazy-img" data-src="./assets/img/content/box-01.png" alt="Box Image 01" />
+                    <img class="hero lazy-img" data-src="./assets/img/hero/06.png" alt="About Hero 01" />
                 </div>
             </div>
+            <div class="contents about-01-target" data-team="2"></div>
+            <div class="contents about-01-target" data-team="3"></div>
+            <div class="contents about-01-target" data-team="4"></div>
+            <div class="contents about-01-target" data-team="5">
+                <div class="content" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-container text-right">
+                        <div class="ss-banner to-left d-inline-block">
+                            <h3>แพทย์หญิงพรรณพิมล วิปุลากร</h3>
+                            <p class="no-margin">อธิบดีกรมอนามัย</p>
+                        </div>
+                        <div class="ss-banner to-left">
+                            <ul>
+                                <li>
+                                    <div class="icon bg-color0 color-white">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <a href="#">
+                                        <span>email :</span> webmaster@anamai.go.th
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="icon bg-color0 color-white">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <a href="#">
+                                        <span>เบอร์โทร :</span> 02-123 4567
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" data-aos="fade-up" data-aos-delay="600">
+                    <img class="box-img lazy-img" data-src="./assets/img/content/box-01.png" alt="Box Image 01" />
+                    <img class="hero lazy-img" data-src="./assets/img/hero/33.png" alt="About Hero 01" />
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section class="section-padding">
         <div class="container">
-            <div class="grids">
-                <div class="grid sm-50 mt-0" data-aos="fade-up" data-aos-delay="0">
-                    <h2 class="no-margin fw-400">ประวัติการศึกษา</h2>
-                    <div class="table-wrapper" data-simplebar>
-                        <table class="table about-table">
-                            <tbody>
-                                <?php for($i=0; $i<7; $i++){?>
-                                    <tr>
-                                        <td><div class="icon icon-dot bg-color1"></div></td>
-                                        <td class="color4 fw-500">2522 - 2528</td>
-                                        <td>มหาวิทยาลัยขอนแก่น</td>
-                                        <td>แพทย์ศาสตร์</td>
-                                    </tr>
-                                <?php }?>
-                            </tbody>
-                        </table>
+            <?php for($i=1; $i<6; $i++){?>
+                <div class="about-01-target <?php if($i==1)echo 'active'; ?>" data-team="<?php echo $i; ?>">
+                    <div class="grids">
+                        <div class="grid md-50 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
+                            <h2 class="no-margin fw-400">ประวัติการศึกษา</h2>
+                            <div class="table-wrapper" data-simplebar>
+                                <table class="table about-table">
+                                    <tbody>
+                                        <?php for($j=0; $j<7; $j++){?>
+                                            <tr>
+                                                <td><div class="icon icon-dot bg-color1"></div></td>
+                                                <td class="color4 fw-500">2522 - 2528</td>
+                                                <td>มหาวิทยาลัยขอนแก่น</td>
+                                                <td>แพทย์ศาสตร์</td>
+                                            </tr>
+                                        <?php }?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="grid md-50 sm-100 xl-mt-0 lg-mt-0 md-mt-0" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="no-margin fw-400">ตำเเหน่งที่รับผิดชอบ</h2>
+                            <div class="table-wrapper" data-simplebar>
+                                <table class="table about-table">
+                                    <tbody>
+                                        <?php for($j=0; $j<7; $j++){?>
+                                            <tr>
+                                                <td><div class="icon icon-dot bg-color1"></div></td>
+                                                <td class="color4 fw-500">2522 - 2528</td>
+                                                <td>มหาวิทยาลัยขอนแก่น</td>
+                                                <td>แพทย์ศาสตร์</td>
+                                            </tr>
+                                        <?php }?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="grid sm-50 sm-mt-0" data-aos="fade-up" data-aos-delay="300">
-                    <h2 class="no-margin fw-400">ตำเเหน่งที่รับผิดชอบ</h2>
-                    <div class="table-wrapper" data-simplebar>
-                        <table class="table about-table">
-                            <tbody>
-                                <?php for($i=0; $i<7; $i++){?>
-                                    <tr>
-                                        <td><div class="icon icon-dot bg-color1"></div></td>
-                                        <td class="color4 fw-500">2522 - 2528</td>
-                                        <td>มหาวิทยาลัยขอนแก่น</td>
-                                        <td>แพทย์ศาสตร์</td>
-                                    </tr>
-                                <?php }?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            <?php }?>
         </div>
     </section>
     
