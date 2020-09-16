@@ -335,10 +335,22 @@ $(function(){ 'use strict';
 
     // About 01
     if($('.about-01').length){
+        var about01Ready = true;
         $('.about-01').find('.team-selector').click(function(e){
             e.preventDefault();
-            $('.about-01-target').removeClass('active');
-            $('.about-01-target[data-team="'+$(this).data('team')+'"]').addClass('active');
+            var temp = $('.about-01-target[data-team="'+$(this).data('team')+'"]');
+            if(about01Ready && temp.length){
+                about01Ready = false;
+                $('.about-01-target.active').addClass('out');
+                setTimeout(function(){
+                    $('.about-01-target').removeClass('active in out');
+                    temp.addClass('active in');
+                    setTimeout(function(){
+                        temp.removeClass('in');
+                        about01Ready = true;
+                    }, 50);
+                }, 450);
+            }
         });
     }
 
