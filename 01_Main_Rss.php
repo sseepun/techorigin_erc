@@ -65,7 +65,7 @@
                         </div>
                         <div class="slot mt-2">
                             <h2 class="header-text quote-text quote-inline">
-                                <span class="fw-400">กรรมอนามัย</span> <br>
+                                <span class="fw-400">กรมอนามัย</span> <br>
                                 เรามีสาระสุขภาพดีๆ <br>
                                 <span class="text-xl fw-400 color1">ส่งตรงถึงคุณ</span> <br>
                                 <span class="text-xl">ทุกวัน</span>

@@ -143,7 +143,7 @@
                         <img class="float-img type-11" src="./assets/img/hero/23.png" alt="Slot Float Image 01" />
                         <div class="slot mt-3-5">
                             <h2 class="header-text quote-text quote-inline">
-                                <span class="fw-400">กรรมอนามัย</span> <br>
+                                <span class="fw-400">กรมอนามัย</span> <br>
                                 เรามีสาระสุขภาพดีๆ <br>
                                 <span class="text-xl fw-400 color1">ส่งตรงถึงคุณ</span> <br>
                                 <span class="text-xl">ทุกวัน</span>

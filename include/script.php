@@ -5,7 +5,10 @@
 <script src="./assets/lib/simple-calendar/simple-calendar.min.js"></script>
 <script src="./assets/lib/fancybox-3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="./assets/lib/dropzone-5.7.0/dist/min/dropzone.min.js"></script>
-<script src="./assets/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+<!-- <script src="./assets/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script> -->
+<script src="./assets/lib/vanilla-datepicker/dist/js/datepicker.min.js"></script>
+
 <!-- <script src="./assets/lib/aos-2.3.1/aos.min.js"></script> -->
 
 <script src="./assets/js/script.js"></script>

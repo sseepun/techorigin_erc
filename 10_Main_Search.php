@@ -59,11 +59,15 @@
                                     <div class="block">
                                         <div class="text-wrapper">
                                             ช่วงเวลา 
-                                            <input type="text" name="start_date" class="date-picker" 
-                                            autocomplete="off" style="width:6rem;" /> 
+                                            <span class="date-picker-wrapper">
+                                                <input type="text" name="start_date" class="date-picker" 
+                                                autocomplete="off" style="width:6.5rem;" /> 
+                                            </span>
                                             - 
-                                            <input type="text" name="end_date" class="date-picker" 
-                                            autocomplete="off" style="width:6rem;" />
+                                            <span class="date-picker-wrapper">
+                                                <input type="text" name="end_date" class="date-picker" 
+                                                autocomplete="off" style="width:6.5rem;" />
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="block">

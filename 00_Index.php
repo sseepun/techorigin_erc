@@ -7,30 +7,44 @@
 <body>
     <?php include_once('include/topnav.php'); ?>
 
-    <section class="banner-01">
+    <section class="banner-01 img-only">
         <div class="slide-container">
             <div class="slides">
                 <?php for($i=0; $i<8; $i++){?>
-                    <div class="slide lazy-bg" data-src="./assets/img/banner/01.jpg">
-                        <div class="container">
-                            <h2 class="animate" style="--delay:.6s;">
-                                new gen
-                            </h2>
-                            <h1 class="animate" style="--delay:.75s;">
-                                NEW NORMAL
-                            </h1>
-                            <h3 class="animate" style="--delay:.9s;">
-                                ปลอดภัยห่างไกล 
-                                <span class="line" style="--delay:1.5s;"></span> 
-                                COVID-19
-                            </h3>
-                        </div>
+                    <div class="slide">
+                        <img class="lazy-img" data-src="./assets/img/banner/0<?php echo $i % 4 + 1; ?>.jpg" alt="Banner <?php echo $i; ?>" />
                     </div>
                 <?php }?>
             </div>
             <div class="dots"></div>
         </div>
     </section>
+    <?php if(0){?>
+        <section class="banner-01">
+            <div class="slide-container">
+                <div class="slides">
+                    <?php for($i=0; $i<8; $i++){?>
+                        <div class="slide lazy-bg" data-src="./assets/img/banner/01.jpg">
+                            <div class="container">
+                                <h2 class="animate" style="--delay:.6s;">
+                                    new gen
+                                </h2>
+                                <h1 class="animate" style="--delay:.75s;">
+                                    NEW NORMAL
+                                </h1>
+                                <h3 class="animate" style="--delay:.9s;">
+                                    ปลอดภัยห่างไกล 
+                                    <span class="line" style="--delay:1.5s;"></span> 
+                                    COVID-19
+                                </h3>
+                            </div>
+                        </div>
+                    <?php }?>
+                </div>
+                <div class="dots"></div>
+            </div>
+        </section>
+    <?php }?>
 
     <section class="content-01" data-aos="fade-up" data-aos-delay="0">
         <div class="container">

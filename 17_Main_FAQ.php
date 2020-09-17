@@ -3,9 +3,6 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-<style>
-
-</style>
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>

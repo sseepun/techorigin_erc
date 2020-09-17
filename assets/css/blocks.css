@@ -72,10 +72,12 @@
 }
 .loading .banner-01 .slide .animate{opacity:0!important; transform:translateY(4rem)!important;}
 
-
 .banner-01 .line{display:inline-block; height:1.5px; width:0; transition:width 2s;}
 .banner-01 .slide.slick-active .line{width:5.5rem; transition-delay:var(--delay);}
 .loading .banner-01 .slide .line{width:0!important;}
+
+.banner-01.img-only .slide{height:auto!important; padding:0!important;}
+.banner-01.img-only .slide > img{display:block; width:100%; height:auto;}
 
 
 /* Banner 02 */

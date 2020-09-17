@@ -117,7 +117,10 @@ $(function(){ 'use strict';
 
 
     // Date Picker
-    $('input.date-picker').datepicker();
+    // $('input.date-picker').datepicker();
+    $('input.date-picker').each(function(){
+        new Datepicker($(this)[0], {});
+    });
     
     // Calendar
     var calendar;
@@ -283,14 +286,26 @@ $(function(){ 'use strict';
 
     // Banner 01
     if($('section.banner-01').length){
-        $('section.banner-01 > .slide-container').each(function(){
-            var self = $(this);
-            self.find('> .slides').slick({
-                centerMode: true, centerPadding: 0, slidesToShow: 1, 
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
-                arrows: false, dots: true, appendDots: self.find('.dots')
+        if($('section.banner-01').hasClass('img-only')){
+            $('section.banner-01 > .slide-container').each(function(){
+                var self = $(this);
+                self.find('> .slides').slick({
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    arrows: false, dots: true, appendDots: self.find('.dots'),
+                    adaptiveHeight: true
+                });
             });
-        });
+        }else{
+            $('section.banner-01 > .slide-container').each(function(){
+                var self = $(this);
+                self.find('> .slides').slick({
+                    centerMode: true, centerPadding: 0, slidesToShow: 1, 
+                    focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                    arrows: false, dots: true, appendDots: self.find('.dots')
+                });
+            });
+        }
     }
     // Banner 02
     if($('.banner-02').length){

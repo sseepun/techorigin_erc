@@ -161,7 +161,9 @@ nav.topnav ~ .topnav-spacer{display:block; width:100%; height:6.625rem;}
     nav.topnav.sticky{top:0;}
     nav.topnav .logo{margin:.5rem 0;}
     nav.topnav.sticky .logo{padding-top:0;}
-    nav.topnav .logo > .text{display:none;}
+    nav.topnav .logo > .text{margin:0 0 0 1rem;}
+    nav.topnav .logo > .text > h1{font-size:2.375rem;}
+    nav.topnav .logo > .text > p{display:none;}
     nav.topnav .logo > img{height:4rem;}
     nav.topnav.sticky .logo > img{height:3rem;}
     nav.topnav .top-menu{display:none;}
