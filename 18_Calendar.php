@@ -3,7 +3,6 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
 </head>
 <body>
     <?php include_once('include/topnav.php'); ?>
@@ -144,6 +143,7 @@
                                         </div>
                                     </div>
                                 <?php }?>
+                                <?php include('component/list-footer.php'); ?>
                             </div>
 
                             <div class="tab-content" data-tab="2">
@@ -175,45 +175,64 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="calendar"></div>
-                            </div>
 
-                            <div class="tab-content" data-tab="3">
-                                <div class="card card-lg">
-                                    <a class="ss-img" href="#">
-                                        <div class="img-bg lazy-bg" data-src="./assets/img/default/banner-01.jpg"></div>
-                                        <div class="tag">
-                                            <div class="date">30</div>
-                                            <div class="text-container">
-                                                <div class="month">กรกฎาคม</div>
-                                                <div class="year">2563</div>
-                                            </div>
+                                <!-- Calendar -->
+                                <div class="fullcalendar-container month">
+                                    <div class="fullcalendar-header">
+                                        <div id="prev-month-btn" class="calendar-btn">
+                                            <i class="fa fa-angle-double-left"></i>
+                                            <span></span>
                                         </div>
-                                    </a>
-                                    <div class="ss-tags">
-                                        <div class="ss-tag type-6"></div>
-                                        <div class="ss-tag type-7"></div>
-                                        <div class="ss-tag type-8"></div>
-                                        <div class="ss-tag type-9"></div>
+                                        <h2 id="calendar-title" class="calendar-title"></h2>
+                                        <div id="next-month-btn" class="calendar-btn">
+                                            <span></span>
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </div>
                                     </div>
-                                    <div class="ss-date">02.04.2563</div>
-                                    <a class="ss-h2" href="#">
-                                        กรมอนามัย แนะ <span class="color1">10 วิธีกินแบบพอเพียงช่วงโควิด 19</span>
-                                        สร้างร่างกายแข็งแรง ไร้พุง
-                                    </a>
-                                    <p>
-                                        คอนโด หม่านโถว ไอติมชิฟฟอนอาข่าแตงกวาเซอร์ ม็อบซิ่งกรีนวีเจ 
-                                        เนิร์สเซอรี่เท็กซ์ไพลินไกด์ซะ อึ๋ม เพนกวินเช็งเม้งฟลุต บัตเตอร์ฮาโลวีนมายองเนสสปอร์ต 
-                                        เครปโดมิโนฟยอร์ดวิลล์ ชาร์ตเดอะสไตล์ ตาปรือกระดี๊กระด๊าอีสต์ เชฟซะมาเฟียโมจิ โฟม 
-                                        แชมพูแจ็กเก็ตรีเสิร์ชโบว์ลิ่ง...
-                                    </p>
-                                    <div class="btns">
-                                        <a class="btn btn-action btn-primary next-icon" href="#">
-                                            อ่านรายละเอียด
-                                        </a>
+                                    <div class="fullcalendar-wrapper">
+                                        <div id="fullcalendar"></div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="tab-content" data-tab="3">
+                                <div class="list-header jc-end">
+                                    <div class="block">
+                                        <div class="text-wrapper">
+                                            <select name="category" class="order no-margin">
+                                                <option value="">เลือกหมวดหมู่</option>
+                                                <option value="1">หมวดหมู่ที่ 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="block ml-1 mr-1">
+                                        <div class="text-wrapper">
+                                            <span class="date-picker-wrapper">
+                                                <input type="text" name="end_date" class="date-picker" 
+                                                autocomplete="off" style="width:6.5rem;" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="text-wrapper">
+                                            <form action="search-result.php" method="GET">
+                                                <input type="text" name="search" placeholder="ค้นหา" required>
+                                                <button type="submit" class="btn">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Calendar Week -->
+                                <div class="fullcalendar-container week">
+                                    <div class="fullcalendar-wrapper">
+                                        <div id="fullcalendar-week"></div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -238,42 +257,287 @@
     
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
-    <link href="https://dpstframework.com/lib/fullcalendar-4.4.0/packages/core/main.min.css" rel="stylesheet">
-    <link href="https://dpstframework.com/lib/fullcalendar-4.4.0/packages/daygrid/main.min.css" rel="stylesheet">
-    <script src="https://dpstframework.com/lib/fullcalendar-4.4.0/packages/core/main.min.js"></script>
-    <script src="https://dpstframework.com/lib/fullcalendar-4.4.0/packages/daygrid/main.min.js"></script>
-    <script src="https://dpstframework.com/lib/fullcalendar-4.4.0/packages/core/locales/th.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.0/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@fullcalendar/daygrid@4.4.0/main.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.0/main.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@fullcalendar/daygrid@4.4.0/main.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@fullcalendar/interaction@4.4.0/main.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@fullcalendar/timegrid@4.4.0/main.min.js"></script>
     <script>
-        var colors = [
-            '#0061ae', '#2980b9', '#3498db', '#16a085', '#1abc9c', '#27ae60',
-            '#2ecc71', '#f1c40f', '#e67e22', '#e84c3d', '#c0392b', '#990033'
-        ];
+        var days = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
         var months = [
             'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน',
             'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
         ];
 
-        var calendar = new FullCalendar.Calendar($('#calendar')[0], {
-            plugins: [ 'dayGrid' ],
-            timeZone: 'UTC',
-            locale: 'th', 
+
+        // Calendar Month
+        var calendarTitle = $('#calendar-title');
+        var prevMonthBtn = $('#prev-month-btn');
+        var nextMonthBtn = $('#next-month-btn');
+        
+        function htmlToElement(html){
+            var template = document.createElement('template');
+            html = html.trim();
+            template.innerHTML = html;
+            return template.content.firstChild;
+        }
+        function updateCalendarHeader(currentMonth){
+            let prevMonth = 0;
+            let nextMonth = 0;
+
+            if(months[currentMonth - 1]) prevMonth = months[currentMonth - 1];
+            else prevMonth = months[months.length - 1];
+
+            if(months[currentMonth + 1]) nextMonth = months[currentMonth + 1];
+            else nextMonth = months[0];
+
+            calendarTitle.html(months[currentMonth]);
+            prevMonthBtn.find('> span').html(prevMonth);
+            nextMonthBtn.find('> span').html(nextMonth);
+        }
+
+        const calendar = new FullCalendar.Calendar($('#fullcalendar')[0], {
+            plugins: [ 'interaction', 'dayGrid', 'timeGrid'],
             defaultView: 'dayGridMonth',
-            events: [
-                {
-                    title: 'การทำโครงงานของนักเรียน ม.4',
-                    start: '2020-07-10',
-                    end: '2020-07-23',
-                    url: 'module-hss/task-group-view/?id=ajNqMnBBZFVLaVNJdVp4MVJkWlFnNi9kVGkvSTNwQTJnOHM1bkk4ZGN0OD0=',
-                    backgroundColor: colors[Number('0') % colors.length],
-                    borderColor: colors[Number('0') % colors.length]
-                },
-            ],
-            eventClick: function(info){
-                info.jsEvent.preventDefault();
-                if(info.event.url) window.open(info.event.url);
-            }
+            firstDay: 1,
+            locale: 'th',
+            contentHeight: 'auto',
+            // eventSources: [
+            //     {
+            //         className: 'ku-event',
+            //         url: '/th/event-calendar/data',
+            //         method: 'GET',
+            //         extraParams: function(){
+            //             return {
+            //                 cate_id:$('#filter_calendar_cate').val(),
+            //                 date:$('#filter_date').val(),
+            //                 keyword:$('#filter_keyword').val(),
+            //                 type:$('[name=my-nav-item].active').attr('data-key')
+            //             };
+            //         },
+            //         failure: function(){
+            //             alert('there was an error while fetching events...');
+            //         }
+            //     } 
+            // ],
+            eventSourceSuccess: function(content, xhr){
+                return content.eventArray;
+            },
+            datesRender: function(info){
+                const date = new Date(info.view.currentStart);
+                updateCalendarHeader(date.getMonth());
+            },
+            dayRender: function (info){
+                const date = new Date(info.date);
+                if (info.el.classList.contains("fc-today")) {
+                    info.el.style.color = "#ffffff";
+                    info.el.style.backgroundColor = "#c4cf13";
+                }
+                if (info.el.classList.contains("fc-other-month")) {
+                    info.el.style.opacity = 0.3;
+                }
+                info.el.innerHTML = `<div class="calendar-date">
+                        ${days[date.getDay()]}<br>${date.getDate()}
+                    </div>`;
+            },
+            eventMouseEnter: function(info){
+                const id = info.event.id;
+                const eventDate = new Date(info.event.start);
+                const day = eventDate.getDate();
+                const dayStr = `${day}`.length === 1 ? `0${day}` : day;
+                const month = months[eventDate.getMonth()];
+                const year = eventDate.getFullYear() + 543;
+
+                const currentCalendarStart = new Date(info.view.activeStart);
+                const nextThreeWeeks = new Date(currentCalendarStart);
+                nextThreeWeeks.setDate(currentCalendarStart.getDate() + 20);
+
+                // Set position for popover
+                const positionClasses = [];
+                if ([1, 2, 3, 4].indexOf(eventDate.getDay()) > -1) {
+                    // Mon - Thu
+                    positionClasses.push("popover-left");
+                } else {
+                    // Fri - Sun
+                    positionClasses.push("popover-right");
+                }
+                if (eventDate <= nextThreeWeeks) {
+                    // week 1 - 3 of the month
+                    positionClasses.push("popover-top");
+                } else {
+                    // week 4 - 6 of the month
+                    positionClasses.push("popover-bottom");
+                }
+                const popover = htmlToElement(`
+                    <div id="${id}" class="event-card calendar-popover ${positionClasses.join(' ')}">
+                        <div class="thumbnail">
+                            <img src="${info.event.extendedProps.thumb_url}" alt="KU Calendar"/>
+                            <div class="date green">
+                            <span>${dayStr}</span>
+                            <span>${month} ${year}</span>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <span>
+                                <strong>${info.event.title}</strong>
+                            </span>
+                            <span>
+                                ${info.event.extendedProps.description}
+                            </span>
+                        </div>
+                    </div>`
+                );
+                info.el.appendChild(popover);
+                if (!info.el.classList.contains('is-show-popover')) {
+                    setTimeout(function(){
+                        info.el.classList.add('is-show-popover');
+                    }, 100);
+                }
+            },
+            eventMouseLeave: function(info){
+                if (info.el.classList.contains('is-show-popover')) {
+                    info.el.classList.remove('is-show-popover');
+                }
+                setTimeout(function(){
+                    const id = info.event.id;
+                    const popover = document.getElementById(id);
+                    if (popover) {
+                        popover.parentNode.removeChild(popover);
+                    }
+                }, 100);
+            },
         });
         calendar.render();
+
+        prevMonthBtn.click(function(e){
+            e.preventDefault();
+            calendar.prev();
+        });
+        nextMonthBtn.click(function(e){
+            e.preventDefault();
+            calendar.next();
+        });
+
+
+        // Calendar Week
+        var calendarWeek = new FullCalendar.Calendar($('#fullcalendar-week')[0], {
+            plugins: [ 'interaction', 'timeGrid'],
+            header: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            defaultView: 'timeGridWeek',
+            firstDay: 1,
+            locale: 'th',
+            contentHeight: 'auto',
+            // eventSources: [
+            //     {
+            //         className: "ku-event",
+        
+            //         url: '/th/event-calendar/data',
+            //         method: 'GET',
+            //         extraParams: function(){
+            //             return {
+            //                 cate_id:$('#filter_calendar_cate').val(),
+            //                 date:$('#filter_date').val(),
+            //                 keyword:$('#filter_keyword').val(),
+            //                 type:$('[name=my-nav-item].active').attr('data-key')
+            //             };
+            //         },
+            //         failure: function(){
+            //             alert('there was an error while fetching events!');
+            //         }
+            //     } 
+            // ],
+            eventSourceSuccess: function(content, xhr){
+                return content.eventArray;
+            },
+            dayRender: function(info){
+                if(!($(info.el).closest('.fc-scroller').length)){
+                    const date = new Date(info.date);
+                    if (info.el.classList.contains("fc-today")) {
+                        info.el.style.color = "#ffffff";
+                        info.el.style.backgroundColor = "#c4cf13";
+                    }
+                    if (info.el.classList.contains("fc-other-month")) {
+                        info.el.style.opacity = 0.3;
+                    }
+                    info.el.innerHTML = `<div class="calendar-custom-date">
+                            ${days[date.getDay()]}<br>${date.getDate()}
+                        </div>`;
+                }
+            },
+            eventMouseEnter: function(info){
+                const id = info.event.id;
+                const eventDate = new Date(info.event.start);
+                const day = eventDate.getDate();
+                const dayStr = `${day}`.length === 1 ? `0${day}` : day;
+                const month = months[eventDate.getMonth()];
+                const year = eventDate.getFullYear() + 543;
+
+                const currentCalendarStart = new Date(info.view.activeStart);
+                const nextThreeWeeks = new Date(currentCalendarStart);
+                nextThreeWeeks.setDate(currentCalendarStart.getDate() + 20);
+
+                // Set position for popover
+                const positionClasses = [];
+                if ([1, 2, 3, 4].indexOf(eventDate.getDay()) > -1) {
+                    // Mon - Thu
+                    positionClasses.push("popover-left");
+                } else {
+                    // Fri - Sun
+                    positionClasses.push("popover-right");
+                }
+                if (eventDate <= nextThreeWeeks) {
+                    // week 1 - 3 of the month
+                    positionClasses.push("popover-top");
+                } else {
+                    // week 4 - 6 of the month
+                    positionClasses.push("popover-bottom");
+                }
+                const popover = htmlToElement(`
+                    <div id="${id}" class="event-card calendar-popover ${positionClasses.join(' ')}">
+                        <div class="thumbnail">
+                            <img src="${info.event.extendedProps.thumb_url}" alt="KU Calendar"/>
+                            <div class="date green">
+                            <span>${dayStr}</span>
+                            <span>${month} ${year}</span>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <span>
+                                <strong>${info.event.title}</strong>
+                            </span>
+                            <span>
+                                ${info.event.extendedProps.description}
+                            </span>
+                        </div>
+                    </div>`
+                );
+                info.el.appendChild(popover);
+                if (!info.el.classList.contains('is-show-popover')){
+                    setTimeout(function(){
+                        info.el.classList.add('is-show-popover');
+                    }, 100);
+                }
+            },
+            eventMouseLeave: function(info){
+                if (info.el.classList.contains('is-show-popover')) {
+                    info.el.classList.remove('is-show-popover');
+                }
+                setTimeout(function(){
+                    const id = info.event.id;
+                    const popover = document.getElementById(id);
+                    if (popover) {
+                        popover.parentNode.removeChild(popover);
+                    }
+                }, 100);
+            },
+        });
+        calendarWeek.render();
     </script>
 </body>
 </html>

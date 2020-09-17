@@ -720,3 +720,70 @@
 @media screen and (max-width:575.98px){
     .info-graphic-container > .info-graphic{padding:140% 0 0 0;}
 }
+
+
+/* Full Calendar */
+.fullcalendar-container{width:100%;}
+.fullcalendar-container .fullcalendar-wrapper{width:100%; overflow:hidden!important; margin:0;}
+.fullcalendar-container .fullcalendar-header{
+    width:100%; display:flex; align-items:center; justify-content:space-between; margin:0;
+}
+.fullcalendar-container .fc-day-header.fc-widget-header{color:transparent; height:2.75rem;}
+
+.fullcalendar-container.month .fc-toolbar.fc-header-toolbar{display:none;}
+.fullcalendar-container.month .fullcalendar-header > .calendar-title{
+    margin:0; font-size:3.25rem; font-weight:500;
+}
+.fullcalendar-container.month .fullcalendar-header > .calendar-btn{
+    display:flex; align-items:center; font-size:1.8375rem; cursor:pointer; font-weight:400;
+    transition:opacity .3s;
+}
+.fullcalendar-container.month .fullcalendar-header > .calendar-btn:hover{opacity:.75;}
+.fullcalendar-container.month .fullcalendar-header > .calendar-btn i{font-size:1rem; margin:0 .5rem 0 0;}
+.fullcalendar-container.month .fullcalendar-header > .calendar-btn:last-child i{margin:0 0 0 .5rem;}
+.fullcalendar-container.month .fc .fc-row .fc-content-skeleton table{display:none;}
+.fullcalendar-container.month .fc td{font-size:1.75rem; font-weight:300; text-align:center;}
+
+.fullcalendar-container.week > .fullcalendar-wrapper{margin:0;}
+.fullcalendar-container.week .fc-toolbar.fc-header-toolbar{margin:0 0 .5rem 0;}
+.fullcalendar-container.week .fc-button{box-shadow:none!important;}
+.fullcalendar-container.week .fc-toolbar.fc-header-toolbar h2{font-size:2rem; font-weight:500;}
+.fullcalendar-container.week .fc-scroller{overflow:auto hidden!important; margin:3.9375rem 0 0 0;}
+.fullcalendar-container.week th.fc-axis.fc-widget-header:first-child{display:none;}
+.fullcalendar-container.week td.fc-axis.fc-widget-content:first-child{width:6rem!important;}
+.fullcalendar-container.week td{font-size:1.75rem; font-weight:300; text-align:center;}
+.fullcalendar-container.week .fc-bg > table{border:1px solid #eee;}
+.fullcalendar-container.week .fc-bg td{border-bottom:1px solid #eee; vertical-align:middle;}
+.fullcalendar-container.week .fc-content-skeleton, .fullcalendar-container.week hr{display:none;}
+
+@media screen and (max-width:1199.98px){
+    .fullcalendar-container.month .fullcalendar-header > .calendar-title{font-size:2.75rem;}
+    .fullcalendar-container.month .fullcalendar-header > .calendar-btn{font-size:1.75rem;}
+    .fullcalendar-container.month .fullcalendar-header > .calendar-btn i{font-size:.9375rem;}
+    .fullcalendar-container.month .fc-day-header.fc-widget-header{height:2.5rem;}
+    .fullcalendar-container.month .fc td{font-size:1.5625rem;}
+}
+@media screen and (max-width:767.98px){
+    .fullcalendar-container.month .fullcalendar-header > .calendar-title{font-size:2.5rem;}
+    .fullcalendar-container.month .fullcalendar-header > .calendar-btn{font-size:1.625rem;}
+    .fullcalendar-container.month .fullcalendar-header > .calendar-btn i{font-size:.875rem;}
+    .fullcalendar-container.month .fc-day-header.fc-widget-header{height:2.25rem;}
+    .fullcalendar-container.month .fc td{font-size:1.5rem; width:7rem;}
+    .fullcalendar-container.week td{font-size:1.5rem;}
+    .fullcalendar-container.week .fc-scroller{margin:3.375rem 0 0 0;}
+}
+
+.fullcalendar-container .fullcalendar-header > .calendar-title{color:#000;}
+.fullcalendar-container .fullcalendar-header > .calendar-btn{color:#0d838d; color:var(--color4);}
+.fullcalendar-container .fc-day-header.fc-widget-header{
+    background:#0d838d; background:var(--color4); border-color:#0d838d; border-color:var(--color4);
+}
+.fullcalendar-container .fc-unthemed td.fc-today{
+    background:#0d838d!important; background:var(--color4)!important;
+    border-color:#0d838d!important; border-color:var(--color4)!important;
+    color:#fff!important;
+}
+.fullcalendar-container.week .fc-button{
+    background:#0d838d; background:var(--color4);
+    border-color:#0d838d; border-color:var(--color4);
+}
