@@ -1458,6 +1458,10 @@ h6, .ss-h6, p, .ss-p{font-size:1.375rem; margin:.625rem 0 0 0;}
 .pr-3{padding-right:3rem!important;} .pr-3-5{padding-right:3.5rem!important;}
 .pr-4{padding-right:4rem!important;} .pr-4-5{padding-right:4.5rem!important;}
 
+/* Background */
+.bg-center{background-position:center!important;}
+.bg-top-center{background-position:top center!important;}
+.bg-bottom-center{background-position:bottom center!important;}
 
 
 /* Toast Notifications */

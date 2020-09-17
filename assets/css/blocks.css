@@ -465,12 +465,27 @@
 
 /* Intro 01 */
 .intro-01{background-position:center; background-size:cover; background-repeat:no-repeat;}
-.intro-01 > .container{position:relative; padding-top:4rem; padding-bottom:4rem;}
+.intro-01 > .container{position:relative; padding-top:4rem; padding-bottom:4rem;} 
+.intro-01 .contact-btns{margin:1rem 0;}
+.intro-01 .contact-btns .contact-btn{
+    position:relative; display:inline-block; color:#fff; font-size:1.625rem; text-decoration:none;
+    margin:.125rem 1.5rem .125rem 0; transition:opacity .3s;
+}
+.intro-01 .contact-btns .contact-btn:last-child{margin-right:0;}
+.intro-01 .contact-btns .contact-btn:hover{opacity:.75;}
+.intro-01 .contact-btns .contact-btn::before{
+    content:'\f054'; display:inline-block; font-family:'Font Awesome 5 Free';
+    font-weight:900; font-size:40%; width:.625rem; height:.625rem; text-align:center;
+    vertical-align:middle; border-radius:.3125rem; line-height:.625rem; padding:.375rem; 
+    background:#fff; color:#777; margin:0 .625rem 0 0;
+}
+
 .intro-01 .float-img{
     display:block; width:auto; height:calc(100% - .5rem); position:absolute; bottom:0; right:0;
 }
 .intro-01 .float-img.type-2{right:11rem;}
-.intro-01 .float-img.type-3{height:calc(100% + 5rem);}
+.intro-01 .float-img.type-3{height:calc(100% + 5rem);} 
+
 @media screen and (max-width:991.98px){
     .intro-01 > .container{padding-top:3rem; padding-bottom:3rem;}
     .intro-01 .float-img{height:calc(100% - 1.5rem);}
