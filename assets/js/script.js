@@ -429,6 +429,17 @@ $(function(){ 'use strict';
         });
     }
 
+
+    // Page Loader
+    if($('body > .page-loader').length){
+        window.onload = function(){
+            $('body > .page-loader').addClass('fade-out');
+            setTimeout(function(){
+                $('body > .page-loader').remove();
+            }, 1350);
+        }
+    }
+
     
     // AOS Animation
     // AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });

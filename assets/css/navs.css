@@ -332,4 +332,22 @@ nav.footer .imgs > img{
 
 
 /* Page Loader */
-
+.page-loader{position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:101;}
+.page-loader > .wrapper{
+    position:relative; width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+}
+.page-loader > .wrapper::before, .page-loader > .wrapper::after{
+    content:''; position:absolute; top:-50vw; bottom:-50vw; width:100%; transform:rotate(30deg);
+    z-index:101; transition:left .9s, right .9s; transition-delay:.45s;
+}
+.page-loader > .wrapper::before{right:50%; background:#eee; transform-origin:center right;}
+.page-loader > .wrapper::after{left:50%; background:#fff; transform-origin:center left;}
+.page-loader.fade-out > .wrapper::before{right:120%;}
+.page-loader.fade-out > .wrapper::after{left:120%;}
+.page-loader .loader{
+    position:relative; border:.5rem solid #ddd; border-top:.5rem solid #0d838d; z-index:102;
+    border-radius:50%; width:6rem; height:6rem; animation:loaderSpin 2s linear infinite;
+    transition:opacity .45s;
+}
+.page-loader.fade-out .loader{opacity:0;}
+@keyframes loaderSpin{ 0%{transform:rotate(0deg);} 100%{transform:rotate(360deg);} }

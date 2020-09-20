@@ -5,7 +5,7 @@
     <?php include_once('include/style.php'); ?>
 </head>
 <body>
-    <div class="page-loader"><div class="wrapper"></div></div>
+    <div class="page-loader"><div class="wrapper"><div class="loader"></div></div></div>
     <?php include_once('include/topnav.php'); ?>
 
     <section class="banner-01 img-only">
