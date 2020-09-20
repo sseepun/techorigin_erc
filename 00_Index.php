@@ -13,7 +13,7 @@
             <div class="slides">
                 <?php for($i=0; $i<8; $i++){?>
                     <div class="slide">
-                        <img class="lazy-img" data-src="./assets/img/banner/0<?php echo $i % 4 + 1; ?>.jpg" alt="Banner <?php echo $i; ?>" />
+                        <img src="./assets/img/banner/0<?php echo $i % 4 + 1; ?>.jpg" alt="Banner <?php echo $i; ?>" />
                     </div>
                 <?php }?>
             </div>

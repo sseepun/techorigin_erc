@@ -755,7 +755,9 @@
 .fullcalendar-container.month .fullcalendar-header > .calendar-btn:hover{opacity:.75;}
 .fullcalendar-container.month .fullcalendar-header > .calendar-btn i{font-size:1rem; margin:0 .5rem 0 0;}
 .fullcalendar-container.month .fullcalendar-header > .calendar-btn:last-child i{margin:0 0 0 .5rem;}
-.fullcalendar-container.month .fc .fc-row .fc-content-skeleton table{display:none;}
+.fullcalendar-container.month .fc .fc-row .fc-content-skeleton table .fc-day-number{
+    color:transparent; height:3.5rem;
+}
 .fullcalendar-container.month .fc td{font-size:1.75rem; font-weight:300; text-align:center;}
 
 .fullcalendar-container.week > .fullcalendar-wrapper{margin:0;}
@@ -790,14 +792,13 @@
 .fullcalendar-container .fullcalendar-header > .calendar-title{color:#000;}
 .fullcalendar-container .fullcalendar-header > .calendar-btn{color:#0d838d; color:var(--color4);}
 .fullcalendar-container .fc-day-header.fc-widget-header{
-    background:#0d838d; background:var(--color4); border-color:#0d838d; border-color:var(--color4);
+    background-color:#0d838d; background-color:var(--color4);
+    border-color:#0d838d; border-color:var(--color4);
 }
 .fullcalendar-container .fc-unthemed td.fc-today{
-    background:#0d838d!important; background:var(--color4)!important;
-    border-color:#0d838d!important; border-color:var(--color4)!important;
-    color:#fff!important;
+    border-color:#0d838d!important; border-color:var(--color4)!important; color:#fff!important;
 }
 .fullcalendar-container.week .fc-button{
-    background:#0d838d; background:var(--color4);
+    background-color:#0d838d; background-color:var(--color4);
     border-color:#0d838d; border-color:var(--color4);
 }

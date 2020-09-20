@@ -304,6 +304,16 @@
             firstDay: 1,
             locale: 'th',
             contentHeight: 'auto',
+            events: [
+                {
+                    title: 'การทำโครงงานของนักเรียน ม.4',
+                    start: '2020-09-18',
+                    end: '2020-09-28',
+                    url: '#',
+                    backgroundColor: 'orange',
+                    borderColor: 'orange'
+                },
+            ],
             // eventSources: [
             //     {
             //         className: 'ku-event',
@@ -331,83 +341,57 @@
             },
             dayRender: function (info){
                 const date = new Date(info.date);
-                if (info.el.classList.contains("fc-today")) {
-                    info.el.style.color = "#ffffff";
-                    info.el.style.backgroundColor = "#c4cf13";
+                if(info.el.classList.contains('fc-today')){
+                    info.el.style.color = '#ffffff';
+                    info.el.style.backgroundColor = '#0d838d';
                 }
-                if (info.el.classList.contains("fc-other-month")) {
+                if(info.el.classList.contains('fc-other-month')){
                     info.el.style.opacity = 0.3;
                 }
                 info.el.innerHTML = `<div class="calendar-date">
                         ${days[date.getDay()]}<br>${date.getDate()}
                     </div>`;
             },
-            eventMouseEnter: function(info){
-                const id = info.event.id;
-                const eventDate = new Date(info.event.start);
-                const day = eventDate.getDate();
-                const dayStr = `${day}`.length === 1 ? `0${day}` : day;
-                const month = months[eventDate.getMonth()];
-                const year = eventDate.getFullYear() + 543;
+            // eventMouseEnter: function(info){
+            //     const id = info.event.id;
+            //     const eventDate = new Date(info.event.start);
+            //     const day = eventDate.getDate();
+            //     const dayStr = `${day}`.length === 1 ? `0${day}` : day;
+            //     const month = months[eventDate.getMonth()];
+            //     const year = eventDate.getFullYear() + 543;
 
-                const currentCalendarStart = new Date(info.view.activeStart);
-                const nextThreeWeeks = new Date(currentCalendarStart);
-                nextThreeWeeks.setDate(currentCalendarStart.getDate() + 20);
+            //     const currentCalendarStart = new Date(info.view.activeStart);
+            //     const nextThreeWeeks = new Date(currentCalendarStart);
+            //     nextThreeWeeks.setDate(currentCalendarStart.getDate() + 20);
 
-                // Set position for popover
-                const positionClasses = [];
-                if ([1, 2, 3, 4].indexOf(eventDate.getDay()) > -1) {
-                    // Mon - Thu
-                    positionClasses.push("popover-left");
-                } else {
-                    // Fri - Sun
-                    positionClasses.push("popover-right");
-                }
-                if (eventDate <= nextThreeWeeks) {
-                    // week 1 - 3 of the month
-                    positionClasses.push("popover-top");
-                } else {
-                    // week 4 - 6 of the month
-                    positionClasses.push("popover-bottom");
-                }
-                const popover = htmlToElement(`
-                    <div id="${id}" class="event-card calendar-popover ${positionClasses.join(' ')}">
-                        <div class="thumbnail">
-                            <img src="${info.event.extendedProps.thumb_url}" alt="KU Calendar"/>
-                            <div class="date green">
-                            <span>${dayStr}</span>
-                            <span>${month} ${year}</span>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <span>
-                                <strong>${info.event.title}</strong>
-                            </span>
-                            <span>
-                                ${info.event.extendedProps.description}
-                            </span>
-                        </div>
-                    </div>`
-                );
-                info.el.appendChild(popover);
-                if (!info.el.classList.contains('is-show-popover')) {
-                    setTimeout(function(){
-                        info.el.classList.add('is-show-popover');
-                    }, 100);
-                }
-            },
-            eventMouseLeave: function(info){
-                if (info.el.classList.contains('is-show-popover')) {
-                    info.el.classList.remove('is-show-popover');
-                }
-                setTimeout(function(){
-                    const id = info.event.id;
-                    const popover = document.getElementById(id);
-                    if (popover) {
-                        popover.parentNode.removeChild(popover);
-                    }
-                }, 100);
-            },
+            //     // Set position for popover
+            //     const positionClasses = [];
+            //     if([1, 2, 3, 4].indexOf(eventDate.getDay()) > -1){ // Mon - Thu
+            //         positionClasses.push('popup-left');
+            //     }else{ // Fri - Sun
+            //         positionClasses.push('popup-right');
+            //     }
+            //     if(eventDate <= nextThreeWeeks){ // week 1 - 3 of the month
+            //         positionClasses.push('popoup-top');
+            //     }else{ // week 4 - 6 of the month
+            //         positionClasses.push('popup-bottom');
+            //     }
+            //     info.el.appendChild(
+            //         htmlToElement(
+            //             `<div class="calendar-popoup ${positionClasses.join(' ')}">
+            //                 <div class="thumbnail" style="background-image:url('./assets/img/banner/01.jpg');"></div>
+            //                 <div class="detail">
+            //                     <div class="date">${dayStr} ${month} ${year}</div>
+            //                     <div class="title">${info.event.title}</div>
+            //                     <div class="desc">Description information</div>
+            //                 </div>
+            //             </div>`
+            //         )
+            //     );
+            // },
+            // eventMouseLeave: function(info){
+            //     $('.calendar-popoup').remove();
+            // },
         });
         calendar.render();
 
@@ -458,11 +442,11 @@
             dayRender: function(info){
                 if(!($(info.el).closest('.fc-scroller').length)){
                     const date = new Date(info.date);
-                    if (info.el.classList.contains("fc-today")) {
-                        info.el.style.color = "#ffffff";
-                        info.el.style.backgroundColor = "#c4cf13";
+                    if(info.el.classList.contains('fc-today')){
+                        info.el.style.color = '#ffffff';
+                        info.el.style.backgroundColor = '#0d838d';
                     }
-                    if (info.el.classList.contains("fc-other-month")) {
+                    if(info.el.classList.contains('fc-other-month')){
                         info.el.style.opacity = 0.3;
                     }
                     info.el.innerHTML = `<div class="calendar-custom-date">
