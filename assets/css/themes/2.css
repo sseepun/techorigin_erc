@@ -128,7 +128,6 @@ nav.footer p, nav.footer h1{color:#ffff00;}
 .back-to-top{color:#ffff00; background:rgba(0,0,0,.5); border-color:#ffff00;}
 
 /* Global Search */
-.global-search-container{background:rgba(0,0,0,.92);}
 .global-search-container .hamburger > *{background:#ffff00;}
 .global-search-container input[type=text]{color:#ffff00; border-color:#ffff00; background:#000;}
 .global-search-container button{color:#ffff00;}

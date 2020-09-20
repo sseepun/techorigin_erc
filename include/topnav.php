@@ -1,4 +1,5 @@
 <!-- Topnav -->
+<div class="topnav-filter"></div>
 <nav class="topnav">
     <div class="container">
         <div class="wrapper">
@@ -355,17 +356,29 @@
 <div class="sidenav-filter"></div>
 
 <!-- Search Container -->
-<div class="global-search-container">
+<div class="global-search-container use-gsap">
     <div class="wrapper">
         <div class="hamburger active global-search-toggle">
             <div></div><div></div><div></div>
         </div>
         <div class="container">
             <form action="./" method="GET">
-                <input type="text" name="keywords" placeholder="ค้นหา" required>
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
+                <h1 class="color-white text-center mt-0 mb-0-5">
+                    คุณกำลังมองหาอะไร?
+                </h1>
+                <div class="input-container">
+                    <input type="text" name="keywords" placeholder="ค้นหา" required>
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="ss-tags mt-1 text-center">
+                    <div class="ss-tag type-1"></div>
+                    <div class="ss-tag type-2"></div>
+                    <div class="ss-tag type-3"></div>
+                    <div class="ss-tag type-4"></div>
+                    <div class="ss-tag type-5"></div>
+                </div>
             </form>
         </div>
     </div>

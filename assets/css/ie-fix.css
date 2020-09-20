@@ -5,6 +5,8 @@
     nav.topnav .menu:hover > .submenu-container{display:block;}
     nav.topnav .submenu > .child-container{display:none;}
     nav.topnav .submenu:hover > .child-container{display:block;}
+    .topnav-filter{display:none;}
+    .topnav-filter.active{display:block;}
 }
 
 /* Sidenav */

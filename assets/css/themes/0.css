@@ -150,9 +150,8 @@ nav.footer p, nav.footer h1{color:#fff;}
 .back-to-top{color:#666; background:rgba(255,255,255,.5); border-color:#666;}
 
 /* Global Search */
-.global-search-container{background:rgba(255,255,255,.92);}
-.global-search-container .hamburger > *{background:#000;}
-.global-search-container input[type=text]{color:#000; border-color:#000; background:#fff;}
+.global-search-container .hamburger > *{background:#fff;}
+.global-search-container input[type=text]{color:#000; border-color:#fff; background:#fff;}
 .global-search-container input[type=text]:focus{border-color:#c0ca67; border-color:var(--color1);}
 .global-search-container button{color:#000;}
 .global-search-container button:hover{color:#c0ca67; color:var(--color1);}

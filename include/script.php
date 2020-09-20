@@ -10,6 +10,7 @@
 <script src="./assets/lib/vanilla-datepicker/dist/js/datepicker.min.js"></script>
 
 <!-- <script src="./assets/lib/aos-2.3.1/aos.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/lazy-load.js"></script>

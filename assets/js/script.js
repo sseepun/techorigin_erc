@@ -2,6 +2,7 @@ $(function(){ 'use strict';
 
     // Topnav
     var topnav = $('nav.topnav'),
+        topnavFilter = $('.topnav-filter'),
         sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container'),
         sidenavBtns = $('nav.topnav .sidenav-btn, nav.sidenav .sidenav-btn');
@@ -32,6 +33,14 @@ $(function(){ 'use strict';
                     .find('.submenu-tab[data-submenu="'+$(this).data('submenu')+'"]')
                         .addClass('active');
             });
+        });
+
+        // Topnav Filter
+        topnav.find('.menu.has-children').mouseenter(function(){
+            topnavFilter.addClass('active');
+        });
+        topnav.find('.menu.has-children').mouseleave(function(){
+            topnavFilter.removeClass('active');
         });
 
         // Sidenav buttons
@@ -89,13 +98,38 @@ $(function(){ 'use strict';
 
     // Global Search
     var globalSearchContainer = $('.global-search-container');
-    $('.global-search-toggle').click(function(e){
-        e.preventDefault();
-        globalSearchContainer.toggleClass('active');
-        if(globalSearchContainer.hasClass('active')){
-            globalSearchContainer.find('input[type=text]').focus();
-        }
-    });
+    if(globalSearchContainer.hasClass('use-gsap')){
+        var globalSearchTl =  new TimelineMax({paused: true})
+            .to('.global-search-container', .6, {
+                autoAlpha: 1, ease: Power3.easeInOut
+            })
+            .from('.global-search-container h1', .6, {
+                opacity: 0, y: 30, ease: Power3.easeInOut
+            }, '-=.4')
+            .from('.global-search-container .input-container', .6, {
+                opacity: 0, y: 30, ease: Power3.easeInOut
+            }, '-=.4')
+            .staggerFrom('.global-search-container .ss-tag', .6, {
+                opacity: 0, y: 30, ease: Power3.easeInOut
+            }, .08, '-=.55')
+            .reverse();
+        $('.global-search-toggle').click(function(e){
+            e.preventDefault();
+            globalSearchTl.reversed( !globalSearchTl.reversed() );
+            globalSearchContainer.toggleClass('active');
+            if(globalSearchContainer.hasClass('active')){
+                globalSearchContainer.find('input[type=text]').focus();
+            }
+        });
+    }else{
+        $('.global-search-toggle').click(function(e){
+            e.preventDefault();
+            globalSearchContainer.toggleClass('active');
+            if(globalSearchContainer.hasClass('active')){
+                globalSearchContainer.find('input[type=text]').focus();
+            }
+        });
+    }
 
 
     // Font Sizes
