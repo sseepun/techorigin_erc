@@ -431,11 +431,11 @@ $(function(){ 'use strict';
 
 
     // Page Loader
-    if($('body > .page-loader').length){
+    if($('.page-loader').length){
         window.onload = function(){
-            $('body > .page-loader').addClass('fade-out');
+            $('.page-loader').addClass('fade-out');
             setTimeout(function(){
-                $('body > .page-loader').remove();
+                $('.page-loader').remove();
             }, 1350);
         }
     }
