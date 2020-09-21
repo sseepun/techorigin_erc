@@ -99,10 +99,10 @@ nav.sidenav .sidenav-btn .hamburger > *{background:#ffff00;}
 nav.sidenav .options > .option, nav.sidenav .scroll-wrapper{border-color:#ffff00;}
 nav.sidenav .option > .dropdown{background:#000;}
 nav.sidenav .option > .dropdown > *{border-color:#ffff00!important;}
-nav.sidenav .option > .dropdown > *{border-color:#ebebeb!important;}
 nav.sidenav .option [data-theme="0"]{background:#fff; color:#1d684a;}
 nav.sidenav .option [data-theme="1"]{background:#010101; color:#fff;}
 nav.sidenav .option [data-theme="2"]{background:#010101; color:#ffff00;}
+nav.sidenav .option > .icon{color:#ffff00;}
 
 nav.sidenav .menu > a{color:#ffff00; border-color:#ffff00;;}
 nav.sidenav .menu:hover > a{color:#000; background:#ffff00;}

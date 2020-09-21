@@ -192,13 +192,13 @@ nav.sidenav .sidenav-btn{
     display:flex; align-items:center; justify-content:center; border-left:1px solid transparent;
 }
 
-nav.sidenav .options{width:100%; display:flex;}
+nav.sidenav .options{display:flex; width:100%; margin:3.75rem 0 0 0;}
 nav.sidenav .options > .option{
-    width:25%; height:3.4125rem; margin:3.75rem 0 0 0; position:relative; cursor:pointer;
+    width:20%; height:3.4125rem; position:relative; cursor:pointer;
     border-top:1px solid transparent; border-right:1px solid transparent;
     display:flex; align-items:center; justify-content:center;
 }
-nav.sidenav .options > .option:nth-child(4n){border-right:0;}
+nav.sidenav .options > .option:nth-child(5n){border-right:0;}
 nav.sidenav .option > .icon{font-size:1.5rem; font-weight:400;}
 nav.sidenav .option i{font-size:1rem;}
 nav.sidenav .option > .dropdown{

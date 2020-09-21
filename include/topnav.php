@@ -373,6 +373,11 @@
                     </a>
                 </div>
             </div>
+            <div class="option">
+                <a class="icon" href="#">
+                    <i class="fas fa-sitemap"></i>
+                </a>
+            </div>
             <div class="option global-search-toggle">
                 <div class="icon"><i class="fas fa-search"></i></div>
             </div>
