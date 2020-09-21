@@ -366,8 +366,8 @@ nav.footer .imgs > img{
 }
 .page-loader > .wrapper::before{right:50%; background:#eee; transform-origin:center right;}
 .page-loader > .wrapper::after{left:50%; background:#fff; transform-origin:center left;}
-.page-loader.fade-out > .wrapper::before{right:120%;}
-.page-loader.fade-out > .wrapper::after{left:120%;}
+.page-loader.fade-out > .wrapper::before{right:calc(80vw + 80vh);}
+.page-loader.fade-out > .wrapper::after{left:calc(80vw + 80vh);}
 .page-loader .loader{
     position:relative; border:.5rem solid #ddd; border-top:.5rem solid #0d838d; z-index:102;
     border-radius:50%; width:6rem; height:6rem; animation:loaderSpin 2s linear infinite;
