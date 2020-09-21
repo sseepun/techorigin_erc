@@ -118,7 +118,12 @@ nav.topnav .mobile-menu .sidenav-btn:hover .hamburger > *{background:#47484d; ba
 nav.sidenav{background:#fff;}
 nav.sidenav .sidenav-btn{border-color:#ebebeb;}
 nav.sidenav .sidenav-btn:hover .hamburger > *{background:#47484d; background:var(--color0);}
-nav.sidenav .scroll-wrapper{border-color:#ebebeb;}
+nav.sidenav .options > .option, nav.sidenav .scroll-wrapper{border-color:#ebebeb;}
+nav.sidenav .option > .dropdown{background:#fff;}
+nav.sidenav .option > .dropdown > *{border-color:#ebebeb!important;}
+nav.sidenav .option [data-theme="0"]{background:#fff; color:#1d684a;}
+nav.sidenav .option [data-theme="1"]{background:#010101; color:#fff;}
+nav.sidenav .option [data-theme="2"]{background:#010101; color:#ffff00;}
 
 nav.sidenav .menu > a{color:#000; border-color:#ebebeb;}
 nav.sidenav .menu:hover > a{color:#47484d; color:var(--color0);}

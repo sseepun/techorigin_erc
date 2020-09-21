@@ -13,6 +13,8 @@
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
     nav.sidenav ~ .sidenav-filter{display:none;}
     nav.sidenav.active ~ .sidenav-filter{display:block;}
+    nav.sidenav .option > .dropdown{display:none;}
+    nav.sidenav .option:hover > .dropdown{display:block;}
 }
 
 /* Back to Top */

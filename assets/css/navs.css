@@ -191,8 +191,35 @@ nav.sidenav .sidenav-btn{
     position:absolute; top:0; right:0; width:3.75rem; height:3.75rem; cursor:pointer;
     display:flex; align-items:center; justify-content:center; border-left:1px solid transparent;
 }
+
+nav.sidenav .options{width:100%; display:flex;}
+nav.sidenav .options > .option{
+    width:25%; height:3.4125rem; margin:3.75rem 0 0 0; position:relative; cursor:pointer;
+    border-top:1px solid transparent; border-right:1px solid transparent;
+    display:flex; align-items:center; justify-content:center;
+}
+nav.sidenav .options > .option:nth-child(4n){border-right:0;}
+nav.sidenav .option > .icon{font-size:1.5rem; font-weight:400;}
+nav.sidenav .option i{font-size:1rem;}
+nav.sidenav .option > .dropdown{
+    position:absolute; top:calc(100% + .25rem); left:-1px; right:-1px; opacity:0; pointer-events:none;
+    z-index:1; transition:opacity .3s, top .3s;
+}
+nav.sidenav .option:hover > .dropdown{opacity:1; top:100%; pointer-events:all;}
+nav.sidenav .option > .dropdown > *{
+    display:flex; align-items:center; justify-content:center; width:100%; height:3.4125rem;
+    text-decoration:none; border-radius:0; border-top:0; border-bottom:1px solid transparent;
+    border-left:1px solid transparent; border-right:1px solid transparent;
+    font-size:1.5rem; font-weight:400;
+}
+nav.sidenav .option > .dropdown > *:first-child{border-top:1px solid transparent;}
+nav.sidenav .option .flag{
+    width:1.5rem; height:1rem; border-radius:.125rem; background-size:cover;
+    background-position:center;
+}
+
 nav.sidenav .scroll-wrapper{
-    width:100%; height:calc(100% - 8rem); max-height:calc(100% - 8rem); margin:3.75rem 0 0 0;
+    width:100%; height:calc(100% - 11.5rem); max-height:calc(100% - 11.5rem);
     overflow-x:hidden; overflow-y:auto; border-top:1px solid transparent;
 }
 
@@ -325,9 +352,6 @@ nav.footer .imgs > img{
     position:absolute; top:0; bottom:0; right:0; width:3.5rem; background:transparent;
     box-shadow:none; outline:none; border:0; font-size:1.75rem; padding:0; text-align:center;
     cursor:pointer; transition:color .3s;
-}
-@media screen and (max-width:1199.98px){
-    .global-search-container{display:none!important;}
 }
 
 

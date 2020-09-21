@@ -348,6 +348,35 @@
                 <div></div><div></div><div></div>
             </div>
         </div>
+        <div class="options">
+            <div class="option">
+                <div class="icon">ก</div>
+                <div class="dropdown">
+                    <div class="btn font-size-btn" data-size="-1">-</div>
+                    <div class="btn font-size-btn" data-size="0">ก</div>
+                    <div class="btn font-size-btn" data-size="1">+</div>
+                </div>
+            </div>
+            <div class="option">
+                <div class="icon">C</div>
+                <div class="dropdown">
+                    <div class="btn theme-btn" data-theme="0">C</div>
+                    <div class="btn theme-btn" data-theme="1">C</div>
+                    <div class="btn theme-btn" data-theme="2">C</div>
+                </div>
+            </div>
+            <div class="option">
+                <div class="flag" style="background-image:url('./assets/img/default/th_flag.png');"></div>
+                <div class="dropdown">
+                    <a href="#">
+                        <div class="flag" style="background-image:url('./assets/img/default/us_flag.png');"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="option global-search-toggle">
+                <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
         <div class="scroll-wrapper" data-simplebar>
             <div class="menu-container"></div>
         </div>
