@@ -764,13 +764,83 @@
 .fullcalendar-container.week .fc-toolbar.fc-header-toolbar{margin:0 0 .5rem 0;}
 .fullcalendar-container.week .fc-button{box-shadow:none!important;}
 .fullcalendar-container.week .fc-toolbar.fc-header-toolbar h2{font-size:2rem; font-weight:500;}
-.fullcalendar-container.week .fc-scroller{overflow:auto hidden!important; margin:3.9375rem 0 0 0;}
+.fullcalendar-container.week .fc-scroller{overflow:auto hidden!important; margin:.875rem 0 0 0;}
 .fullcalendar-container.week th.fc-axis.fc-widget-header:first-child{display:none;}
 .fullcalendar-container.week td.fc-axis.fc-widget-content:first-child{width:6rem!important;}
 .fullcalendar-container.week td{font-size:1.75rem; font-weight:300; text-align:center;}
-.fullcalendar-container.week .fc-bg > table{border:1px solid #eee;}
+.fullcalendar-container.week .fc-bg > table{border-bottom:1px solid #eee;}
 .fullcalendar-container.week .fc-bg td{border-bottom:1px solid #eee; vertical-align:middle;}
-.fullcalendar-container.week .fc-content-skeleton, .fullcalendar-container.week hr{display:none;}
+.fullcalendar-container.week hr{display:none;}
+.fullcalendar-container.week .fc-content-skeleton{position:absolute; top:0; left:0; right:0; z-index:3;}
+.fullcalendar-container.week .fc-timeGrid-view .fc-day-grid{position:relative; z-index:2;}
+.fullcalendar-container.week .fc-timeGrid-view .fc-day-grid .fc-row{min-height:3rem;}
+.fullcalendar-container.week .fc-timeGrid-view .fc-day-grid .fc-row .fc-content-skeleton{
+    padding-bottom:1rem;
+}
+.fullcalendar-container.week .fc .fc-axis{vertical-align:middle; padding:0 .25rem; white-space:nowrap;}
+.fullcalendar-container.week .fc-ltr .fc-axis{text-align:right;}
+.fullcalendar-container.week .fc-rtl .fc-axis{text-align:left;}
+.fullcalendar-container.week .fc-time-grid-container,
+.fullcalendar-container.week .fc-time-grid{position:relative; z-index:1;}
+.fullcalendar-container.week .fc-time-grid{min-height:100%;}
+.fullcalendar-container.week .fc-time-grid table{border:0 hidden transparent;}
+.fullcalendar-container.week .fc-time-grid > .fc-bg{z-index:1;}
+.fullcalendar-container.week .fc-time-grid .fc-slats,
+.fullcalendar-container.week .fc-time-grid > hr{position:relative; z-index:2;}
+.fullcalendar-container.week .fc-time-grid .fc-content-col{position:relative;}
+.fullcalendar-container.week .fc-time-grid .fc-content-skeleton{
+    position:absolute; z-index:3; top:0; left:1.9375rem; right:0;
+}
+.fullcalendar-container.week .fc-time-grid .fc-business-container{position:relative; z-index:1;}
+.fullcalendar-container.week .fc-time-grid .fc-bgevent-container{position:relative; z-index:2;}
+.fullcalendar-container.week .fc-time-grid .fc-highlight-container{position:relative; z-index:3;}
+.fullcalendar-container.week .fc-time-grid .fc-event-container{position:relative; z-index:4;}
+.fullcalendar-container.week .fc-time-grid .fc-now-indicator-line{z-index:5;}
+.fullcalendar-container.week .fc-time-grid .fc-mirror-container{position:relative; z-index:6;}
+.fullcalendar-container.week .fc-time-grid .fc-slats td{height:1.5em; border-bottom:0;}
+.fullcalendar-container.week .fc-time-grid .fc-slats .fc-minor td{border-top-style:dotted;}
+.fullcalendar-container.week .fc-time-grid .fc-highlight-container{position:relative;}
+.fullcalendar-container.week .fc-time-grid .fc-highlight{position:absolute; left:0; right:0;}
+.fullcalendar-container.week .fc-ltr .fc-time-grid .fc-event-container{margin:0 2.5% 0 2px;}
+.fullcalendar-container.week .fc-rtl .fc-time-grid .fc-event-container{margin:0 2px 0 2.5%;}
+
+.fullcalendar-container.week .fc-time-grid .fc-event,
+.fullcalendar-container.week .fc-time-grid .fc-bgevent{position:absolute; padding:1rem .0625rem;}
+.fullcalendar-container.week .fc-time-grid .fc-bgevent{left:0; right:0;}
+.fullcalendar-container.week .fc-time-grid-event{margin-bottom:1px;}
+.fullcalendar-container.week .fc-time-grid-event-inset{
+    -webkit-box-shadow:0px 0px 0px 1px #fff; box-shadow:0px 0px 0px 1px #fff;
+}
+.fullcalendar-container.week .fc-time-grid-event.fc-not-start{
+    border-top-width:0; padding-top:1px; border-top-left-radius:0; border-top-right-radius:0;
+}
+.fullcalendar-container.week .fc-time-grid-event.fc-not-end{
+  border-bottom-width:0; padding-bottom:1px; border-bottom-left-radius:0; border-bottom-right-radius:0;
+}
+.fullcalendar-container.week .fc-time-grid-event .fc-content{overflow:hidden; max-height:100%;}
+.fullcalendar-container.week .fc-time-grid-event .fc-time,
+.fullcalendar-container.week .fc-time-grid-event .fc-title{
+    padding:0 1px; font-size:1.25rem; line-height:1.2;
+}
+.fullcalendar-container.week .fc-time-grid-event.fc-allow-mouse-resize .fc-resizer{
+    left:0; right:0; bottom:0; height:.5rem; overflow:hidden; line-height:.5rem; font-size:.75rem;
+    font-family:monospace; text-align:center; cursor:s-resize;
+}
+.fullcalendar-container.week .fc-time-grid-event.fc-allow-mouse-resize .fc-resizer:after{content:'=';}
+.fullcalendar-container.week .fc-time-grid-event.fc-selected .fc-resizer{
+    border-radius:.3125rem; border-width:1px; width:.5rem; height:.5rem; border-style:solid;
+    border-color:inherit; background:#fff; left:50%; margin-left:-.3125rem; bottom:-.3125rem;
+}
+.fullcalendar-container.week .fc-time-grid .fc-now-indicator-line{border-top-width:1px; left:0; right:0;}
+.fullcalendar-container.week .fc-time-grid .fc-now-indicator-arrow{margin-top:-.3125rem;}
+.fullcalendar-container.week .fc-ltr .fc-time-grid .fc-now-indicator-arrow{
+    left:0; border-width:.3125rem 0 .3125rem .3125rem;
+    border-top-color:transparent; border-bottom-color:transparent;
+}
+.fullcalendar-container.week .fc-rtl .fc-time-grid .fc-now-indicator-arrow{
+    right:0; border-width:.3125rem 0 .3125rem .3125rem;
+    border-top-color:transparent; border-bottom-color:transparent;
+}
 
 @media screen and (max-width:1199.98px){
     .fullcalendar-container.month .fullcalendar-header > .calendar-title{font-size:2.75rem;}
@@ -785,8 +855,8 @@
     .fullcalendar-container.month .fullcalendar-header > .calendar-btn i{font-size:.875rem;}
     .fullcalendar-container.month .fc-day-header.fc-widget-header{height:2.25rem;}
     .fullcalendar-container.month .fc td{font-size:1.5rem; width:7rem;}
-    .fullcalendar-container.week td{font-size:1.5rem;}
-    .fullcalendar-container.week .fc-scroller{margin:3.375rem 0 0 0;}
+    /* .fullcalendar-container.week td{font-size:1.5rem;}
+    .fullcalendar-container.week .fc-scroller{margin:3.375rem 0 0 0;} */
 }
 
 .fullcalendar-container .fullcalendar-header > .calendar-title{color:#000;}
