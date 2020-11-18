@@ -1,12 +1,27 @@
 /* Reset */
 html, body{
-    padding:0; margin:0; overflow-x:hidden; overflow-y:auto;
-    font-size:16px; font-weight:300; line-height:1.1;
+    padding:0; margin:0; overflow-x:hidden; overflow-y:auto; font-family:'Prompt', sans-serif;
+    font-size:16px; font-weight:300; line-height:1.45; color:#000;
 }
 *{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; outline:none;}
-a{text-decoration:none;}
+a, a:hover{text-decoration:none;}
 img.img{display:block; width:100%; height:auto;}
-section{overflow:hidden;}
-@media screen and (max-width:1199.98px){
+i.zmdi{transform:translateY(.0625rem);}
+@media screen and (max-width:991.98px){
     html.sidenav-opened, body.sidenav-opened{overflow-y:hidden!important;}
+}
+
+
+/* Hamburger */
+.hamburger{cursor:pointer;}
+.hamburger > *{width:2rem; height:.14rem; background:#000; transition:all .5s;}
+.hamburger > *:nth-child(2){margin:.375rem 0;}
+.hamburger.active > *:nth-child(1){
+    -webkit-transform:rotate(-45deg)translate(-.375rem, .375rem);
+    transform:rotate(-45deg)translate(-.375rem, .375rem);
+}
+.hamburger.active > *:nth-child(2){opacity:0;}
+.hamburger.active > *:nth-child(3){
+    -webkit-transform:rotate(45deg)translate(-.375rem,-.375rem);
+    transform:rotate(45deg)translate(-.375rem, -.375rem);
 }

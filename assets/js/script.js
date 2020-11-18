@@ -2,10 +2,9 @@ $(function(){ 'use strict';
 
     // Topnav
     var topnav = $('nav.topnav'),
-        topnavFilter = $('.topnav-filter'),
         sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container'),
-        sidenavBtns = $('nav.topnav .sidenav-btn, nav.sidenav .sidenav-btn');
+        sidenavToggle = $('nav.topnav .sidenav-toggle, nav.sidenav .sidenav-toggle');
     var backToTop = $('.back-to-top');
     if(topnav.length){
 
@@ -15,69 +14,36 @@ $(function(){ 'use strict';
             checkOnScroll( $(this).scrollTop() );
         });
 
-        // Language dropdown
-        topnav.find('.form-language .ui.dropdown').dropdown();
-        topnav.find('.form-language input[name=language]').change(function(){
-            $(this).closest('.form-language')[0].submit();
-        });
-
-        // Topnav Submenu Tab
-        topnav.find('.submenu-container .pagination').each(function(){
-            var topnavPagination = $(this);
-            topnavPagination.find('.page-btn').click(function(e){
-                e.preventDefault();
-                topnavPagination.find('.page-btn').removeClass('active');
-                $(this).addClass('active');
-                $(this).closest('.submenu-container').find('.submenu-tab').removeClass('active');
-                $(this).closest('.submenu-container')
-                    .find('.submenu-tab[data-submenu="'+$(this).data('submenu')+'"]')
-                        .addClass('active');
-            });
-        });
-
-        // Topnav Filter
-        topnav.find('.menu.has-children').mouseenter(function(){
-            topnavFilter.addClass('active');
-        });
-        topnav.find('.menu.has-children').mouseleave(function(){
-            topnavFilter.removeClass('active');
-        });
-
         // Sidenav buttons
-        sidenavBtns.click(function(e){
+        sidenavToggle.click(function(e){
             e.preventDefault();
             if($('body').hasClass('sidenav-opened')){
                 $('html, body').removeClass('sidenav-opened');
-                sidenavBtns.find('> *').removeClass('active');
+                sidenavToggle.find('> *').removeClass('active');
                 sidenav.removeClass('active');
             }else{
                 $('html, body').addClass('sidenav-opened');
-                sidenavBtns.find('> *').addClass('active');
+                sidenavToggle.find('> *').addClass('active');
                 sidenav.addClass('active');
             }
         });
         $('.sidenav-filter').click(function(e){
             e.preventDefault();
             $('html, body').removeClass('sidenav-opened');
-            sidenavBtns.find('> *').removeClass('active');
+            sidenavToggle.find('> *').removeClass('active');
             sidenav.removeClass('active');
         });
 
         // Generate sidenav
-        sidenavMenus.html( topnav.find('#topnav-menu-container').html() );
-
-        sidenavMenus.find('.menu.icon-menu > a').eq(0).html('หน้าแรก');
-        sidenavMenus.find('.menu.icon-menu').eq(0).removeClass('icon-menu');
-
-        sidenavMenus.find('.menu.icon-menu').remove();
-        sidenavMenus.find('.has-children').each(function(){
-            $(this).append('<div class="dropdown-toggle"><i class="fas fa-chevron-right"></i></div>');
-        });
-        sidenavMenus.find('.dropdown-toggle').click(function(e){
+        sidenavMenus.html( topnav.find('.menu-container').html() );
+        sidenavMenus.find('.menu.has-submenu > a').click(function(e){
             e.preventDefault();
-            var self = $(this);
-            self.toggleClass('active');
-            self.prev().slideToggle();
+            var parent = $(this).parent(),
+                target = parent.find('> .submenu-container');
+            if(target.length){
+                parent.toggleClass('opened');
+                target.slideToggle();
+            }
         });
 
         // Back to Top
@@ -88,17 +54,15 @@ $(function(){ 'use strict';
     }
     function checkOnScroll(st){
         if(st > 400){
-            topnav.addClass('sticky');
             backToTop.addClass('active');
         }else{
-            topnav.removeClass('sticky');
             backToTop.removeClass('active');
         }
     }
 
     // Global Search
     var globalSearchContainer = $('.global-search-container');
-    if(globalSearchContainer.hasClass('use-gsap')){
+    if(0 && globalSearchContainer.hasClass('use-gsap')){
         var globalSearchTl =  new TimelineMax({paused: true})
             .to('.global-search-container', .6, {
                 autoAlpha: 1, ease: Power3.easeInOut
@@ -132,80 +96,11 @@ $(function(){ 'use strict';
     }
 
 
-    // Font Sizes
-    var bodySize = 16;
-    $('.btn.font-size-btn').click(function(e){
-        e.preventDefault();
-        var s = Number($(this).data('size'));
-        if(s==0) bodySize = 16;
-        else if(s==1 || s==-1) bodySize += s;
-        else bodySize = s;
-        $('html, body').css('font-size', bodySize+'px');
-    });
-
-    // Themes
-    $('.theme-btn').click(function(e){
-        e.preventDefault();
-        $('#css-theme').attr('href', './assets/css/themes/'+$(this).data('theme')+'.css'); 
-    });
-
-
     // Date Picker
-    // $('input.date-picker').datepicker();
     $('input.date-picker').each(function(){
         new Datepicker($(this)[0], {});
     });
     
-    // Calendar
-    var calendar;
-    if($('.calendar-container > .calendar-wrapper').length){
-        if(!$('.banner-event').length){
-            $('.calendar-container > .calendar-wrapper').simpleCalendar({
-                months: [
-                    'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 
-                    'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
-                ],
-                days: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'],
-                displayYear: false,
-                fixedStartDay: 0,
-                displayEvent: true,
-                disableEventDetails: false,
-                disableEmptyDetails: true,
-                events: [
-                    {
-                        startDate: new Date('08-18-2020'),
-                        endDate: new Date('08-18-2020'),
-                        summary: 'กิจกรรมที่ 1'
-                    }
-                ]
-            });
-        }else{
-            calendar = $('.calendar-container > .calendar-wrapper').simpleCalendar({
-                months: [
-                    'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 
-                    'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'
-                ],
-                days: ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'],
-                displayYear: false,
-                fixedStartDay: 0,
-                displayEvent: true,
-                disableEventDetails: false,
-                disableEmptyDetails: true,
-                events: [
-                    {
-                        startDate: new Date('08-18-2020'),
-                        endDate: new Date('08-18-2020'),
-                        summary: 'กิจกรรมที่ 1'
-                    }
-                ],
-                onMonthChange: function(month, year){
-                    $('.banner-event').find('.slides').css('--month', month);
-                    $('.banner-event').find('.slide').removeClass('active');
-                    $('.banner-event').find('.slide[data-month="'+month+'"]').addClass('active');
-                }
-            });
-        }
-    }
 
     // Banner Event
     if($('.banner-event').length){
@@ -442,6 +337,6 @@ $(function(){ 'use strict';
 
     
     // AOS Animation
-    // AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
+    AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
 
 });
