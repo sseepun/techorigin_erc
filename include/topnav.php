@@ -97,6 +97,32 @@
 </nav>
 <div class="sidenav-filter"></div>
 
+<!-- Policy -->
+<nav class="policy-nav">
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-container">
+                <h6>This website uses cookies</h6>
+                <p>
+                    This website uses cookies to improve user experience. By using our website 
+                    you consent to all cookies in accordance with our Cookie Policy.
+                </p>
+            </div>
+            <div class="btns">
+                <a class="btn btn-secondary btn-xs" href="#">
+                    ยอมรับ
+                </a>
+                <a class="btn btn-xs" href="#">
+                    ปฏิเสธ
+                </a>
+                <a href="#">
+                    <i class="zmdi zmdi-close"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <!-- Search Container -->
 <div class="global-search-container use-gsap d-none">
     <div class="wrapper">
@@ -125,29 +151,3 @@
         </div>
     </div>
 </div>
-
-<!-- Policy -->
-<nav class="policy-nav">
-    <div class="container">
-        <div class="wrapper">
-            <div class="text-container">
-                <h6>This website uses cookies</h6>
-                <p>
-                    This website uses cookies to improve user experience. By using our website 
-                    you consent to all cookies in accordance with our Cookie Policy.
-                </p>
-            </div>
-            <div class="btns">
-                <a class="btn btn-secondary btn-xs" href="#">
-                    ยอมรับ
-                </a>
-                <a class="btn btn-xs" href="#">
-                    ปฏิเสธ
-                </a>
-                <a href="#">
-                    <i class="zmdi zmdi-close"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</nav>

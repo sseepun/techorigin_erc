@@ -21,13 +21,13 @@
         </div>
     </section>
 
-    <section class="search-01 section-padding">
+    <section class="search-01 section-padding-01">
         <div class="container">
-            <h4 class="text-center color-secondary">
+            <h4 class="text-center color-secondary" data-aos="fade-up" data-aos-delay="0">
                 ค้นหาองค์กรปกครองส่วนท้องถิ่นที่ได้รางวัล
             </h4>
-            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
-            <form action="" method="GET">
+            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
+            <form action="" method="GET" data-aos="fade-up" data-aos-delay="300">
                 <div class="search-box mt bg-primary">
                     <input type="text" name="keyword" class="lg" placeholder="คำค้นหา..." required />
                 </div>
@@ -72,14 +72,14 @@
 
     <section class="content-01 section-padding-02">
         <div class="container">
-            <h4 class="text-center color-secondary">
+            <h4 class="text-center color-secondary" data-aos="fade-up" data-aos-delay="0">
                 เกี่ยวกับรางวัล
             </h4>
-            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
-            <p class="text-center">
+            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
+            <p class="text-center" data-aos="fade-up" data-aos-delay="300">
                 การมอบรางวัลพระปกเกล้าแก่องค์กรปกครองส่วนท้องถิ่น แบ่งการมอบรางวัลพระปกเกล้า ออกเป็น 2 ระดับ คือ
             </p>
-            <div class="grids">
+            <div class="grids" data-aos="fade-up" data-aos-delay="0">
 
                 <div class="grid md-50 sm-100">
                     <div class="ss-title">
@@ -87,7 +87,7 @@
                             <img src="assets/img/hero/01.png" alt="Icon" />
                         </div>
                         <div class="text-container">
-                            <h1>รางวัลพระปกเกล้า</h1>
+                            <h3>รางวัลพระปกเกล้า</h3>
                             <p>
                                 ให้สำหรับองค์กรปกครองส่วนท้องถิ่นที่มีความเป็นเลิศในแต่ละด้าน
                                 อันเป็นแบบอย่างที่ดีแก่องค์กรปกครองส่วนท้องถิ่นอื่นๆ ในประเทศไทย
@@ -119,7 +119,7 @@
                             <img src="assets/img/hero/02.png" alt="Icon" />
                         </div>
                         <div class="text-container">
-                            <h1 class="color-primary">รางวัลพระปกเกล้าทองคำ</h1>
+                            <h3 class="color-primary">รางวัลพระปกเกล้าทองคำ</h3>
                             <p>
                                 เพื่อเป็นแรงจูงใจแก่องค์กรปกครองส่วนท้องถิ่นที่เคยได้รับรางวัล
                                 พระปกเกล้า มีการพัฒนาต่อยอดการดำเนินงานอย่างต่อเนื่อง
@@ -152,11 +152,11 @@
 
     <section class="content-02 section-padding-02">
         <div class="container">
-            <h4 class="text-center color-secondary">
+            <h4 class="text-center color-secondary" data-aos="fade-up" data-aos-delay="0">
                 ข่าวสารและกิจกรรม
             </h4>
-            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
-            <div class="slide-container">
+            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
+            <div class="slide-container" data-aos="fade-up" data-aos-delay="300">
                 <div class="slides">
                     <?php for($i=0; $i<2; $i++){?>
 
@@ -266,11 +266,11 @@
 
     <section class="content-03 section-padding-02">
         <div class="container">
-            <h4 class="text-center color-secondary">
+            <h4 class="text-center color-secondary" data-aos="fade-up" data-aos-delay="0">
                 คลิปวีดิโอ
             </h4>
-            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
-            <div class="slide-container">
+            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
+            <div class="slide-container" data-aos="fade-up" data-aos-delay="300">
                 <div class="slides">
                     <?php for($i=0; $i<5; $i++){?>
                         <div class="slide">
@@ -298,11 +298,11 @@
 
     <section class="section-padding-02">
         <div class="container">
-            <h4 class="text-center color-secondary">
+            <h4 class="text-center color-secondary" data-aos="fade-up" data-aos-delay="0">
                 สอบถามข้อมูล
             </h4>
-            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
-            <form action="" method="POST">
+            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
+            <form action="" method="POST" data-aos="fade-up" data-aos-delay="300">
                 <div class="gallery-grids mt-4">
                     <div class="grid lg-50">
                         <input type="text" class="gray" placeholder="ชื่อ - นามสกุล *" required />
@@ -337,11 +337,11 @@
 
     <section class="client-01 section-padding-03">
         <div class="container">
-            <h4 class="text-center color-secondary">
+            <h4 class="text-center color-secondary" data-aos="fade-up" data-aos-delay="0">
                 เว็บไซต์ที่เกี่ยวข้อง
             </h4>
-            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
-            <div class="clients">
+            <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
+            <div class="clients" data-aos="fade-up" data-aos-delay="300">
                 <a class="client" href="#">
                     <img src="assets/img/client/01.png" alt="Client" />
                 </a>
