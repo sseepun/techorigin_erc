@@ -222,8 +222,8 @@ input[type=number]:focus, select:focus, textarea:focus{
 /* Popup Container */
 .popup-container{
     display:block; position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:100;
-    opacity:0; pointer-events:none; background:rgba(0,0,0,.75); transition:opacity .6s;
-    backdrop-filter:blur(4px);
+    opacity:0; pointer-events:none; background:rgba(0,0,0,.75); padding:0 0 4rem 0;
+    backdrop-filter:blur(4px); transition:opacity .6s;
 }
 .popup-container.active{opacity:1; pointer-events:all;}
 .popup-container > .wrapper{
