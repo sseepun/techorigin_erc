@@ -21,71 +21,73 @@
                         ลงทะเบียน
                     </h4>
                     <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
-                    <form action="" method="POST">
-                        <div class="gallery-grids">
-                            <div class="grid sm-100">
-                                <div class="position-relative">
-                                    <input type="text" class="gray" placeholder="ชื่อ - นามสกุล" required />
-                                    <div class="input-icon">
-                                        <i class="zmdi zmdi-account"></i>
+                    <div class="scroll-wrapper">
+                        <form action="" method="POST">
+                            <div class="gallery-grids">
+                                <div class="grid sm-100">
+                                    <div class="position-relative">
+                                        <input type="text" class="gray" placeholder="ชื่อ - นามสกุล" required />
+                                        <div class="input-icon">
+                                            <i class="zmdi zmdi-account"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100">
+                                    <div class="position-relative">
+                                        <input type="text" class="gray" placeholder="หน่วยงาน" />
+                                        <div class="input-icon">
+                                            <i class="zmdi zmdi-home"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100">
+                                    <div class="position-relative">
+                                        <input type="email" class="gray" placeholder="อีเมล" required />
+                                        <div class="input-icon">
+                                            <i class="zmdi zmdi-email"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100">
+                                    <div class="position-relative">
+                                        <input type="text" class="gray" placeholder="เบอร์ถือมือ" required />
+                                        <div class="input-icon">
+                                            <i class="zmdi zmdi-phone"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100">
+                                    <div class="position-relative">
+                                        <input type="password" class="gray" placeholder="******* รหัสผ่าน" required />
+                                        <div class="input-icon">
+                                            <i class="zmdi zmdi-lock"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid sm-100">
+                                    <div class="position-relative">
+                                        <input type="password" class="gray" placeholder="******* ยืนยันรหัสผ่าน" required />
+                                        <div class="input-icon">
+                                            <i class="zmdi zmdi-lock"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid sm-100">
-                                <div class="position-relative">
-                                    <input type="text" class="gray" placeholder="หน่วยงาน" />
-                                    <div class="input-icon">
-                                        <i class="zmdi zmdi-home"></i>
-                                    </div>
+                            <div class="gallery-grids">
+                                <div class="grid sm-50">
+                                    <button type="submit" class="btn btn-secondary btn-sm w-full">
+                                        ยืนยัน
+                                    </button>
+                                </div>
+                                <div class="grid sm-50">
+                                    <a class="btn btn-gray bcolor-primary btn-sm w-full btn-popup-toggle" 
+                                    data-popup="register" href="#">
+                                        ยกเลิก
+                                    </a>
                                 </div>
                             </div>
-                            <div class="grid sm-100">
-                                <div class="position-relative">
-                                    <input type="email" class="gray" placeholder="อีเมล" required />
-                                    <div class="input-icon">
-                                        <i class="zmdi zmdi-email"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid sm-100">
-                                <div class="position-relative">
-                                    <input type="text" class="gray" placeholder="เบอร์ถือมือ" required />
-                                    <div class="input-icon">
-                                        <i class="zmdi zmdi-phone"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid sm-100">
-                                <div class="position-relative">
-                                    <input type="password" class="gray" placeholder="******* รหัสผ่าน" required />
-                                    <div class="input-icon">
-                                        <i class="zmdi zmdi-lock"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid sm-100">
-                                <div class="position-relative">
-                                    <input type="password" class="gray" placeholder="******* ยืนยันรหัสผ่าน" required />
-                                    <div class="input-icon">
-                                        <i class="zmdi zmdi-lock"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-grids">
-                            <div class="grid sm-50">
-                                <button type="submit" class="btn btn-secondary btn-sm w-full">
-                                    ยืนยัน
-                                </button>
-                            </div>
-                            <div class="grid sm-50">
-                                <a class="btn btn-gray bcolor-primary btn-sm w-full btn-popup-toggle" 
-                                data-popup="register" href="#">
-                                    ยกเลิก
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

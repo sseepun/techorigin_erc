@@ -38,7 +38,7 @@
 }
 @media screen and (min-width:768px){
     .content-01 .p{
-        height:10.125rem; overflow:hidden; display:-webkit-box; -webkit-line-clamp:7;
+        height:9.875rem; overflow:hidden; display:-webkit-box; -webkit-line-clamp:7;
         -webkit-box-orient:vertical;
     }
 }

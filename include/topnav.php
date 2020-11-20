@@ -167,43 +167,45 @@
                     ติดต่อเรา
                 </h4>
                 <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
-                <form action="" method="POST">
-                    <div class="gallery-grids">
-                        <div class="grid sm-100">
-                            <div class="position-relative">
-                                <input type="text" name="username" class="gray" placeholder="เบอร์มือถือ / อีเมล" required />
-                                <div class="input-icon">
-                                    <i class="zmdi zmdi-account"></i>
+                <div class="scroll-wrapper">
+                    <form action="" method="POST">
+                        <div class="gallery-grids">
+                            <div class="grid sm-100">
+                                <div class="position-relative">
+                                    <input type="text" name="username" class="gray" placeholder="เบอร์มือถือ / อีเมล" required />
+                                    <div class="input-icon">
+                                        <i class="zmdi zmdi-account"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid sm-100">
+                                <div class="position-relative">
+                                    <input type="password" name="password" class="gray" placeholder="รหัสผ่าน" required />
+                                    <div class="input-icon">
+                                        <i class="zmdi zmdi-lock"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="grid sm-100">
-                            <div class="position-relative">
-                                <input type="password" name="password" class="gray" placeholder="รหัสผ่าน" required />
-                                <div class="input-icon">
-                                    <i class="zmdi zmdi-lock"></i>
-                                </div>
+                        <div class="gallery-grids">
+                            <div class="grid sm-50">
+                                <button type="submit" class="btn btn-secondary btn-sm w-full">
+                                    เข้าสู่ระบบ
+                                </button>
+                            </div>
+                            <div class="grid sm-50">
+                                <a class="btn btn-gray bcolor-primary btn-sm w-full" href="#">
+                                    ลงทะเบียน
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="gallery-grids">
-                        <div class="grid sm-50">
-                            <button type="submit" class="btn btn-secondary btn-sm w-full">
-                                เข้าสู่ระบบ
-                            </button>
-                        </div>
-                        <div class="grid sm-50">
-                            <a class="btn btn-gray bcolor-primary btn-sm w-full" href="#">
-                                ลงทะเบียน
+                        <p class="text-center mt-3">
+                            <a class="fw-400 color-black h-color-primary" href="#">
+                                ลืมรหัสผ่าน?
                             </a>
-                        </div>
-                    </div>
-                    <p class="text-center mt-3">
-                        <a class="fw-400 color-black h-color-primary" href="#">
-                            ลืมรหัสผ่าน?
-                        </a>
-                    </p>
-                </form>
+                        </p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

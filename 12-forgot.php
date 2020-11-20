@@ -25,31 +25,33 @@
                         กรุณากรอกเบอร์มือถือหรืออีเมล <br>
                         เพื่อรับรหัสผ่านสำหรับใช้ในการเข้าสู่ระบบ
                     </p>
-                    <form action="" method="POST">
-                        <div class="gallery-grids">
-                            <div class="grid sm-100">
-                                <div class="position-relative">
-                                    <input type="text" class="gray" placeholder="เบอร์มือถือ / อีเมล" required />
-                                    <div class="input-icon">
-                                        <i class="zmdi zmdi-account"></i>
+                    <div class="scroll-wrapper">
+                        <form action="" method="POST">
+                            <div class="gallery-grids">
+                                <div class="grid sm-100">
+                                    <div class="position-relative">
+                                        <input type="text" class="gray" placeholder="เบอร์มือถือ / อีเมล" required />
+                                        <div class="input-icon">
+                                            <i class="zmdi zmdi-account"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="gallery-grids">
-                            <div class="grid sm-50">
-                                <button type="submit" class="btn btn-secondary btn-sm w-full">
-                                    ยืนยัน
-                                </button>
+                            <div class="gallery-grids">
+                                <div class="grid sm-50">
+                                    <button type="submit" class="btn btn-secondary btn-sm w-full">
+                                        ยืนยัน
+                                    </button>
+                                </div>
+                                <div class="grid sm-50">
+                                    <a class="btn btn-gray bcolor-primary btn-sm w-full btn-popup-toggle" 
+                                    data-popup="forgot" href="#">
+                                        ยกเลิก
+                                    </a>
+                                </div>
                             </div>
-                            <div class="grid sm-50">
-                                <a class="btn btn-gray bcolor-primary btn-sm w-full btn-popup-toggle" 
-                                data-popup="forgot" href="#">
-                                    ยกเลิก
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

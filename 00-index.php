@@ -73,7 +73,7 @@
     <section class="content-01 section-padding-02">
         <div class="container">
             <h4 class="text-center color-secondary" data-aos="fade-up" data-aos-delay="0">
-                เกี่ยวกับรางวัล
+                เกณฑ์การพิจารณา
             </h4>
             <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
             <p class="text-center" data-aos="fade-up" data-aos-delay="300">

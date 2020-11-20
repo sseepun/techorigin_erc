@@ -71,7 +71,7 @@
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 
-    <script>var focusProvince = false, focusRegion = 2;</script>
+    <script>var focusProvince = 'Chiang Mai', focusRegion = false;</script>
     <script src="assets/js/d3.v5.min.js"></script>
     <script src="assets/js/thai-map.js"></script>
     <script src="assets/js/thai-map-process.js"></script>
