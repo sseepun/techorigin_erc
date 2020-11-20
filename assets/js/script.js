@@ -111,6 +111,13 @@ $(function(){ 'use strict';
         }
     }
 
+    
+    // Button Popup
+    $('.btn-popup-toggle').click(function(e){
+        e.preventDefault();
+        $('.popup-container[data-popup="'+$(this).data('popup')+'"]').toggleClass('active');
+    });
+
 
     // Banner 01
     var banner01 = $('.banner-01');

@@ -10,6 +10,18 @@
 .banner-01 .slide-container .dots{bottom:1rem;}
 
 
+/* Contact 01 */
+.contact-01 .footer{
+    background:transparent; padding:1.25rem 0 2rem 0; margin:0 0 2.5rem 0;
+}
+@media screen and (max-width:1199.98px){
+    .contact-01 .footer{padding:1.125rem 0 1.5rem 0; margin:0 0 2.25rem 0;}
+}
+@media screen and (max-width:767.98px){
+    .contact-01 .footer{padding:1rem 0 1.25rem 0; margin:0 0 1.75rem 0;}
+}
+
+
 /* Content 01 */
 .content-01 .grid{margin-top:3rem;}
 .content-01 .ss-img{margin:2rem 0 2.375rem 0;}
@@ -72,6 +84,25 @@
 @media screen and (max-width:767.98px){
     .content-04 .img-content.vertical{height:16rem;}
     .content-04 h4{height:auto; margin:0 0 1rem 0;}
+}
+
+/* Content 05 */
+.content-05 .img-content{
+    display:block; width:100%; max-width:36rem; height:auto; margin:2rem auto;
+}
+.content-05 .sep-01{margin-bottom:1.75rem;}
+.content-05 h6{margin-top:1.375rem;}
+.content-05 p{margin-top:1.25rem;}
+.content-05 table.p-list{width:calc(100% - 3rem); margin:1.25rem 0 1.25rem auto;}
+.content-05 table.p-list td{vertical-align:baseline;}
+.content-05 table.p-list td:first-child{padding-right:.5rem; white-space:nowrap;}
+@media screen and (max-width:991.98px){
+    .content-05 table.p-list{width:calc(100% - 2rem);}
+}
+@media screen and (max-width:767.98px){
+    .content-05 h6{margin-top:1.3125rem;}
+    .content-05 p{margin-top:1.125rem;}
+    .content-05 table.p-list{width:calc(100% - 1rem); margin:1.125rem 0 1.125rem auto;}
 }
 
 

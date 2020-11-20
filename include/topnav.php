@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="items">
                     <div class="item">
-                        <a href="#">
+                        <a class="btn-popup-toggle" data-popup="signin" href="#">
                             <i class="zmdi zmdi-account mr-1"></i> เข้าสู่ระบบ
                         </a>
                     </div>
@@ -148,6 +148,63 @@
                     <div class="ss-tag type-5"></div>
                 </div>
             </form>
+        </div>
+    </div>
+</div>
+
+<!-- Signin Popup -->
+<div class="popup-container" data-popup="signin">
+    <div class="wrapper">
+        <div class="close-filter btn-popup-toggle" data-popup="signin"></div>
+        <div class="popup-box">
+            <div class="popup-header" style="background-image:url('assets/img/content/02.jpg');">
+                <div class="hero-container">
+                    <img src="assets/img/hero/07.png" alt="Hero" />
+                </div>
+            </div>
+            <div class="popup-body">
+                <h4 class="text-center color-secondary">
+                    ติดต่อเรา
+                </h4>
+                <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
+                <form action="" method="POST">
+                    <div class="gallery-grids">
+                        <div class="grid sm-100">
+                            <div class="position-relative">
+                                <input type="text" name="username" class="gray" placeholder="เบอร์มือถือ / อีเมล" required />
+                                <div class="input-icon">
+                                    <i class="zmdi zmdi-account"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid sm-100">
+                            <div class="position-relative">
+                                <input type="password" name="password" class="gray" placeholder="รหัสผ่าน" required />
+                                <div class="input-icon">
+                                    <i class="zmdi zmdi-lock"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-grids">
+                        <div class="grid sm-50">
+                            <button type="submit" class="btn btn-secondary btn-sm w-full">
+                                เข้าสู่ระบบ
+                            </button>
+                        </div>
+                        <div class="grid sm-50">
+                            <a class="btn btn-gray bcolor-primary btn-sm w-full" href="#">
+                                ลงทะเบียน
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-center mt-3">
+                        <a class="fw-400 color-black h-color-primary" href="#">
+                            ลืมรหัสผ่าน?
+                        </a>
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
 </div>
