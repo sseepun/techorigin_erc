@@ -131,6 +131,21 @@ input[type=number]:focus, select:focus, textarea:focus{
 }
 .radio-container input[type=radio]:checked + label::after{background:#185f3f;}
 
+.checkbox-container{width:100%; position:relative; margin:.75rem 0 0 0;}
+.checkbox-container input[type=checkbox]{position:absolute; top:0; left:0; opacity:0;}
+.checkbox-container input[type=checkbox] + label{
+    position:relative; width:100%; margin:0; cursor:pointer; padding:0 0 0 1.5rem;
+}
+.checkbox-container input[type=checkbox] + label::before{
+    content:'\f26b'; position:absolute; top:.1875rem; left:0; width:1rem; height:1rem;
+    border-radius:.1875rem; background:#d0d0d0; color:#fff; text-align:center;
+    font:normal normal normal 14px/1 'Material-Design-Iconic-Font'; line-height:1rem;
+    font-size:.8125rem; transition:background .25s, color .25s;
+}
+.checkbox-container input[type=checkbox]:checked + label::before{
+    background:#185f3f; color:#d6a94e;
+}
+
 
 /* Buttons */
 .btns{width:100%; margin:1.5625rem 0 0 0; text-align:center;}
