@@ -62,6 +62,14 @@
                 <div class="thai-map-wrapper">
                     <div class="wrapper">
                         <div class="thai-map" id="thai-map"></div>
+                        <div class="region-tags">
+                            <img class="region region-1" src="assets/img/hero/region-1.png" alt="Region 1" />
+                            <img class="region region-2" src="assets/img/hero/region-2.png" alt="Region 2" />
+                            <img class="region region-3" src="assets/img/hero/region-3.png" alt="Region 3" />
+                            <img class="region region-4" src="assets/img/hero/region-4.png" alt="Region 4" />
+                            <img class="region region-5" src="assets/img/hero/region-5.png" alt="Region 5" />
+                            <img class="region region-6" src="assets/img/hero/region-6.png" alt="Region 6" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,7 +79,7 @@
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 
-    <script>var focusProvince = false, focusRegion = 2;</script>
+    <script>var focusProvince = false, focusRegion = 5;</script>
     <script src="assets/js/d3.v5.min.js"></script>
     <script src="assets/js/thai-map.js"></script>
     <script src="assets/js/thai-map-process.js"></script>

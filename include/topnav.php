@@ -31,33 +31,33 @@
         <div class="bottom-container">
             <div class="container">
                 <div class="menu-container menu-pc">
-                    <div class="menu active">
-                        <a href="#">หน้าแรก</a>
+                    <div class="menu <?php if(!empty($pageActive) && $pageActive=='Home')echo 'active'; ?>">
+                        <a href="index.php">หน้าแรก</a>
                     </div>
-                    <div class="menu has-submenu">
-                        <a href="#">เกี่ยวกับรางวัล</a>
+                    <div class="menu has-submenu <?php if(!empty($pageActive) && $pageActive=='About')echo 'active'; ?>">
+                        <a href="javascript:">เกี่ยวกับรางวัล</a>
                         <div class="submenu-container">
                             <div class="submenu">
-                                <a href="#">รางวัลพระปกเกล้า</a>
+                                <a href="01-about.php">รางวัลพระปกเกล้า</a>
                             </div>
                             <div class="submenu">
-                                <a href="#">รางวัลพระปกเกล้าทองคำ</a>
+                                <a href="02-about.php">รางวัลพระปกเกล้าทองคำ</a>
                             </div>
                         </div>
                     </div>
-                    <div class="menu">
-                        <a href="#">เกณฑ์การพิจารณา</a>
+                    <div class="menu <?php if(!empty($pageActive) && $pageActive=='Criterion')echo 'active'; ?>">
+                        <a href="03-criterion.php">เกณฑ์การพิจารณา</a>
                     </div>
-                    <div class="menu">
-                        <a href="#">สมัครรางวัล</a>
+                    <div class="menu <?php if(!empty($pageActive) && $pageActive=='Register')echo 'active'; ?>">
+                        <a href="04-register-01.php">สมัครรางวัล</a>
                     </div>
-                    <div class="menu">
+                    <div class="menu <?php if(!empty($pageActive) && $pageActive=='Results')echo 'active'; ?>">
                         <a href="#">อปท. ที่ได้รางวัล</a>
                     </div>
-                    <div class="menu">
+                    <div class="menu <?php if(!empty($pageActive) && $pageActive=='Document')echo 'active'; ?>">
                         <a href="#">เอกสาร / งานวิจัย</a>
                     </div>
-                    <div class="menu">
+                    <div class="menu <?php if(!empty($pageActive) && $pageActive=='Contact')echo 'active'; ?>">
                         <a href="#">ติดต่อเรา</a>
                     </div>
                 </div>
@@ -122,35 +122,6 @@
         </div>
     </div>
 </nav>
-
-<!-- Search Container -->
-<div class="global-search-container use-gsap d-none">
-    <div class="wrapper">
-        <div class="hamburger active global-search-toggle">
-            <div></div><div></div><div></div>
-        </div>
-        <div class="container">
-            <form action="./" method="GET">
-                <h1 class="color-white text-center mt-0 mb-0-5">
-                    คุณกำลังมองหาอะไร?
-                </h1>
-                <div class="input-container">
-                    <input type="text" name="keywords" placeholder="ค้นหา" required>
-                    <button type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-                <div class="ss-tags mt-1 text-center">
-                    <div class="ss-tag type-1"></div>
-                    <div class="ss-tag type-2"></div>
-                    <div class="ss-tag type-3"></div>
-                    <div class="ss-tag type-4"></div>
-                    <div class="ss-tag type-5"></div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
 
 <!-- Signin Popup -->
 <div class="popup-container" data-popup="signin">

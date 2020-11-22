@@ -70,7 +70,7 @@
                             รางวัลพระปกเกล้า <span class="color-secondary">“จังหวัดชลบุรี”</span>
                         </h4>
                         <div class="table-wrapper">
-                            <table class="table">
+                            <table class="table table-01">
                                 <thead>
                                     <tr>
                                         <th class="text-center h6 ws-nowrap">ปี พ.ศ.</th>

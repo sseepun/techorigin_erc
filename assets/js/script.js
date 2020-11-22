@@ -118,6 +118,11 @@ $(function(){ 'use strict';
         $('.popup-container[data-popup="'+$(this).data('popup')+'"]').toggleClass('active');
     });
 
+    // Date Picker
+    $('input.date-picker').each(function(){
+        new Datepicker($(this)[0], {});
+    });
+
 
     // Tab Container
     var tabContainers = $('.tab-container');

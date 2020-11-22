@@ -5,7 +5,7 @@
     <?php include_once('include/style.php'); ?>
 </head>
 <body>
-    <?php include_once('include/topnav.php'); ?>
+    <?php $pageActive = 'Register'; include_once('include/topnav.php'); ?>
 
     <section class="content-04 section-padding">
         <div class="container">
@@ -22,7 +22,7 @@
                         </h4>
                         <img class="img-content" src="assets/img/hero/05.png" alt="Icon" />
                         <div class="btns">
-                            <a class="btn btn-secondary" href="#">
+                            <a class="btn btn-secondary" href="04-register-02.php">
                                 สมัคร
                             </a>
                         </div>
@@ -35,7 +35,7 @@
                         </h4>
                         <img class="img-content" src="assets/img/hero/06.png" alt="Icon" />
                         <div class="btns">
-                            <a class="btn btn-secondary" href="#">
+                            <a class="btn btn-secondary" href="04-register-02.php">
                                 สมัคร
                             </a>
                         </div>

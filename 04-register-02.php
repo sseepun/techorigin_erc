@@ -86,10 +86,10 @@
                 </div>
             </div>
             <div class="d-flex ai-center jc-space-between mt-4" data-aos="fade-up" data-aos-delay="450">
-                <a class="btn btn-primary" href="#">
+                <a class="btn btn-primary xs-mw-adaptive" href="#">
                     <i class="zmdi zmdi-chevron-left mr-2"></i> ก่อนหน้า
                 </a>
-                <a class="btn btn-primary" href="#">
+                <a class="btn btn-primary xs-mw-adaptive" href="#">
                     ต่อไป <i class="zmdi zmdi-chevron-right ml-2"></i>
                 </a>
             </div>

@@ -5,7 +5,7 @@
     <?php include_once('include/style.php'); ?>
 </head>
 <body>
-    <?php include_once('include/topnav.php'); ?>
+    <?php $pageActive = 'Criterion'; include_once('include/topnav.php'); ?>
 
     <section class="content-01 section-padding">
         <div class="container">
@@ -20,9 +20,9 @@
 
                 <div class="grid md-50 sm-100">
                     <h3>รางวัลพระปกเกล้า</h3>
-                    <a class="ss-img mt" href="#">
+                    <div class="ss-img mt">
                         <div class="img-bg lazy-bg" data-src="assets/img/content/01.jpg"></div>
-                    </a>
+                    </div>
                     <p class="p">
                         สำหรับเกณฑ์การพิจารณารางวัลพระปกเกล้า จะให้ความสำคัญต่อการบริหารจัดการ 
                         และการดำเนินงานเพื่อพัฒนาในท้องถิ่น ซึ่งเกณฑ์ต่างๆ จะเกี่ยวข้องกับภารกิจหน้าที่
@@ -46,9 +46,9 @@
 
                 <div class="grid md-50 sm-100">
                     <h3>รางวัลพระปกเกล้าทองคำ</h3>
-                    <a class="ss-img mt" href="#">
+                    <div class="ss-img mt">
                         <div class="img-bg lazy-bg" data-src="assets/img/content/02.jpg"></div>
-                    </a>
+                    </div>
                     <p class="p">
                         สำหรับเกณฑ์การพิจารณารางวัลพระปกเกล้าทองคำ จะให้ความสำคัญต่อการ
                         พัฒนาต่อยอดความสำเร็จ ของการดำเนินงานทั้งในมุมของการบริหารจัดการ 

@@ -1,5 +1,8 @@
 $(function(){ 'use strict';
 
+    var textContainer = $('.thai-map-container > .option > h4'),
+        regionTagContainer = $('.thai-map-container .region-tags');
+
     var width = 400,
         height = 600;
 
@@ -81,7 +84,6 @@ $(function(){ 'use strict';
             workspace.transition().duration(spec.animTime)
                 .attr('transform', 'translate('+xOff+','+yOff+')scale('+scale+')');
 
-            var textContainer = $('.thai-map-container > .option > h4');
             if(region==1) textContainer.html('ภาคเหนือ');
             else if(region==2) textContainer.html('ภาคตะวันออกเฉียงเหนือ');
             else if(region==3) textContainer.html('ภาคกลาง');
@@ -89,6 +91,8 @@ $(function(){ 'use strict';
             else if(region==5) textContainer.html('ภาคตะวันตก');
             else if(region==6) textContainer.html('ภาคใต้');
             else if(region==7) textContainer.html('กรุงเทพมหานคร');
+
+            regionTagContainer.addClass('inactive');
         }
     }
     if(focusRegion) selectRegion(focusRegion);
@@ -103,7 +107,7 @@ $(function(){ 'use strict';
             workspace.classed('active', true);
             workspace.selectAll('.active').classed('active', false);
 
-            var textContainer = $('.thai-map-container > .option > h4');
+            regionTagContainer.addClass('inactive');
             var provinceId = stringToId(province),
                 provincePath = workspace.select('.province#'+provinceId)
                     .classed('active', function(d){
