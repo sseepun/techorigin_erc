@@ -1,7 +1,10 @@
 $(function(){ 'use strict';
 
-    var textContainer = $('.thai-map-container > .option > h4'),
-        regionTagContainer = $('.thai-map-container .region-tags');
+    var thaiMapContainer = $('.thai-map-container'),
+        thaiMapOption = thaiMapContainer.find('> .option'),
+        textContainer = thaiMapContainer.find('> .option > h4'),
+        regionTagContainer = thaiMapContainer.find('.region-tags');
+    thaiMapOption.slideUp();
 
     var width = 400,
         height = 600;
@@ -22,11 +25,33 @@ $(function(){ 'use strict';
     var workspace = svg.append('g').attr('class', 'workspace')
         .attr('transform', 'translate(0,0)scale(1)');
 
-    workspace.selectAll('path.province').data(thaiMap.features).enter().append('path')
-        .attr('class', function(d){ return propertyToClass(d.properties); })
-        .attr('id', function(d){ return stringToId(d.properties.name); })
-        .attr('d', spec.geoPath)
-        .style('stroke-width', 0.0001*width);
+    var provinces = workspace.selectAll('path.province')
+        .data(thaiMapData.features).enter().append('path')
+            .attr('class', function(d){ return propertyToClass(d.properties); })
+            .attr('id', function(d){ return stringToId(d.properties.name); })
+            .attr('d', spec.geoPath)
+            .style('stroke-width', 0.0001*width);
+
+    provinces.on('click', function(d){
+        if(!focusRegion){
+            focusRegion = d.properties.region;
+            selectRegion(focusRegion);
+        }else if(!focusProvince){
+            focusProvince = d.properties.name;
+            selectProvince(focusProvince);
+        }
+    });
+
+    thaiMapOption.find('.btn-back').click(function(e){
+        e.preventDefault();
+        if(focusProvince){
+            focusProvince = false;
+            selectRegion(focusRegion);
+        }else if(focusRegion){
+            focusRegion = false;
+            selectRegion(focusRegion);
+        }
+    });
 
     function propertyToClass(p){
         return 'province region-'+p.region;
@@ -37,11 +62,13 @@ $(function(){ 'use strict';
 
     function selectRegion(region=false){
         if(!region){
+            thaiMapOption.slideUp();
             workspace.transition().duration(spec.animTime)
                 .attr('transform', 'translate(0,0)scale(1)');
             workspace.classed('active', false);
             workspace.selectAll('.active').classed('active', false);
         }else{
+            thaiMapOption.slideDown();
             workspace.classed('active', true);
             workspace.selectAll('.active').classed('active', false);
 
@@ -99,11 +126,13 @@ $(function(){ 'use strict';
 
     function selectProvince(province=false){
         if(!province){
+            thaiMapOption.slideUp();
             workspace.transition().duration(spec.animTime)
                 .attr('transform', 'translate(0,0)scale(1)');
             workspace.classed('active', false);
             workspace.selectAll('.active').classed('active', false);
         }else{
+            thaiMapOption.slideDown();
             workspace.classed('active', true);
             workspace.selectAll('.active').classed('active', false);
 
@@ -126,7 +155,5 @@ $(function(){ 'use strict';
         }
     }
     if(focusProvince) selectProvince(focusProvince);
-
-    if(!focusRegion && !focusProvince) $('.thai-map-container > .option').remove();
 
 });

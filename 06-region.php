@@ -57,7 +57,7 @@
             <div class="thai-map-container" data-aos="fade-up" data-aos-delay="450">
                 <div class="option">
                     <h4 class="text-center color-secondary"></h4>
-                    <a class="color-black h-color-primary" href="05-local-award.php">
+                    <a class="color-black h-color-primary btn-back" href="05-local-award.php">
                         <i class="zmdi zmdi-chevron-left mr-1"></i> กลับหน้าหลัก
                     </a>
                 </div>
