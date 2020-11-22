@@ -74,7 +74,7 @@
             </div>
         </div>
         <div class="container">
-            <a class="logo" href="">
+            <a class="logo" href="index.php">
                 <img src="assets/img/logo.png" alt="Logo" />
             </a>
         </div>

@@ -58,9 +58,10 @@
                             <div class="position-relative mt-2">
                                 <div class="input-prefix"><?= $i+1 ?></div>
                                 <input type="text" class="sm border" placeholder="ชื่อแผนงาน หรือ โครงการ หรือ กิจกรรม" />
-                                <div class="input-suffix">
+                                <div class="input-suffix btn-file">
                                     แนบไฟล์ 
                                     <i class="zmdi zmdi-plus-square color-primary ml-1"></i>
+                                    <input type="file" />
                                 </div>
                             </div>
                         <?php }?>

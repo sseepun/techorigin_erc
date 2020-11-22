@@ -94,7 +94,7 @@
                             </p>
                         </div>
                     </div>
-                    <a class="ss-img" href="#">
+                    <a class="ss-img" href="01-about.php">
                         <div class="img-bg lazy-bg" data-src="assets/img/content/01.jpg"></div>
                     </a>
                     <p class="p text-center">
@@ -107,7 +107,7 @@
                         ใหม่ๆ ในการดำเนินงาน เป็นแบบอย่างที่ดีให้แก่องค์กรปกครองส่วนท้องถิ่นอื่น
                     </p>
                     <div class="btns">
-                        <a class="btn btn-secondary" href="#">
+                        <a class="btn btn-secondary" href="01-about.php">
                             อ่านรายละเอียด
                         </a>
                     </div>
@@ -126,7 +126,7 @@
                             </p>
                         </div>
                     </div>
-                    <a class="ss-img" href="#">
+                    <a class="ss-img" href="02-about.php">
                         <div class="img-bg lazy-bg" data-src="assets/img/content/02.jpg"></div>
                     </a>
                     <p class="p text-center">
@@ -139,7 +139,7 @@
                         ใหม่ๆ อันเป็นแบบอย่างที่ดีแก่องค์กรปกครองส่วนท้องถิ่นอื่นในประเทศไทย
                     </p>
                     <div class="btns">
-                        <a class="btn btn-secondary" href="#">
+                        <a class="btn btn-secondary" href="02-about.php">
                             อ่านรายละเอียด
                         </a>
                     </div>
