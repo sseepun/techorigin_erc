@@ -27,7 +27,7 @@
                 ค้นหาองค์กรปกครองส่วนท้องถิ่นที่ได้รางวัล
             </h4>
             <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
-            <form action="" method="GET" data-aos="fade-up" data-aos-delay="300">
+            <form action="05-local-award.php" method="GET" data-aos="fade-up" data-aos-delay="300">
                 <div class="search-box mt bg-primary">
                     <input type="text" name="keyword" class="lg" placeholder="คำค้นหา..." required />
                 </div>

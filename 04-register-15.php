@@ -5,7 +5,7 @@
     <?php include_once('include/style.php'); ?>
 </head>
 <body>
-    <?php include_once('include/topnav.php'); ?>
+    <?php $pageActive = 'Register'; include_once('include/topnav.php'); ?>
 
     <section class="content-04 section-padding">
         <div class="container">
@@ -16,7 +16,7 @@
                     ข้อมูลในการสมัครของคุณอยู่ในระบบแล้ว
                 </h5>
                 <div class="btns">
-                    <a class="btn btn-secondary" href="#">
+                    <a class="btn btn-secondary" href="index.php">
                         เสร็จสิ้น
                     </a>
                 </div>
@@ -25,7 +25,7 @@
                 <a class="btn btn-gray mx-1" href="#">
                     <i class="zmdi zmdi-print mr-1"></i> พิมพ์ใบสมัคร
                 </a>
-                <a class="btn btn-gray mx-1" href="#">
+                <a class="btn btn-gray mx-1" href="04-register-01.php">
                     <i class="zmdi zmdi-assignment mr-1"></i> แก้ไขใบสมัคร
                 </a>
             </div>

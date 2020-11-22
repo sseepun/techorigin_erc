@@ -5,7 +5,7 @@
     <?php include_once('include/style.php'); ?>
 </head>
 <body>
-    <?php include_once('include/topnav.php'); ?>
+    <?php $pageActive = 'Results'; include_once('include/topnav.php'); ?>
 
     <section class="search-01 section-padding">
         <div class="container">
@@ -13,7 +13,8 @@
                 อปท. ที่ได้รางวัล
             </h4>
             <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" data-aos="fade-up" data-aos-delay="150" />
-            <form action="" method="GET" data-aos="fade-up" data-aos-delay="300">
+            
+            <form action="06-province.php" method="GET" data-aos="fade-up" data-aos-delay="300">
                 <div class="search-box mt bg-primary">
                     <input type="text" name="keyword" class="lg" placeholder="คำค้นหา..." required />
                 </div>
@@ -52,10 +53,11 @@
                     </button>
                 </div>
             </form>
+
             <div class="thai-map-container" data-aos="fade-up" data-aos-delay="450">
                 <div class="option">
                     <h4 class="text-center color-secondary"></h4>
-                    <a class="color-black h-color-primary" href="#">
+                    <a class="color-black h-color-primary" href="05-local-award.php">
                         <i class="zmdi zmdi-chevron-left mr-1"></i> กลับหน้าหลัก
                     </a>
                 </div>

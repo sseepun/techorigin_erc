@@ -5,7 +5,7 @@
     <?php include_once('include/style.php'); ?>
 </head>
 <body>
-    <?php include_once('include/topnav.php'); ?>
+    <?php $pageActive = 'Contact'; include_once('include/topnav.php'); ?>
 
     <section class="contact-01 section-padding">
         <div class="container">

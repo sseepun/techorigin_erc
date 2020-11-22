@@ -59,41 +59,7 @@ $(function(){ 'use strict';
             backToTop.removeClass('active');
         }
     }
-
-    // Global Search
-    var globalSearchContainer = $('.global-search-container');
-    if(0 && globalSearchContainer.hasClass('use-gsap')){
-        var globalSearchTl =  new TimelineMax({paused: true})
-            .to('.global-search-container', .6, {
-                autoAlpha: 1, ease: Power3.easeInOut
-            })
-            .from('.global-search-container h1', .6, {
-                opacity: 0, y: 30, ease: Power3.easeInOut
-            }, '-=.4')
-            .from('.global-search-container .input-container', .6, {
-                opacity: 0, y: 30, ease: Power3.easeInOut
-            }, '-=.4')
-            .staggerFrom('.global-search-container .ss-tag', .6, {
-                opacity: 0, y: 30, ease: Power3.easeInOut
-            }, .08, '-=.55')
-            .reverse();
-        $('.global-search-toggle').click(function(e){
-            e.preventDefault();
-            globalSearchTl.reversed( !globalSearchTl.reversed() );
-            globalSearchContainer.toggleClass('active');
-            if(globalSearchContainer.hasClass('active')){
-                globalSearchContainer.find('input[type=text]').focus();
-            }
-        });
-    }else{
-        $('.global-search-toggle').click(function(e){
-            e.preventDefault();
-            globalSearchContainer.toggleClass('active');
-            if(globalSearchContainer.hasClass('active')){
-                globalSearchContainer.find('input[type=text]').focus();
-            }
-        });
-    }
+    
 
     // Policy Nav
     var policyNav = $('nav.policy-nav');

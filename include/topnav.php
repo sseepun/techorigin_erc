@@ -21,7 +21,7 @@
                         </a>
                     </div>
                     <div class="item menu-pc">
-                        <a class="global-search-toggle" href="#">
+                        <a class="global-search-toggle" href="05-local-award.php">
                             <i class="zmdi zmdi-search mr-1"></i> ค้นหา
                         </a>
                     </div>
@@ -52,17 +52,17 @@
                         <a href="04-register-01.php">สมัครรางวัล</a>
                     </div>
                     <div class="menu <?php if(!empty($pageActive) && $pageActive=='Results')echo 'active'; ?>">
-                        <a href="#">อปท. ที่ได้รางวัล</a>
+                        <a href="05-local-award.php">อปท. ที่ได้รางวัล</a>
                     </div>
-                    <div class="menu <?php if(!empty($pageActive) && $pageActive=='Document')echo 'active'; ?>">
-                        <a href="#">เอกสาร / งานวิจัย</a>
+                    <div class="menu <?php if(!empty($pageActive) && $pageActive=='Download')echo 'active'; ?>">
+                        <a href="08-download.php">เอกสาร / งานวิจัย</a>
                     </div>
                     <div class="menu <?php if(!empty($pageActive) && $pageActive=='Contact')echo 'active'; ?>">
-                        <a href="#">ติดต่อเรา</a>
+                        <a href="09-contact.php">ติดต่อเรา</a>
                     </div>
                 </div>
                 <div class="menu-mobile">
-                    <a class="search-btn global-search-toggle" href="#">
+                    <a class="search-btn global-search-toggle" href="05-local-award.php">
                         <i class="zmdi zmdi-search"></i>
                     </a>
                     <div class="sidenav-toggle">
@@ -135,11 +135,11 @@
             </div>
             <div class="popup-body">
                 <h4 class="text-center color-secondary">
-                    ติดต่อเรา
+                    ลงชื่อเข้าใช้งาน
                 </h4>
                 <img class="sep-01" src="assets/img/hero/03.png" alt="Separation" />
                 <div class="scroll-wrapper">
-                    <form action="" method="POST">
+                    <form action="index.php" method="POST">
                         <div class="gallery-grids">
                             <div class="grid sm-100">
                                 <div class="position-relative">
@@ -165,13 +165,13 @@
                                 </button>
                             </div>
                             <div class="grid sm-50">
-                                <a class="btn btn-gray bcolor-primary btn-sm w-full" href="#">
+                                <a class="btn btn-gray bcolor-primary btn-sm w-full" href="11-register.php">
                                     ลงทะเบียน
                                 </a>
                             </div>
                         </div>
                         <p class="text-center mt-3">
-                            <a class="fw-400 color-black h-color-primary" href="#">
+                            <a class="fw-400 color-black h-color-primary" href="12-forgot.php">
                                 ลืมรหัสผ่าน?
                             </a>
                         </p>
