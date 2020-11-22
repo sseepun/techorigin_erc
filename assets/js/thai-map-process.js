@@ -63,12 +63,16 @@ $(function(){ 'use strict';
     function selectRegion(region=false){
         if(!region){
             thaiMapOption.slideUp();
+            regionTagContainer.removeClass('inactive');
+
             workspace.transition().duration(spec.animTime)
                 .attr('transform', 'translate(0,0)scale(1)');
             workspace.classed('active', false);
             workspace.selectAll('.active').classed('active', false);
         }else{
             thaiMapOption.slideDown();
+            regionTagContainer.addClass('inactive');
+
             workspace.classed('active', true);
             workspace.selectAll('.active').classed('active', false);
 
@@ -118,8 +122,6 @@ $(function(){ 'use strict';
             else if(region==5) textContainer.html('ภาคตะวันตก');
             else if(region==6) textContainer.html('ภาคใต้');
             else if(region==7) textContainer.html('กรุงเทพมหานคร');
-
-            regionTagContainer.addClass('inactive');
         }
     }
     if(focusRegion) selectRegion(focusRegion);
@@ -127,16 +129,19 @@ $(function(){ 'use strict';
     function selectProvince(province=false){
         if(!province){
             thaiMapOption.slideUp();
+            regionTagContainer.removeClass('inactive');
+
             workspace.transition().duration(spec.animTime)
                 .attr('transform', 'translate(0,0)scale(1)');
             workspace.classed('active', false);
             workspace.selectAll('.active').classed('active', false);
         }else{
             thaiMapOption.slideDown();
+            regionTagContainer.addClass('inactive');
+
             workspace.classed('active', true);
             workspace.selectAll('.active').classed('active', false);
 
-            regionTagContainer.addClass('inactive');
             var provinceId = stringToId(province),
                 provincePath = workspace.select('.province#'+provinceId)
                     .classed('active', function(d){
