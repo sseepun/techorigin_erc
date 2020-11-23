@@ -20,15 +20,15 @@
                 </h6>
                 <div class="stepbar" data-aos="fade-up" data-aos-delay="300">
                     <div class="wrapper">
-                        <div class="step">1</div>
-                        <div class="step">2</div>
-                        <div class="step">3</div>
-                        <div class="step">4</div>
-                        <div class="step">5</div>
-                        <div class="step">6</div>
-                        <div class="step">7</div>
-                        <div class="step active">8</div>
-                        <div class="step">9</div>
+                        <a class="step" href="04-register-04.php">1</a>
+                        <a class="step" href="04-register-05.php">2</a>
+                        <a class="step" href="04-register-06.php">3</a>
+                        <a class="step" href="04-register-08.php">4</a>
+                        <a class="step" href="04-register-09.php">5</a>
+                        <a class="step" href="04-register-10.php">6</a>
+                        <a class="step" href="04-register-11.php">7</a>
+                        <a class="step active" href="04-register-12.php">8</a>
+                        <a class="step" href="04-register-14.php">9</a>
                     </div>
                 </div>
                 
@@ -68,9 +68,12 @@
                 <div class="ss-box mt-4" data-aos="fade-up" data-aos-delay="0">
                     <p class="fw-500">
                         ระยะเวลาในการดำเนินงาน (ระบุ) 
-                        <input type="number" class="sm input-inline border mx-1" step="1" /> ปี 
-                        <input type="number" class="sm input-inline border mx-1" step="1" /> เดือน 
-                        <input type="number" class="sm input-inline border mx-1" step="1" /> วัน
+                        <span class="mr-1"></span>
+                        <input type="number" class="sm input-inline border mr-1" step="1" /> ปี 
+                        <span class="mr-1"></span>
+                        <input type="number" class="sm input-inline border mr-1" step="1" /> เดือน 
+                        <span class="mr-1"></span>
+                        <input type="number" class="sm input-inline border mr-1" step="1" /> วัน
                     </p>
                     <div class="d-flex fw-wrap spacing">
                         <div class="radio-container w-auto mr-4">
@@ -83,7 +86,8 @@
                             <input type="radio" name="radio_0" id="radio_0_1" value="1" />
                             <label for="radio_0_1">
                                 โครงการต่อเนื่อง เริ่มดำเนินการเมื่อ 
-                                <div class="d-inline position-relative ml-1">
+                                <span class="mr-1"></span>
+                                <div class="d-inline position-relative">
                                     <input type="text" class="sm input-inline border date-picker" placeholder="วัน / เดือน / ปี" />
                                     <div class="input-icon">
                                         <i class="zmdi zmdi-calendar"></i>

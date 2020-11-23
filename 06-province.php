@@ -72,6 +72,13 @@
                             <img class="region region-5" src="assets/img/hero/region-5.png" alt="Region 5" />
                             <img class="region region-6" src="assets/img/hero/region-6.png" alt="Region 6" />
                         </div>
+                        <div class="hover-container">
+                            <div class="element">
+                                <div class="shadow"></div>
+                                <div class="pin"></div>
+                                <h4>จังหวัดตาก</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

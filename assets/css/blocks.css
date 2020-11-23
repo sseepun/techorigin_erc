@@ -26,21 +26,24 @@
 .content-01 .grid{margin-top:3rem;}
 .content-01 .ss-img{margin:2rem 0 2.375rem 0;}
 .content-01 .ss-img.mt{margin-top:1rem;}
-.content-01 .btns{margin-top:2rem;}
+.content-01 .p{font-size:.975rem;}
+.content-01 .content-card{position:relative; height:100%; padding:0 0 5rem 0;}
+.content-01 .btns{position:absolute; bottom:0; left:0; right:0;}
+@media screen and (max-width:1199.98px){
+    .content-01 .content-card{padding:0 0 4.75rem 0;}
+    .content-01 .content-card.adaptive{padding:0 0 7.5rem 0;}
+    .content-01 .btn.adaptive{min-width:16.5rem;}
+}
 @media screen and (max-width:991.98px){
     .content-01 .grid{margin-top:2.5rem;}
     .content-01 .ss-img{margin:1.5rem 0 1.5rem 0;}
-    .content-01 .btns{margin-top:1.75rem;}
+    .content-01 .content-card{padding:0 0 4.5rem 0;}
+    .content-01 .content-card.adaptive{padding:0 0 7.25rem 0;}
 }
 @media screen and (max-width:767.98px){
     .content-01 .ss-img.mt{margin-top:.8125rem;}
-    .content-01 .btns{margin-top:1.25rem;}
-}
-@media screen and (min-width:768px){
-    .content-01 .p{
-        height:9.875rem; overflow:hidden; display:-webkit-box; -webkit-line-clamp:7;
-        -webkit-box-orient:vertical;
-    }
+    .content-01 .content-card{padding:0 0 4.125rem 0;}
+    .content-01 .content-card.adaptive{padding:0 0 6.875rem 0;}
 }
 
 /* Content 02 */
@@ -234,3 +237,27 @@
 .thai-map .region-5{fill:#bb8843;}
 .thai-map .region-6{fill:#bb9443;}
 .thai-map .region-7{fill:#bb9443;}
+
+.thai-map-container .hover-container{
+    position:absolute; opacity:0; pointer-events:none; transition:opacity .25s;
+    transform:translate(-1.4375rem, -3.8125rem);
+}
+.thai-map-container.show-hover .hover-container.active{opacity:1;}
+.thai-map-container .hover-container > .element{position:relative;}
+.thai-map-container .hover-container h4{
+    background-image:linear-gradient(to right, #337f5c, #266c4b, #175839);
+    border-radius:0 .3125rem .3125rem 0; padding:.625rem 1rem; font-size:1rem;
+    font-weight:300; color:#fff; white-space:nowrap;
+}
+.thai-map-container .hover-container .pin{
+    position:absolute; top:100%; left:0; width:1.5rem; height:1.25rem; background:#175738;
+    clip-path:polygon(100% 0, 0 0, 100% 100%);
+}
+.thai-map-container .hover-container .shadow,
+.thai-map-container .hover-container .shadow::after{
+    position:absolute; top:calc(100% + .4375rem); left:.625rem; width:1.75rem; height:1.75rem;
+    border-radius:50%; background:rgba(0,0,0,.15); transform:scaleY(.55);
+}
+.thai-map-container .hover-container .shadow::after{
+    content:''; width:1rem; height:1rem; top:.375rem; left:.375rem; transform:none;
+}

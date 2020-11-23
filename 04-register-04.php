@@ -20,15 +20,15 @@
                 </h6>
                 <div class="stepbar" data-aos="fade-up" data-aos-delay="300">
                     <div class="wrapper">
-                        <div class="step active">1</div>
-                        <div class="step">2</div>
-                        <div class="step">3</div>
-                        <div class="step">4</div>
-                        <div class="step">5</div>
-                        <div class="step">6</div>
-                        <div class="step">7</div>
-                        <div class="step">8</div>
-                        <div class="step">9</div>
+                        <a class="step active" href="04-register-04.php">1</a>
+                        <a class="step" href="04-register-05.php">2</a>
+                        <a class="step" href="04-register-06.php">3</a>
+                        <a class="step" href="04-register-08.php">4</a>
+                        <a class="step" href="04-register-09.php">5</a>
+                        <a class="step" href="04-register-10.php">6</a>
+                        <a class="step" href="04-register-11.php">7</a>
+                        <a class="step" href="04-register-12.php">8</a>
+                        <a class="step" href="04-register-14.php">9</a>
                     </div>
                 </div>
                 
@@ -52,16 +52,19 @@
                 <div class="ss-box bg-soft-primary mt-4" data-aos="fade-up" data-aos-delay="0">
                     <p class="fw-500">
                         จำนวนประชากรในเขตองค์กรปกครองส่วนท้องถิ่น
-                        <input type="number" class="sm input-inline border mx-1" step="1" 
+                        <span class="mr-1"></span>
+                        <input type="number" class="sm input-inline border mr-1" step="1" 
                         placeholder="จำนวน" style="width:6.5rem!important;" /> 
                         คน 
                     </p>
                     <p class="fw-500 spacing">
                         พื้นที่ขององค์กรปกครองส่วนท้องถิ่น
-                        <input type="number" class="sm input-inline border mx-1" step="1" 
+                        <span class="mr-1"></span>
+                        <input type="number" class="sm input-inline border mr-1" step="1" 
                         placeholder="จำนวน" style="width:6.5rem!important;" /> 
                         ตารางกิโลเมตร ครอบคลุม 
-                        <input type="number" class="sm input-inline border mx-1" step="1" 
+                        <span class="mr-1"></span>
+                        <input type="number" class="sm input-inline border mr-1" step="1" 
                         placeholder="จำนวน" style="width:6.5rem!important;" /> 
                         หมู่บ้าน / ชุมชน
                     </p>
@@ -71,13 +74,15 @@
                     <p class="fw-500">
                         รายได้ขององค์กรปกครองส่วนท้องถิ่น 
                         <span class="fw-300">(ไม่รวมเงินอุดหนุน, เงินกู้, เงินจ่ายขาดจากเงินสะสม)</span> 
-                        <input type="number" class="sm input-inline border mx-1" step="1" 
+                        <span class="mr-1"></span>
+                        <input type="number" class="sm input-inline border mr-1" step="1" 
                         placeholder="จำนวน" style="width:6.5rem!important;" /> 
                         บาท 
                     </p>
                     <p class="fw-500 spacing">
                         และรายได้จากเงินอุดหนุน 
-                        <input type="number" class="sm input-inline border mx-1" step="1" 
+                        <span class="mr-1"></span>
+                        <input type="number" class="sm input-inline border mr-1" step="1" 
                         placeholder="จำนวน" style="width:6.5rem!important;" /> 
                         บาท
                     </p>

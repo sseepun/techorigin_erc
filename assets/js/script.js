@@ -89,6 +89,16 @@ $(function(){ 'use strict';
         new Datepicker($(this)[0], {});
     });
 
+    // Check Toggle
+    $('.check-toggle').each(function(){
+        var self = $(this),
+            target = self.parent().find('input[type="checkbox"], input[type="radio"]');
+        if(target.is(':checked')) self.show();
+        target.change(function(){
+            self.slideToggle();
+        });
+    });
+
 
     // Tab Container
     var tabContainers = $('.tab-container');

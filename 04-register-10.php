@@ -20,15 +20,15 @@
                 </h6>
                 <div class="stepbar" data-aos="fade-up" data-aos-delay="300">
                     <div class="wrapper">
-                        <div class="step">1</div>
-                        <div class="step">2</div>
-                        <div class="step">3</div>
-                        <div class="step">4</div>
-                        <div class="step">5</div>
-                        <div class="step active">6</div>
-                        <div class="step">7</div>
-                        <div class="step">8</div>
-                        <div class="step">9</div>
+                        <a class="step" href="04-register-04.php">1</a>
+                        <a class="step" href="04-register-05.php">2</a>
+                        <a class="step" href="04-register-06.php">3</a>
+                        <a class="step" href="04-register-08.php">4</a>
+                        <a class="step" href="04-register-09.php">5</a>
+                        <a class="step active" href="04-register-10.php">6</a>
+                        <a class="step" href="04-register-11.php">7</a>
+                        <a class="step" href="04-register-12.php">8</a>
+                        <a class="step" href="04-register-14.php">9</a>
                     </div>
                 </div>
                 
@@ -53,13 +53,13 @@
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_0_0" value="1" />
+                                            <input type="radio" name="checkbox_0" id="checkbox_0_0" value="1" />
                                             <label for="checkbox_0_0">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_0_1" value="1" />
+                                            <input type="radio" name="checkbox_0" id="checkbox_0_1" value="1" />
                                             <label for="checkbox_0_1">&nbsp;</label>
                                         </div>
                                     </td>
@@ -70,13 +70,13 @@
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_1_0" value="1" />
+                                            <input type="radio" name="checkbox_1" id="checkbox_1_0" value="1" />
                                             <label for="checkbox_1_0">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_1_1" value="1" />
+                                            <input type="radio" name="checkbox_1" id="checkbox_1_1" value="1" />
                                             <label for="checkbox_1_1">&nbsp;</label>
                                         </div>
                                     </td>
@@ -87,13 +87,13 @@
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_2_0" value="1" />
+                                            <input type="radio" name="checkbox_2" id="checkbox_2_0" value="1" />
                                             <label for="checkbox_2_0">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_2_1" value="1" />
+                                            <input type="radio" name="checkbox_2" id="checkbox_2_1" value="1" />
                                             <label for="checkbox_2_1">&nbsp;</label>
                                         </div>
                                     </td>
@@ -104,13 +104,13 @@
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_3_0" value="1" />
+                                            <input type="radio" name="checkbox_3" id="checkbox_3_0" value="1" />
                                             <label for="checkbox_3_0">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_3_1" value="1" />
+                                            <input type="radio" name="checkbox_3" id="checkbox_3_1" value="1" />
                                             <label for="checkbox_3_1">&nbsp;</label>
                                         </div>
                                     </td>
@@ -121,13 +121,13 @@
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_4_0" value="1" />
+                                            <input type="radio" name="checkbox_4" id="checkbox_4_0" value="1" />
                                             <label for="checkbox_4_0">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_4_1" value="1" />
+                                            <input type="radio" name="checkbox_4" id="checkbox_4_1" value="1" />
                                             <label for="checkbox_4_1">&nbsp;</label>
                                         </div>
                                     </td>
@@ -138,13 +138,13 @@
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_5_0" value="1" />
+                                            <input type="radio" name="checkbox_5" id="checkbox_5_0" value="1" />
                                             <label for="checkbox_5_0">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_5_1" value="1" />
+                                            <input type="radio" name="checkbox_5" id="checkbox_5_1" value="1" />
                                             <label for="checkbox_5_1">&nbsp;</label>
                                         </div>
                                     </td>
@@ -158,13 +158,13 @@
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_6_0" value="1" />
+                                            <input type="radio" name="checkbox_6" id="checkbox_6_0" value="1" />
                                             <label for="checkbox_6_0">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="checkbox-container">
-                                            <input type="checkbox" id="checkbox_6_1" value="1" />
+                                            <input type="radio" name="checkbox_6" id="checkbox_6_1" value="1" />
                                             <label for="checkbox_6_1">&nbsp;</label>
                                         </div>
                                     </td>

@@ -1,9 +1,11 @@
 $(function(){ 'use strict';
 
     var thaiMapContainer = $('.thai-map-container'),
+        thaiMapWrapper = thaiMapContainer.find('.wrapper'),
         thaiMapOption = thaiMapContainer.find('> .option'),
         textContainer = thaiMapContainer.find('> .option > h4'),
-        regionTagContainer = thaiMapContainer.find('.region-tags');
+        regionTagContainer = thaiMapContainer.find('.region-tags'),
+        hover = thaiMapContainer.find('.hover-container');
     thaiMapOption.slideUp();
 
     var width = 400,
@@ -14,7 +16,9 @@ $(function(){ 'use strict';
         projection: d3.geoMercator().scale(2250)
             .rotate([-100.6331, -13.2])
             .translate([width*0.43, height*0.49]), 
-        currentScale: 1
+        currentScale: 1,
+        xOffset: 0,
+        yOffset: 0,
     };
     spec.geoPath = d3.geoPath().projection(spec.projection);
 
@@ -32,13 +36,31 @@ $(function(){ 'use strict';
             .attr('d', spec.geoPath)
             .style('stroke-width', 0.0001*width);
 
+    var mouseX = 0, mouseY = 0;
+    thaiMapWrapper.mousemove(function(e){            
+        mouseX = e.pageX - $(this).offset().left;
+        mouseY = e.pageY - $(this).offset().top;
+        hover.css({ 'top': mouseY+'px', 'left': mouseX+'px' });
+    });
+
     provinces.on('click', function(d){
         if(!focusRegion){
             focusRegion = d.properties.region;
             selectRegion(focusRegion);
         }else if(!focusProvince){
-            focusProvince = d.properties.name;
-            selectProvince(focusProvince);
+            window.location.href = '07-result.php';
+        }
+    });
+    provinces.on('mouseenter', function(d){
+        thaiMapContainer.addClass('show-hover');
+        if(focusRegion && focusRegion==d.properties.region){
+            hover.addClass('active');
+            hover.find('h4').html('จังหวัด'+d.properties.thai_name);
+        }
+    });
+    provinces.on('mouseleave', function(){
+        if(focusRegion){
+            hover.removeClass('active');
         }
     });
 
@@ -64,6 +86,7 @@ $(function(){ 'use strict';
         if(!region){
             thaiMapOption.slideUp();
             regionTagContainer.removeClass('inactive');
+            thaiMapContainer.removeClass('show-hover');
 
             workspace.transition().duration(spec.animTime)
                 .attr('transform', 'translate(0,0)scale(1)');
@@ -72,6 +95,7 @@ $(function(){ 'use strict';
         }else{
             thaiMapOption.slideDown();
             regionTagContainer.addClass('inactive');
+            thaiMapContainer.addClass('show-hover');
 
             workspace.classed('active', true);
             workspace.selectAll('.active').classed('active', false);
@@ -111,6 +135,8 @@ $(function(){ 'use strict';
             var xOff = -pRect.x*scale + (width - pRect.width*scale)/2,
                 yOff = -pRect.y*scale + (height - pRect.height*scale)/2;
             spec.currentScale = scale;
+            spec.xOff = xOff;
+            spec.yOff = yOff;
                 
             workspace.transition().duration(spec.animTime)
                 .attr('transform', 'translate('+xOff+','+yOff+')scale('+scale+')');
@@ -154,6 +180,8 @@ $(function(){ 'use strict';
             var xOff = -pRect.x*scale + (width - pRect.width*scale)/2,
                 yOff = -pRect.y*scale + (height - pRect.height*scale)/2;
             spec.currentScale = scale;
+            spec.xOff = xOff;
+            spec.yOff = yOff;
                 
             workspace.transition().duration(spec.animTime)
                 .attr('transform', 'translate('+xOff+','+yOff+')scale('+scale+')');
