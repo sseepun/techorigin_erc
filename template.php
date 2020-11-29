@@ -4,7 +4,7 @@
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
 </head>
-<body>
+<body class="loading">
     <?php include_once('include/topnav.php'); ?>
 
     <!-- Start Here -->

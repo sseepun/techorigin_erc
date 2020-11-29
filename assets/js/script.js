@@ -173,19 +173,20 @@ $(function(){ 'use strict';
 
 
     // Page Loader
-    if($('.page-loader').length){
+    var pageLoader = $('.page-loader');
+    if(pageLoader.length){
         window.onload = function(){
-            $('.page-loader').addClass('fade-out');
+            pageLoader.addClass('fade-out');
             setTimeout(function(){
-                $('.page-loader').remove();
+                pageLoader.remove();
+                $('body').removeClass('loading');
+                AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
             }, 1350);
         }
+    }else{
+        $('body').removeClass('loading');
+        AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
     }
-
-    
-    // AOS Animation
-    AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 15 });
-
 
     // On Resize
     $(window).on('resize', function(){
