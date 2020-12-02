@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* DB HEAVENT */
+@font-face{
+    font-family:'DB HEAVENT'; font-weight:100; font-style:normal; font-display:swap;
+    src:url('DB-HEAVENT/COND-DB-HEAVENT-THIN.TTF') format('truetype');
+}
+@font-face{
+    font-family:'DB HEAVENT'; font-weight:200; font-style:normal; font-display:swap;
+    src:url('DB-HEAVENT/COND-DB-HEAVENT-LI.TTF') format('truetype');
+}
+@font-face{
+    font-family:'DB HEAVENT'; font-weight:300; font-style:normal; font-display:swap;
+    src:url('DB-HEAVENT/COND-DB-HEAVENT.TTF') format('truetype');
+}
+@font-face{
+    font-family:'DB HEAVENT'; font-weight:400; font-style:normal; font-display:swap;
+    src:url('DB-HEAVENT/COND-DB-HEAVENT-MED.TTF') format('truetype');
+}
+@font-face{
+    font-family:'DB HEAVENT'; font-weight:600; font-style:normal; font-display:swap;
+    src:url('DB-HEAVENT/COND-DB-HEAVENT-BD.TTF') format('truetype');
+}
+@font-face{
+    font-family:'DB HEAVENT'; font-weight:900; font-style:normal; font-display:swap;
+    src:url('DB-HEAVENT/DB-HEAVENT-BLK.TTF') format('truetype');
+}

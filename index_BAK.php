@@ -7,7 +7,78 @@
 <body class="loading">
     <?php include_once('include/topnav.php'); ?>
 
-    <section class="content-01 section-padding" style="background-image:url('assets/img/bg/01.jpg');">
+    <!-- Start Here -->
+    <style>
+        h1, h2, h3, h4, h5, h6 {margin: 0;}
+        p{margin:.75rem 0 0 0; font-size: 1.125rem;}
+        .container {
+            max-width: 1140px; margin: 0 auto;
+        }
+        /* Color */
+        .color-black {color: #000 !important;}
+        .color-white {color: #fff !important;}
+        .bg-white{background-color:#fff !important;}
+        @media screen and (max-width: 1199.98px){
+            .container {
+                max-width: 960px;
+            }
+        }
+        @media screen and (max-width: 991.98px){
+            .container{
+                max-width: 720px;
+            }            
+        }
+        @media screen and (max-width: 767.98px){
+            .container{
+                max-width: 540px;
+            }
+        }
+        @media screen and (max-width: 575.98px){
+            .container{
+                max-width: 100%;
+            }
+        }
+        /* Layout */
+        .pb-0 {padding-bottom:0 !important;}
+        .section-padding {padding: 4rem 0;}
+        .section-bg {padding:4rem 0; background-size: cover; background-repeat: no-repeat;}
+        .header {font-size: 4rem; font-weight: 600;}
+        .sub-header {font-size: 1.5rem; font-weight:200; letter-spacing: .1rem;}
+        .text-wrapper {max-width:75%; margin: 0 auto;}
+        .text-container {color:#fff; padding:4.5rem 0 0 0;}
+
+        /* Tab Container */
+        .tab-container {position:relative; display:block; width:100%; margin: 2.5rem 0 0 0;}
+        .tab-container .tabs {
+            position:relative; width:100%; display:flex; flex-wrap:wrap; margin:0; justify-content: space-between;
+        }
+        .tab-container .tabs .tab { width: calc(100%/7 - .5rem);}
+
+        /* Stat Container */
+        .stat-container  {margin: 1rem 0 0 0;}
+        .stat-container h3 {font-weight: 400; font-size: 1.6rem;}
+        .stat-container .stat-info { padding:1rem; border-left: 1px solid transparent; border-color:#fff;}
+        .stat-container .grids .grid{margin: 1.5rem 0 0 0;}
+        .stat-container .grids .grid:first-child .stat-info {border: none;}
+        .stat-container .stat-info .name {font-size: 1.75rem; font-weight:200;}
+        .stat-container .stat-info .name i {color:#29dfee; font-size:2.5rem;}
+        .stat-container .stat-info .num {font-size: 2rem; font-weight:600;}
+        .stat-container .stat-info .num > span {font-weight: 200; font-size:1rem; margin-left: 0.375rem;}
+
+
+        /* Button */
+        .btn-container {width:100%; display:flex; justify-content:center; margin: 1.75rem 0 0 0;}
+        .btn-round { cursor:pointer; display:block; max-width:10.5rem; font-size:.7rem; color:#fff;  padding: .5rem 1.5rem; border-radius: 99999rem; text-align:center;} 
+        .btn-round.btn-primary {
+            background-color: #282828;
+        }
+        .btn-bg {background-image: url('./assets/img/bg/bg-btn.png'); background-position:center; background-size:cover; background-repeat: no-repeat;}
+        .btn-round.btn-secondary {
+            background-color: #ed8f09; 
+        }
+    </style>
+
+    <section class="section-padding">
         <div class="container">
             <div class="header text-center">ทันสมัย ทันเหตุการณ์</div>
             <p class="text-center">อัพเดืข่าวสารด้านพลังงาน กิจกรรมต่างๆ พร้อมทั้งแสดงข้อคิดเห็นได้ที่นี่</p>
