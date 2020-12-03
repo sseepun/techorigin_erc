@@ -3,29 +3,6 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-
-    <style>
-        .banner-01 {position:relative; width:100%;}
-        .banner-01 > .slide-container {position:relative; width:100%; padding:0;}
-        .banner-01 .slide-container .slides .slide {position:relative;display:flex; justify-content:center;}
-        .banner-01 .slide-container .slide .hero {display:block; width:100%; height:auto;}
-        .banner-01 .slide-container .slide .text-wrapper {position:absolute; top:15%; }
-        .banner-01 .dots {position:absolute; bottom:0;}
-        .banner-01 .dots .slick-dots {padding: 0 0 0 8rem; list-style:none; display:flex; flex-wrap:wrap; align-items:center;}
-        .banner-01 .dots li.slick-active button {  font-size:.9375rem; color:#fff; font-weight:100; padding:.5rem .625rem; background: #df660c; border-radius: 99999rem; width:auto; height:auto;}
-        .banner-01 .dots li button {display:block; cursor:pointer; font-size: 0; background: #fff; border-radius: 50%; width:.625rem; height:.625rem; border:none; }
-        .banner-01 .dots li {padding:.5625rem; display:flex; position:relative;}
-        .banner-01 .dots li > .desc {position: absolute; font-weight:100; bottom: 100%; left:5rem; width:16.5rem; color:#fff;}
-        .banner-01 .dots li.slick-active .text-yellow {color:#f1cb0b;}
-        .banner-01 .dots li .text-yellow {color:transparent;}
-        .banner-01 .dots li:first-child::after, .banner-01 .dots li:last-child::after {
-            content: ''; position:absolute; height:1px; width:100vw; background-color:#fff; top:calc(50% - .5px);
-        }
-        .banner-01 .dots li.slick-active:first-child::after {right:100%;}
-        .banner-01 .dots li.slick-active:last-child::after {left:100%;}
-        .banner-01 .dots li:first-child::after{right:calc(100% - .5625rem);}
-        .banner-01 .dots li:last-child::after {left:calc(100% - .5625rem);}
-    </style>
 </head>
 <body class="loading policy-opened">
     <?php include_once('include/topnav.php'); ?>
@@ -69,10 +46,6 @@
         <div class="slide-container">
             <div class="slides">
                 <?php for($i=1; $i<5;$i++){?>
-<<<<<<< HEAD
-                    <div class="slide" data-desc="<span class='text-yellow'><?php echo ($i%4 +1).'/4';?></span> ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
-                        <img src="./assets/img/bg/08.jpg" alt="banner">
-=======
                     <div class="slide" data-desc="<span class='text-yellow'><?php echo ($i%4 +1).'/4';?></span>ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
                         <img class="hero" src="./assets/img/bg/07.jpg" alt="banner" />
                         <img style="position:absolute; top:50%; width:10%; height:auto;" src="./assets/img/icon/play.png" alt="play-icon"  />
@@ -80,7 +53,6 @@
                             <h4 class="fw-100">หนังสั้นแนะนำ กกพ.</h4>
                             <h2 class="fw-400" style="margin-top:.25rem;">ตอนที่ 2 เคธี่ เท่าเทียมไม่ใช่เท่ากัน</h2>
                         </div>
->>>>>>> 4fe51d056effee1405fd3d700fe3bf0d85f4fff1
                     </div>
                 <?php }?>
             </div>
