@@ -3,30 +3,51 @@
 <head>
     <?php include_once('include/header.php'); ?>
     <?php include_once('include/style.php'); ?>
-
-    <style>
-        .banner-01 {position:relative; width:100%;}
-        .banner-01 > .slide-container {position:relative; width:100%; padding:0;}
-        .banner-01 .slide-container img {display:block; width:100%; height:auto; }
-        .banner-01 .dots {position:absolute; bottom:0;}
-        .banner-01 .dots .slick-dots {list-style:none; display:flex; flex-wrap:wrap; align-items:center;}
-        .banner-01 .dots li.slick-active button { display:block; font-size:.9375rem; color:#fff; font-weight:100; padding:.5rem .625rem; background: #df660c; border-radius: 99999rem; width:auto; height:auto; transition: width .4s;}
-        .banner-01 .dots li button {display:block; cursor:pointer; font-size: 0; background: #fff; border-radius: 50%; width:.625rem; height:.625rem; border:none; }
-        .banner-01 .dots li {padding:.5625rem; display:flex;}
-        .banner-01 .dots li > .desc {position: absolute; font-weight:100; bottom: 100%; left:5rem; width:16.5rem; color:#fff;}
-        .banner-01 .dots li.slick-active .text-yellow {color:#f1cb0b;}
-        .banner-01 .dots li .text-yellow {color:transparent;}
-    </style>
 </head>
-<body class="loading">
+<body class="loading policy-opened">
     <?php include_once('include/topnav.php'); ?>
+
+    <section class="menubar-01" style="background-image:url('assets/img/hero/05.jpg');">
+        <div class="wrapper">
+            <div class="menu-icon">
+                <a href="#">
+                    <img src="assets/img/icon/05.png" alt="Icon" /> 
+                    <div class="text">การกำกับกิจการพลังงาน</div>
+                </a>
+            </div>
+            <div class="menu-icon">
+                <a href="#">
+                    <img src="assets/img/icon/06.png" alt="Icon" /> 
+                    <div class="text">การขอรับใบอนุณาต/การแจ้งต่างๆ</div>
+                </a>
+            </div>
+            <div class="menu-icon">
+                <a href="#">
+                    <img src="assets/img/icon/07.png" alt="Icon" /> 
+                    <div class="text">กองทุนพัฒนาไฟฟ้า</div>
+                </a>
+            </div>
+            <div class="menu-icon">
+                <a href="#">
+                    <img src="assets/img/icon/08.png" alt="Icon" /> 
+                    <div class="text">สำนักงานประจำเขต</div>
+                </a>
+            </div>
+            <div class="menu-icon">
+                <a href="#">
+                    <img src="assets/img/icon/09.png" alt="Icon" /> 
+                    <div class="text">คณะกรรมการผู้ใช้พลังงานประจำเขต (คพข.)</div>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <section class="banner-01">
         <div class="slide-container">
             <div class="slides">
                 <?php for($i=1; $i<5;$i++){?>
-                    <div class="slide" data-desc="<span class='text-yellow'><?php echo ($i%4 +1).'/4';?></span>ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
-                    <img src="./assets/img/bg/08.jpg" alt="banner">
+                    <div class="slide" data-desc="<span class='text-yellow'><?php echo ($i%4 +1).'/4';?></span> ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
+                        <img src="./assets/img/bg/08.jpg" alt="banner">
                     </div>
                 <?php }?>
             </div>

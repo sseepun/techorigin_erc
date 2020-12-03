@@ -7,3 +7,5 @@
 
 <script src="assets/js/script.js"></script>
 <script src="assets/js/lazy-load.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>

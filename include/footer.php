@@ -1,3 +1,11 @@
+<a class="back-to-top" href="#">
+    <div class="wrapper">
+        <div class="icon">
+            <i class="zmdi zmdi-chevron-up"></i>
+        </div>
+    </div>
+</a>
+
 <nav class="footer" style="background-image:url('assets/img/bg/06.jpg');">
     <div class="container">
         <div class="footer-top color-white text-center">

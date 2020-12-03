@@ -1,3 +1,16 @@
+/* Banner 01 */
+.banner-01{position:relative; width:100%;}
+.banner-01 > .slide-container{position:relative; width:100%; padding:0;}
+.banner-01 .slide-container img{display:block; width:100%; height:auto; }
+.banner-01 .dots{position:absolute; bottom:0;}
+.banner-01 .dots .slick-dots{list-style:none; display:flex; flex-wrap:wrap; align-items:center;}
+.banner-01 .dots li.slick-active button{ display:block; font-size:.9375rem; color:#fff; font-weight:100; padding:.5rem .625rem; background: #df660c; border-radius: 99999rem; width:auto; height:auto; transition: width .4s;}
+.banner-01 .dots li button{display:block; cursor:pointer; font-size: 0; background: #fff; border-radius: 50%; width:.625rem; height:.625rem; border:none; }
+.banner-01 .dots li{padding:.5625rem; display:flex;}
+.banner-01 .dots li > .desc{position: absolute; font-weight:100; bottom: 100%; left:5rem; width:16.5rem; color:#fff;}
+.banner-01 .dots li.slick-active .text-yellow{color:#f1cb0b;}
+.banner-01 .dots li .text-yellow{color:transparent;}
+
 
 /* Content 01 */
 .content-01{background-size:cover; background-position:center;}
@@ -62,3 +75,20 @@
 /* Call to Action 02 */
 .call-02{background-size:cover; background-position:center; padding:6rem 0 10rem 0;}
 
+
+/* Menubar 01 */
+.menubar-01{
+    position:relative; width:100%; font-size:1.125rem; font-weight:200; background-size:cover;
+    background-position:center;
+}
+.menubar-01 > .wrapper{width:100%; display:flex; justify-content:center;}
+.menubar-01 .menu-icon{display:block; position:relative;}
+.menubar-01 .menu-icon > a{
+    display:block; position:relative; color:#fff; padding:1.0625rem .75rem .375rem .75rem;
+    text-align:center;
+}
+.menubar-01 .menu-icon > a > img{
+    display:block; height:2.125rem; width:auto; margin:0 auto .125rem auto; opacity:.82;
+    transition:opacity .25s;
+}
+.menubar-01 .menu-icon:hover > a > img{opacity:1;}

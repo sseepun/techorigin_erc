@@ -13,3 +13,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/navs.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/blocks.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/ie-fix.css" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />

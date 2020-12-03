@@ -2,9 +2,8 @@ $(function(){ 'use strict';
 
     // Topnav
     var topnav = $('nav.topnav'),
-        sidenav = $('nav.sidenav'),
-        sidenavMenus = sidenav.find('.menu-container'),
-        sidenavToggle = $('nav.topnav .sidenav-toggle, nav.sidenav .sidenav-toggle');
+        topnavMenuToggle = topnav.find('.menu-toggle'),
+        tonavMenuTabs = topnav.find('.menu-tab');
     var backToTop = $('.back-to-top');
     if(topnav.length){
 
@@ -14,36 +13,25 @@ $(function(){ 'use strict';
             checkOnScroll( $(this).scrollTop() );
         });
 
-        // Sidenav buttons
-        sidenavToggle.click(function(e){
+        // Topnav Menu Toggle
+        topnavMenuToggle.find('> a').click(function(e){
             e.preventDefault();
-            if($('body').hasClass('sidenav-opened')){
-                $('html, body').removeClass('sidenav-opened');
-                sidenavToggle.find('> *').removeClass('active');
-                sidenav.removeClass('active');
-            }else{
-                $('html, body').addClass('sidenav-opened');
-                sidenavToggle.find('> *').addClass('active');
-                sidenav.addClass('active');
-            }
-        });
-        $('.sidenav-filter').click(function(e){
-            e.preventDefault();
-            $('html, body').removeClass('sidenav-opened');
-            sidenavToggle.find('> *').removeClass('active');
-            sidenav.removeClass('active');
+            topnavMenuToggle.toggleClass('active');
+            topnavMenuToggle.find('.hamburger').toggleClass('active');
         });
 
-        // Generate sidenav
-        sidenavMenus.html( topnav.find('.menu-container').html() );
-        sidenavMenus.find('.menu.has-submenu > a').click(function(e){
-            e.preventDefault();
-            var parent = $(this).parent(),
-                target = parent.find('> .submenu-container');
-            if(target.length){
-                parent.toggleClass('opened');
-                target.slideToggle();
-            }
+        // Topnav Menu Tabs
+        tonavMenuTabs.each(function(){
+            var tonavMenuTab = $(this),
+                tempTabs = tonavMenuTab.find('.tab'),
+                tempContents = tonavMenuTab.find('.tab-content');
+            tempTabs.click(function(e){
+                e.preventDefault();
+                tempTabs.removeClass('active');
+                $(this).addClass('active');
+                tempContents.removeClass('active');
+                tempContents.filter('[data-tab="'+$(this).data('tab')+'"]').addClass('active');
+            });
         });
 
         // Back to Top
