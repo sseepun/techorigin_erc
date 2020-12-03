@@ -110,6 +110,33 @@ $(function(){ 'use strict';
         });
     }
 
+    var banner01 = $('.banner-01');
+    if(banner01.length){
+        banner01.find('.slide-container').each(function(){
+            var self = $(this);
+            self.find('.slides').slick({
+                centerMode: false, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
+                focusOnSelect: true, 
+                arrows: false,
+                dots: true, appendDots: self.find('.dots'),
+            });
+
+            var descObj = {};
+            self.find('.slide').each(function(i){
+                if($(this).data('desc')!==undefined){
+                    descObj[i] = $(this).data('desc');
+                }
+            });
+            self.find('.slick-dots > li button').each(function(i){
+                if(descObj[i]!==undefined){
+                    $(this).html(descObj[i]);
+                }
+            });
+        });
+
+        
+    }
+
 
     // Content 01
     var content01 = $('.content-01');
