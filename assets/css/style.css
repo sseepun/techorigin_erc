@@ -23,7 +23,10 @@ input[type=number], input[type=phone], input[type=submit], select, textarea, but
 .section-padding{padding:4rem 0 5rem 0;}
 
 /* Container */
-.container{width:1140px; margin-left:auto; margin-right:auto;}
+.container{width:1240px; margin-left:auto; margin-right:auto;}
+@media screen and (max-width:1299.98px){
+    .container{width:1140px;}
+}
 @media screen and (max-width:1199.98px){
     .container{width:960px;}
 }
@@ -54,10 +57,14 @@ p, .p{font-size:1.25rem; font-weight:300;}
 .color-white{color:#fff!important;}
 .color-black{color:#000!important;}
 .color-sgray{color:#f2f2f2!important;}
+.color-01{color:#e59d2b!important;}
+.color-02{color:#e7a439!important;}
 
 .bg-white{background:#fff!important;}
 .bg-black{background:#000!important;}
 .bg-sgray{background:#f2f2f2!important;}
+.bg-01{background:#e59d2b!important;}
+.bg-02{background:#e7a439!important;}
 
 
 /* Buttons */
@@ -103,6 +110,17 @@ p, .p{font-size:1.25rem; font-weight:300;}
 .ss-card .title{font-size:1.375rem; font-weight:600;}
 .ss-card .desc{font-size:1.1875rem; margin:.125rem 0 0 0;}
 .ss-card .date{font-size:1.125rem; margin:1rem 0 0 0;}
+
+/* Special Card 02 */
+.ss-card-02{
+    display:block; position:relative; width:100%; background:#fff; color:#000;
+    transform-origin:top center; transition:box-shadow .3s;
+}
+.ss-card-02:hover{box-shadow:rgba(0,0,0,.15) 0px 15px 30px;}
+.ss-card-02 .text-wrapper{position:relative; width:100%; padding:1rem .25rem; background:#fff;}
+.ss-card-02 .title{font-size:1.375rem; font-weight:600;}
+.ss-card-02 .desc{font-size:1.1875rem; margin:.125rem 0 0 0;}
+.ss-card-02 .date{font-size:1.125rem; margin:1rem 0 0 0;}
 
 
 /* Special Image */
@@ -160,13 +178,15 @@ p, .p{font-size:1.25rem; font-weight:300;}
 .w-full{width:100%!important; max-width:100%!important;}
 .h-auto{height:auto!important;}
 
-.ws-nowrap, .ws-no-wrap{white-space:nowrap!important;}
-.no-br > br{display:none;}
-
 .text-center{text-align:center;}
 .text-left{text-align:left;}
 .text-right{text-align:right;}
 
+.overflow-hidden{overflow:hidden;}
+
+.ws-nowrap, .ws-no-wrap{white-space:nowrap!important;}
+
+.no-br > br{display:none;}
 @media screen and (max-width:1199.98px){
     .lg-no-br > br{display:none;}
 }
@@ -178,5 +198,6 @@ p, .p{font-size:1.25rem; font-weight:300;}
 }
 @media screen and (max-width:575.98px){
     .xs-no-br > br{display:none;}
-    .xs-mw-adaptive{min-width:6.5rem!important;}
 }
+
+.mt-1{margin-top:1rem!important;}

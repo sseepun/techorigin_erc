@@ -197,7 +197,7 @@
         </div>
     </section>
 
-    <section class="content-03 section-padding bg-sgray">
+    <section class="section-padding bg-sgray overflow-hidden">
         <div class="container">
             <h1 class="text-center">
                 ความรู้คู่พลังงานไทย 
@@ -214,7 +214,7 @@
                     <span>ดูรายละเอียดเพิ่มเติม</span>
                 </a>
             </div>
-            <div class="grids jc-center">
+            <div class="grids jc-center mt-1">
                 <div class="grid md-40">
                     <a class="ss-card-02" href="#">
                         <div class="ss-img">
