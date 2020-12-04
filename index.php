@@ -37,7 +37,7 @@
                         <div class="hero" style="background-image:url('assets/img/bg/07.jpg')"></div>
                         <div class="container">
                             <div class="text-wrapper color-white text-center">
-                                <h4 class="fw-600 animate" style="--delay:.6s;">
+                                <h4 class="fw-400 animate" style="--delay:.6s;">
                                     หนังสั้นแนะนำ กกพ.
                                 </h4>
                                 <h2 class="fw-500 mt-05 animate" style="--delay:.8s;">
@@ -79,7 +79,7 @@
                         <div class="hero" style="background-image:url('assets/img/bg/07.jpg')"></div>
                         <div class="container">
                             <div class="text-wrapper color-white text-center">
-                                <h4 class="fw-600 animate" style="--delay:.6s;">
+                                <h4 class="fw-400 animate" style="--delay:.6s;">
                                     หนังสั้นแนะนำ กกพ.
                                 </h4>
                                 <h2 class="fw-500 mt-05 animate" style="--delay:.8s;">
