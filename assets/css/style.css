@@ -58,7 +58,8 @@ h5, .h5{font-size:1.625rem; font-weight:300;}
 h6, .h6{font-size:1.5rem; font-weight:300;}
 p, .p{font-size:1.25rem; font-weight:300;}
 
-.text-sm{font-size:80%;}
+.text-xs{font-size:80%;}
+.text-sm{font-size:90%;}
 
 
 /* Colors */
@@ -274,4 +275,5 @@ ul.ss-list-02 > li:hover > a{color:#e9aa11;}
 }
 
 .mt-0{margin-top:0!important;}
-.mt-1{margin-top:1rem!important;}
+.mt-05{margin-top:.5rem!important;}
+.mt-10{margin-top:1rem!important;}

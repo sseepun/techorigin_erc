@@ -213,7 +213,7 @@
                     <span>ดูรายละเอียดเพิ่มเติม</span>
                 </a>
             </div>
-            <div class="grids jc-center mt-1" data-aos="fade-up" data-aos-delay="300">
+            <div class="grids jc-center mt-10" data-aos="fade-up" data-aos-delay="300">
                 <div class="grid md-40">
                     <a class="ss-card-02" href="#">
                         <div class="ss-img">
