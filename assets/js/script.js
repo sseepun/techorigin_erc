@@ -58,6 +58,7 @@ $(function(){ 'use strict';
                 $('body').removeClass('policy-opened');
                 setTimeout(function(){
                     policyNav.remove();
+                    AOS.refresh();
                 }, 750);
             });
         }else{
@@ -98,15 +99,16 @@ $(function(){ 'use strict';
         });
     }
 
+
+    // Banner 01
     var banner01 = $('.banner-01');
     if(banner01.length){
         banner01.find('.slide-container').each(function(){
             var self = $(this);
             self.find('.slides').slick({
-                centerMode: false, centerPadding: 0, slidesToShow: 1, swipeToSlide: true,
-                focusOnSelect: true, 
-                arrows: false,
-                dots: true, appendDots: self.find('.dots'),
+                centerMode: false, centerPadding: 0, slidesToShow: 1, 
+                swipeToSlide: true, focusOnSelect: true, speed: 900, infinite: false,
+                arrows: false, dots: true, appendDots: self.find('.dots'),
             });
 
             var descObj = {};
@@ -121,8 +123,6 @@ $(function(){ 'use strict';
                 }
             });
         });
-
-        
     }
 
 
@@ -132,8 +132,8 @@ $(function(){ 'use strict';
         content01.find('.slide-container').each(function(){
             var self = $(this);
             self.find('.slides').slick({
-                centerMode: false, centerPadding: 0, slidesToShow: 6, 
-                swipeToSlide: true, focusOnSelect: true, autoplay: false,
+                centerMode: false, centerPadding: 0, slidesToShow: 6, swipeToSlide: true, 
+                focusOnSelect: true, autoplay: false, speed: 600,
                 arrows: true, appendArrows: self.find('.page-arrows'),
                 dots: true, appendDots: self.find('.page-dots'),
             });

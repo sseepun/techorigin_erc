@@ -17,7 +17,7 @@ nav.topnav .option a.link > img{
     display:inline-block; height:1rem; width:auto; transform:translateY(.125rem);
 }
 nav.topnav .top-container .logo{
-    display:block; color:#000; margin:0 auto; padding:1rem .6875rem .125rem .6875rem;
+    display:block; color:#000; margin:0 auto; padding:.75rem .6875rem .125rem .6875rem;
     font-weight:300; text-align:center; transition:color .25s;
 }
 nav.topnav .top-container .logo:hover{color:#db8305;}
@@ -37,9 +37,9 @@ nav.topnav .menu-toggle > .menu-dropdown{
     position:absolute; top:100%; left:0; width:100vw; max-height:0; overflow:hidden;
     background:#2d2e30; color:#fff; transition:max-height .6s;
 }
-nav.topnav .menu-toggle.active > .menu-dropdown{max-height:calc(100vh - 5.9375rem);}
+nav.topnav .menu-toggle.active > .menu-dropdown{max-height:calc(100vh - 5.6875rem);}
 nav.topnav .menu-dropdown > .wrapper{
-    width:100%; height:calc(100vh - 5.9375rem); padding:1.75rem 0; overflow:hidden;
+    width:100%; height:calc(100vh - 5.6875rem); padding:1.75rem 0; overflow:hidden;
     background-size:cover; background-position:center;
 }
 
@@ -61,7 +61,7 @@ nav.topnav .menu-tab .scroll-wrapper{
     display:block; width:100%; height:100%; max-height:100%; overflow-x:hidden; overflow-y:auto;
 }
 
-nav.topnav + .topnav-spacer{display:block; width:100%; height:5.9375rem; transition:height .6s;}
+nav.topnav + .topnav-spacer{display:block; width:100%; height:5.6875rem; transition:height .6s;}
 
 
 /* Policy Nav */
@@ -81,10 +81,10 @@ nav.policy-nav .close img{display:block; height:1.6875rem; width:auto;}
 
 body.policy-opened nav.topnav{top:4rem;}
 body.policy-opened nav.topnav .menu-toggle.active > .menu-dropdown{
-    max-height:calc(100vh - 9.9375rem);
+    max-height:calc(100vh - 9.6875rem);
 }
-body.policy-opened nav.topnav .menu-dropdown > .wrapper{height:calc(100vh - 9.9375rem);}
-body.policy-opened nav.topnav + .topnav-spacer{height:9.9375rem;}
+body.policy-opened nav.topnav .menu-dropdown > .wrapper{height:calc(100vh - 9.6875rem);}
+body.policy-opened nav.topnav + .topnav-spacer{height:9.6875rem;}
 
 body.policy-opened nav.policy-nav{transform:translateY(0);}
 

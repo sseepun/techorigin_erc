@@ -10,18 +10,117 @@
     <section class="banner-01">
         <div class="slide-container">
             <div class="slides">
-                <?php for($i=1; $i<5;$i++){?>
-                    <div class="slide" data-desc="<span class='text-yellow'><?php echo ($i%4 +1).'/4';?></span>ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
-                        <img class="hero" src="./assets/img/bg/07.jpg" alt="banner" />
-                        <img style="position:absolute; top:50%; width:10%; height:auto;" src="./assets/img/icon/play.png" alt="play-icon"  />
-                        <div class="text-wrapper color-white text-center">
-                            <h4 class="fw-100">หนังสั้นแนะนำ กกพ.</h4>
-                            <h2 class="fw-400" style="margin-top:.25rem;">ตอนที่ 2 เคธี่ เท่าเทียมไม่ใช่เท่ากัน</h2>
+                <div class="slide" data-desc="<span>1/4</span> ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
+                    <div class="wrapper">
+                        <div class="hero" style="background-image:url('assets/img/bg/08.jpg')"></div>
+                        <div class="container">
+                            <div class="text-wrapper text-center">
+                                <h2 class="fw-600 animate" style="--delay:.6s;">
+                                    ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงาน 
+                                </h2>
+                                <h6 class="mt-05 animate" style="--delay:.8s;">
+                                    พลังงานที่ทำให้มนุษย์อย่างเราสะดวกสบายมีน้ำไหล ไฟฟ้าสว่าง 
+                                    เพียงพอต่อความต้องการอย่างยั่งยืน <br>
+                                    และมีการจัดสรรปันส่วนให้เราทุกคนได้ใช้พลังงานได้อย่างเท่าเทียม
+                                </h6>
+                                <div class="btns animate" style="--delay:1s;">
+                                    <a class="btn btn-round btn-ss btn-ss-03" href="#">
+                                        <span>ดูรายละเอียดเพิ่มเติม</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                <?php }?>
+                </div>
+                <div class="slide" data-desc="<span>2/4</span> ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
+                    <div class="wrapper">
+                        <div class="hero" style="background-image:url('assets/img/bg/07.jpg')"></div>
+                        <div class="container">
+                            <div class="text-wrapper color-white text-center">
+                                <h4 class="fw-600 animate" style="--delay:.6s;">
+                                    หนังสั้นแนะนำ กกพ.
+                                </h4>
+                                <h2 class="fw-500 mt-05 animate" style="--delay:.8s;">
+                                    ตอนที่ 2 เคธี่ เท่าเทียมไม่ใช่เท่ากัน
+                                </h2>
+                                <div class="play-btns animate" style="--delay:1s;">
+                                    <a class="play-btn" href="https://www.youtube.com/watch?v=u3VFzuUiTGw" data-fancybox>
+                                        <img src="assets/img/icon/play.png" alt="Play Icon" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-desc="<span>3/4</span> ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
+                    <div class="wrapper">
+                        <div class="hero" style="background-image:url('assets/img/bg/08.jpg')"></div>
+                        <div class="container">
+                            <div class="text-wrapper text-center">
+                                <h2 class="fw-600 animate" style="--delay:.6s;">
+                                    ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงาน 
+                                </h2>
+                                <h6 class="mt-05 animate" style="--delay:.8s;">
+                                    พลังงานที่ทำให้มนุษย์อย่างเราสะดวกสบายมีน้ำไหล ไฟฟ้าสว่าง 
+                                    เพียงพอต่อความต้องการอย่างยั่งยืน <br>
+                                    และมีการจัดสรรปันส่วนให้เราทุกคนได้ใช้พลังงานได้อย่างเท่าเทียม
+                                </h6>
+                                <div class="btns animate" style="--delay:1s;">
+                                    <a class="btn btn-round btn-ss btn-ss-03" href="#">
+                                        <span>ดูรายละเอียดเพิ่มเติม</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-desc="<span>4/4</span> ใครคือผู้อยู่เบื้องหลังในการดูแลพลังงานไทย">
+                    <div class="wrapper">
+                        <div class="hero" style="background-image:url('assets/img/bg/07.jpg')"></div>
+                        <div class="container">
+                            <div class="text-wrapper color-white text-center">
+                                <h4 class="fw-600 animate" style="--delay:.6s;">
+                                    หนังสั้นแนะนำ กกพ.
+                                </h4>
+                                <h2 class="fw-500 mt-05 animate" style="--delay:.8s;">
+                                    ตอนที่ 2 เคธี่ เท่าเทียมไม่ใช่เท่ากัน
+                                </h2>
+                                <div class="play-btns animate" style="--delay:1s;">
+                                    <a class="play-btn" href="https://www.youtube.com/watch?v=u3VFzuUiTGw" data-fancybox>
+                                        <img src="assets/img/icon/play.png" alt="Play Icon" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="dots"></div>
+            <div class="container position-relative">
+                <div class="dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-06" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="call-wrapper">
+                <a class="wrapper" href="assets/img/content/09.jpg" data-fancybox>
+                    <div class="ss-img horizontal">
+                        <div class="img-bg" style="background-image:url('assets/img/content/09.jpg');"></div>
+                        <div class="expand-icon">
+                            <img src="assets/img/icon/expand.png" alt="Icon" />
+                        </div>
+                    </div>
+                    <div class="text-wrapper text-center">
+                        <h6 class="fw-400 color-01">
+                            ประกาศจาก กกพ.
+                        </h6>
+                        <p class="fw-200 color-white">
+                            “กกพ.” มอบของขวัญ หั่นเอฟทีลงเหลือ
+                        </p>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
