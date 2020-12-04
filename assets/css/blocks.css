@@ -166,7 +166,6 @@
 }
 .call-05 .character img{display:block; width:100%; height:auto;}
 .call-05 .character .text{transform:translateY(-3rem);}
-.call-06 .text-wrapper{padding:1rem .5rem; background:#1e222f;}
 
 
 /* Call to Action 06 */
@@ -176,6 +175,7 @@
     position:absolute; bottom:0; right:0; width:16rem; box-shadow:rgba(0,0,0,.25) 0px 15px 30px;
 }
 .call-06 .call-wrapper > .wrapper{position:relative; width:100%;}
+.call-06 .text-wrapper{padding:.75rem .5rem; background:#1e222f;}
 
 
 /* Menubar 01 */

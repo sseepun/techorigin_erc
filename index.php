@@ -112,7 +112,7 @@
                         </div>
                     </div>
                     <div class="text-wrapper text-center">
-                        <h6 class="fw-400 color-01">
+                        <h6 class="color-01">
                             ประกาศจาก กกพ.
                         </h6>
                         <p class="fw-200 color-white">
