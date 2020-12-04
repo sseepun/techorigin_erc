@@ -1,3 +1,4 @@
+<!-- Back to Top -->
 <a class="back-to-top" href="#">
     <div class="wrapper">
         <div class="icon">
@@ -6,18 +7,19 @@
     </div>
 </a>
 
+<!-- Footer -->
 <nav class="footer" style="background-image:url('assets/img/bg/06.jpg');">
     <div class="container">
         <div class="footer-top color-white text-center">
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-up" data-aos-delay="0">
                 <h2>ขอขอบคุณทุกพันธมิตรของพวกเรา</h2>
             </div>
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-up" data-aos-delay="150">
                 <h4>ที่ร่วมสร้างสรรสิ่งดีดี เพื่อสังคมและเพื่อการพัฒนาประเทศของเราให้เติบโตอย่างยั่งยืน</h4>
             </div>
         </div>
 
-        <div class="gallery-grids">
+        <div class="gallery-grids" data-aos="fade-up" data-aos-delay="300">
             <div class="grid xl-20 lg-20">
                 <h4 class="color-white">Link ภายใน</h4>
                 <ul class="footer-list">
@@ -94,7 +96,7 @@
             </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-bottom" data-aos="fade-up" data-aos-delay="0">
             <div class="socials">
                 <div class="social">
                     <a href="#"><img src="assets/img/icon/fb.png" alt="Social Icon" /></a>

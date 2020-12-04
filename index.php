@@ -7,41 +7,6 @@
 <body class="loading policy-opened">
     <?php include_once('include/topnav.php'); ?>
 
-    <section class="menubar-01" style="background-image:url('assets/img/hero/05.jpg');">
-        <div class="wrapper">
-            <div class="menu-icon">
-                <a href="#">
-                    <img src="assets/img/icon/05.png" alt="Icon" /> 
-                    <div class="text">การกำกับกิจการพลังงาน</div>
-                </a>
-            </div>
-            <div class="menu-icon">
-                <a href="#">
-                    <img src="assets/img/icon/06.png" alt="Icon" /> 
-                    <div class="text">การขอรับใบอนุณาต/การแจ้งต่างๆ</div>
-                </a>
-            </div>
-            <div class="menu-icon">
-                <a href="#">
-                    <img src="assets/img/icon/07.png" alt="Icon" /> 
-                    <div class="text">กองทุนพัฒนาไฟฟ้า</div>
-                </a>
-            </div>
-            <div class="menu-icon">
-                <a href="#">
-                    <img src="assets/img/icon/08.png" alt="Icon" /> 
-                    <div class="text">สำนักงานประจำเขต</div>
-                </a>
-            </div>
-            <div class="menu-icon">
-                <a href="#">
-                    <img src="assets/img/icon/09.png" alt="Icon" /> 
-                    <div class="text">คณะกรรมการผู้ใช้พลังงานประจำเขต (คพข.)</div>
-                </a>
-            </div>
-        </div>
-    </section>
-
     <section class="banner-01">
         <div class="slide-container">
             <div class="slides">
@@ -62,14 +27,14 @@
 
     <section class="content-01 section-padding" style="background-image:url('assets/img/bg/01.jpg');">
         <div class="container">
-            <h2 class="text-center">
+            <h2 class="text-center" data-aos="fade-up" data-aos-delay="0">
                 ทันสมัย ทันเหตุการณ์
             </h2>
-            <h5 class="text-center">
+            <h5 class="text-center" data-aos="fade-up" data-aos-delay="150">
                 อัพเดทข่าวสารด้านพลังงาน กิจกรรมต่างๆ พร้อมทั้งแสดงข้อคิดเห็นได้ที่นี่
             </h5>
         </div>
-        <div class="tab-container">
+        <div class="tab-container" data-aos="fade-up" data-aos-delay="300">
             <div class="tabs">
                 <?php
                     $tabs = [
@@ -131,18 +96,20 @@
 
     <section class="content-02 section-padding" style="background-image:url('assets/img/bg/02.jpg');">
         <div class="container">
-            <h1 class="text-center color-white">
-                เทคโนโลยีพลังงานน้ำ
-            </h1>
-            <h6 class="text-center color-white">
-                น้ำจะสามารถนำมาใช้ประโยชน์ได้ต้องมีการกักเก็บน้ำไว้ เพื่อเป็นการสะสมกำลัง โดยการก่อสร้างเขื่อนหรือฝายปิดลำน้ำที่มีระดับความสูงเป็นพลังงานศักย์ <br>
-                และผันน้ำเข้าท่อไปยังเครื่องกังหันน้ำขับเครื่องกำเนิดไฟฟ้าพลังน้ำ
-            </h6>
-            <h4 class="text-center color-white">
-                กำลังการผลิตรวมไฟฟ้าพลังงานน้ำของประเทศไทย
-            </h4>
+            <div data-aos="fade-up" data-aos-delay="0">
+                <h1 class="text-center color-white">
+                    เทคโนโลยีพลังงานน้ำ
+                </h1>
+                <h6 class="text-center color-white">
+                    น้ำจะสามารถนำมาใช้ประโยชน์ได้ต้องมีการกักเก็บน้ำไว้ เพื่อเป็นการสะสมกำลัง โดยการก่อสร้างเขื่อนหรือฝายปิดลำน้ำที่มีระดับความสูงเป็นพลังงานศักย์ <br>
+                    และผันน้ำเข้าท่อไปยังเครื่องกังหันน้ำขับเครื่องกำเนิดไฟฟ้าพลังน้ำ
+                </h6>
+                <h4 class="text-center color-white">
+                    กำลังการผลิตรวมไฟฟ้าพลังงานน้ำของประเทศไทย
+                </h4>
+            </div>
             <div class="grids">
-                <div class="grid lg-25 xl-25">
+                <div class="grid lg-25 xl-25" data-aos="fade-up" data-aos-delay="0">
                     <div class="stat text-center color-white">
                         <div class="icon-title">
                             <img src="assets/img/icon/01.png" alt="Icon" /> IPP
@@ -150,7 +117,7 @@
                         <div class="num">14,248,50<span>MW</span></div>
                     </div>
                 </div>
-                <div class="grid lg-25 xl-25">
+                <div class="grid lg-25 xl-25" data-aos="fade-up" data-aos-delay="150">
                     <div class="stat text-center color-white">
                         <div class="icon-title">
                             <img src="assets/img/icon/02.png" alt="Icon" /> Foreign
@@ -158,7 +125,7 @@
                         <div class="num">5,720.60<span>MW</span></div>
                     </div>
                 </div>
-                <div class="grid lg-25 xl-25">
+                <div class="grid lg-25 xl-25" data-aos="fade-up" data-aos-delay="300">
                     <div class="stat text-center color-white">
                         <div class="icon-title">
                             <img src="assets/img/icon/03.png" alt="Icon" /> SSP
@@ -166,7 +133,7 @@
                         <div class="num">9,473.94<span>MW</span></div>
                     </div>
                 </div>
-                <div class="grid lg-25 xl-25">
+                <div class="grid lg-25 xl-25" data-aos="fade-up" data-aos-delay="450">
                     <div class="stat text-center color-white">
                         <div class="icon-title">
                             <img src="assets/img/icon/04.png" alt="Icon" /> EGAT
@@ -175,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class="btns">
+            <div class="btns" data-aos="fade-up" data-aos-delay="0">
                 <a class="btn btn-round btn-ss btn-ss-03" href="#">
                     <span>ดูรายละเอียดเพิ่มเติม</span>
                 </a>
@@ -185,17 +152,19 @@
 
     <section class="call-01 section-padding" style="background-image:url('assets/img/bg/03.jpg');">
         <div class="container">
-            <h1 class="text-center">
-                พลังงานจากขยะ
-            </h1>
-            <h3 class="text-center">
-                ต้นแบบโรงไฟฟ้าขยะชุมชลไร้มลพิษ แห่งแรกในไทย
-            </h3>
-            <h6 class="text-center">
-                ถ้าให้มองสถานการณ์ของการผลิตไฟฟ้าแบบดั้งเดิมโดยใช้ก๊าซธรรมชาติ มันมีความเสี่ยงที่จะทำให้ในอนาคตประเทศไทย <br>
-                จะเสี่ยงต่อการที่ค่าไฟจะขึ้นราคาไปมากกว่านี้ เพราะปริมาณก๊าซในอ่าวไทยที่เราผลิตได้เองก็ลดน้อยลงทุก ๆ ปี
-            </h6>
-            <div class="btns">
+            <div data-aos="fade-up" data-aos-delay="0">
+                <h1 class="text-center">
+                    พลังงานจากขยะ
+                </h1>
+                <h3 class="text-center">
+                    ต้นแบบโรงไฟฟ้าขยะชุมชลไร้มลพิษ แห่งแรกในไทย
+                </h3>
+                <h6 class="text-center">
+                    ถ้าให้มองสถานการณ์ของการผลิตไฟฟ้าแบบดั้งเดิมโดยใช้ก๊าซธรรมชาติ มันมีความเสี่ยงที่จะทำให้ในอนาคตประเทศไทย <br>
+                    จะเสี่ยงต่อการที่ค่าไฟจะขึ้นราคาไปมากกว่านี้ เพราะปริมาณก๊าซในอ่าวไทยที่เราผลิตได้เองก็ลดน้อยลงทุก ๆ ปี
+                </h6>
+            </div>
+            <div class="btns" data-aos="fade-up" data-aos-delay="150">
                 <a class="btn btn-round btn-ss btn-ss-02" href="#">
                     <span>ดูรายละเอียดเพิ่มเติม</span>
                 </a>
@@ -205,17 +174,19 @@
 
     <section class="call-02 section-padding" style="background-image:url('assets/img/bg/04.jpg');">
         <div class="container">
-            <h1 class="text-center color-white">
-                ความมั่นคงของพลังงาน
-            </h1>
-            <h3 class="text-center color-white">
-                ทั้งปัจจุบัน และอนาคต คือ หน้าที่ของเรา
-            </h3>
-            <h6 class="text-center color-white">
-                กำกับดูแลประกอบกิจการพลังงานให้มีระบบการบริหารจัดการพลังงานให้มีความมั่นคงและเชื่อถือได้ มีประสิทธิภาพเป็นธรรม <br>
-                ต่อผู้ใช้และผู้ประกอบกิจการพลังงาน ตลอดจนเป็นมิตรต่อสิ่งแวดล้อม
-            </h6>
-            <div class="btns">
+            <div data-aos="fade-up" data-aos-delay="0">
+                <h1 class="text-center color-white">
+                    ความมั่นคงของพลังงาน
+                </h1>
+                <h3 class="text-center color-white">
+                    ทั้งปัจจุบัน และอนาคต คือ หน้าที่ของเรา
+                </h3>
+                <h6 class="text-center color-white">
+                    กำกับดูแลประกอบกิจการพลังงานให้มีระบบการบริหารจัดการพลังงานให้มีความมั่นคงและเชื่อถือได้ มีประสิทธิภาพเป็นธรรม <br>
+                    ต่อผู้ใช้และผู้ประกอบกิจการพลังงาน ตลอดจนเป็นมิตรต่อสิ่งแวดล้อม
+                </h6>
+            </div>
+            <div class="btns" data-aos="fade-up" data-aos-delay="150">
                 <a class="btn btn-round btn-ss btn-ss-04" href="#">
                     <span>ดูรายละเอียดเพิ่มเติม</span>
                 </a>
@@ -225,22 +196,24 @@
 
     <section class="section-padding bg-sgray overflow-hidden">
         <div class="container">
-            <h1 class="text-center">
-                ความรู้คู่พลังงานไทย 
-            </h1>
-            <h3 class="text-center">
-                ต้นแบบโรงไฟฟ้าขยะชุมชนไร้มลพิษ แห่งแรกในไทย
-            </h3>
-            <h6 class="text-center">
-                ถ้าให้มองสถานการณ์ของการผลิตไฟฟ้าแบบดั้งเดิมโดยใช้ก๊าซธรรมชาติ มันมีความเสี่ยงที่จะทำให้ในอนาคตประเทศไทย <br>
-                จะเสี่ยงต่อการที่ค่าไฟจะขึ้นราคาไปมากกว่านี้ เพราะปริมาณก๊าซในอ่าวไทยที่เราผลิตได้เองก็ลดน้อยลงทุก ๆ ปี 
-            </h6>
-            <div class="btns">
+            <div data-aos="fade-up" data-aos-delay="0">
+                <h1 class="text-center">
+                    ความรู้คู่พลังงานไทย 
+                </h1>
+                <h3 class="text-center">
+                    ต้นแบบโรงไฟฟ้าขยะชุมชนไร้มลพิษ แห่งแรกในไทย
+                </h3>
+                <h6 class="text-center">
+                    ถ้าให้มองสถานการณ์ของการผลิตไฟฟ้าแบบดั้งเดิมโดยใช้ก๊าซธรรมชาติ มันมีความเสี่ยงที่จะทำให้ในอนาคตประเทศไทย <br>
+                    จะเสี่ยงต่อการที่ค่าไฟจะขึ้นราคาไปมากกว่านี้ เพราะปริมาณก๊าซในอ่าวไทยที่เราผลิตได้เองก็ลดน้อยลงทุก ๆ ปี 
+                </h6>
+            </div>
+            <div class="btns" data-aos="fade-up" data-aos-delay="150">
                 <a class="btn btn-round btn-ss btn-ss-02" href="#">
                     <span>ดูรายละเอียดเพิ่มเติม</span>
                 </a>
             </div>
-            <div class="grids jc-center mt-1">
+            <div class="grids jc-center mt-1" data-aos="fade-up" data-aos-delay="300">
                 <div class="grid md-40">
                     <a class="ss-card-02" href="#">
                         <div class="ss-img">
@@ -289,17 +262,19 @@
 
     <section class="call-02 section-padding" style="background-image:url('assets/img/bg/05.jpg');">
         <div class="container">
-            <h1 class="text-center color-white">
-                พลังที่ทำให้เราสะดวกสบาย
-            </h1>
-            <h3 class="text-center color-white">
-                มีน้ำไหล ไฟฟ้าสว่าง เพียงพอต่อความต้องการอย่างยั่งยืน
-            </h3>
-            <h6 class="text-center color-white">
-                และมีการจัดสรรปันส่วนให้เราทุกคนได้ใช้พลังงานได้อย่างเท่าเทียม และมาตรฐานความปลอดภัยให้เป็นไปอย่างมีประสิทธิภาพ <br>
-                มั่นคงมีปริมาฟรเพียงพอ สามารถตอบสนองความต้องการภายในประเทศ
-            </h6>
-            <div class="btns">
+            <div data-aos="fade-up" data-aos-delay="0">
+                <h1 class="text-center color-white">
+                    พลังที่ทำให้เราสะดวกสบาย
+                </h1>
+                <h3 class="text-center color-white">
+                    มีน้ำไหล ไฟฟ้าสว่าง เพียงพอต่อความต้องการอย่างยั่งยืน
+                </h3>
+                <h6 class="text-center color-white">
+                    และมีการจัดสรรปันส่วนให้เราทุกคนได้ใช้พลังงานได้อย่างเท่าเทียม และมาตรฐานความปลอดภัยให้เป็นไปอย่างมีประสิทธิภาพ <br>
+                    มั่นคงมีปริมาฟรเพียงพอ สามารถตอบสนองความต้องการภายในประเทศ
+                </h6>
+            </div>
+            <div class="btns" data-aos="fade-up" data-aos-delay="150">
                 <a class="btn btn-round btn-ss btn-ss-04" href="#">
                     <span>ดูรายละเอียดเพิ่มเติม</span>
                 </a>

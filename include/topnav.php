@@ -99,10 +99,12 @@
                 </a>
             </div>
         </div>
-        <a class="logo" href="#">
+
+        <a class="logo" href="index.php">
             <img src="assets/img/logo.png" alt="Logo" />
             <p>สำนักงานคณะกรรมการกำกับกิจการพลังงาน</p>
         </a>
+
         <div class="options">
             <div class="option">
                 ขนาดตัวอักษร 
@@ -132,6 +134,7 @@
                 </a>
             </div>
         </div>
+
     </div>
 </nav>
 <div class="topnav-spacer"></div>
@@ -158,3 +161,39 @@
         </div>
     </div>
 </nav>
+
+<!-- Menu Bar 01 -->
+<section class="menubar-01" style="background-image:url('assets/img/hero/05.jpg');">
+    <div class="wrapper">
+        <div class="menu-icon">
+            <a href="#">
+                <img src="assets/img/icon/05.png" alt="Icon" /> 
+                <div class="text">การกำกับกิจการพลังงาน</div>
+            </a>
+        </div>
+        <div class="menu-icon">
+            <a href="#">
+                <img src="assets/img/icon/06.png" alt="Icon" /> 
+                <div class="text">การขอรับใบอนุณาต/การแจ้งต่างๆ</div>
+            </a>
+        </div>
+        <div class="menu-icon">
+            <a href="#">
+                <img src="assets/img/icon/07.png" alt="Icon" /> 
+                <div class="text">กองทุนพัฒนาไฟฟ้า</div>
+            </a>
+        </div>
+        <div class="menu-icon">
+            <a href="#">
+                <img src="assets/img/icon/08.png" alt="Icon" /> 
+                <div class="text">สำนักงานประจำเขต</div>
+            </a>
+        </div>
+        <div class="menu-icon">
+            <a href="#">
+                <img src="assets/img/icon/09.png" alt="Icon" /> 
+                <div class="text">คณะกรรมการผู้ใช้พลังงานประจำเขต (คพข.)</div>
+            </a>
+        </div>
+    </div>
+</section>
