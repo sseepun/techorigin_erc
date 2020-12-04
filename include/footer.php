@@ -96,7 +96,7 @@
             </div>
         </div>
 
-        <div class="footer-bottom" data-aos="fade-up" data-aos-delay="0">
+        <div class="footer-bottom">
             <div class="socials">
                 <div class="social">
                     <a href="#"><img src="assets/img/icon/fb.png" alt="Social Icon" /></a>

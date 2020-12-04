@@ -132,8 +132,8 @@ $(function(){ 'use strict';
         content01.find('.slide-container').each(function(){
             var self = $(this);
             self.find('.slides').slick({
-                centerMode: false, centerPadding: 0, slidesToShow: 6, swipeToSlide: true,
-                focusOnSelect: true, autoplay: true, autoplaySpeed: 4000, speed: 800,
+                centerMode: false, centerPadding: 0, slidesToShow: 6, 
+                swipeToSlide: true, focusOnSelect: true, autoplay: false,
                 arrows: true, appendArrows: self.find('.page-arrows'),
                 dots: true, appendDots: self.find('.page-dots'),
             });
